@@ -1,0 +1,152 @@
+{
+  "slug": "zoogvpn",
+  "name": "ZoogVPN",
+  "website": "https://zoogvpn.com/",
+  "tagline": "A budget VPN legally based in Greece (operated from Ukraine by the Softoria group) with a free 10 GB tier and a proprietary obfuscation protocol, but no full independent no-logs audit.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Greece",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Zoog Services Single Member Private Company",
+    "conglomerate": "Softoria",
+    "founded": 2013
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Claims a zero-logs policy: per the privacy policy, it does not collect or keep usage information on user activity, the websites or apps visited, timestamps, IP addresses, or log-in/log-out sessions. Collects only an account email (a disposable one is accepted) and aggregate total upload/download bandwidth per account (without traffic content or destinations) for service rendering/billing and free-tier limits. Not independently audited at the infrastructure/no-logs level."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Shadow (obfuscation); also ZoogTLS",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256",
+    "handshake": "RSA-2048"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Unnamed authorized third-party lab (Google Play MASA)",
+        "year": 2026,
+        "scope": "Android app only — Mobile Application Security Assessment (MASA) validated against OWASP MASVS (MASTG); earned Google Play 'Verified'/Independent Security Review badge. NOT a no-logs or full-infrastructure audit; auditing firm not publicly named.",
+        "url": "https://zoogvpn.com/android-security-badge/"
+      }
+    ],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena outcome is publicly known. ZoogVPN publishes a warrant canary (current as of June 2026; also seen updated April/May 2026) reporting 0 national security letters, 0 gag orders, and 0 warrants/subpoenas. The no-logs claim has not been court-tested or independently audited at the infrastructure level."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 55,
+    "servers": 100,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 9.99,
+    "bestPerMonthUsd": 2.49,
+    "bestPlanTerm": "2-year (27 months incl. 3 free months, ~$59.99 total)",
+    "freeTrialDays": 0,
+    "refundDays": 7,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Budget-conscious users and beginners wanting a low-cost or free VPN",
+    "Users who value a non-Eyes (Greece) legal jurisdiction and minimal data collection",
+    "People in censored regions needing obfuscation (Shadow protocol)",
+    "Casual streaming and torrenting on supported servers"
+  ],
+  "notFor": [
+    "Users who require an independently audited, court-tested no-logs guarantee",
+    "Privacy-maximalists uneasy about Ukraine-based operations and shared ownership with a data/proxy-mining group (Softoria, DataImpulse)",
+    "Linux users wanting a full native GUI client with kill switch",
+    "Power users needing multi-hop, port forwarding, or a large global server fleet; anyone wanting fully anonymous signup (an email is required)"
+  ],
+  "pros": [
+    "Greece legal jurisdiction is outside the formal Five/Nine/Fourteen Eyes alliances; minimal data collection (only email + aggregate bandwidth)",
+    "Genuinely usable free tier with 10 GB/month",
+    "Inexpensive long-term plan (~$2.49/mo) and accepts cryptocurrency",
+    "Built-in proprietary Shadow obfuscation protocol for censored regions, plus WireGuard support (premium)"
+  ],
+  "cons": [
+    "No full independent no-logs/infrastructure audit (only an Android-app MASA review); company operations are run from Ukraine under the Softoria group despite the Greek registration",
+    "Publishes a warrant canary but no formal transparency report",
+    "Short 7-day money-back guarantee (and capped at 10 GB usage) versus the 30 days common among competitors",
+    "No native Linux GUI app (manual/CLI configuration only, which disables the kill switch on Linux); small server network (~100 servers); no multi-hop, no port forwarding, no confirmed RAM-only servers"
+  ],
+  "notes": "Operated by Zoog Services Single Member Private Company, 130 Germanou Str, 26224 Patras, Greece (company no. 145382616000). Although legally registered in Greece (EU/GDPR), day-to-day operations are run from Ukraine: ZoogVPN is a product of the Softoria group (Ukraine-based, founded 2014, offices in Kyiv/Kharkiv), which also owns DataForSEO and the DataImpulse residential-proxy network; CEO is Yaroslav Savenkov. Softoria/ZoogVPN confirm shared ownership but do not name the ultimate individual owner, citing safety/legal concerns. ZoogVPN previously was associated with the Isle of Man before its Greek registration. Greece is not part of the Five/Nine/Fourteen Eyes intelligence-sharing alliances. The 2026 'Verified' badge reflects an Android-app MASA security assessment only (firm unnamed) and should not be read as validation of the service-wide no-logs claim. Encryption stated by the vendor as 256-bit AES with a 2048-bit handshake key. WireGuard is premium-only (excluded from the free plan), which also limits server choice and uses 128-bit encryption. The 7-day refund is conditioned on not exceeding 10 GB of usage, and the refund window starts at purchase.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "ZoogVPN official — Privacy Policy (logging, legal entity, company no., Greece jurisdiction)",
+      "url": "https://zoogvpn.com/privacy/"
+    },
+    {
+      "label": "ZoogVPN official — Pricing (monthly $9.99, 2-year $2.49/$59.99, free 10 GB tier, 7-day refund, crypto/payment methods)",
+      "url": "https://zoogvpn.com/pricing/"
+    },
+    {
+      "label": "ZoogVPN official — Features (10 connections, OpenVPN/IKEv2, kill switch, Shadow obfuscation, P2P, AES-256/2048-bit)",
+      "url": "https://zoogvpn.com/features/"
+    },
+    {
+      "label": "ZoogVPN official — WireGuard implementation page",
+      "url": "https://zoogvpn.com/wireguard-implementation/"
+    },
+    {
+      "label": "ZoogVPN official — Warrant Canary (current as of June 2026; 0 NSLs / gag orders / warrants)",
+      "url": "https://zoogvpn.com/warrant-canary/"
+    },
+    {
+      "label": "ZoogVPN official — Android 'Verified' badge / MASA (OWASP MASVS) audit announcement (firm unnamed)",
+      "url": "https://zoogvpn.com/android-security-badge/"
+    },
+    {
+      "label": "Softoria official — confirms ZoogVPN is a Softoria-group product (with DataForSEO, DataImpulse); Ukraine-based, founded 2014",
+      "url": "https://softoria.com/why-us/"
+    },
+    {
+      "label": "top10vpn — ZoogVPN review (Softoria/ZoogVPN same owner, Ukraine operations, 10 paid connections, no independent audit)",
+      "url": "https://www.top10vpn.com/reviews/zoogvpn/"
+    },
+    {
+      "label": "vpnMentor — ZoogVPN Review 2026 (no infrastructure audit, 100 servers/55 countries, $2.49 best price, no multi-hop/port-forwarding/RAM-only)",
+      "url": "https://www.vpnmentor.com/reviews/zoogvpn/"
+    },
+    {
+      "label": "PrivacySharks — ZoogVPN Review 2026 (launched 2013, Greece base, no-logs not yet audited, 7-day refund)",
+      "url": "https://www.privacysharks.com/vpn-reviews/zoogvpn/"
+    },
+    {
+      "label": "Cloudwards — ZoogVPN Review 2026 (Linux no-GUI limitation, 7-day guarantee, no named audit)",
+      "url": "https://www.cloudwards.net/zoogvpn-review/"
+    }
+  ]
+}

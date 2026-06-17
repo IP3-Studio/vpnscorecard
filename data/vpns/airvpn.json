@@ -1,0 +1,147 @@
+{
+  "slug": "airvpn",
+  "name": "AirVPN",
+  "website": "https://airvpn.org/",
+  "tagline": "A long-running, technically configurable no-logs VPN run by privacy activists in Italy, favored by power users for port forwarding and P2P.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Italy",
+    "eyes": "fourteen",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "founded": 2010
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "AirVPN's Privacy Notice states that activity traffic, traffic content, and customer/user IP addresses are not inspected, logged, or stored on any mass-storage device. Technical data strictly necessary to run the connection is handled by automatic systems only in RAM and only for the time needed to provide the service. The notice does not itemize DNS/timestamp/bandwidth/device fields individually, but the overarching claim is no traffic, IP, or browsing logs; nothing persisted to disk. Claims are self-asserted and have never been independently audited or court-tested."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "None of its own; ships AmneziaWG (third-party) in the Eddie client for DPI-resistant obfuscation, plus SSH/SSL/Tor tunneling",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM and ChaCha20-Poly1305",
+    "handshake": "RSA-4096 / ECDH"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena has publicly tested AirVPN's no-logs claim in 15+ years of operation; absence of an incident is not positive proof. (Contrast: Mullvad and Windscribe have had RAM-only setups validated by real seizures; AirVPN has no such public test.)"
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 23,
+    "servers": 264,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 8.13,
+    "bestPerMonthUsd": 3.19,
+    "bestPlanTerm": "3 years",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Torrenters and P2P users who need reliable port forwarding",
+    "Technical/power users comfortable configuring OpenVPN/WireGuard and obfuscation",
+    "Privacy-focused users who value an activist-run, transparent provider and crypto payment"
+  ],
+  "notFor": [
+    "People who primarily want to unblock Netflix and other streaming catalogs",
+    "Non-technical users wanting a simple one-click app",
+    "Users who require an independently audited or court-proven no-logs guarantee, or native iOS/multihop support"
+  ],
+  "pros": [
+    "Run by privacy activists with a 15+ year track record, full transparency, and no parent conglomerate (independent; not owned by Kape or any group)",
+    "Strong power-user feature set: remote port forwarding, RAM-only servers, own DNS, and SSH/SSL/Tor obfuscation tunneling",
+    "Open-source Eddie client (GPLv3) for Windows, macOS, Linux (GUI + CLI), and Android",
+    "Privacy-friendly signup: only an email needed, plus Bitcoin, Bitcoin Cash, and Monero payment options",
+    "30-day money-back guarantee with no stated data-usage restriction"
+  ],
+  "cons": [
+    "No independent third-party audit of its no-logs policy or infrastructure, and no real-world server-seizure test",
+    "Headquartered in Italy, a member of the 14 Eyes intelligence-sharing tier",
+    "Relatively small network (~250-300 servers across ~23 countries) with no coverage in Africa and minimal Asia/Middle East presence",
+    "Clunky, technical apps and weak streaming-unblocking; no iOS app in the official store, no native multihop",
+    "No genuine free trial (the old ask-support 3-day trial is no longer honored; the cheapest option is a paid 3-day plan)"
+  ],
+  "notes": "Founded April 2010 by a small group of activists/hacktivists (people linked to NEXA, Telecomix, Juliagruppen, the Swedish and Italian Pirate Party circles, Scambioetico), with help from two lawyers and financing from an interested company. Originally operated by Iridium; became its own dedicated company, \"Air,\" around November 2012 (Italian VAT IT03297800546, REA PG-279011). Operated from Italy (Perugia/Roma activist origins). Italy did not mandate VPN data retention; AirVPN states it would contest disclosure demands. Independent — NOT owned by Kape Technologies or any conglomerate (vpnMentor itself is Kape-owned, but AirVPN is not). Pricing is native EUR: 1 month €7, 3 years €99 (~€2.75/mo). USD figures recomputed at the ~1.16 EUR/USD rate on 2026-06-17 (€7≈$8.13, €2.75≈$3.19); reviewer-cited USD per-month figures range $2.90-$3.21 depending on FX. Server count varies by how reviewers count: official live status page showed ~255 servers / ~24 countries this session; reviews cite ~39 locations vs ~200-514 individual servers across 22-24 countries. infra.servers (264) is an approximate mid-range estimate and is low-confidence. Refund is a 30-day money-back guarantee per the official ToS (no 5GB/3-day data restriction in current terms). No independent audit and no documented court test of the no-logs claim.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "AirVPN official site",
+      "url": "https://airvpn.org/"
+    },
+    {
+      "label": "AirVPN - About us / company history (founding, Iridium->Air 2012, Italy VAT)",
+      "url": "https://airvpn.org/aboutus/"
+    },
+    {
+      "label": "AirVPN - Privacy Notice (no-logs / RAM-only statements)",
+      "url": "https://airvpn.org/privacy/"
+    },
+    {
+      "label": "AirVPN - Buy / pricing (EUR plans: €7/mo, €99/3yr)",
+      "url": "https://airvpn.org/buy/"
+    },
+    {
+      "label": "AirVPN - Terms of Service (30-day money-back guarantee)",
+      "url": "https://airvpn.org/tos/"
+    },
+    {
+      "label": "AirVPN - live server status page (~255 servers / ~24 countries)",
+      "url": "https://airvpn.org/status/"
+    },
+    {
+      "label": "AirVPN/Eddie open-source client (GitHub, GPLv3, v2.24.6 Jan 2025)",
+      "url": "https://github.com/AirVPN/Eddie"
+    },
+    {
+      "label": "Cloudwards AirVPN review 2026 (no audit, free trial no longer honored, 30-day refund, $2.90/mo 3yr)",
+      "url": "https://www.cloudwards.net/airvpn-review/"
+    },
+    {
+      "label": "vpnMentor AirVPN review 2026 ($3.21/mo, 14 Eyes, no audit, not Kape-owned)",
+      "url": "https://www.vpnmentor.com/reviews/airvpn/"
+    },
+    {
+      "label": "All About Cookies AirVPN review 2026 (jurisdiction/no-logs, no audit)",
+      "url": "https://allaboutcookies.org/airvpn-review"
+    },
+    {
+      "label": "Privacy Affairs - 5/9/14 Eyes countries (Italy = 14 Eyes)",
+      "url": "https://www.privacyaffairs.com/5-9-14-eyes-countries/"
+    },
+    {
+      "label": "Exchange-Rates.org EUR/USD history 2026 (~1.16 on 2026-06-17)",
+      "url": "https://www.exchange-rates.org/exchange-rate-history/eur-usd-2026"
+    }
+  ]
+}

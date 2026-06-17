@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllSlugs, getVpnBySlug } from "@/lib/load";
 import { scoreVpn } from "@/lib/scoring";
-import { CATEGORIES, CRITERIA_BY_CATEGORY } from "@/lib/criteria";
-import { ScoreCell, ScoreBadge, ScoreBar } from "@/components/ScoreCell";
+import { ScoreBadge, ScoreBar } from "@/components/ScoreCell";
+import { DataSheet } from "@/components/DataSheet";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -170,29 +170,12 @@ export default async function VpnPage({
         </div>
       )}
 
-      {/* Detailed breakdown */}
-      <h2 className="mt-10 text-xl font-bold">Full breakdown</h2>
-      <div className="mt-4 space-y-6">
-        {CATEGORIES.map((cat) => (
-          <div key={cat.id} className="rounded-lg border border-zinc-200 dark:border-zinc-800">
-            <div className="flex items-center justify-between border-b border-zinc-200 px-4 py-2.5 dark:border-zinc-800">
-              <h3 className="font-semibold">{cat.label}</h3>
-              <span className="text-xs text-zinc-500">{cat.blurb}</span>
-            </div>
-            <ul className="divide-y divide-zinc-100 dark:divide-zinc-800/60">
-              {CRITERIA_BY_CATEGORY[cat.id].map((cr) => (
-                <li key={cr.id} className="flex items-center justify-between gap-4 px-4 py-2.5">
-                  <div className="min-w-0">
-                    <div className="text-sm font-medium">{cr.label}</div>
-                    <div className="truncate text-xs text-zinc-500">{cr.explain}</div>
-                  </div>
-                  <ScoreCell cell={score.cells[cr.id]} className="shrink-0" />
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
+      {/* Full data sheet (in the spirit of the original chart) */}
+      <h2 className="mt-10 text-xl font-bold">Full data sheet</h2>
+      <p className="mb-4 mt-1 text-sm text-zinc-500">
+        Every attribute we track — coloured by whether it helps or hurts your privacy.
+      </p>
+      <DataSheet vpn={vpn} />
 
       {/* Audits */}
       {vpn.transparency.audits.length > 0 && (

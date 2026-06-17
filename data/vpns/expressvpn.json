@@ -1,0 +1,186 @@
+{
+  "slug": "expressvpn",
+  "name": "ExpressVPN",
+  "website": "https://www.expressvpn.com",
+  "tagline": "A long-established British Virgin Islands VPN known for its audited no-logs policy, RAM-only TrustedServer infrastructure, and the in-house open-source Lightway protocol, now owned by Kape Technologies.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "British Virgin Islands",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Kape Technologies",
+    "conglomerate": "Kape Technologies",
+    "founded": 2009
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Audited no-logs policy: no browsing history, traffic destinations/metadata, DNS queries, or IP addresses are recorded. Minimal aggregate data is collected: the dates (not times) of connection, the VPN location chosen (not server IP), source country, app versions activated, and total bandwidth transferred per day. ExpressVPN states none of this can link an individual to specific activity. Verified most recently by KPMG (assessment date 28 Feb 2025)."
+  },
+  "privacy": {
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "anonymousSignup": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Lightway",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM",
+    "handshake": "RSA-4096 / ECDHE (Lightway uses wolfSSL; post-quantum protection available, incl. ML-KEM in the post-quantum WireGuard implementation)"
+  },
+  "transparency": {
+    "openSourceClients": "partial",
+    "audits": [
+      {
+        "firm": "KPMG",
+        "year": 2025,
+        "scope": "No-logs / privacy policy assurance under ISAE (UK) 3000 Type I (assessment date 28 Feb 2025); reasonable assurance that TrustedServer prevents activity/connection logging. ExpressVPN's 2nd KPMG no-logs audit.",
+        "url": "https://www.expressvpn.com/blog/kpmg-2025-no-logs-policy-audit/"
+      },
+      {
+        "firm": "Praetorian",
+        "year": 2024,
+        "scope": "Security audit of the Lightway protocol's Rust rewrite (Sept 2024; retested Dec 2024)",
+        "url": "https://www.expressvpn.com/blog/lightway-audits-cure53-praetorian/"
+      },
+      {
+        "firm": "Cure53",
+        "year": 2024,
+        "scope": "Security audits of apps, browser extensions, and the Lightway protocol Rust rewrite (multiple assessments over time, incl. 2021, 2022 and 2024)",
+        "url": "https://www.expressvpn.com/blog/lightway-audits-cure53-praetorian/"
+      },
+      {
+        "firm": "PwC Switzerland",
+        "year": 2019,
+        "scope": "No-logs / privacy policy audit of TrustedServer technology",
+        "url": "https://www.expressvpn.com/blog/pwc-audits-expressvpn-servers-to-confirm-essential-privacy-protections/"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "unknown",
+    "realWorldNoLog": "In January 2017, Turkish authorities physically seized an ExpressVPN server during the investigation into the December 2016 assassination of Russian Ambassador Andrei Karlov; investigators recovered no activity or connection logs and no user-identifying data, corroborating the no-logs policy. This was a law-enforcement seizure, not a court proceeding compelling log production. Backed by 23+ independent audits (KPMG, PwC, Cure53, F-Secure, Praetorian)."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 105,
+    "servers": 3000,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 12.99,
+    "bestPerMonthUsd": 2.49,
+    "bestPlanTerm": "2-year (Basic tier)",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Privacy-conscious users who prioritize an audited no-logs record validated by a real-world server seizure and a non-Eyes jurisdiction",
+    "Streaming and accessing geo-restricted content across many countries",
+    "Users in heavily censored regions who need reliable, automatic obfuscation",
+    "Non-technical users wanting polished, easy apps across many platforms including routers and TV devices"
+  ],
+  "notFor": [
+    "Budget-focused buyers, since cheaper providers offer comparable or unlimited connections",
+    "Power users who need multihop/Double VPN or port forwarding",
+    "Users uncomfortable with Kape Technologies ownership or its corporate history",
+    "People wanting fully open-source, independently buildable client applications"
+  ],
+  "pros": [
+    "Audited no-logs policy (23+ independent audits, latest KPMG 2025) with real-world validation from the 2017 Turkey server seizure that yielded no user data",
+    "Strong privacy jurisdiction: British Virgin Islands, outside all 5/9/14-Eyes alliances and with no mandatory data-retention laws",
+    "RAM-only TrustedServer infrastructure that wipes all data on reboot, plus reliable obfuscation that works in restrictive networks like China",
+    "In-house Lightway protocol is open-source (GPLv2), lightweight, fast, supports TCP/UDP, and has a post-quantum-secure option; now also offers a custom post-quantum WireGuard implementation"
+  ],
+  "cons": [
+    "Significantly more expensive than most competitors at the monthly rate, with steep post-intro renewal pricing",
+    "Owned by Kape Technologies (now private under Unikmind / Teddy Sagi) — a group with a controversial adware/Crossrider history and reduced transparency after going private",
+    "Lacks multihop/Double VPN and offers no meaningful port forwarding (router-only)",
+    "Apps are proprietary (only the Lightway protocol and leak-test tools are open-source), limiting full client-side code verification"
+  ],
+  "notes": "ExpressVPN restructured into tiered plans (Basic/Advanced/Pro) by 2026. The cheapest effective rate is roughly USD 2.49-2.79/mo on a 2-year Basic plan (sources vary by promo); month-to-month is around 12.99 (advertised up to ~19.99). Higher tiers (Advanced/Pro) bundle a password manager (ExpressVPN Keys), identity/ID-theft protection, and Aircove router perks. Simultaneous connections are now tiered: 10 (Basic) / 12 (Advanced) / 14 (Pro) per ExpressVPN's own knowledge hub; the long-standing 8-device base limit is outdated. Server count (~3,000 historically) is no longer prominently published; ExpressVPN now emphasizes 105 countries and 10/40 Gbps servers. WireGuard IS now offered natively: ExpressVPN shipped a custom post-quantum WireGuard build (hybrid ML-KEM, ephemeral credentials, dynamic IPs, TrustedServer integration) starting Aug 2025, while Lightway remains the default protocol. Free trial is 7 days on mobile (iOS/Android). The 30-day money-back guarantee is standard but is suspended for purchases made 10 Jun-11 Jul 2026 (FIFA World Cup). Crypto payments are processed via BitPay (Bitcoin, USDT and others) and signup requires only an email. Ownership chain: ExpressVPN -> Express Technologies Ltd -> Kape Technologies -> Unikmind Holdings (Teddy Sagi, sole owner); Kape (formerly Crossrider, founded 2011 Tel Aviv; rebranded 2018) was taken private and delisted from London AIM on 31 May 2023. courtTested downgraded to unknown: the 2017 Turkey seizure recovered no user data but was a police seizure, not a court test of the no-logs claim.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "ExpressVPN official — Policy towards logs / privacy",
+      "url": "https://www.expressvpn.com/what-is-vpn/policy-towards-logs"
+    },
+    {
+      "label": "ExpressVPN Blog — KPMG 2025 no-logs policy audit (ISAE 3000 Type I, 28 Feb 2025; 2nd KPMG audit, 23 total)",
+      "url": "https://www.expressvpn.com/blog/kpmg-2025-no-logs-policy-audit/"
+    },
+    {
+      "label": "ExpressVPN Blog — Why ExpressVPN now supports WireGuard (post-quantum, Aug 2025)",
+      "url": "https://www.expressvpn.com/blog/why-expressvpn-now-supports-wireguard/"
+    },
+    {
+      "label": "ExpressVPN Blog — 2 security audits of Lightway's Rust rewrite (Cure53 + Praetorian, 2024)",
+      "url": "https://www.expressvpn.com/blog/lightway-audits-cure53-praetorian/"
+    },
+    {
+      "label": "ExpressVPN Blog — PwC audits ExpressVPN servers / TrustedServer",
+      "url": "https://www.expressvpn.com/blog/pwc-audits-expressvpn-servers-to-confirm-essential-privacy-protections/"
+    },
+    {
+      "label": "ExpressVPN Support — Simultaneous connections (10/12/14 by tier)",
+      "url": "https://www.expressvpn.com/support/knowledge-hub/simultaneous-connections/"
+    },
+    {
+      "label": "ExpressVPN official — Buy VPN with Bitcoin/crypto (BitPay, USDT, email-only signup)",
+      "url": "https://www.expressvpn.com/features/buy-vpn-with-bitcoin"
+    },
+    {
+      "label": "ExpressVPN official — VPN trial (7-day mobile free trial)",
+      "url": "https://www.expressvpn.com/features/vpn-trial"
+    },
+    {
+      "label": "Comparitech — ExpressVPN server seized in Turkey, no info found (2017)",
+      "url": "https://www.comparitech.com/blog/vpn-privacy/expressvpn-server-seized-in-turkey-verifyies-no-logs-claim/"
+    },
+    {
+      "label": "PrivateProxyGuide — Who Owns ExpressVPN in 2026 (Kape/Unikmind/Teddy Sagi; Crossrider history)",
+      "url": "https://www.privateproxyguide.com/who-owns-expressvpn/"
+    },
+    {
+      "label": "Wikipedia — Kape Technologies (Unikmind delisting from AIM, 31 May 2023)",
+      "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
+    },
+    {
+      "label": "Security.org — ExpressVPN price & plans 2026 ($2.79 2-yr Basic, 30-day guarantee, tiers)",
+      "url": "https://www.security.org/vpn/expressvpn/"
+    },
+    {
+      "label": "AllAboutCookies — ExpressVPN price 2026 ($2.49 2-yr Basic; Advanced/Pro tiers)",
+      "url": "https://allaboutcookies.org/expressvpn-price"
+    },
+    {
+      "label": "TechRadar — ExpressVPN removes 30-day guarantee during World Cup (10 Jun–11 Jul 2026)",
+      "url": "https://www.techradar.com/vpn/vpn-services/expressvpn-removes-30-day-free-trial-during-the-world-cup-here-are-the-vpns-with-the-best-free-trials-to-use-instead"
+    },
+    {
+      "label": "Wikipedia — ExpressVPN (founded 2009, history)",
+      "url": "https://en.wikipedia.org/wiki/ExpressVPN"
+    }
+  ]
+}

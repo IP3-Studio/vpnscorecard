@@ -1,0 +1,148 @@
+{
+  "slug": "hma-hidemyass",
+  "name": "HMA (HideMyAss)",
+  "website": "https://www.hidemyass.com",
+  "tagline": "A long-running UK-based VPN, now owned by the Avast/Norton conglomerate Gen Digital, known for its very large country footprint but burdened by a Five Eyes jurisdiction and a history of handing user data to law enforcement.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United Kingdom",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Privax Ltd / Avast",
+    "conglomerate": "Gen Digital",
+    "founded": 2005
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "ip": "none",
+    "timestamps": "some",
+    "bandwidth": "some",
+    "summary": "Current policy (since the May 2020 overhaul) states no logging of browsing activity, originating IP addresses, DNS queries, or volume of data transferred to identify a user. Minimal aggregate connection metadata is retained for ~35 days without user linkage: connection time rounded to AM/PM only (no precise timestamps) and data transfer rounded to the nearest 100 MB, plus connection events and account info (email, username). A VerSprite assessment (Aug 2020) rated the no-logs policy low-risk. Note: HMA's separate browser proxy extensions are not covered by the no-logs policy and do keep logs."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Mimic (proprietary obfuscation protocol; WireGuard and Mimic are Windows-only)",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM (OpenVPN)",
+    "handshake": "RSA-4096 / SHA-256"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "VerSprite",
+        "year": 2020,
+        "scope": "No-logs / privacy-policy assessment of HMA clients for Android, iOS, Mac and Windows (install through full data flow, client- and server-side); rated low-risk user-privacy impact. Full report not publicly published.",
+        "url": "https://www.prnewswire.com/news-releases/hma-vpn-no-logging-policy-verified-by-cyber-risk-consulting-firm-versprite-301106096.html"
+      }
+    ],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Failed historically (under older logging policies and prior ownership): in the 2011 LulzSec case HMA complied with a UK court order and supplied connection logs that helped identify and convict Cody Kretsinger, and reviewers note it again helped identify a user via connection logs in 2017. The current post-2020 no-logs policy has not been court-tested. Avast historically published a quarterly warrant canary covering VPN data requests, but reporting indicates it has not been updated since July 2023 and the URL is now inactive, so an active warrant canary should not be assumed in 2026."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 190,
+    "servers": 1100,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 0,
+    "bestPerMonthUsd": 2.99,
+    "bestPlanTerm": "3-year",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Users who want servers in an unusually large number of countries",
+    "Casual/streaming users on a budget who value brand familiarity over maximal privacy",
+    "People comfortable with a mainstream, conglomerate-owned provider"
+  ],
+  "notFor": [
+    "Threat models requiring strong jurisdictional protection (Five Eyes / data-handover history)",
+    "Users needing anonymous signup or crypto/cash payment",
+    "Privacy maximalists wanting open-source clients, RAM-only servers, multihop, or a court-tested no-logs record"
+  ],
+  "pros": [
+    "Very large country footprint (190+ countries), useful for geographic variety",
+    "Reasonable long-term pricing (~$2.99/mo on the 3-year individual plan) with a 30-day money-back guarantee and a 7-day trial",
+    "Modern protocol support including WireGuard (Windows) plus a proprietary Mimic obfuscation protocol and first-party DNS",
+    "No-logs policy received a third-party VerSprite assessment (Aug 2020) rated low-risk"
+  ],
+  "cons": [
+    "UK headquarters places it squarely inside the Five Eyes intelligence-sharing alliance",
+    "Documented history of providing user data to law enforcement (LulzSec/Kretsinger 2011; further log-based identification in 2017)",
+    "No anonymous payment options - no cryptocurrency or cash, and signup requires email/username",
+    "Owned by Gen Digital, a large security/data conglomerate; clients are closed-source and the VerSprite report is not public",
+    "Heavy reliance on virtual server locations, no multihop, no port forwarding, and no RAM-only servers; kill switch limited to Windows/Android (system-wide also on macOS)",
+    "Avast's warrant canary appears stale/discontinued (no update since mid-2023), undercutting that transparency signal"
+  ],
+  "notes": "Operated by Privax Ltd (UK), founded 2005 by Jack Cator; acquired by AVG (2015, ~$40M + earn-out) -> Avast (2016) -> Gen Digital (Avast/NortonLifeLock merger, Sept 2022; Gen Digital co-HQ Tempe AZ + Prague). Server/country figures vary by source: HMA marketing and most reviews cite ~1,080-1,100 servers across 190+ countries (heavy use of virtual locations), though some pages report \"3,400+ servers in 65+ countries\" - treat exact counts as approximate. Simultaneous connections: 5 on the Individual plan, 10 on the Family plan, more on Business (one 2026 review conflated the Family figure as the base). No true month-to-month plan currently sold; cheapest short commitment is the 1-year plan at ~$4.99/mo (monthlyUsd set to 0 to denote no month-to-month option). The 7-day free trial requires a payment method. Kill switch and split tunneling are platform-limited (best on Windows/Android; system-wide kill switch also on macOS). WireGuard and Mimic are Windows-only; Mac/iOS rely on IKEv2 and OpenVPN. CORRECTION vs draft: draft stated Gen Digital \"publishes a warrant canary quarterly\" - in fact the historical quarterly canary was Avast's and appears not to have been updated since July 2023.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "HMA (VPN) - Wikipedia (history, ownership, LulzSec/Kretsinger case)",
+      "url": "https://en.wikipedia.org/wiki/HMA_(VPN)"
+    },
+    {
+      "label": "Gen Digital - Wikipedia (ownership, dual HQ Tempe/Prague, Sept 2022 merger, brands)",
+      "url": "https://en.wikipedia.org/wiki/Gen_Digital"
+    },
+    {
+      "label": "PRNewswire - HMA VPN No-Logging Policy Verified by VerSprite (Aug 2020, scope, rating)",
+      "url": "https://www.prnewswire.com/news-releases/hma-vpn-no-logging-policy-verified-by-cyber-risk-consulting-firm-versprite-301106096.html"
+    },
+    {
+      "label": "Comparitech - Hide My Ass review (logging detail, protocols, 2017 log-based identification, payments, connections)",
+      "url": "https://www.comparitech.com/vpn/reviews/hidemyass-review/"
+    },
+    {
+      "label": "vpnMentor - HMA VPN Review 2026 (servers, WireGuard/Mimic, pricing, payments)",
+      "url": "https://www.vpnmentor.com/reviews/hidemyass-vpn/"
+    },
+    {
+      "label": "Security.org - HMA VPN Cost & Pricing 2026 ($2.99 3-yr, no monthly, 30-day refund, 7-day trial requires payment, 5 vs 10 connections)",
+      "url": "https://www.security.org/vpn/hma/"
+    },
+    {
+      "label": "CyberInsider - HideMyAss (HMA) VPN Review 2026 (ownership, jurisdiction, LulzSec)",
+      "url": "https://cyberinsider.com/vpn/reviews/hidemyass-hma-vpn/"
+    },
+    {
+      "label": "AllAboutCookies - HMA VPN Review 2026 (Five Eyes, payments, 5 connections, WireGuard on Windows)",
+      "url": "https://allaboutcookies.org/hma-vpn-review"
+    },
+    {
+      "label": "Top10VPN - Avast SecureLine review (Avast warrant canary not updated since July 2023, URL inactive)",
+      "url": "https://www.top10vpn.com/reviews/avast-secureline/"
+    },
+    {
+      "label": "Android Central - HMA VPN no-logs (VerSprite audit)",
+      "url": "https://www.androidcentral.com/hma-vpn-given-thumbs-its-no-logs-policy"
+    }
+  ]
+}

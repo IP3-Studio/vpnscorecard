@@ -1,0 +1,162 @@
+{
+  "slug": "vpn-unlimited-keepsolid",
+  "name": "VPN Unlimited (KeepSolid)",
+  "website": "https://www.vpnunlimited.com/",
+  "tagline": "A long-running, US-incorporated (Ukrainian-founded) budget VPN with a proprietary obfuscation protocol and lifetime plans, but no independent no-logs audit.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "KeepSolid Inc.",
+    "founded": 2013
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Per KeepSolid's official privacy policy, the service does NOT monitor, store, or log online activity, browsing history, connection times/metadata, downloads, server usage, or data content, and does NOT store DNS requests (only anonymized, non-user-linked aggregate DNS-firewall statistics). The user's real IP is held only to route traffic during an active session and is removed immediately on disconnect. Bandwidth (total traffic + dates of use) is logged only for the Virtual Private Servers (VPS) add-on. Account/device metadata is collected: email (and optional social-login ID for Facebook/Google sign-in), device name/ID and count, OS and version, browser type, language, time zone, app version, and activation date. A 7-year retention applies only to data KeepSolid must keep for legal-compliance purposes, not to VPN activity. No independent third-party no-logs audit has verified these claims."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "KeepSolid Wise (OpenVPN-based stealth/obfuscation over TCP 443 / UDP 33434); also offers XRAY/VLESS for DPI bypass",
+    "multihop": "unknown",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256",
+    "handshake": "unknown"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Not court-tested in a privacy-favorable sense. In January 2022 KeepSolid settled a US copyright lawsuit (brought by the makers of The Hitman's Bodyguard, Dallas Buyers Club, London Has Fallen) by agreeing to use commercially reasonable efforts to block BitTorrent traffic and torrent sites (The Pirate Bay, RARBG, 1337x, YTS, and proxies) on its US servers only. The settlement did not require keeping user logs (unlike the separate VPN.ht case), all claims were dismissed, and KeepSolid admitted no liability. There is no documented instance of a server seizure or subpoena proving no usable user data was retained."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 80,
+    "servers": 3000,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 9.99,
+    "bestPerMonthUsd": 5,
+    "bestPlanTerm": "1 year (billed $59.99/yr)",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Budget users who want a cheap long-term or lifetime VPN for general browsing and geo-unblocking",
+    "Users in censored regions who need obfuscation/stealth protocols to evade DPI",
+    "People who want broad device/OS coverage from a single established vendor"
+  ],
+  "notFor": [
+    "Privacy maximalists who require an audited, independently verified no-logs policy outside Five Eyes jurisdiction",
+    "Heavy torrenters and P2P users (limited servers, discouraged, blocked on US servers)",
+    "Users needing many simultaneous connections or confirmed RAM-only/multihop infrastructure"
+  ],
+  "pros": [
+    "Mature, long-running provider (product since 2013) with broad platform coverage including Linux and browser extensions",
+    "Proprietary KeepSolid Wise obfuscation plus XRAY/VLESS help bypass deep packet inspection and VPN blocks",
+    "Accepts anonymous-leaning payment via crypto (BitPay) and gift cards; 30-day money-back guarantee and 7-day mobile free trial",
+    "Inexpensive long-term and one-time/lifetime pricing options, with port forwarding available on P2P-designated servers"
+  ],
+  "cons": [
+    "US (Five Eyes) jurisdiction with no independent no-logs audit to back its zero-log claims",
+    "Collects more account/device metadata than leading privacy-first competitors",
+    "Only 5 simultaneous connections on standard plans (below industry norm); kill switch is unavailable on Linux and limited to IKEv2 on iOS",
+    "P2P/torrenting is restricted to a handful of servers and discouraged, and US servers block BitTorrent per a 2022 court settlement"
+  ],
+  "notes": "Verification result: most draft fields confirmed against primary/strong sources; the substantive change is technical.portForwarding (unknown -> yes), plus the logging summary was tightened to match KeepSolid's official privacy policy. KeepSolid Inc. is a private, independent company (HQ 347 5th Ave, Suite 1402-419, New York, NY 10016) founded by Vasyl Ivanov/Vasyl Diakonov; it was originally founded in Odessa, Ukraine (as Simplex Solutions) and is now US-incorporated, so Five Eyes jurisdiction stands. KeepSolid does NOT belong to a conglomerate and does NOT own VyprVPN (VyprVPN was acquired from Golden Frog by Certida LLC in 2023), so conglomerate is correctly left empty. No independent third-party no-logs audit exists; an \\\"AV-TEST audit\\\" is occasionally cited in affiliate content but is not corroborated by reputable 2025-2026 reviews (Security.org, Top10VPN, AllAboutCookies, TechNadu) and is treated as unverified (audits = []). Per official policy: no traffic/DNS/timestamp/IP logging; bandwidth logged only for the VPS add-on; a 7-year retention applies only to legal-compliance account data, not VPN activity. AllAboutCookies characterizes the privacy policy as containing tensions (no-log claim vs. session IP handling and optional social-login third-party data); this is standard session routing plus optional social login rather than a true contradiction, so contradictoryLogging is kept \\\"no\\\" (borderline). Pricing confirmed: monthly $9.99; 1-year $59.99 (~$5/mo); 3-year ~$4.50/mo; lifetime/Infinity $199.99 (some pages show an inflated $5,599.99 headline). Refund 30 days (KeepSolid support docs; the Top10VPN \\\"7-day\\\" figure is stale/incorrect). 7-day free trial is mobile-only; no free tier. Multihop and RAM-only are not documented on official pages and are left unknown rather than guessed.\"",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "VPN Unlimited official no-logs policy page",
+      "url": "https://www.vpnunlimited.com/help/more-about-vpn/best-no-log-vpn"
+    },
+    {
+      "label": "KeepSolid official privacy policy (entity, NY HQ, exact data collected, no DNS/IP logging, VPS bandwidth, 7-year compliance retention)",
+      "url": "https://www.keepsolid.com/privacy-policy"
+    },
+    {
+      "label": "VPN Unlimited official homepage (3000+ servers, 80+ locations, 30-day guarantee)",
+      "url": "https://www.vpnunlimited.com/"
+    },
+    {
+      "label": "VPN Unlimited official ports/protocols help page (port forwarding listed as a feature; WireGuard/OpenVPN/IKEv2 ports)",
+      "url": "https://www.vpnunlimited.com/help/more-about-vpn/what-port-does-vpn-use"
+    },
+    {
+      "label": "VPN Unlimited official payment methods page (crypto, BitPay, gift cards)",
+      "url": "https://www.vpnunlimited.com/help/specials/vpn-payment-methods"
+    },
+    {
+      "label": "KeepSolid support: subscription plans and 30-day money-back guarantee",
+      "url": "https://keepsolid.zendesk.com/hc/en-us/articles/23979020501650-I-need-a-VPN-Unlimited-subscription-Which-subscription-plans-do-you-offer"
+    },
+    {
+      "label": "KeepSolid official announcement on the 2022 copyright lawsuit settlement",
+      "url": "https://www.vpnunlimited.com/blog/official-announcement-on-copyright-lawsuit"
+    },
+    {
+      "label": "TorrentFreak: VPN Unlimited agrees to block torrents/Pirate Bay on US servers (Jan 2022); no logging required, unlike VPN.ht",
+      "url": "https://torrentfreak.com/vpn-provider-agrees-to-block-torrent-traffic-and-the-pirate-bay-on-u-s-servers-220117/"
+    },
+    {
+      "label": "BleepingComputer: VPN provider bans BitTorrent after film-studio lawsuit",
+      "url": "https://www.bleepingcomputer.com/news/security/vpn-provider-bans-bittorrent-after-getting-sued-by-film-studios/"
+    },
+    {
+      "label": "Security.org VPN Unlimited review 2026 (5 devices, kill-switch platforms, no audit, 30-day refund, $9.99/$5/$1.67 pricing, $199.99 lifetime)",
+      "url": "https://www.security.org/vpn/vpn-unlimited/review/"
+    },
+    {
+      "label": "Security.org VPN Unlimited pricing page (annual $59.99, lifetime $199.99, 30-day guarantee, 7-day mobile trial, no free tier)",
+      "url": "https://www.security.org/vpn/vpn-unlimited/"
+    },
+    {
+      "label": "Top10VPN review (Ukrainian-founded/Odessa, US-incorporated, no audit, session-only IP, ~$4.50/mo 3-yr)",
+      "url": "https://www.top10vpn.com/reviews/vpn-unlimited/"
+    },
+    {
+      "label": "AllAboutCookies review 2026 (US/Five Eyes, data-collection concerns, no audit, $199.99 lifetime)",
+      "url": "https://allaboutcookies.org/keepsolid-vpn-unlimited-review"
+    },
+    {
+      "label": "vpntesting.com ownership profile: KeepSolid is Ukrainian-founded, independent; does not own VyprVPN",
+      "url": "https://vpntesting.com/ownership/keepsolid/"
+    },
+    {
+      "label": "Wikipedia: KeepSolid (founding 2013, NY, product history, WireGuard 2019)",
+      "url": "https://en.wikipedia.org/wiki/KeepSolid"
+    },
+    {
+      "label": "StackSocial: KeepSolid VPN Unlimited Infinity lifetime plan listing (reseller lifetime pricing)",
+      "url": "https://stacksocial.com/sales/infinity-vpn"
+    }
+  ]
+}

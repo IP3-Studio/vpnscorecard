@@ -1,0 +1,160 @@
+{
+  "slug": "ovpn",
+  "name": "OVPN",
+  "website": "https://www.ovpn.com",
+  "tagline": "A small, privacy-focused Swedish-built VPN that owns its diskless bare-metal servers and proved its no-logs claim in a Swedish court, now operating under a US legal entity following acquisition by Pango (now part of Point Wild).",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Pango",
+    "conglomerate": "Point Wild",
+    "founded": 2014
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "OVPN states it prevents logs from being generated at all - no logs of traffic, connections, timestamps, bandwidth or IP addresses. All servers are bare-metal, owned by OVPN, and run diskless (OS in RAM only; zero hard drives). The no-logs claim was tested in Sweden's Patent and Market Court in 2020, where The Rights Alliance failed to prove any logs were stored and OVPN handed over no user data. The operating entity is now US-incorporated, which post-dates the Swedish court case."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20-Poly1305 / AES-256-GCM (WireGuard: ChaCha20-Poly1305, Curve25519)",
+    "handshake": "TLS 1.3 (TLS_AES_256_GCM_SHA384), RSA-4096 with Perfect Forward Secrecy"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "yes",
+    "courtTested": "yes",
+    "realWorldNoLog": "In 2020 Sweden's Patent and Market Court (Stockholm) rejected a movie-industry information injunction (The Rights Alliance) seeking user data; the court found the plaintiffs and their security experts could not prove OVPN stored any logs, OVPN handed over no user data, and the rights holders were ordered to pay OVPN's legal costs of ~108,000 SEK. The court also held OVPN is not classified as an ISP, so EU data-retention rules do not apply. OVPN publishes monthly transparency reports going back to October 2014."
+  },
+  "infra": {
+    "simultaneousConnections": 4,
+    "countries": 18,
+    "servers": 96,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 13.9,
+    "bestPerMonthUsd": 4.9,
+    "bestPlanTerm": "36 months",
+    "freeTrialDays": 0,
+    "refundDays": 10,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Privacy-conscious users who value provider-owned, diskless servers and a court-proven no-logs record",
+    "People who want to sign up and pay anonymously (no email, cash or Monero)",
+    "Torrent/P2P users and those who need port forwarding or multihop",
+    "Linux desktop users who want a real GUI client"
+  ],
+  "notFor": [
+    "Users who need a large global server network or many country/city options",
+    "Those who refuse any association with Pango/Point Wild/Hotspot Shield or want a non-US/non-Five-Eyes jurisdiction",
+    "Buyers who require a recent independent third-party audit of no-logs and infrastructure",
+    "Heavy streamers wanting broad, reliable geo-unblocking, or anyone wanting a long no-questions refund window"
+  ],
+  "pros": [
+    "No-logs policy genuinely tested and upheld in a Swedish court (2020), a rare real-world validation",
+    "Owns all of its bare-metal hardware and runs every server diskless (RAM-only, zero hard drives), reducing data-at-rest exposure",
+    "Strong privacy onboarding: anonymous signup with no email required, plus crypto (BTC/ETH/XMR) and cash-by-mail payment",
+    "Solid feature set for a small provider: WireGuard + OpenVPN, kill switch, port forwarding, multihop, own DNS, P2P allowed, and a GUI Linux app"
+  ],
+  "cons": [
+    "Small network (~96 servers in roughly 18-20 countries), limiting location choice and performance options versus larger rivals",
+    "Now owned by Pango (US VPN division of Point Wild, the Boston-based holding company also behind Hotspot Shield, Betternet, VPN360, UltraVPN), which has a checkered privacy reputation; the legal operating entity is now US-incorporated (Five Eyes)",
+    "No published independent infrastructure/no-logs audit; assurance rests on the 2020 court case and self-reported transparency rather than a third-party audit",
+    "Pricey month-to-month (~$14) with only a short 10-day refund window and no free trial; clients are not open source"
+  ],
+  "notes": "Ownership/jurisdiction is the key caveat. OVPN was built in Sweden (OVPN Integritet AB, founded 2014) and is still widely described as \"Swedish,\" but it was acquired by Pango in May 2023 and OVPN's official press page now states the legal operating entity is \"OVPN Inc., incorporated in US.\" I treated jurisdiction as US (eyes=five) on the strength of that primary source. The corporate tree has shifted: Aura split in Sept 2024 and Pango Group merged with Total Security to become Point Wild (Boston, MA) on 12 Dec 2024, so the current top conglomerate is Point Wild, not Pango (Pango remains the consumer VPN brand/division). The 2020 no-logs court victory predates the US entity and was a Swedish proceeding. I found NO credible published independent audit; a generic search claim of a 2026 Cure53 audit is a conflation with other providers and is contradicted by OVPN's own security/transparency pages and 2026 reviews. The \"founders bought OVPN back from Pango\" rumor is unconfirmed - no credible source supports it, so ownership is treated as remaining under Pango/Point Wild. Pricing is listed in EUR on OVPN's site (EUR 12/mo; EUR 4.22/mo on 36-month); converted to USD at ~1.16 USD/EUR (June 2026): ~$13.9/mo and ~$4.90/mo best. Country count varies by source (18 per ProPrivacy 2026 / 26-32 cities per OVPN); servers ~96. Base simultaneous connections = 4, rising +1 per subscription year (5 on 12-month, 7 on 36-month plans).",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "OVPN official - Press resources (legal entity 'OVPN Inc., incorporated in US')",
+      "url": "https://www.ovpn.com/en/press"
+    },
+    {
+      "label": "OVPN official - Network (96 servers, owned/diskless hardware, 32 locations)",
+      "url": "https://www.ovpn.com/en/network"
+    },
+    {
+      "label": "OVPN official - Security (ciphers, WireGuard/OpenVPN, kill switch, RAM-only; no audit mentioned)",
+      "url": "https://www.ovpn.com/en/security"
+    },
+    {
+      "label": "OVPN official - Pricing (EUR 12/mo, EUR 4.22/mo on 36-month, 10-day refund, device counts)",
+      "url": "https://www.ovpn.com/en/pricing"
+    },
+    {
+      "label": "OVPN official - Transparency (monthly reports since Oct 2014, legal-fee insurance; no audit)",
+      "url": "https://www.ovpn.com/en/transparency"
+    },
+    {
+      "label": "OVPN official blog - 'Next chapter for OVPN' (Pango acquisition, May 2023)",
+      "url": "https://www.ovpn.com/en/blog/next-chapter-for-ovpn"
+    },
+    {
+      "label": "OVPN official blog - 'OVPN wins court order' (2020 Swedish Patent and Market Court no-logs ruling, 108,000 SEK costs)",
+      "url": "https://www.ovpn.com/en/blog/ovpn-wins-court-order"
+    },
+    {
+      "label": "PRNewswire - 'Pango Group Merges With Total Security, Combined Company Rebranded Point Wild' (12 Dec 2024)",
+      "url": "https://www.prnewswire.com/news-releases/pango-group-merges-with-total-security-combined-company-rebranded-point-wild-302330290.html"
+    },
+    {
+      "label": "Point Wild news - 'Aura Splits Into Two World-Class Online Safety Companies' (Sept 2024 split)",
+      "url": "https://www.pointwild.com/news/aura-splits-into-two-world-class-online-safety-companies/"
+    },
+    {
+      "label": "VPNTesting - Point Wild (Pango) ownership: brands include Hotspot Shield, Betternet, etc.",
+      "url": "https://vpntesting.com/ownership/point-wild/"
+    },
+    {
+      "label": "CyberInsider - OVPN Review 2026 (ownership, 96 servers, court case, 10-day refund, 4 connections)",
+      "url": "https://cyberinsider.com/vpn/reviews/ovpn/"
+    },
+    {
+      "label": "ProPrivacy - OVPN Review 2026 (18 countries/26 cities, payments, anonymous signup, obfuscation, port forwarding, 10-day refund)",
+      "url": "https://proprivacy.com/vpn/review/ovpn"
+    },
+    {
+      "label": "GreyCoder - List of VPNs with public audits (OVPN listed only as 'verified in a court case', no third-party audit)",
+      "url": "https://greycoder.com/a-list-of-vpn-providers-with-public-audits/"
+    },
+    {
+      "label": "AlternativeTo - OVPN acquired by Pango: Pango brands and privacy concerns",
+      "url": "https://alternativeto.net/news/2023/5/ovpn-acquired-by-pango-parent-company-of-hotspot-shield-what-does-it-mean-for-users-"
+    },
+    {
+      "label": "IsItDownChecker - OVPN.com status (up, ~100% uptime, May 2026)",
+      "url": "https://isitdownchecker.com/check/ovpn.com"
+    }
+  ]
+}

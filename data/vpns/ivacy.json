@@ -1,0 +1,142 @@
+{
+  "slug": "ivacy",
+  "name": "Ivacy VPN",
+  "website": "https://www.ivacy.com",
+  "tagline": "A budget Singapore-branded VPN that merged into sister brand PureVPN in 2024 and now runs on PureVPN's network.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Singapore",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "PMG Pte. Ltd. (Singapore); operated under PureVPN",
+    "conglomerate": "Disrupt.com (formerly Gaditek); PureVPN/Ivacy run by GZ Systems Ltd.",
+    "founded": 2007
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Stated no-logs policy: no browsing activity, connection logs, assigned VPN IPs, originating IPs, browsing history, outgoing traffic, connection times, accessed data, or DNS queries. Retains account email, payment method, and aggregated/non-identifying diagnostics (failed connection attempts, app usage, aggregated bandwidth). The no-logs claim has never been verified by a published independent audit of Ivacy, and the now-shared PureVPN backend was shown in 2017 to retain connection metadata (IP + timestamps)."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "no",
+    "obfuscation": "no",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM",
+    "handshake": "RSA/ECDH (OpenVPN, IKEv2); WireGuard uses Curve25519/ChaCha20-Poly1305"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Negative track record on the shared backend: in 2017, PureVPN (now Ivacy's infrastructure provider and sister brand) supplied connection logs (IP + timestamps) to the FBI in the Ryan Lin cyberstalking case despite advertising 'no logs,' contradicting its policy at the time. Ivacy itself has no documented seizure/subpoena outcome and has never published an independent no-logs audit."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 60,
+    "servers": 5700,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 9.95,
+    "bestPerMonthUsd": 1.17,
+    "bestPlanTerm": "5-year",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "yes",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Budget users who want a cheap multi-device VPN for streaming and casual privacy",
+    "People who want a low-commitment trial before paying",
+    "Households needing many simultaneous connections on one plan"
+  ],
+  "notFor": [
+    "Privacy-critical users (activists, journalists) who need an audited, court-tested no-logs guarantee",
+    "Anyone wanting a fully independent provider rather than a PureVPN white-label",
+    "Users needing advanced privacy features like multihop, true obfuscation/stealth, or RAM-only servers"
+  ],
+  "pros": [
+    "Very cheap on long-term plans (effective ~$1.17-$2.15/month) with a limited free tier and a low-cost 7-day trial",
+    "10 simultaneous connections and broad app/platform coverage",
+    "Supports modern WireGuard plus OpenVPN, with an in-house DNS network and a working kill switch (Windows/Android)",
+    "Now backed by PureVPN's larger, KPMG-audited infrastructure"
+  ],
+  "cons": [
+    "No longer an independent product — merged into PureVPN in 2024, with the original Ivacy apps discontinued",
+    "Ivacy itself has never published an independent no-logs audit; 'regularly audited' claim is unverified (ioXt cert covers only Android app security — 45 security tests, not no-logs)",
+    "Shared PureVPN backend has a documented history of handing connection logs to the FBI (2017)",
+    "Misleading marketing: advertised 'lifetime' plan is actually a 5-year subscription; server/country counts appear overstated (claims 100+; independent testing ~52-69); kill switch missing on macOS/iOS"
+  ],
+  "notes": "Status nuance: review sites disagree on phrasing — some call Ivacy 'no longer active' (as a standalone) while others (e.g. security.org, Dec 2025) confirm it still actively sells subscriptions. Treated here as ACTIVE-but-rebranded ('Ivacy Powered by PureVPN'). Ownership chain: branded as PMG Pte. Ltd. (Singapore) but historically part of Gaditek/Disrupt.com (Pakistan; PureVPN/Ivacy operated via GZ Systems Ltd.), the same group behind PureVPN — criticized for opaque ownership and for running VPN 'review' sites. Eyes: Singapore is not a member of the 5/9/14 Eyes (so 'none'), though reviewers note it cooperates with U.S./Five Eyes surveillance on request. Server count ~5,700 is consistent across sources; the marketed '100+ countries' is disputed (independent testing suggests ~52-69 countries; ~60 used here as a mid-point). Pricing fluctuates with frequent discounts: current 1-month price is most often cited at $9.95 (older reviews still list $12.95); cheapest effective rate ~$1.17-$1.19/mo on the 5-year plan (some report up to ~$2.15/mo on 2-year). No independent no-logs audit of Ivacy exists; the only third-party security check is the Android-only ioXt certification.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "vpnMentor — Ivacy VPN Review 2026 (merger, logging, ioXt, specs, pricing, kill switch by platform)",
+      "url": "https://www.vpnmentor.com/reviews/ivacy-vpn/"
+    },
+    {
+      "label": "AllAboutCookies — Ivacy VPN Review 2026 (now powered by PureVPN, jurisdiction/eyes, logging, audit gap)",
+      "url": "https://allaboutcookies.org/ivacy-vpn-review"
+    },
+    {
+      "label": "Cloudwards — Ivacy Review 2026 (PMG Pte Ltd, server/country counts ~69, logging, $12.95 monthly, $2.15 2-yr)",
+      "url": "https://www.cloudwards.net/ivacy-review/"
+    },
+    {
+      "label": "Security.org — Ivacy VPN Review 2026 (still selling subscriptions Dec 2025, pricing, kill switch macOS/iOS absent)",
+      "url": "https://www.security.org/vpn/ivacy/review/"
+    },
+    {
+      "label": "PrivacyJournal — Ivacy Review 2026 ($9.95 monthly, 5-yr ~$1/mo, free tier 1 NL server/2GB, 61 countries, ownership opacity)",
+      "url": "https://www.privacyjournal.net/ivacy-review/"
+    },
+    {
+      "label": "NewCoupons — IvacyVPN Acquired By PureVPN, apps closing 30 Sept 2024 (official announcement summary, migration)",
+      "url": "https://www.newcoupons.info/ivacyvpn-acquired-by-purevp/"
+    },
+    {
+      "label": "Several.com — Ivacy VPN Has Merged with PureVPN (Aug 23 2024 merger breakdown, same parent)",
+      "url": "https://several.com/vpn/ivacy-vpn"
+    },
+    {
+      "label": "VPNpro — Who Owns Your VPN (PureVPN & Ivacy owned by GZ Systems / Gaditek / Disrupt.com, Gadit family)",
+      "url": "https://vpnpro.com/blog/hidden-vpn-owners-unveiled-97-vpns-23-companies/"
+    },
+    {
+      "label": "TorrentFreak — PureVPN Logs Helped FBI Net Alleged Cyberstalker (2017 Ryan Lin case, IP+timestamps)",
+      "url": "https://torrentfreak.com/purevpn-logs-helped-fbi-net-alleged-cyberstalker-171009/"
+    },
+    {
+      "label": "TechNadu — ioXt Alliance Certifies Ivacy VPN (Android app, 45 security requirements — not a no-logs audit)",
+      "url": "https://www.technadu.com/ioxt-alliance-certified-ivacy-vpn-welcomes-club/288236/"
+    },
+    {
+      "label": "PureVPN blog / PRNewswire — KPMG validates PureVPN no-log claims (Altius IT 2019, KPMG 2021 always-on; backend now serving Ivacy)",
+      "url": "https://www.purevpn.com/blog/kpmg-validates-purevpn-no-log-claims/"
+    }
+  ]
+}

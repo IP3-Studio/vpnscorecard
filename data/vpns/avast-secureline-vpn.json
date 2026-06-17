@@ -1,0 +1,143 @@
+{
+  "slug": "avast-secureline-vpn",
+  "name": "Avast SecureLine VPN",
+  "website": "https://www.avast.com/secureline-vpn",
+  "tagline": "An antivirus-bundled VPN from Gen Digital's Avast with mainstream apps but a connection-logging policy and corporate privacy history that undercut its no-logs marketing.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Czech Republic",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Avast Software s.r.o.",
+    "conglomerate": "Gen Digital",
+    "founded": 2014
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "yes",
+    "bandwidth": "yes",
+    "ip": "unknown",
+    "summary": "Avast's current VPN Policy states SecureLine logs connection events (connect/disconnect/error timestamps), cumulative amount of data transmitted, and VPN server/network metadata (assigned location, protocol, server IP), with connection events retained ~12 months and server service data ~18 months; application events ~18 months and crash reports ~90 days. That policy explicitly lists the originating IP address, DNS queries, browsing history, and transferred file contents as NOT collected. However, Avast's older iOS Products Policy still describes logging the subnet of the originating IP address with ~36-month retention, and independent reviews variously cite originating-IP-subnet logging (with the final octet anonymized) and 30-day, 35-day, or 2-year retention. Because the originating-IP and exact-retention claims conflict across Avast's own documents and reviewers, ip is marked unknown; connection-timestamp + bandwidth logging is confirmed and is heavier than most privacy-focused VPNs, so the no-logs marketing is misleading."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Mimic",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "unknown",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM / ChaCha20",
+    "handshake": "OpenVPN/OpenSSL and WireGuard (Curve25519); IPsec and proprietary Mimic also offered"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "no",
+    "realWorldNoLog": "No independent no-logs or infrastructure audit has ever been published; multiple 2026 reviews (Cloudwards, CyberInsider, Cybernews, vpnMentor) explicitly confirm Avast has never had its apps, policy, or infrastructure independently audited. The opposite of a favorable real-world test exists: Avast's subsidiary Jumpshot collected and sold users' browsing data (2014-2020), leading to a 2024 FTC settlement against Avast Limited ($16.5M plus a ban on selling/licensing browsing data for advertising). No documented server-seizure or court test of the VPN service specifically."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 37,
+    "servers": 700,
+    "linux": "none"
+  },
+  "pricing": {
+    "monthlyUsd": 0,
+    "bestPerMonthUsd": 3.99,
+    "bestPlanTerm": "2-3 year plan (~$95.76 / 2 yr; ~$143.64 / 3 yr, first-term promo pricing)",
+    "freeTrialDays": 60,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "yes",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Existing Avast/AVG/Norton (Gen Digital) antivirus users who want a simple bundled VPN",
+    "Casual users wanting basic public-Wi-Fi encryption and geo-unblocking",
+    "People who value an easy interface over strong privacy guarantees"
+  ],
+  "notFor": [
+    "Privacy-critical users, journalists, or activists who need an audited, verifiable no-logs provider",
+    "Anyone wanting anonymous signup/payment (crypto or cash)",
+    "Linux users needing a native client, or users wanting multihop and a published transparency record"
+  ],
+  "pros": [
+    "Easy, beginner-friendly apps for Windows, Mac, iOS and Android with one-click connect",
+    "Modern protocol support including WireGuard, OpenVPN, and the Mimic obfuscation protocol to bypass DPI/censorship",
+    "Generous 60-day free trial and 30-day money-back guarantee; up to 10 simultaneous connections",
+    "Allows P2P/torrenting on designated servers (officially advertised) and includes a kill switch and uses its own DNS"
+  ],
+  "cons": [
+    "Logs connection timestamps, bandwidth, and server metadata (connection events retained ~12 months, server data ~18 months) despite 'no-logs' marketing; older iOS policy and some reviews also cite originating-IP-subnet logging",
+    "Parent group's Avast Limited was caught harvesting and selling user browsing data via Jumpshot and settled with the FTC in 2024 - a serious trust failure",
+    "No independent no-logs or security audit has ever been published; servers are bare-metal, not RAM-only",
+    "No anonymous payment (card/PayPal only), no Linux app, no multihop, and no transparency report"
+  ],
+  "notes": "Jurisdiction is the Czech Republic (Avast Software s.r.o., Prague), outside the 5/9/14 Eyes alliances; however, the FTC-named parent entity is Avast Limited (UK) and the conglomerate Gen Digital is US-headquartered, so effective corporate control sits within Five Eyes. LOGGING/RETENTION CORRECTION: the draft's \"~36 months\" retention and ip:\"some\" reflect Avast's older iOS Products Policy; Avast's current dedicated VPN Policy instead lists originating IP, DNS, browsing history and file contents as NOT collected and gives retention of ~12 months (connection events) and ~18 months (server service data). Because Avast's own documents and 2026 reviews conflict on originating-IP-subnet logging and exact retention (30-day / 35-day / 2-year figures also appear), ip is downgraded to unknown and the summary notes the conflict. Server/location counts vary by source: Avast's marketing claims 100+ locations in 60+ countries, while independent 2026 reviews (Cloudwards, CyberInsider, Cybernews) consistently report ~58-59 locations across 34-37 countries - the lower, corroborated figures are used (servers ~700 is an approximation; Avast does not publish an exact current count). P2P is now confirmed (officially advertised \"P2P\" servers plus 2026 review confirmation). ownDns set to yes per the current VPN Policy (\"We rely on our own secure DNS servers\"). Avast does not sell a true month-to-month plan via its main funnel, so monthlyUsd is set to 0 (effectively n/a); cheapest effective rate is ~$3.99/mo on 2-3 year terms (first-term promo pricing that renews higher). Free trial is 60 days on desktop (7 days on mobile) and requires payment details; it is a trial, not a standing free tier, so freeTier is \"no\".",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Avast SecureLine VPN official product/features & pricing page (60-day trial, 30-day refund, 10 devices, $3.99/mo on 3yr, P2P advertised)",
+      "url": "https://www.avast.com/en-us/secureline-vpn"
+    },
+    {
+      "label": "Avast VPN Policy (PRIMARY: logs connection events ~12mo, server service data ~18mo, app events ~18mo, crash reports ~90d; explicitly does NOT log originating IP, DNS queries, browsing history, transferred files; uses own DNS)",
+      "url": "https://www.avast.com/vpn-policy"
+    },
+    {
+      "label": "Avast Products Policy (older iOS VPN language: logs timestamps, amount of data transmitted, subnet of originating IP, VPN server IP; ~36-month retention)",
+      "url": "https://www.avast.com/products-policy"
+    },
+    {
+      "label": "Avast General Privacy Policy (jurisdiction: Avast Software s.r.o., Prague)",
+      "url": "https://www.avast.com/privacy-policy"
+    },
+    {
+      "label": "FTC: Order Will Ban Avast (Avast Limited, UK) from Selling Browsing Data; $16.5M (Jumpshot, announced Feb 22, 2024)",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/02/ftc-order-will-ban-avast-selling-browsing-data-advertising-purposes-require-it-pay-165-million-over"
+    },
+    {
+      "label": "FTC: Finalizes Order Against Avast (finalized June 26, 2024)",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/06/ftc-finalizes-order-avast-banning-it-selling-or-licensing-web-browsing-data-advertising-requiring-it"
+    },
+    {
+      "label": "Hunton Privacy Law: FTC $16.5M settlement against UK entity Avast Limited (entity confirmation)",
+      "url": "https://www.hunton.com/privacy-and-information-security-law/ftc-announces-16-5-million-settlement-against-uk-service-provider-and-ban-from-selling-browsing-data-for-advertising-purposes"
+    },
+    {
+      "label": "Cloudwards - Avast SecureLine VPN Review 2026 (~59 locations/37 countries, no audit, bare-metal servers, Mimic, WireGuard, P2P servers, $4.39/mo, 60-day trial, 30-day refund)",
+      "url": "https://www.cloudwards.net/avast-secureline-vpn-review/"
+    },
+    {
+      "label": "CyberInsider - Avast SecureLine VPN Review 2026 (58 locations/34 countries, no audit, card/PayPal only, ownership/jurisdiction, ~30-day connection-data retention)",
+      "url": "https://cyberinsider.com/vpn/reviews/avast-secureline-vpn/"
+    },
+    {
+      "label": "Cybernews - Avast SecureLine VPN Review 2026 (no third-party audit, Gen Digital ownership, connection logs incl. bandwidth, ~35-day server data / 2-year app-event retention)",
+      "url": "https://cybernews.com/best-vpn/avast-secureline-vpn-review/"
+    },
+    {
+      "label": "vpnMentor - Avast SecureLine VPN Review 2026 (Mimic + WireGuard, no Linux app, no independent audit, $3.99/mo 3yr, 60-day trial, 30-day refund)",
+      "url": "https://www.vpnmentor.com/reviews/avast-secureline-vpn/"
+    }
+  ]
+}

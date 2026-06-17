@@ -1,0 +1,149 @@
+{
+  "slug": "bitdefender-vpn",
+  "name": "Bitdefender VPN",
+  "website": "https://www.bitdefender.com/en-us/consumer/vpn",
+  "tagline": "An antivirus-vendor VPN running on Aura/Hotspot Shield (formerly Pango) infrastructure, offered standalone or bundled with Bitdefender security suites.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Romania",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Bitdefender (privately held; co-founders Talpeș family majority, Vitruvian Partners ~30% minority stake since 2017; originated as a SOFTWIN subsidiary)",
+    "founded": 2001
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "No-logs policy (independently audited; see audits): no browsing history, no connection timestamps, and no recording of originating IP address or destination websites. Bitdefender retains account data (email, payment info) and minimal non-identifiable/session data for authentication, connectivity and performance, plus some aggregate operational data. The network is operated by Aura/Hotspot Shield (formerly Pango), a US-based processor, so the combined privacy policy spans both Bitdefender and the third-party infrastructure provider."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "unknown",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Historically used Hotspot Shield's Catapult Hydra, but current clients have dropped Hydra in favor of standard protocols; Bitdefender's official protocol page now lists only WireGuard, OpenVPN and IKEv2 (no Hydra)",
+    "multihop": "yes",
+    "obfuscation": "no",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "unknown",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256 / ChaCha20",
+    "handshake": "WireGuard (Curve25519)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Independent third party (firm not publicly named)",
+        "year": 2025,
+        "scope": "No-logs / privacy verification — confirmed no logging of browsing activity, connection timestamps, or IP addresses. Year (2025 vs 2026) and exact scope (full infrastructure vs logging policy only) are reported inconsistently across sources; no detailed report published.",
+        "url": "https://www.bitdefender.com/consumer/support/answer/116380/"
+      }
+    ],
+    "transparencyReport": "unknown",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No public record of a server seizure or legal demand testing Bitdefender VPN in court. The no-logs claim has been validated by an unnamed third-party audit (reported as 2025 on Bitdefender's own support page, 2026 by some review sites). Audit scope is described inconsistently — Bitdefender's page frames it as an audit of the infrastructure used by the VPN, while several review sites describe it as covering only the logging policy, not the full Aura/Hotspot Shield stack. No full report is published."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 100,
+    "servers": 3000,
+    "linux": "none"
+  },
+  "pricing": {
+    "monthlyUsd": 6.99,
+    "bestPerMonthUsd": 2.92,
+    "bestPlanTerm": "1-year (first-year promo, e.g. $34.99 first year ≈ $2.92/mo; renews higher, ~$69.99/yr)",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Existing Bitdefender antivirus customers who want an integrated VPN add-on",
+    "Everyday privacy, public-Wi-Fi protection, and geo-unblocking of streaming",
+    "Users who value a simple, set-and-forget client over advanced configurability"
+  ],
+  "notFor": [
+    "Users in heavily censored countries needing obfuscation/stealth",
+    "Privacy maximalists wanting open-source clients, anonymous crypto signup, or self-operated infrastructure",
+    "Linux users and power users needing port forwarding or self-hosted-style server control"
+  ],
+  "pros": [
+    "Independently audited no-logs policy (no browsing history, connection timestamps, or IP logging)",
+    "Headquartered in Romania, outside the 5/9/14-Eyes alliances and with no mandatory VPN data-retention law",
+    "Excellent value when bundled with Bitdefender antivirus suites; cheap first-year standalone price",
+    "WireGuard support with strong AES-256/ChaCha20 encryption, plus kill switch, multihop (Double Hop), and P2P-friendly servers"
+  ],
+  "cons": [
+    "Does not run its own network — relies on Aura/Hotspot Shield (formerly Pango), a US-based third party, so the privacy chain spans an additional operator",
+    "No obfuscation, so it works poorly in censorship-heavy regions",
+    "Clients are closed-source, the audit firm is not publicly named, and no detailed audit report is published; audit year and scope are reported inconsistently",
+    "Renewal prices jump well above the first-year promo, no native Linux client, and crypto/cash anonymous payment is not supported"
+  ],
+  "notes": "Bitdefender VPN does not operate its own servers; the network is provided by Aura/Hotspot Shield (formerly Pango), a US-based processor. Bitdefender itself is a privately held Romanian cybersecurity firm founded in 2001 by Florin Talpeș (originating as a subsidiary of SOFTWIN, founded 1990), dual-HQ in Bucharest and San Antonio. It has no parent company/conglomerate; London-based PE firm Vitruvian Partners holds an ~30% minority stake (since 2017) and the founders retain the majority. A free tier exists (200 MB/day, 1 server), often tied to Bitdefender security suites. Server count is reported between ~3,000 and 4,000+ across reviews; Bitdefender's own product page states \"more than 3,000 servers in 100+ countries,\" so 3,000 is used as the conservative official figure. CORRECTIONS vs draft: OpenVPN is in fact supported (Windows/Android per Bitdefender's official protocol page) — changed from \"no\" to \"yes\"; Catapult Hydra appears discontinued in current clients (no longer listed officially); Linux changed from \"unknown\" to \"none\" (no native client, manual WireGuard config only); servers reduced from 4000 to 3000 to match the official figure; company.parent annotated with the Vitruvian Partners stake. The no-logs audit firm remains unnamed and audit year/scope are contested (2025 per Bitdefender vs 2026 per some reviews).",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Bitdefender VPN No-Log Policy (official support page; audit '2025', infrastructure framing)",
+      "url": "https://www.bitdefender.com/consumer/support/answer/116380/"
+    },
+    {
+      "label": "Bitdefender VPN Protocols Explained: WireGuard, OpenVPN, IKEv2 (official; confirms OpenVPN on Windows/Android, no Hydra listed)",
+      "url": "https://www.bitdefender.com/consumer/support/answer/131796/"
+    },
+    {
+      "label": "Bitdefender Premium VPN official product/features page (3,000+ servers/100+ countries, $6.99/mo, 30-day money-back, 7-day trial, WireGuard+Hydra wording)",
+      "url": "https://www.bitdefender.com/en-us/consumer/vpn"
+    },
+    {
+      "label": "Security.org — Bitdefender VPN pricing & plans 2026 (free tier 200MB/day 1 server, $39.98/yr ≈ $3.33/mo and $2.50/mo promo, 10 devices, 30-day refund)",
+      "url": "https://www.security.org/vpn/bitdefender/"
+    },
+    {
+      "label": "Security.org — Bitdefender Premium VPN Review 2026 (Romania/outside Eyes, multihop now present, no IP logging for VPN, no Linux support, 4,000+ servers)",
+      "url": "https://www.security.org/vpn/bitdefender/review/"
+    },
+    {
+      "label": "VPNMentor — Bitdefender VPN Review 2026 (Hotspot Shield servers + Pango/Aura processor, 3000+ servers/100 countries, 10 connections, 30-day money-back)",
+      "url": "https://www.vpnmentor.com/reviews/bitdefender-vpn/"
+    },
+    {
+      "label": "VPN.com — Bitdefender VPN Review (WireGuard-only framing, audit 2026 'logging policy only', Aura network, double-hop, no Linux native)",
+      "url": "https://www.vpn.com/vpn/bitdefender-vpn/"
+    },
+    {
+      "label": "SoftwareLab — Bitdefender VPN Review 2026 (OpenVPN/WireGuard/Hydra+IPsec, Aura/Pango infra, $34.99 first year / $69.99 renewal, 30-day refund)",
+      "url": "https://softwarelab.org/bitdefender-vpn-review/"
+    },
+    {
+      "label": "AllAboutCookies — Bitdefender VPN Review 2026 (no-logs audited 2025, 3,000+ servers/100+ countries, OpenVPN+WireGuard+IPsec, no Linux, $2.50/mo–$6.99/mo, split tunneling/kill switch/double-hop)",
+      "url": "https://allaboutcookies.org/bitdefender-vpn-review"
+    },
+    {
+      "label": "CyberScoop — Bitdefender valued at $600M after Vitruvian Partners buys ~30% minority stake",
+      "url": "https://cyberscoop.com/bitdefender-vitruvian-partners-600m-anti-virus-ransomware/"
+    },
+    {
+      "label": "Wikipedia — Bitdefender (founded 2001 by Florin Talpeș, dual HQ Bucharest/San Antonio, SOFTWIN origin 1990, Vitruvian 30% 2017, no parent company)",
+      "url": "https://en.wikipedia.org/wiki/Bitdefender"
+    }
+  ]
+}

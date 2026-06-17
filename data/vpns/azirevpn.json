@@ -1,0 +1,163 @@
+{
+  "slug": "azirevpn",
+  "name": "AzireVPN",
+  "website": "https://www.azirevpn.com/",
+  "tagline": "A small, privacy-focused Swedish WireGuard VPN, now owned by US-based Malwarebytes, with diskless servers and an independently audited no-logs infrastructure.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Sweden",
+    "eyes": "fourteen",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Malwarebytes",
+    "founded": 2012
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Claims a strict no-logs policy: no traffic, DNS, timestamps, bandwidth, IP or session logs. Backed by diskless (no hard drive) servers and 'Blind Operator' mode that disables remote/local server access. Account requires only an email/username and password. The independent X41 D-Sec audit (assessment 2025-12-01 to 2026-01-09) observed no evidence of user-activity logging and found access to systems tightly controlled."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "multihop": "unknown",
+    "obfuscation": "unknown",
+    "killSwitch": "unknown",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20-Poly1305 (WireGuard)",
+    "handshake": "Curve25519 (WireGuard Noise handshake)"
+  },
+  "transparency": {
+    "openSourceClients": "unknown",
+    "audits": [
+      {
+        "firm": "X41 D-Sec",
+        "year": 2026,
+        "scope": "White-box penetration test, source-code review (web interface/API/VPN servers) and physical hardware audit of a VPN server (servers shipped to Germany). Assessment ran 2025-12-01 to 2026-01-09; published 2026-04-02. 14 findings: 2 critical, 0 high, 8 medium, 4 low. The two critical issues were supply-chain/boot-integrity: 'Unverified Debian Image' (CVSS 9.4, unverified checksum signature in deployment pipeline; already fixed) and 'Unverified Boot Chain' (CVSS 9.3, PXE boot lacked cryptographic verification; remediation in progress), both with high exploitation barriers. Auditors observed no evidence of user-activity logging.",
+        "url": "https://x41-dsec.de/static/reports/X41-Azire-Audit-Public-Report-2026-04-02.pdf"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "no",
+    "realWorldNoLog": "No documented server seizure or subpoena outcome; the no-logs claim has never been court-tested. A monthly warrant canary (current as of 2026-05-30) states no warrants have been served and no searches or seizures have taken place at any AzireVPN location or involving any AzireVPN personnel."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 62,
+    "servers": 153,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 5.4,
+    "bestPerMonthUsd": 4.05,
+    "bestPlanTerm": "12 months",
+    "freeTrialDays": 0,
+    "refundDays": 7,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "unknown"
+  },
+  "bestFor": [
+    "Privacy enthusiasts who value diskless servers, Blind Operator mode, and a recent independent infrastructure audit",
+    "WireGuard-first users who want port forwarding and P2P support",
+    "Users comfortable with a small, no-frills, Sweden-based provider"
+  ],
+  "notFor": [
+    "People in censored regions needing obfuscation/stealth protocols to bypass deep packet inspection",
+    "Users who require a rock-solid desktop kill switch and verified leak protection out of the box",
+    "Those seeking fully anonymous signup/payment (no crypto, email required, cash discontinued)",
+    "Users wanting a large server network or advanced features like multihop",
+    "OpenVPN holdouts: OpenVPN support officially ended 2025-03-15, leaving WireGuard as the only protocol"
+  ],
+  "pros": [
+    "Strong, hardware-level privacy posture: diskless/RAM-only servers plus 'Blind Operator' mode that disables remote and local server access",
+    "First independent third-party audit (X41 D-Sec, published April 2026) reviewed source code and physical hardware and found no evidence of user-activity logging",
+    "Privacy-friendly basics: own DNS, port forwarding, P2P/torrenting allowed, and a current monthly warrant canary",
+    "Backed by the resources of parent company Malwarebytes following the 2024 acquisition"
+  ],
+  "cons": [
+    "Independent 2026 reviewers repeatedly found DNS (and some WebRTC) leaks during testing",
+    "Desktop kill switch is reported unreliable/Android-only in hands-on reviews, despite the official FAQ claiming an always-on kill switch that cannot be disabled",
+    "Small network and limited feature set (no documented multihop or obfuscation/stealth mode); not ideal for censorship circumvention",
+    "Reduced anonymity options: email required at signup, cash discontinued, and cryptocurrency no longer accepted",
+    "Loss of independent-operator status: now owned by Malwarebytes and the site's privacy policy redirects to Malwarebytes', putting data handling under a US security vendor"
+  ],
+  "notes": "Founded 2012 in Stockholm, Sweden by three security experts; acquired by Malwarebytes (Santa Clara, CA, US) announced 2024-11-07. The brand still operates at azirevpn.com with its original Swedish team and shares server software/hardware with Malwarebytes Privacy VPN; the inaugural third-party audit was published 2026-04-02. NOTE ON CONFLICTS: (1) Pricing on the live official page is in EUR (EUR5/mo monthly; EUR3.75/mo on 12-month; EUR4/mo on 3-month; 7-day refund on the 3- and 12-month plans, not the monthly). USD figures here are approximate conversions (~1.08) and may drift. Older aggregator reviews still quote USD prices and a 2-year plan that the current pricing page does not list. (2) Server/country counts differ widely: the official FAQ states 153 servers / 62 locations, while 2026 third-party reviews report far smaller numbers (e.g., ~70-80 servers, ~19-26 countries). The official figure is used here but is likely generous. (3) Kill switch: the FAQ claims a built-in always-on kill switch that cannot be turned off (system- and app-level on Windows/macOS/iOS/Android/Linux/routers), but multiple hands-on reviews say it works reliably only on Android - marked unknown. (4) Payment: official pages now list only cards (Visa/MasterCard/Amex), PayPal and Apple Pay; cash explicitly discontinued; crypto NOT accepted (older reviews cite Bitcoin/Monero/Dogecoin) - acceptsCrypto marked 'no'. SEPA is NOT an accepted method despite some secondary sources. (5) jurisdiction.eyes = 'fourteen' because Sweden is part of the SIGINT Seniors Europe / Fourteen Eyes arrangement. (6) Ownership: Malwarebytes is a private US company (Vector Capital holds only a 2022 minority investment, not control), so there is no larger conglomerate above Malwarebytes - conglomerate left blank. (7) openSourceClients downgraded to 'unknown': the FAQ states AzireVPN uses open-source software on its server infrastructure, but does not document open-source official client apps; only community-built CLI wrappers exist on GitHub.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "AzireVPN official homepage (features, no-logs, warrant canary claims)",
+      "url": "https://www.azirevpn.com/"
+    },
+    {
+      "label": "AzireVPN official pricing page (EUR prices, 7-day refund, payment methods, no crypto/cash, no free trial)",
+      "url": "https://www.azirevpn.com/pricing"
+    },
+    {
+      "label": "AzireVPN official FAQ (153 servers/62 locations, 5 active connections, kill switch, OpenVPN end-of-life 2025-03-15, open-source server software)",
+      "url": "https://www.azirevpn.com/support/faq"
+    },
+    {
+      "label": "AzireVPN official About page (founded 2012 Stockholm; owned by Malwarebytes, Santa Clara CA)",
+      "url": "https://www.azirevpn.com/about"
+    },
+    {
+      "label": "AzireVPN warrant canary API (dated 2026-05-30; no warrants/searches/seizures)",
+      "url": "https://api.azirevpn.com/v3/warrantcanary"
+    },
+    {
+      "label": "AzireVPN blog: 'AzireVPN Now Third-Party Audited and Verified' (names the two critical findings: Unverified Debian Image, Unverified Boot Chain; no logging observed)",
+      "url": "https://blog.azirevpn.com/third-party-audit/"
+    },
+    {
+      "label": "X41 D-Sec: Review of AzireVPN and Malwarebytes Privacy VPN (scope, dates 2025-12-01 to 2026-01-09, no user-activity logging)",
+      "url": "https://x41-dsec.de/security/research/news/2026/04/02/malwarebytes/"
+    },
+    {
+      "label": "X41 D-Sec full public audit report PDF (2026-04-02)",
+      "url": "https://x41-dsec.de/static/reports/X41-Azire-Audit-Public-Report-2026-04-02.pdf"
+    },
+    {
+      "label": "Malwarebytes press release: completes inaugural third-party audit of AzireVPN (2026-04-02)",
+      "url": "https://www.malwarebytes.com/press/2026/04/02/malwarebytes-completes-inaugural-third-party-security-audit-of-azirevpn-infrastructure-reinforcing-commitment-to-radical-transparency"
+    },
+    {
+      "label": "Malwarebytes acquires AzireVPN (PR Newswire, 2024-11-07)",
+      "url": "https://www.prnewswire.com/news-releases/malwarebytes-acquires-azirevpn-to-strengthen-security-and-privacy-offerings-302298280.html"
+    },
+    {
+      "label": "CyberInsider: Malwarebytes/AzireVPN audit uncovers critical flaws (CVSS 9.4 and 9.3 criticals, 14 findings)",
+      "url": "https://cyberinsider.com/malwarebytes-vpns-audit-uncovers-critical-flaws-fixes-underway/"
+    },
+    {
+      "label": "TechCrunch: Vector Capital $100M minority investment in Malwarebytes (2022; not a parent)",
+      "url": "https://techcrunch.com/2022/09/21/malwarebytes-vector-capital-layoffs/"
+    },
+    {
+      "label": "vpnMentor AzireVPN review 2026 (DNS leak, kill switch reliability, server counts)",
+      "url": "https://www.vpnmentor.com/reviews/azirevpn/"
+    },
+    {
+      "label": "SafetyDetectives AzireVPN review 2026 (no-logs, blind operator, DNS leak)",
+      "url": "https://www.safetydetectives.com/best-vpns/azirevpn/"
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "slug": "hide-me",
+  "name": "hide.me",
+  "website": "https://hide.me",
+  "tagline": "A long-running, Malaysia-based VPN with a feature-rich client, an unlimited-data free tier, RAM-only servers, and an independent 2024 no-logs audit by Securitum.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Malaysia",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "eVenture Ltd",
+    "founded": 2012
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Per its privacy policy, hide.me does not log originating IP addresses, browsing/traffic activity, DNS queries, or connection timestamps. It retains only an account email (stored encrypted) and aggregate monthly data (bandwidth) usage; the in-session randomly generated username and connected server are erased every few hours. The no-logs policy was independently audited by Securitum in June 2024, which also examined the RAM-only server infrastructure."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM (OpenVPN/IKEv2); ChaCha20-Poly1305 (WireGuard)",
+    "handshake": "RSA/ECDH with Perfect Forward Secrecy"
+  },
+  "transparency": {
+    "openSourceClients": "partial",
+    "audits": [
+      {
+        "firm": "Securitum",
+        "year": 2024,
+        "scope": "No-logs policy audit (June 2024) confirming the no-logs policy is correctly applied; the assessment also covered the RAM-only/diskless server infrastructure",
+        "url": "https://www.safetydetectives.com/best-vpns/hide-me/"
+      },
+      {
+        "firm": "App Defense Alliance (MASA)",
+        "year": 2023,
+        "scope": "Mobile Application Security Assessment — authentication, information handling, encryption",
+        "url": "https://www.vpnmentor.com/reviews/hide-me-vpn/"
+      },
+      {
+        "firm": "DefenseCode Ltd (Leon Juranic)",
+        "year": 2015,
+        "scope": "Early security/privacy audit certifying no-logs operation",
+        "url": "https://www.cloudwards.net/hide-me-review/"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "unknown",
+    "realWorldNoLog": "hide.me has published transparency reports since 2012 stating it has never held customer data to hand over in response to legal/government requests, and it was re-accredited by the VPN Trust Initiative in 2025. There is no documented server seizure, raid, or subpoena that has publicly tested the no-logs claim in court, so the claim is audit-supported (Securitum 2024) but not court-tested."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 90,
+    "servers": 2500,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 11.99,
+    "bestPerMonthUsd": 2.69,
+    "bestPlanTerm": "~2-year plan (billed ~$69.95 every 2 years; sometimes promoted ~$2.59/mo on a 27-month deal)",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Privacy-focused users who want a non-Eyes jurisdiction plus an audited no-logs policy and RAM-only servers",
+    "Users wanting a capable free VPN with unlimited data before paying",
+    "Torrent/P2P users (P2P allowed, multihop, dynamic port forwarding)",
+    "Households needing multiple simultaneous connections (10)"
+  ],
+  "notFor": [
+    "Users who require fully open-source desktop/mobile clients for independent verification",
+    "Those who want a provider with a documented court-tested no-logs record",
+    "Buyers unwilling to commit to a multi-year plan for the lowest price",
+    "Anyone needing static/fixed port forwarding"
+  ],
+  "pros": [
+    "Strong privacy posture: Malaysia jurisdiction (outside 5/9/14 Eyes), no-logs policy independently audited by Securitum (2024), RAM-only servers, transparency reports since 2012, and VPN Trust Initiative re-accreditation (2025)",
+    "Feature-rich apps: WireGuard/OpenVPN/IKEv2, system-wide kill switch (StealthGuard), multihop, split tunneling, obfuscation, SmartGuard DNS ad/tracker blocking, and dynamic port forwarding",
+    "Genuinely usable free tier with unlimited data (limited locations and one connection)",
+    "Crypto payments (including Monero) and email-only signup support relatively anonymous accounts; 10 simultaneous connections",
+    "Linux CLI, OpenWRT and Ubuntu Touch clients are open source (GPL-2.0) on the eVenture GitHub org"
+  ],
+  "cons": [
+    "No-logs audit cadence is light — one true no-logs audit (Securitum 2024) plus a mobile (MASA) assessment and a 2015 DefenseCode audit; not audited annually like some rivals",
+    "Main desktop and mobile apps are not open source — only niche Linux/router/Ubuntu Touch clients are public, limiting independent code verification",
+    "Month-to-month price is high ($11.99); the cheap rate requires a ~2-year commitment",
+    "No documented real-world court/seizure test of the no-logs claim; static port forwarding is not offered"
+  ],
+  "notes": "The official hide.me domain and Wayback Machine were not directly fetchable from this environment, so figures were cross-checked across multiple reputable 2026 reviews (SafetyDetectives, vpnMentor, Cloudwards, WizCase, Top10VPN, VPNOverview, Gizmodo) plus the eVenture GitHub organization. CHANGES FROM DRAFT: technical.ramOnly upgraded unknown→yes (RAM-only/diskless confirmed by Cloudwards, VPNOverview, WizCase, Top10VPN, and reportedly covered by the Securitum 2024 audit); transparency.openSourceClients upgraded unknown→partial (eVenture GitHub publishes GPL-2.0 Linux CLI, OpenWRT, Ubuntu Touch clients and a SoftEther fork, but main Windows/macOS/Android/iOS apps remain proprietary); audit scope and realWorldNoLog refined to note RAM coverage and the 2025 VPN Trust Initiative re-accreditation. Server/country counts vary by source (2026 reviews cite ~90–91 countries / ~2,100–2,600 servers) and are approximate. Monthly price shows minor source variance ($9.95–$11.99); $11.99 is corroborated by SafetyDetectives, Top10VPN, WizCase, and vpnMentor. Best long-term price is sometimes promoted as low as ~$2.49–$2.59/mo on a 27-month (24+3 free) deal; the ~$2.69/mo 2-year figure (billed ~$69.95) is used as the conservative standard rate. Encryption ciphers are standard protocol defaults rather than provider-confirmed in this research.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "SafetyDetectives — hide.me VPN Review 2026 (audit, RAM-only, pricing $11.99/$2.59, 10 connections)",
+      "url": "https://www.safetydetectives.com/best-vpns/hide-me/"
+    },
+    {
+      "label": "vpnMentor — Hide.me Review 2026 (no-logs, MASA audit, payments, owner eVenture)",
+      "url": "https://www.vpnmentor.com/reviews/hide-me-vpn/"
+    },
+    {
+      "label": "Cloudwards — Hide.me VPN Review 2026 (RAM-only confirmed, $2.69/2yr billed $69.95, 30-day refund, eVenture, Malaysia non-Eyes)",
+      "url": "https://www.cloudwards.net/hide-me-review/"
+    },
+    {
+      "label": "Top10VPN — Hide.me Review 2026 (RAM-only/diskless, no open-source apps, no court/seizure test, $11.99 monthly)",
+      "url": "https://www.top10vpn.com/reviews/hide-me/"
+    },
+    {
+      "label": "VPNOverview — Hide.me VPN Review 2025 (RAM-only servers, Securitum 2024 covered RAM structure, VPN Trust Initiative 2025)",
+      "url": "https://vpnoverview.com/vpn-reviews/hide-me/"
+    },
+    {
+      "label": "WizCase — hide.me Review 2026 (diskless servers, eVenture independent of rivals, 30-day refund)",
+      "url": "https://www.wizcase.com/reviews/hide-me/"
+    },
+    {
+      "label": "hide.me VPN (eVenture) GitHub organization — open-source Linux CLI, OpenWRT, Ubuntu Touch clients (GPL-2.0) and SoftEther fork",
+      "url": "https://github.com/eventure"
+    },
+    {
+      "label": "Gizmodo — Hide.me Review 2026 (pricing cross-check, jurisdiction, crypto payments)",
+      "url": "https://gizmodo.com/best-vpn/hide-me"
+    }
+  ]
+}

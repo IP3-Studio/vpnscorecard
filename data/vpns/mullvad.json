@@ -24,6 +24,8 @@
     "killSwitch": "yes",
     "ownDns": "yes",
     "ramOnly": "yes",
+    "portForwarding": "no",
+    "p2p": "yes",
     "ipv6": "supported"
   },
   "encryption": { "dataCipher": "ChaCha20 (WireGuard) / AES-256 (OpenVPN)", "handshake": "Curve25519" },
@@ -34,6 +36,7 @@
       { "firm": "Cure53", "year": 2020, "scope": "apps + infrastructure" }
     ],
     "transparencyReport": "yes",
+    "courtTested": "yes",
     "realWorldNoLog": "In April 2023 Swedish police executed a search warrant at Mullvad's office and left empty-handed — there was no customer data to seize."
   },
   "infra": { "simultaneousConnections": 5, "countries": 45, "linux": "gui" },

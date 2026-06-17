@@ -1,0 +1,162 @@
+{
+  "slug": "tunnelbear",
+  "name": "TunnelBear",
+  "website": "https://www.tunnelbear.com",
+  "tagline": "A consumer-friendly Canadian VPN, owned by McAfee, known for a simple bear-themed app and a long streak of annual independent security audits.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Canada",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "McAfee",
+    "conglomerate": "Advent International-led private-equity consortium (with Permira), owner of McAfee since March 2022",
+    "founded": 2011
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "No logs of originating IP addresses, DNS queries, traffic, or browsing activity, and no connection timestamps. TunnelBear does track aggregate operational data such as total data used in the current month (reset monthly), OS/app version, and whether an account was active in a month. All personal data is stored within Canada (payment processors may store financial data internationally)."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "no"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM (OpenVPN); ChaCha20-Poly1305 (WireGuard)",
+    "handshake": "RSA-2048 / TLS (OpenVPN)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Cure53",
+        "year": 2024,
+        "scope": "White-box audit of TunnelBear apps, backend systems, server configurations, APIs and encryption (8th annual audit; 44 working days across Oct-Nov, 8 senior auditors; published Nov 24, 2025). Found 10 medium-or-higher and 3 low-severity issues, all acknowledged and fixed or mitigated.",
+        "url": "https://www.tunnelbear.com/blog/tunnelbear-completes-8th-annual-independent-security-audit/"
+      },
+      {
+        "firm": "Cure53",
+        "year": 2025,
+        "scope": "9th consecutive annual independent security audit, completed in 2025 with findings under review per TunnelBear's 8th-audit blog post (Nov 2025).",
+        "url": "https://www.tunnelbear.com/blog/tunnelbear-completes-8th-annual-independent-security-audit/"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "yes",
+    "realWorldNoLog": "TunnelBear's transparency report for 2023 disclosed 70 law-enforcement/government requests over 2021-2023 (29 in 2021, 30 in 2022, 11 in 2023); it confirmed account existence for only 2 individuals (both in 2023) and provided zero browsing/usage data, stating that because it does not log IPs or track browsing, no information about user sessions could be provided."
+  },
+  "infra": {
+    "simultaneousConnections": "unlimited",
+    "countries": 46,
+    "servers": 8000,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 9.99,
+    "bestPerMonthUsd": 3.33,
+    "bestPlanTerm": "3-year",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Beginners who want a simple, friendly VPN",
+    "Users who value a long, verifiable independent-audit history",
+    "People who need a free tier for light/occasional use",
+    "Securing many devices at once on a single account"
+  ],
+  "notFor": [
+    "Torrenting and P2P file sharing",
+    "Users wanting maximum jurisdictional distance from Five Eyes / US ownership",
+    "Power users needing port forwarding, multihop, or a full Linux GUI",
+    "Anyone wanting anonymous signup or crypto/cash payment"
+  ],
+  "pros": [
+    "Nine consecutive annual independent security audits by Cure53 (8th published Nov 2025, 9th completed and under review) - one of the longest public audit track records in the consumer VPN industry",
+    "Genuinely no-logs for IP, DNS, traffic and connection timestamps, with all personal data stored in Canada and a transparency report showing no usable user data ever handed over",
+    "Very easy to use with a free 2GB/month tier and unlimited simultaneous devices on paid plans",
+    "Strong, modern protocol support (WireGuard, OpenVPN, IKEv2) plus a kill switch (VigilantBear) and obfuscation (GhostBear)",
+    "Offers a 30-day full money-back guarantee on first-year annual plans purchased directly from its website"
+  ],
+  "cons": [
+    "Owned by McAfee (a US-headquartered security company, itself owned by an Advent International-led private-equity consortium) and based in Canada, a Five Eyes country",
+    "Refunds limited: the 30-day money-back guarantee covers only first-year annual plans bought directly; monthly plans, Teams, and App Store/Google Play purchases are non-refundable",
+    "Weak for power users: no port forwarding, no multihop, only limited/CLI Linux support, and slow speeds make it poorly suited to P2P/torrenting",
+    "Apps are not open source, and it logs aggregate monthly bandwidth usage (though reset monthly)"
+  ],
+  "notes": "Founded in Toronto in 2011; acquired by McAfee in March 2018 and still run as a standalone brand (McAfee itself was taken private by an Advent International/Permira-led consortium in March 2022). The free plan grants 2GB/month. As of Jan 26, 2026, free users can no longer manually choose a server and split tunneling (SplitBear) became a paid feature. Official pricing lists the Unlimited plan \"from $3.33/mo\"; the 3-year plan is ~$120 total (~$3.33/mo) and the 1-year plan is $39.99 (~$3.33/mo) - the draft's $2.33/mo 3-year figure could not be confirmed by any primary source. Refund: TunnelBear's official Terms of Service grant a full refund on first-year annual subscriptions bought directly if requested within 30 days, despite some third-party reviews still describing the service as non-refundable. \"Own DNS\" and \"RAM-only servers\" could not be confirmed from primary sources. Court-tested marked \"yes\" on the basis of a documented no-data-produced transparency report rather than a single seizure/raid. Server count (~8000) and 46+ countries are now confirmed on TunnelBear's official features page.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "TunnelBear official - Terms of Service (30-day full refund on first-year annual plans; otherwise non-refundable)",
+      "url": "https://www.tunnelbear.com/terms-of-service/"
+    },
+    {
+      "label": "TunnelBear official - Features (46+ countries, over 8000 servers, WireGuard/OpenVPN/IKEv2, VigilantBear kill switch, GhostBear, SplitBear, unlimited devices)",
+      "url": "https://www.tunnelbear.com/features"
+    },
+    {
+      "label": "TunnelBear official - Privacy Policy (data collected/not collected, Canada storage, Stripe/PayPal)",
+      "url": "https://www.tunnelbear.com/privacy-policy/"
+    },
+    {
+      "label": "TunnelBear official - Pricing ('from $3.33/mo' Unlimited; free 2GB; Teams $5.75/user)",
+      "url": "https://www.tunnelbear.com/pricing"
+    },
+    {
+      "label": "TunnelBear official - 8th Annual Independent Security Audit (Cure53, 2024 audit, published Nov 24 2025; notes 9th/2025 audit completed and under review)",
+      "url": "https://www.tunnelbear.com/blog/tunnelbear-completes-8th-annual-independent-security-audit/"
+    },
+    {
+      "label": "TunnelBear official - Transparency Report for 2023 (70 requests 2021-2023; 2 accounts confirmed; no usable data)",
+      "url": "https://www.tunnelbear.com/blog/tunnelbear-transparency-report-for-2023/"
+    },
+    {
+      "label": "TunnelBear official - Implements Support for WireGuard (July 2023)",
+      "url": "https://www.tunnelbear.com/blog/tunnelbear-implements-support-for-wireguard/"
+    },
+    {
+      "label": "Dark Reading - McAfee Closes Acquisition of TunnelBear (March 2018 ownership)",
+      "url": "https://www.darkreading.com/perimeter/mcafee-closes-acquisition-of-vpn-provider-tunnelbear"
+    },
+    {
+      "label": "Permira - Investor group led by Advent International and Permira completes acquisition of McAfee (March 1, 2022; ultimate ownership of McAfee)",
+      "url": "https://www.permira.com/news-and-insights/announcements/investor-group-led-by-advent-international-and-permira-completes-acquisition-of-mcafee"
+    },
+    {
+      "label": "TechRadar - TunnelBear free VPN users lose custom server selection and split tunneling (free-tier changes, Jan 2026)",
+      "url": "https://www.techradar.com/vpn/vpn-services/tunnelbear-reshapes-its-free-vpn-model-amid-rising-infrastructure-costs"
+    },
+    {
+      "label": "CyberInsider - TunnelBear Review & Test Results 2026 (active status, ~8000 servers/46 locations, Linux limitations, torrenting, refund framing)",
+      "url": "https://cyberinsider.com/vpn/reviews/tunnelbear/"
+    },
+    {
+      "label": "Security.org - TunnelBear VPN Pricing & Plan Cost 2026 ($9.99 monthly, $39.99/yr, $120/3yr = $3.33/mo)",
+      "url": "https://www.security.org/vpn/tunnelbear/"
+    }
+  ]
+}

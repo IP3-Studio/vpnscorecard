@@ -1,0 +1,137 @@
+{
+  "slug": "vpn-ac",
+  "name": "VPN.ac",
+  "website": "https://vpn.ac",
+  "tagline": "A Romania-based VPN run by a security firm (Cryptolayer, formerly Netsec Interactive Solutions), fast and obfuscation-friendly, but it keeps short-lived connection logs and has never been independently audited.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Romania",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Cryptolayer SRL (formerly Netsec Interactive Solutions SRL)",
+    "founded": 2009
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "some",
+    "bandwidth": "some",
+    "ip": "some",
+    "summary": "No activity/traffic or DNS-query logging. However, the official privacy policy states VPN connection logs DO include the user's IP address, VPN connection start/end times, and amount of data transferred; these are held only while a session is active and erased once the session is terminated. Not a true zero-logs model, and never independently audited."
+  },
+  "privacy": {
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "anonymousSignup": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "unknown",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-GCM",
+    "handshake": "Elliptic Curve Cryptography (ECC/ECDH)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena that tested the logging policy; no public transparency report."
+  },
+  "infra": {
+    "simultaneousConnections": 12,
+    "countries": 21,
+    "servers": 130,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 9,
+    "bestPerMonthUsd": 3.75,
+    "bestPlanTerm": "2-year ($90 billed upfront)",
+    "freeTrialDays": 7,
+    "refundDays": 7,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Users in censored/restrictive regions (e.g. China) who need reliable obfuscation",
+    "Speed-sensitive use like streaming and torrenting on a privacy-friendly jurisdiction",
+    "Technical users comfortable with manual configuration who value strong encryption"
+  ],
+  "notFor": [
+    "Privacy maximalists who require an independently audited, court-tested true zero-logs provider",
+    "People who want fully anonymous signup or a polished, actively maintained Linux/open-source client",
+    "Users who prioritize RAM-only diskless infrastructure or a large global server fleet"
+  ],
+  "pros": [
+    "Privacy-friendly Romanian jurisdiction, outside the 5/9/14 Eyes alliances and historically without mandatory data-retention",
+    "Run by an established security company (Cryptolayer, formerly Netsec Interactive Solutions, operating since 2009) with strong encryption (ECC + AES-GCM) and effective obfuscation that works in restrictive networks like China",
+    "Consistently fast in independent 2026 speed tests, with P2P/torrenting allowed and multi-hop (double-VPN) server options",
+    "Accepts cryptocurrency and offers a cheap $2 7-day trial plus a 7-day money-back guarantee"
+  ],
+  "cons": [
+    "Not a true no-logs VPN: the official privacy policy admits connection logs include the user's IP, connection timestamps, and data transferred while a session is active",
+    "No-logs/privacy claims have never been independently audited, and the service has never been court-tested by a seizure or subpoena",
+    "No RAM-only (diskless) servers; infrastructure is bare-metal/rented disk-based servers, and the network is relatively small (~21 countries)",
+    "Closed-source clients and a neglected Linux app (command-line only, effectively unmaintained since January 2020); WireGuard requires manual setup"
+  ],
+  "notes": "Logging is the key nuance: VPN.ac advertises 'No activity logs' and does not log traffic content or DNS queries, but its own privacy policy explicitly states that VPN connection logs (IP address, connection start/end times, amount of data transferred) are kept for the duration of an active session and erased once the session is terminated. This is a real, documented contradiction with a blanket 'no-logs' impression, hence ethics.contradictoryLogging='yes' while falseClaims='no' (they disclose it). The operating company was renamed from Netsec Interactive Solutions SRL to Cryptolayer SRL (same Sibiu, Romania entity, established 2009; not a conglomerate). Never independently audited — VPN.ac appears in GreyCoder's 'VPNs With No Public Audits' list and VPNMentor reports support stating audits are 'only for marketing'. Pricing verified against live official page: $9/mo, $24/3mo, $58/yr, $90/2yr ($3.75/mo best rate); 7-day money-back guarantee; a discounted $2 7-day trial exists (not a free tier). Connection limit is 12 total (6 OpenVPN/IPsec + 6 WireGuard). Server-count and country figures vary by source and are flagged low-confidence.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "VPN.ac official privacy policy (logging wording: 'connection logs include IP addresses, start and end time of VPN connections, amount of data transfered'; 'erased once a session is terminated'; 'do not log or monitor actual VPN activity')",
+      "url": "https://vpn.ac/privacy-policy"
+    },
+    {
+      "label": "VPN.ac official VPN accounts / pricing page (plans: $9/mo, $24/3mo, $58/yr, $90/2yr = $3.75/mo; 7-day money-back; 12 connections; 21 VPN countries)",
+      "url": "https://vpn.ac/vpn-accounts"
+    },
+    {
+      "label": "VPN.ac official security/features page (OpenVPN/IPsec/WireGuard, ECC + AES-GCM, obfuscation, secure DNS; proprietary client apps)",
+      "url": "https://vpn.ac/security"
+    },
+    {
+      "label": "VPN.ac official About page (footer: 'a VPN Service of Cryptolayer (formerly Netsec Interactive Solutions)'; operating company established Romania 2009)",
+      "url": "https://vpn.ac/about"
+    },
+    {
+      "label": "Amazon Appstore listing for VPN.AC (publisher 'Cryptolayer SRL', confirming the company rename)",
+      "url": "https://www.amazon.com/Cryptolayer-SRL-VPN-AC/dp/B07KB27X9L"
+    },
+    {
+      "label": "CyberInsider VPN.ac Review (dated Jan 2026; connection logs erased shortly after disconnect, no DNS/activity logging, no audit, bare-metal not RAM-only, Linux client not updated since January 2020, OpenVPN XOR obfuscation, $2 discounted trial, 7-day refund)",
+      "url": "https://cyberinsider.com/vpn/reviews/vpn-ac/"
+    },
+    {
+      "label": "SafetyDetectives VPN.ac Review 2026 (active status, pricing, connection-log nuance, no audit)",
+      "url": "https://www.safetydetectives.com/best-vpns/vpn-ac/"
+    },
+    {
+      "label": "Cloudwards VPN.ac Review (updated 2026; server/infrastructure and WireGuard limitations)",
+      "url": "https://www.cloudwards.net/vpn-ac-review/"
+    },
+    {
+      "label": "VPNMentor VPN.ac Review (dated Apr 2026; logs IP/timestamps/bandwidth deleted on session end; 'not been audited or verified by a third party', support said audits 'only for marketing'; $3.75/mo 2-year; 7-day refund; no free trial; 130+ servers in 26 countries; WireGuard manual-only)",
+      "url": "https://www.vpnmentor.com/reviews/vpn-ac/"
+    },
+    {
+      "label": "GreyCoder 'A List Of VPN Providers With Public Audits' (VPN.ac listed under 'VPNs With No Public Audits')",
+      "url": "https://greycoder.com/a-list-of-vpn-providers-with-public-audits/"
+    }
+  ]
+}
