@@ -1,0 +1,63 @@
+{
+  "slug": "proton-vpn",
+  "name": "Proton VPN",
+  "website": "https://protonvpn.com",
+  "tagline": "Swiss-based, open-source, with a genuinely usable free tier.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": { "country": "Switzerland", "eyes": "none", "enemyOfInternet": "no" },
+  "company": { "parent": "Proton AG", "founded": 2017 },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No-logs policy independently verified by five consecutive Securitum audits, including physical inspection of live servers in Zürich (Aug 2025)."
+  },
+  "privacy": { "anonymousSignup": "no", "acceptsCash": "unknown", "acceptsCrypto": "yes", "pgpKey": "yes" },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Stealth",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "ipv6": "supported"
+  },
+  "encryption": { "dataCipher": "AES-256 / ChaCha20", "handshake": "RSA-4096 / Curve25519" },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [
+      { "firm": "Securitum", "year": 2025, "scope": "no-logs — live server inspection, Zürich", "url": "https://protonvpn.com/blog/no-logs-audit" },
+      { "firm": "Securitum", "year": 2024, "scope": "no-logs" }
+    ],
+    "transparencyReport": "yes",
+    "realWorldNoLog": "Switzerland sits outside the 5/9/14 Eyes and has no VPN data-retention requirement; Proton publishes a transparency report."
+  },
+  "infra": { "simultaneousConnections": 10, "countries": 110, "linux": "gui" },
+  "pricing": { "monthlyUsd": 9.99, "bestPerMonthUsd": 2.99, "bestPlanTerm": "2-year (VPN Plus)", "refundDays": 30, "freeTier": "yes" },
+  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
+  "bestFor": ["People who want a trustworthy free tier", "Open-source advocates", "Higher-risk users (Secure Core multi-hop)"],
+  "notFor": ["Fully anonymous signup (an email or username is required)"],
+  "pros": [
+    "Strong Swiss jurisdiction outside 5/9/14 Eyes",
+    "All apps open source and independently audited",
+    "Unlimited free tier with no data cap (1 device, 5 countries)",
+    "Stealth obfuscation protocol and Secure Core multi-hop"
+  ],
+  "cons": [
+    "Signup requires an email or username (not fully anonymous)",
+    "Cheapest rate needs a 2-year commitment",
+    "One company spanning many products is a broad attack surface"
+  ],
+  "notes": "Overseen by the non-profit Proton Foundation; the free tier is funded by paid subscriptions.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    { "label": "Proton VPN no-logs audits (official)", "url": "https://protonvpn.com/blog/no-logs-audit" },
+    { "label": "Tom's Guide — fourth consecutive no-logs audit", "url": "https://www.tomsguide.com/computing/vpns/proton-vpn-passes-its-fourth-consecutive-no-logs-audit-heres-what-that-means-for-your-data" },
+    { "label": "Proton VPN (official)", "url": "https://protonvpn.com" }
+  ]
+}

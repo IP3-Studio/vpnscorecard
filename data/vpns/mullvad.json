@@ -1,0 +1,62 @@
+{
+  "slug": "mullvad",
+  "name": "Mullvad",
+  "website": "https://mullvad.net",
+  "tagline": "Flat-rate, account-number anonymity from Sweden.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": { "country": "Sweden", "eyes": "fourteen", "enemyOfInternet": "no" },
+  "company": { "parent": "Mullvad VPN AB (Amagicom AB)", "founded": 2009 },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No activity or connection logs; only a live count of active connections to enforce the 5-device limit."
+  },
+  "privacy": { "anonymousSignup": "yes", "acceptsCash": "yes", "acceptsCrypto": "yes", "pgpKey": "yes" },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "ipv6": "supported"
+  },
+  "encryption": { "dataCipher": "ChaCha20 (WireGuard) / AES-256 (OpenVPN)", "handshake": "Curve25519" },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [
+      { "firm": "Assured AB", "year": 2025, "scope": "web application penetration test", "url": "https://www.techradar.com/vpn/vpn-services/another-audit-same-result-mullvad-proven-secure-and-log-free-in-latest-audit-check" },
+      { "firm": "Cure53", "year": 2020, "scope": "apps + infrastructure" }
+    ],
+    "transparencyReport": "yes",
+    "realWorldNoLog": "In April 2023 Swedish police executed a search warrant at Mullvad's office and left empty-handed — there was no customer data to seize."
+  },
+  "infra": { "simultaneousConnections": 5, "countries": 45, "linux": "gui" },
+  "pricing": { "monthlyUsd": 5.8, "bestPerMonthUsd": 5.8, "bestPlanTerm": "flat rate (no discount)", "refundDays": 14, "freeTier": "no" },
+  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
+  "bestFor": ["Privacy purists", "Anonymous signup & payment", "Whistleblowers and journalists"],
+  "notFor": ["Large streaming libraries (no port forwarding, modest network)", "Bargain hunters wanting multi-year discounts"],
+  "pros": [
+    "Account-number signup with no email or personal data",
+    "Flat €5/mo — no manipulative tiers or upsells",
+    "Accepts cash and Monero; RAM-only servers",
+    "Repeatedly audited; survived a real police search with no data to give"
+  ],
+  "cons": [
+    "No free trial and only a 14-day refund (not on cash payments)",
+    "Removed port forwarding in 2023, weakening some P2P use",
+    "Sweden sits within the 14 Eyes alliance"
+  ],
+  "notes": "Owned by Amagicom AB. Pricing is a deliberate single flat rate whether you pay monthly or yearly; crypto payments get a 10% discount.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    { "label": "Mullvad pricing (official)", "url": "https://mullvad.net/en/pricing" },
+    { "label": "TechRadar — 2025 audit", "url": "https://www.techradar.com/vpn/vpn-services/another-audit-same-result-mullvad-proven-secure-and-log-free-in-latest-audit-check" },
+    { "label": "Mullvad (official)", "url": "https://mullvad.net" }
+  ]
+}

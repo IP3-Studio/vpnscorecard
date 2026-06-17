@@ -1,0 +1,65 @@
+{
+  "slug": "nordvpn",
+  "name": "NordVPN",
+  "website": "https://nordvpn.com",
+  "tagline": "Large, fast, heavily-audited mainstream VPN from Panama.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": { "country": "Panama", "eyes": "none", "enemyOfInternet": "no" },
+  "company": { "parent": "Nord Security (Nordsec Ltd)", "conglomerate": "Nord Security", "founded": 2012 },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No-logs policy audited six times (PwC, Deloitte); all servers run from RAM."
+  },
+  "privacy": { "anonymousSignup": "no", "acceptsCash": "no", "acceptsCrypto": "yes", "pgpKey": "unknown" },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "NordLynx",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "ipv6": "blocked"
+  },
+  "encryption": { "dataCipher": "ChaCha20 / AES-256", "handshake": "Curve25519" },
+  "transparency": {
+    "openSourceClients": "partial",
+    "audits": [
+      { "firm": "Deloitte", "year": 2025, "scope": "no-logs assurance" },
+      { "firm": "Deloitte", "year": 2023, "scope": "no-logs assurance" },
+      { "firm": "PwC", "year": 2022, "scope": "no-logs" }
+    ],
+    "transparencyReport": "yes",
+    "realWorldNoLog": "Panama has no data-retention law. A 2018 breach of a rented Finnish server (disclosed 2019) exposed a TLS key but no user activity; Nord moved to RAM-only colocated servers afterward."
+  },
+  "infra": { "simultaneousConnections": 10, "countries": 110, "linux": "gui" },
+  "pricing": { "monthlyUsd": 12.99, "bestPerMonthUsd": 3.09, "bestPlanTerm": "2-year (Basic)", "refundDays": 30, "freeTier": "no" },
+  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
+  "bestFor": ["Speed and large server choice", "Streaming and general use", "Audited no-logs at scale"],
+  "notFor": ["Fully anonymous signup (email required)", "Open-source purists (apps only partly open)"],
+  "pros": [
+    "Six independent no-logs audits; RAM-only fleet",
+    "Fast NordLynx (WireGuard) protocol with post-quantum option",
+    "Huge network (~110 countries)",
+    "Panama jurisdiction outside the Eyes alliances"
+  ],
+  "cons": [
+    "Email required; no cash payment",
+    "Apps only partially open source",
+    "Part of the Nord Security group that also owns Surfshark",
+    "2018 server breach (no user data, but a trust dent)"
+  ],
+  "notes": "Tiered Basic/Plus/Complete plans; higher tiers bundle a password manager and storage.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    { "label": "Security.org — NordVPN review", "url": "https://www.security.org/vpn/nordvpn/review/" },
+    { "label": "Cybernews — NordVPN review", "url": "https://cybernews.com/best-vpn/nordvpn-review/" },
+    { "label": "NordVPN (official)", "url": "https://nordvpn.com" }
+  ]
+}

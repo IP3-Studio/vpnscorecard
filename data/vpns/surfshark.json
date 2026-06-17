@@ -1,0 +1,62 @@
+{
+  "slug": "surfshark",
+  "name": "Surfshark",
+  "website": "https://surfshark.com",
+  "tagline": "Budget-friendly, unlimited devices, RAM-only — now part of Nord Security.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": { "country": "Netherlands", "eyes": "nine", "enemyOfInternet": "no" },
+  "company": { "parent": "Surfshark B.V.", "conglomerate": "Nord Security", "founded": 2018 },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No-logs policy audited by Deloitte (ISAE 3000) in 2025; the entire fleet is RAM-only."
+  },
+  "privacy": { "anonymousSignup": "no", "acceptsCash": "no", "acceptsCrypto": "yes", "pgpKey": "unknown" },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "ipv6": "unknown"
+  },
+  "encryption": { "dataCipher": "ChaCha20 / AES-256", "handshake": "Curve25519" },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      { "firm": "Deloitte", "year": 2025, "scope": "no-logs (ISAE 3000)" },
+      { "firm": "Cure53", "year": 2021, "scope": "apps + infrastructure" }
+    ],
+    "transparencyReport": "yes"
+  },
+  "infra": { "simultaneousConnections": "unlimited", "countries": 100, "linux": "gui" },
+  "pricing": { "monthlyUsd": 15.45, "bestPerMonthUsd": 1.99, "bestPlanTerm": "2-year (Starter)", "refundDays": 30, "freeTier": "no" },
+  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
+  "bestFor": ["Households (unlimited devices)", "Budget buyers", "Streaming and travel"],
+  "notFor": ["Open-source advocates (closed apps)", "Anonymous signup", "Avoiding 9-Eyes jurisdictions"],
+  "pros": [
+    "Unlimited simultaneous connections",
+    "Cheap multi-year pricing (~$2/mo)",
+    "RAM-only servers; Deloitte no-logs audit",
+    "Obfuscation and multi-hop included"
+  ],
+  "cons": [
+    "Netherlands sits within the 9 Eyes alliance",
+    "Apps are not open source",
+    "Email required; no cash payment",
+    "Now under the same parent as NordVPN (less brand diversity)"
+  ],
+  "notes": "Merged under Nord Security's parent company in Feb 2022 but runs separate infrastructure and audit cycles.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    { "label": "Security.org — Surfshark review", "url": "https://www.security.org/vpn/surfshark/review/" },
+    { "label": "Surfshark vs NordVPN (official — merger + 2025 audit)", "url": "https://surfshark.com/blog/surfshark-vs-nordvpn" },
+    { "label": "Surfshark (official)", "url": "https://surfshark.com" }
+  ]
+}
