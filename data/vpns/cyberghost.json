@@ -1,0 +1,165 @@
+{
+  "slug": "cyberghost",
+  "name": "CyberGhost VPN",
+  "website": "https://www.cyberghostvpn.com/",
+  "tagline": "A Romania-based, Kape-owned VPN with a large server network, streaming focus, and a thrice-audited no-logs policy, but limited advanced privacy features and a controversial parent company.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Romania",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Kape Technologies",
+    "conglomerate": "Kape Technologies (Unikmind / Teddy Sagi)",
+    "founded": 2011
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Audited no-logs policy (Deloitte Romania, three times: 2022, 2024, 2025) running on RAM-only servers that reset regularly. Quarterly transparency reports state no user data could be handed over because none is stored. Aggregate/anonymized usage stats may be collected."
+  },
+  "privacy": {
+    "acceptsCrypto": "yes",
+    "acceptsCash": "no",
+    "anonymousSignup": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "none",
+    "multihop": "no",
+    "obfuscation": "no",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM (and ChaCha20 with WireGuard)",
+    "handshake": "Perfect Forward Secrecy; RSA/ECDH key exchange"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Deloitte Romania",
+        "year": 2022,
+        "scope": "ISAE 3000 (Revised) no-logs assurance: VPN servers, management/change/config systems, no-logs policy"
+      },
+      {
+        "firm": "Deloitte Romania",
+        "year": 2024,
+        "scope": "ISAE 3000 (Revised) no-logs assurance (second audit)"
+      },
+      {
+        "firm": "Deloitte Romania",
+        "year": 2025,
+        "scope": "ISAE 3000 (Revised) no-logs assurance: VPN server network, configuration, change-management and incident-response controls, RAM-only operation, token-based Dedicated IP technology (third audit)"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "no",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena has publicly proven the no-logs policy in practice; independent reviews note it has not been real-world tested (unlike sister brand ExpressVPN). The Q4 2025 transparency report logged 2 law-enforcement requests (October and December 2025) with no data handed over, plus 56,053 DMCA notices, citing the no-logs/RAM-only setup."
+  },
+  "infra": {
+    "simultaneousConnections": 7,
+    "countries": 100,
+    "servers": 11000,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 12.99,
+    "bestPerMonthUsd": 2.03,
+    "bestPlanTerm": "2-year (26-month) plan",
+    "freeTrialDays": 1,
+    "refundDays": 45,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Streaming geo-restricted content with purpose-built optimized servers",
+    "Torrenting/P2P on a budget via long-term plans",
+    "VPN beginners wanting a simple, polished app with a long money-back guarantee",
+    "Users who want a large server network and a Romania-based, audited no-logs provider"
+  ],
+  "notFor": [
+    "Users in heavily censored countries needing strong obfuscation (e.g. China, Iran)",
+    "Privacy maximalists who distrust the Kape Technologies ownership and adware history",
+    "People needing advanced features like multi-hop, port forwarding, or fully open-source clients",
+    "Anyone wanting a no-logs policy that has been court-tested or proven by a real-world data request"
+  ],
+  "pros": [
+    "No-logs policy independently audited three times by Deloitte Romania (2022, 2024, 2025) under ISAE 3000 (Revised), with RAM-only servers and quarterly transparency reports",
+    "Romania-based jurisdiction, outside the 5/9/14 Eyes alliances with no data-retention mandate for VPNs",
+    "Very large network (~11,000 servers in 100 countries) with dedicated streaming, torrenting, and gaming-optimized servers",
+    "Self-owned NoSpy servers in Romania, long 45-day money-back guarantee on 6-month+ plans, and accepts cryptocurrency via BitPay"
+  ],
+  "cons": [
+    "Owned by Kape Technologies (formerly Crossrider, with a documented history of adware/PUP distribution), privately held since 2023 under Teddy Sagi's Unikmind group, raising trust concerns",
+    "Lacks several advanced privacy features: no multi-hop/double VPN, no port forwarding, and weak/limited obfuscation (unreliable in heavily censored regions like China)",
+    "Apps are closed-source/proprietary, so clients cannot be independently code-audited",
+    "No-logs policy has never been proven by a real-world server seizure, raid, or subpoena, and month-to-month pricing is expensive ($12.99)"
+  ],
+  "notes": "Founded 2011 in Romania; acquired by Crossrider (renamed Kape Technologies in 2018) in 2017. Kape was taken private by Teddy Sagi's Unikmind Holdings and delisted from the London Stock Exchange (AIM) on 31 May 2023, and has been privately held since; sister brands include ExpressVPN, Private Internet Access, ZenMate and Intego. Pricing reflects USD list as of mid-2026 ($12.99/mo; ~$2.03/mo effective on the ~26-month plan); promotional effective rates as low as ~$1.49-$1.75/mo have appeared. Simultaneous connections = 7. Server count is provider-stated and fluctuates (~9,700-11,690 across 2026 reviews; ~11,000 used here). Free trials vary by platform (24h desktop / 3d Android / 7d iOS); no permanent free tier. Crypto payment via BitPay (BTC, ETH, etc.) but an email is required, so signup is not fully anonymous.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "CyberGhost official site (homepage / features)",
+      "url": "https://www.cyberghostvpn.com/"
+    },
+    {
+      "label": "CyberGhost buy/pricing page",
+      "url": "https://www.cyberghostvpn.com/buy"
+    },
+    {
+      "label": "CyberGhost Deloitte no-logs privacy audit (2022/2024)",
+      "url": "https://www.cyberghostvpn.com/privacyhub/privacy-audit/"
+    },
+    {
+      "label": "CyberGhost third no-logs audit (2025, Deloitte Romania, ISAE 3000)",
+      "url": "https://www.cyberghostvpn.com/privacyhub/privacy-audit-2025/"
+    },
+    {
+      "label": "CyberGhost Q4 2025 transparency report (2 LE requests, 56,053 DMCA, no data handed over)",
+      "url": "https://www.cyberghostvpn.com/privacyhub/transparency-report-q4-2025/"
+    },
+    {
+      "label": "Security.org CyberGhost pricing & review 2026 ($12.99/mo, $2.03/mo 2yr, 45-day refund, 11,000 servers, no free tier)",
+      "url": "https://www.security.org/vpn/cyberghost/"
+    },
+    {
+      "label": "vpnMentor CyberGhost review 2026 (11,690 servers, closed-source, no port forwarding, weak obfuscation/China)",
+      "url": "https://www.vpnmentor.com/reviews/cyberghost-vpn/"
+    },
+    {
+      "label": "Comparitech CyberGhost review",
+      "url": "https://www.comparitech.com/vpn/reviews/cyberghost-review/"
+    },
+    {
+      "label": "Wikipedia: Kape Technologies (formerly Crossrider; owns CyberGhost/ExpressVPN/PIA/ZenMate/Intego; adware history)",
+      "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
+    },
+    {
+      "label": "CyberInsider: Kape owns ExpressVPN, CyberGhost, PIA, ZenMate",
+      "url": "https://cyberinsider.com/kape-technologies-owns-expressvpn-cyberghost-pia-zenmate-vpn-review-sites/"
+    },
+    {
+      "label": "LSE/ADVFN RNS: Unikmind notice of offer closure and delisting of Kape from AIM (delisted 31 May 2023)",
+      "url": "https://uk.advfn.com/stock-market/london/kape-technologies-KAPE/share-news/Unikmind-Holdings-Limited-Notice-Of-Offer-Closure/90882623"
+    },
+    {
+      "label": "Perivan: Unikmind closes acceptances for Kape (equity ~$1.58bn; Unikmind wholly owned by Teddy Sagi)",
+      "url": "https://www.perivan.com/resources/news/unikmind-holdings-closes-acceptances-for-cash-offer-for-kape-technologies-with-a-valuation-of-kapes-equity-at-1-58-billion/"
+    }
+  ]
+}

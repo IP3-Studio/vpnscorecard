@@ -1,0 +1,141 @@
+{
+  "slug": "trust-zone",
+  "name": "Trust.Zone",
+  "website": "https://trust.zone",
+  "tagline": "Budget, no-frills Seychelles-based VPN with a long-standing PGP-signed warrant canary but no independent audit.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Seychelles",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Internet Privacy Ltd",
+    "founded": 2014
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Claims a strict no-logs policy: no traffic, DNS, timestamp, session, or IP logs, and states servers store no log files tied to a real public IP. However, enforcing the 3-day/1GB free trial and the conditional 10-day refund (valid only if under ~1GB used) requires some bandwidth metering. No-logs claims are self-attested and have never been independently audited."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "yes"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "unknown",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-CBC (OpenVPN)",
+    "handshake": "RSA-2048"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "Publishes a daily-updated, PGP-signed (GnuPG) warrant canary (last updated 17 June 2026) asserting no warrants, searches, or data seizures have ever been served on Trust.Zone, its principals, or its servers. This is an unverified self-attestation and reflects the absence of any documented legal test rather than a confirmed real-world no-logs proof."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 90,
+    "servers": 188,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 9.99,
+    "bestPerMonthUsd": 1.77,
+    "bestPlanTerm": "3 years",
+    "freeTrialDays": 3,
+    "refundDays": 10,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Budget-conscious users wanting a cheap long-term VPN",
+    "Privacy seekers who value an offshore (Seychelles) jurisdiction",
+    "Crypto-paying users and basic P2P/torrent use"
+  ],
+  "notFor": [
+    "Users who require an independently audited no-logs VPN",
+    "People needing top-tier speeds for 4K streaming or gaming",
+    "Those wanting a polished, modern app experience with one-click WireGuard and live chat support"
+  ],
+  "pros": [
+    "Privacy-friendly Seychelles jurisdiction, outside all 5/9/14 Eyes alliances",
+    "Very cheap on long-term plans (about $1.77/month on the 3-year promo)",
+    "Long-running, daily-updated, PGP-signed warrant canary",
+    "Accepts cryptocurrency (with ~10% discount) and supports P2P/torrenting; offers a Double VPN / multi-hop option"
+  ],
+  "cons": [
+    "No independent third-party audit of its no-logs claims",
+    "Apps feel dated/cluttered; WireGuard often needs manual setup and the kill switch is weaker on macOS",
+    "Below-average speeds and a relatively small server network (~188 servers)",
+    "Refund and free trial are tightly conditioned on staying under ~1GB of bandwidth; port forwarding is a paid add-on"
+  ],
+  "notes": "Primary-source correction: the official Terms page names the operating entity / Licensor as «Internet Privacy» Ltd (Unit 117, Orion Mall, Palm Street, Victoria, Mahe, Seychelles); cryptocurrency payments are handled by that entity, while card/other payments are processed by the Distributor Tersys Group OÜ (Tallinn, Estonia). Several secondary reviews (CyberInsider, vpnMentor) instead cite \"Trusted Solutions Ltd\" — treated as lower-confidence vs. the primary Terms document. VPN service launched 2014. Official site figures: \"188 ultra-fast servers in over 90 zones\"; reviewers counting live in-app locations report far fewer countries (~36-38), so the country/zone figure is uncertain. Simultaneous connections vary by plan: 1 on the free trial, 3 on most plans, 5 on the 2-year and longer plans (best-plan value recorded); extra slots available as paid add-ons. Monthly plan is $9.99. Cheapest effective rate is the ~$1.77/mo 3-year promotion (CyberInsider, vpnMentor); 2-year-based plans are quoted around $1.86-$2.33/mo elsewhere, so the headline per-month figure varies by source and term. Refund is 10 days; the official Terms state a 100% refund within 10 days without explicitly stating the 1GB cap, but reviews consistently report the refund and trial are bandwidth-limited to ~1GB. No live chat (ticket support only).",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Trust.Zone official General Terms & Conditions (operating entity «Internet Privacy» Ltd, Distributor Tersys Group OÜ, 10-day refund)",
+      "url": "https://trust.zone/terms"
+    },
+    {
+      "label": "Trust.Zone official Servers/Zones page (188 servers in over 90 zones)",
+      "url": "https://trust.zone/servers"
+    },
+    {
+      "label": "Trust.Zone official Warrant Canary (PGP/GnuPG-signed, last updated 17 June 2026)",
+      "url": "https://trust.zone/canary"
+    },
+    {
+      "label": "Trust.Zone official homepage / VPN features page (no-logs claim, free trial, Seychelles)",
+      "url": "https://trust.zone/trustzone-vpn"
+    },
+    {
+      "label": "Trust.Zone blog: What is a Warrant Canary of Trust.Zone (daily canary, digital signature)",
+      "url": "https://trust.zone/post/whats-warrant-canary-of-trustzone-vpn"
+    },
+    {
+      "label": "CyberInsider Trust.Zone Review 2026 (ownership, jurisdiction, no audit, $1.77/3-year, refund, free trial)",
+      "url": "https://cyberinsider.com/vpn/reviews/trust-zone/"
+    },
+    {
+      "label": "vpnMentor Trust.Zone Review 2026 (servers/countries, 1/3/5 connections, no audit confirmed, WireGuard manual setup)",
+      "url": "https://www.vpnmentor.com/reviews/trust-zone/"
+    },
+    {
+      "label": "Cybernews Trust.Zone Review 2026 (Seychelles, no-logs, 3-day trial, refund)",
+      "url": "https://cybernews.com/best-vpn/trust-zone-vpn-review/"
+    },
+    {
+      "label": "AllAboutCookies Trust.Zone Review 2026 (no audit, OpenVPN/IPsec/WireGuard, refund 1GB cap, 190+ servers/37 countries)",
+      "url": "https://allaboutcookies.org/trustzone-vpn-review-now"
+    },
+    {
+      "label": "Security.org Trust.Zone Review 2026 (192 servers, 1/3/5 connections, no audit, pricing)",
+      "url": "https://www.security.org/vpn/trust-zone/"
+    },
+    {
+      "label": "ProPrivacy Trust.Zone Review 2026 (no third-party audit, Seychelles, metadata wording, pricing $2.33/2-year)",
+      "url": "https://proprivacy.com/vpn/review/trustzone"
+    }
+  ]
+}

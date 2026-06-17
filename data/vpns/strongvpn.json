@@ -1,0 +1,142 @@
+{
+  "slug": "strongvpn",
+  "name": "StrongVPN",
+  "website": "https://strongvpn.com",
+  "tagline": "A long-running US-based VPN owned by Ziff Davis, offering a small but self-operated server network and a no-logs claim that has never been independently audited.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "NetProtect (Ziff Davis, Inc.)",
+    "conglomerate": "Ziff Davis",
+    "founded": 2005
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "StrongVPN's stated policy says it does not collect or log traffic, IP addresses, connection timestamps, or bandwidth (it retains only account email and payment info), and support has confirmed no connection logs are kept (per Comparitech). However, the policy is UNAUDITED (unlike sibling brand IPVanish, which passed a Leviathan Security Group no-logs audit in 2022, StrongVPN has published no independent audit), there is no transparency report or warrant canary, StrongVPN operates under US (Five Eyes) jurisdiction, and its sibling brand IPVanish was documented handing connection logs (timestamps + source IP) to US Homeland Security in 2016 despite a 'zero logs' claim (under prior Highwinds ownership). Treat the no-logs claim as unverified."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "unknown",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256 (OpenVPN/IKEv2); ChaCha20 (WireGuard)",
+    "handshake": "unknown"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "No StrongVPN-specific seizure or subpoena has been documented to test its no-logs claim, and StrongVPN itself remains unaudited (no transparency report or warrant canary). Its sibling brand IPVanish (same current owner, Ziff Davis/NetProtect) was shown in 2016 court filings to have provided connection logs (timestamps and source IP) to US Homeland Security despite advertising 'zero logs' — though that incident predates StackPath/J2 Global/Ziff Davis ownership (IPVanish was under Highwinds at the time). Note: IPVanish later passed an independent Leviathan Security Group no-logs audit in 2022, but that audit covers IPVanish, not StrongVPN."
+  },
+  "infra": {
+    "simultaneousConnections": 12,
+    "countries": 30,
+    "servers": 950,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 11.99,
+    "bestPerMonthUsd": 3.97,
+    "bestPlanTerm": "12 months (first-year intro, ~$47.69 for year 1); renews higher (~$79.99-$89.99/yr per source)",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "unknown"
+  },
+  "bestFor": [
+    "Users who want a simple, established VPN for general privacy and unblocking",
+    "Households needing many simultaneous device connections",
+    "Torrenting/P2P on a mid-priced plan"
+  ],
+  "notFor": [
+    "Privacy maximalists or high-risk users (US jurisdiction, unaudited logs, cooperative subpoena stance)",
+    "People who require an independently audited no-logs guarantee",
+    "Users wanting anonymous/cash signup, RAM-only servers, multihop, or port forwarding"
+  ],
+  "pros": [
+    "Supports modern protocols including WireGuard, OpenVPN and IKEv2",
+    "Generous 12 simultaneous connections and self-operated (not rented) server network",
+    "P2P/torrenting allowed on all servers, with Scramble obfuscation and own StrongDNS",
+    "Long-running, established brand backed by a large parent company (Ziff Davis); VPN unit retained after the 2026 Connectivity-to-Accenture sale"
+  ],
+  "cons": [
+    "No-logs policy has never been independently audited (sibling IPVanish has been, StrongVPN has not), and there is no transparency report or warrant canary",
+    "US jurisdiction (Five Eyes); will notify-then-comply with subpoenas, and sibling brand IPVanish was caught logging in 2016",
+    "Small network (~950 servers, ~30 countries) versus major competitors",
+    "Kill switch limited to desktop/Android; split tunneling limited to Android/Fire TV; no port forwarding, no multihop, no RAM-only servers; annual price jumps sharply on renewal"
+  ],
+  "notes": "Ownership chain: StrongVPN (founded ~2005) -> Highwinds -> StackPath (2017) -> J2 Global (acquired IPVanish/StrongVPN/Encrypt.me from StackPath, closed ~April 30, 2019); J2 Global rebranded to Ziff Davis, Inc. in 2021 (NASDAQ: ZD). Operated under the NetProtect division alongside IPVanish and Encrypt.me, inside Ziff Davis's Cybersecurity & Martech segment. IMPORTANT 2026 status check: Ziff Davis announced (March 3, 2026) a definitive agreement to sell its CONNECTIVITY division (Ookla, Speedtest, Ekahau, Downdetector, RootMetrics) to Accenture for $1.2B; the VPN brands (IPVanish/StrongVPN) are NOT part of that sale and remain with Ziff Davis. Encryption: AES-256 for OpenVPN/IKEv2, ChaCha20 for WireGuard. Includes StrongDNS/SmartDNS. No free tier or free trial; 30-day money-back guarantee applies to the annual plan only (monthly has no refund). Pricing: monthly $11.99; year-1 annual ~$47.69 ($3.97/mo), renews higher (sources cite $79.99-$89.99/yr). The most important caveat for a comparison site: StrongVPN's no-logs claim is UNAUDITED (its sibling IPVanish passed a 2022 Leviathan Security Group audit, but StrongVPN has not), there is no transparency report or warrant canary, and corporate sibling IPVanish has a documented (pre-Ziff-Davis, under Highwinds) 2016 logging incident.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Comparitech — StrongVPN review (logging policy, Bitcoin via BitPay, features, no audit, ownership)",
+      "url": "https://www.comparitech.com/vpn/reviews/strongvpn/"
+    },
+    {
+      "label": "Comparitech — 100+ VPN logging policies (StrongVPN entry)",
+      "url": "https://www.comparitech.com/vpn/vpn-logging-policies/"
+    },
+    {
+      "label": "Cloudwards — StrongVPN Review (pricing, $47.69/$79.99, protocols, jurisdiction, no crypto)",
+      "url": "https://www.cloudwards.net/strongvpn-review/"
+    },
+    {
+      "label": "vpnMentor — StrongVPN Review 2026 (price $11.99/$3.97, 950 servers/30 countries, no crypto, unaudited, no warrant canary, 12 connections, NYC)",
+      "url": "https://www.vpnmentor.com/reviews/strongvpn/"
+    },
+    {
+      "label": "Security.org — StrongVPN Review 2026 (pricing incl. $89.99 renewal, Lake Mary FL, Five Eyes; dated Dec 2025)",
+      "url": "https://www.security.org/vpn/strongvpn/review/"
+    },
+    {
+      "label": "MarketScreener — J2 Global acquired IPVanish/StrongVPN/Encrypt.me from StackPath (closed ~April 2019)",
+      "url": "https://www.marketscreener.com/quote/stock/ZIFF-DAVIS-INC-9623089/news/J2-Global-Inc-acquired-IPVanish-StrongVPN-Encrypt-me-from-StackPath-LLC-34322612/"
+    },
+    {
+      "label": "J2 Global SEC 8-K (FY2021) — rebrand to Ziff Davis on Consensus spin-off",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001084048/000119312521248743/d207618dex991.htm"
+    },
+    {
+      "label": "StockTitan — Ziff Davis $1.2B Connectivity sale to Accenture (Ookla/Speedtest/Ekahau/Downdetector/RootMetrics; VPN brands not included)",
+      "url": "https://www.stocktitan.net/news/ZD/ziff-davis-announces-definitive-agreement-to-sell-connectivity-g9a17q68c7qg.html"
+    },
+    {
+      "label": "Ziff Davis SEC 8-K (FY2026) — Connectivity division sale material event",
+      "url": "https://www.stocktitan.net/sec-filings/ZD/8-k-ziff-davis-inc-reports-material-event-f7690b3b9c14.html"
+    },
+    {
+      "label": "TorrentFreak — 'No-Logging' IPVanish led Homeland Security to Comcast user (2016 incident under Highwinds; reported 2018)",
+      "url": "https://torrentfreak.com/ipvanish-no-logging-vpn-led-homeland-security-to-comcast-user-180505/"
+    },
+    {
+      "label": "BusinessWire — IPVanish Certifies No-Logs VPN Protection with Third-Party (Leviathan Security Group) Audit, April 2022",
+      "url": "https://www.businesswire.com/news/home/20220405005182/en/IPVanish-Certifies-No-logs-VPN-Protection-with-Third-party-Audit"
+    }
+  ]
+}

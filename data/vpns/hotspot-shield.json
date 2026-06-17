@@ -1,0 +1,166 @@
+{
+  "slug": "hotspot-shield",
+  "name": "Hotspot Shield",
+  "website": "https://www.hotspotshield.com/",
+  "tagline": "A long-running US-based VPN built on the proprietary Catapult Hydra protocol, now operated by Point Wild, offering fast speeds but a checkered privacy history.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Point Wild",
+    "conglomerate": "Point Wild",
+    "founded": 2008
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "unknown",
+    "timestamps": "some",
+    "bandwidth": "yes",
+    "ip": "some",
+    "summary": "Markets itself as no-logs and the policy (held by Anchorfree, LLC) states it does not record which sites/apps you access or tie session activity to your identity. However, the privacy policy admits it collects session duration, bandwidth consumed, a per-install device hash, and uses your IP to derive approximate location. The Aug 2023 Aon report's own data-classification table lists timestamps, bandwidth, device hash and approximate location among collected data. DNS-query logging is not addressed. US jurisdiction (Five Eyes) and a 2017 FTC complaint over undisclosed ad-network data sharing weigh against the no-logs marketing."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Catapult Hydra",
+    "multihop": "no",
+    "obfuscation": "unknown",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256",
+    "handshake": "TLS (Catapult Hydra)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Aon",
+        "year": 2023,
+        "scope": "Technical security review of the Hotspot Shield VPN privacy policy, scoped strictly to data-collection and logging claims (no-logs validation) across free and paid tiers and client- and server-side components; methodology included VPN node server log review, client analysis, and review of the 2022 transparency report. Not a Hydra source-code audit or app penetration test, and explicitly excluded review of security measures/best practices across the hosting environment.",
+        "url": "https://www.hotspotshield.com/security-audit/"
+      }
+    ],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena outcome demonstrating an absence of usable user data. Last public law-enforcement transparency report referenced is 2022 (per the Aon report); no published transparency report found since."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 80,
+    "servers": 1800,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 12.99,
+    "bestPerMonthUsd": 2.99,
+    "bestPlanTerm": "3-year",
+    "freeTrialDays": 0,
+    "refundDays": 45,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "yes",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Users prioritizing raw connection speed over maximum privacy",
+    "Casual streaming and general browsing on a trusted network",
+    "People wanting a free ad-supported VPN tier to try before paying"
+  ],
+  "notFor": [
+    "Privacy-critical users, journalists, or activists needing a court-tested no-logs provider",
+    "Anyone wanting anonymous/crypto payment or open-source, independently audited clients",
+    "Users in a non-Five-Eyes jurisdiction seeking strong legal protection from data requests"
+  ],
+  "pros": [
+    "Proprietary Catapult Hydra protocol delivers consistently fast, high-throughput speeds",
+    "Has a no-logs validation by Aon (Aug 25, 2023) covering its privacy-policy data-collection claims across free and paid tiers",
+    "Generous 45-day money-back guarantee plus a genuinely free (ad-supported) tier",
+    "Large brand with apps across all major platforms and up to 10 simultaneous connections"
+  ],
+  "cons": [
+    "US jurisdiction (Five Eyes) and a 2017 FTC/CDT complaint alleging undisclosed data sharing with ad networks and traffic redirection/JavaScript injection",
+    "Privacy policy admits collecting bandwidth, session duration, device hashes and IP-derived location despite no-logs marketing",
+    "Core Hydra protocol is closed-source and clients are not open source; the Aon audit reviewed only the privacy policy, not Hydra's code or app security",
+    "No public transparency report since 2022, no RAM-only servers, no port forwarding or multi-hop"
+  ],
+  "notes": "Ownership timeline: AnchorFree (founded 2005; Hotspot Shield product launched 2008) -> rebranded Pango -> folded into Aura (Dec 2020) -> Aura split, VPN/security side spun out (Sep 2024) -> Pango Group merged with Total Security to form Point Wild (12 Dec 2024, confirmed via PRNewswire). Hotspot Shield, Betternet, UltraAV, VPN360 and TotalAV are sibling Point Wild brands (the Dec 2024 release also names UltraAV, CyEx, Simpluris and Comparitech). The privacy policy is held by Anchorfree, LLC (250 Northern Ave, Boston, MA) with Pango GmbH (Stans, Switzerland) as an associated entity, but operational control and HQ are US. The Aon report PDF on the official security-audit page is dated 25 August 2023 (PDF metadata created 2023-10-27), confirmed by direct extraction; firm = Aon, scope = privacy-policy/logging validation only.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Hotspot Shield official Privacy Policy (held by Anchorfree, LLC; Pango GmbH associated)",
+      "url": "https://www.hotspotshield.com/privacy-policy/"
+    },
+    {
+      "label": "Hotspot Shield official Security Audit page (links Aon report PDF)",
+      "url": "https://www.hotspotshield.com/security-audit/"
+    },
+    {
+      "label": "Aon Privacy Policy Review Summary Report (official PDF; cover dated Aug 25 2023; firm=Aon; scope=logging/policy validation; PDF metadata created 2023-10-27) — verified by direct text extraction",
+      "url": "https://www.hotspotshield.com/reports/Pango_HotSpot%20Shield_VPN_Privacy_Policy_Review_Summary_Report.pdf"
+    },
+    {
+      "label": "PRNewswire: Pango Group merges with Total Security, rebranded Point Wild (Dec 12, 2024); brands incl. Hotspot Shield, Betternet, UltraAV, TotalAV; CEO Hari Ravichandran",
+      "url": "https://www.prnewswire.com/news-releases/pango-group-merges-with-total-security-combined-company-rebranded-point-wild-302330290.html"
+    },
+    {
+      "label": "Point Wild newsroom: Aura splits into two companies (Sep 2024)",
+      "url": "https://www.pointwild.com/news/aura-splits-into-two-world-class-online-safety-companies/"
+    },
+    {
+      "label": "Wikipedia: AnchorFree (founded 2005 by David Gorodyansky; acquired by Aura via Pango 2020)",
+      "url": "https://en.wikipedia.org/wiki/AnchorFree"
+    },
+    {
+      "label": "Wikipedia: Hotspot Shield (history, 2017 FTC complaint, 2018 vulnerability)",
+      "url": "https://en.wikipedia.org/wiki/Hotspot_Shield"
+    },
+    {
+      "label": "CDT: Complaint to the FTC on Hotspot Shield VPN (Aug 7, 2017)",
+      "url": "https://cdt.org/insights/cdts-complaint-to-the-ftc-on-hotspot-shield-vpn/"
+    },
+    {
+      "label": "CDT FTC complaint full PDF (Aug 7, 2017)",
+      "url": "https://cdt.org/wp-content/uploads/2017/08/FTC-CDT-VPN-complaint-8-7-17.pdf"
+    },
+    {
+      "label": "Cloudwards Hotspot Shield review 2026 (protocols: Hydra/IKEv2/WireGuard, OpenVPN dropped; $2.99/mo 3-yr; 45-day refund; server-count contradiction)",
+      "url": "https://www.cloudwards.net/hotspot-shield-review/"
+    },
+    {
+      "label": "Security.org Hotspot Shield review 2026 ($12.99/$7.99/$2.99 pricing; 45-day; 10 connections; 1,800 servers/80 countries; free tier; WireGuard+IKEv2, no OpenVPN)",
+      "url": "https://www.security.org/vpn/hotspot-shield/review/"
+    },
+    {
+      "label": "Security.org Hotspot Shield pricing 2026",
+      "url": "https://www.security.org/vpn/hotspot-shield/"
+    },
+    {
+      "label": "CyberInsider Hotspot Shield review 2026 (free tier 500MB/day US-only, kill switch, audit caveats; reports WireGuard not supported — conflicts with others)",
+      "url": "https://cyberinsider.com/vpn/reviews/hotspot-shield/"
+    },
+    {
+      "label": "Comparitech Hotspot Shield review (Aon Aug 2023 audit corroboration)",
+      "url": "https://www.comparitech.com/vpn/reviews/hotspot-shield-review/"
+    },
+    {
+      "label": "TrustRadius Hotspot Shield pricing 2026 (plan prices, mentions 7-day trial)",
+      "url": "https://www.trustradius.com/products/hotspot-shield-vpn/pricing"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "slug": "hola-vpn",
+  "name": "Hola VPN",
+  "website": "https://hola.org/",
+  "tagline": "A peer-to-peer \"VPN\" that routes free users' traffic through one another's devices rather than dedicated encrypted servers.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Israel",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Hola VPN Ltd. (Hola Networks Limited)",
+    "conglomerate": "Independent (Hola Networks, founded by Ofer Vilenski and Derry Shribman, who retain their stake). NOT owned by EMK Capital. EMK Capital acquired the proxy arm Luminati (rebranded Bright Data in March 2021), which was spun out of Hola and sold SEPARATELY in 2017 (~$125M for ~75.6%); Bright Data is now a separate company, formerly a sister/sibling of Hola.",
+    "founded": 2007
+  },
+  "logging": {
+    "traffic": "yes",
+    "dns": "some",
+    "timestamps": "yes",
+    "bandwidth": "unknown",
+    "ip": "yes",
+    "summary": "Hola's own privacy policy (hola.org/legal/privacy) states it collects Log Data including IP address, OS, browser type, browsing history (obtained via the browser extension), access times and dates, and the names of applications installed on the user's device, with Log Data retained up to 12 months. The policy does NOT distinguish logging between free and Premium/Ultra users. Free users' devices become peers/exit nodes on the Bright Data (formerly Luminati) residential-proxy network and their IPs are commercially resold. Among the most data-collecting and least private services marketed as a VPN. DNS and bandwidth logging are not explicitly itemized in the policy (downgraded to 'some'/'unknown')."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "unknown",
+    "acceptsCash": "no",
+    "pgpKey": "no"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "no",
+    "proprietaryProtocol": "IKEv2/IPsec (AES-256); also legacy PPTP/L2TP. No OpenVPN or WireGuard.",
+    "multihop": "no",
+    "obfuscation": "no",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "unknown",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256",
+    "handshake": "IKEv2"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No independent no-logs audit exists, and the company's own policy documents extensive logging. In 2015 free users were exposed as having been sold as Luminati exit nodes (including traffic used to DDoS 8chan). No documented case of a seizure/subpoena yielding no usable data."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 41,
+    "servers": 1500,
+    "linux": "unknown"
+  },
+  "pricing": {
+    "monthlyUsd": 14.99,
+    "bestPerMonthUsd": 2.99,
+    "bestPlanTerm": "3 years (Premium)",
+    "freeTrialDays": 0,
+    "refundDays": 14,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "yes",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Casually unblocking a geo-restricted website or stream on a throwaway basis",
+    "Users who specifically want a free, browser-based proxy and accept the trade-offs"
+  ],
+  "notFor": [
+    "Anyone needing genuine privacy, anonymity, or protection from surveillance",
+    "Journalists, activists, or anyone whose threat model includes their IP being used by strangers",
+    "Torrenting/P2P safety, sensitive transactions, or corporate/work devices on a network"
+  ],
+  "pros": [
+    "Free tier exists with a large number of geo-unblocking exit locations",
+    "Inexpensive long-term Premium plans (as low as ~$2.99/mo on 3 years)",
+    "Effective at unblocking region-locked streaming/websites for casual use",
+    "Backed by an established company (founded ~2007) that is still actively maintained"
+  ],
+  "cons": [
+    "Free users' devices are turned into peers/exit nodes and their IPs are resold via the Bright Data network, exposing them to others' traffic",
+    "Company's own privacy policy admits logging IP, browsing history, timestamps and installed apps (retained up to 12 months), with no free-vs-premium distinction",
+    "No OpenVPN or WireGuard, no independent audit, no open-source clients, kill switch on Windows only",
+    "Repeated serious security incidents (2015 botnet/Luminati scandal, 2018 Chrome extension compromise targeting MyEtherWallet, 2021 Google malware removal, June 2026 Windows Hola Browser cryptominer supply-chain attack)"
+  ],
+  "notes": "Hola is technically a peer-to-peer routing network rather than a conventional encrypted-tunnel VPN. CORRECTION to common claims: EMK Capital does NOT own Hola VPN. EMK acquired the commercial proxy arm Luminati (which monetizes free users' bandwidth) SEPARATELY from Hola in 2017 (~$125M / ~75.6% stake; valuation ~$165M, potentially up to ~$200M headline); Luminati rebranded to Bright Data in March 2021 and is a separate company. Hola's founders (Vilenski/Shribman) retained their Hola stake. Founding year: company-profile databases (Tracxn/Crunchbase) cite 2007; Wikipedia describes the P2P launch as late 2012 (concept from 2008) — kept as 2007. Refund window: Hola's official money-back guarantee is widely reported in 2026 as 14 days and conditional on the Premium plan being entirely unused (cloudwards.net, vpnmentor.com); one source (security.org) cites 30 days — corrected to 14. Pricing varies by promotion; figures may differ from on-site checkout. 'Ultra' tier runs ~$29.99/mo month-to-month down to ~$7.99/mo on 3 years. Server/country counts vary widely by source (security.org ~1,000-1,500 servers; cloudwards confirms 41 countries; vpnmentor cites 700+ servers / 195+ claimed countries).",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Hola official Privacy Policy (hola.org/legal/privacy)",
+      "url": "https://hola.org/legal/privacy"
+    },
+    {
+      "label": "Hola official site",
+      "url": "https://hola.org/"
+    },
+    {
+      "label": "Wikipedia: Hola (VPN) — history, botnet, Luminati/Bright Data, EMK Capital",
+      "url": "https://en.wikipedia.org/wiki/Hola_(VPN)"
+    },
+    {
+      "label": "Wikipedia: Bright Data — Luminati spun out of Hola, sold separately to EMK Capital 2017, rebrand 2021",
+      "url": "https://en.wikipedia.org/wiki/Bright_Data"
+    },
+    {
+      "label": "Cloudwards — Hola VPN Review 2026 (pricing, 14-day conditional refund, 41 countries, logging, no audit)",
+      "url": "https://www.cloudwards.net/hola-vpn/"
+    },
+    {
+      "label": "Security.org — Hola VPN Review & Pricing 2026 (Premium/Ultra pricing, servers, kill switch)",
+      "url": "https://www.security.org/vpn/hola/"
+    },
+    {
+      "label": "vpnMentor — Hola VPN Review 2026 (operational status, 14-day refund, no free/premium logging distinction, no audit)",
+      "url": "https://www.vpnmentor.com/reviews/hola-vpn/"
+    },
+    {
+      "label": "BleepingComputer — Hola Browser for Windows compromised to deliver cryptominer (June 4, 2026)",
+      "url": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/"
+    },
+    {
+      "label": "Newsweek — Trend Micro security warning on Hola/Luminati",
+      "url": "https://www.newsweek.com/hola-holavpn-luminati-cybersecurity-trend-micro-virtual-private-network-1264639"
+    },
+    {
+      "label": "BleepingComputer — Hola Chrome extension breach targeting MyEtherWallet (2018)",
+      "url": "https://www.bleepingcomputer.com/news/security/hacker-breaches-hola-vpn-chrome-extension-to-go-after-cryptocurrency-wallet-site/"
+    },
+    {
+      "label": "Mergr — EMK Capital Acquires Bright Data (deal details)",
+      "url": "https://mergr.com/transaction/emk-capital-acquires-bright-data"
+    },
+    {
+      "label": "CSO Online — Hola users vulnerable to hacking",
+      "url": "https://www.csoonline.com/article/551625/users-of-free-vpn-hola-vulnerable-to-hacking-researchers-warn.html"
+    }
+  ]
+}

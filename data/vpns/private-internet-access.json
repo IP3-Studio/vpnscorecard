@@ -1,0 +1,191 @@
+{
+  "slug": "private-internet-access",
+  "name": "Private Internet Access",
+  "website": "https://www.privateinternetaccess.com",
+  "tagline": "A long-established, budget-priced US-based VPN with open-source apps, RAM-only servers, and a no-logs policy repeatedly audited by Deloitte and tested in court.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Kape Technologies",
+    "conglomerate": "Kape Technologies (Unikmind Holdings / Teddy Sagi)",
+    "founded": 2010
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Strict no-logs policy: no traffic, DNS, timestamp, bandwidth, or IP logging. Runs on RAM-only (RAM-disk) servers so data does not survive a reboot. Independently reviewed by Deloitte Audit Romania under ISAE 3000 (Revised) three times (June 2022, April 2024, and 2025)."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM (OpenVPN); ChaCha20 (WireGuard)",
+    "handshake": "RSA-4096 (OpenVPN TLS, SHA-256); Curve25519 (WireGuard)"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [
+      {
+        "firm": "Deloitte Audit Romania",
+        "year": 2022,
+        "scope": "First independent ISAE 3000 limited-assurance review of no-logs server configurations (server configs as of mid-2022)",
+        "url": "https://www.privateinternetaccess.com/blog/privacy-audit/"
+      },
+      {
+        "firm": "Deloitte Audit Romania",
+        "year": 2024,
+        "scope": "Second independent ISAE 3000 (Revised) limited-assurance review of VPN server network, no-logs server configurations, management systems, and token-based dedicated-IP system (published April 2024)",
+        "url": "https://www.privateinternetaccess.com/blog/security-audit-2024/"
+      },
+      {
+        "firm": "Deloitte Audit Romania",
+        "year": 2025,
+        "scope": "Third ISAE 3000 (Revised) review covering VPN configuration, management systems, access/change/incident management, and dedicated-IP technology",
+        "url": "https://www.privateinternetaccess.com/blog/security-audit-2025/"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "yes",
+    "realWorldNoLog": "PIA was subpoenaed in a 2016 FBI bomb-threats case and again in a 2018 hacking trial (Embarcadero Media defacement) and produced no usable user data in either. Its quarterly transparency reports continue this pattern: the latest Q4 2025 report logs 30 legal requests with zero user data disclosed (the prior Q2 2025 report logged 46 requests, also zero)."
+  },
+  "infra": {
+    "simultaneousConnections": "unlimited",
+    "countries": 91,
+    "servers": 0,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 11.99,
+    "bestPerMonthUsd": 2.03,
+    "bestPlanTerm": "2-year (plus bonus months); periodic promos as low as ~$1.75/mo",
+    "freeTrialDays": 7,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Budget-conscious users who want a heavily audited, court-tested no-logs VPN",
+    "Households with many devices (unlimited simultaneous connections)",
+    "Torrenting / P2P with port forwarding",
+    "Users who value open-source, inspectable client apps"
+  ],
+  "notFor": [
+    "Users who need a non-Five-Eyes jurisdiction",
+    "People who distrust Kape Technologies' ownership and conflicts of interest",
+    "Those requiring fully anonymous signup or cash payment",
+    "Users wanting a genuine multi-server double-VPN hop"
+  ],
+  "pros": [
+    "No-logs policy is unusually well-proven: three Deloitte Audit Romania reviews (2022/2024/2025) plus two real court tests (2016 FBI bomb-threats case, 2018 hacking trial) that yielded no user data",
+    "Fully open-source client apps (desktop/Android GPLv3, iOS MIT) that anyone can inspect, plus a full-featured Linux GUI app",
+    "Very cheap on long-term plans (~$2/mo) with unlimited simultaneous device connections",
+    "Strong feature set: WireGuard + OpenVPN, multi-level kill switch, port forwarding, MACE ad/tracker blocker, RAM-only servers, P2P-friendly"
+  ],
+  "cons": [
+    "US jurisdiction (Five Eyes) is a turn-off for threat models worried about intelligence-sharing, even though there are no data-retention laws forcing VPN logging",
+    "Owned by Kape Technologies, a group with a controversial history (former Crossrider ad-injection roots and ownership of VPN review sites), which raises trust-conflict concerns",
+    "Account signup is not anonymous (email required); the only trial is a 7-day mobile (iOS/Android) free trial alongside the 30-day money-back guarantee",
+    "'Multi-hop' is VPN-plus-proxy (Shadowsocks/SOCKS5) rather than a true server-to-server double VPN"
+  ],
+  "notes": "PIA was founded in 2010 by Andrew Lee under London Trust Media and acquired by Kape Technologies on 18 Nov 2019 (reported ~$95M; some sources cite higher figures). Kape (sibling brands ExpressVPN, CyberGhost, ZenMate, Intego) was taken private by Teddy Sagi's Unikmind Holdings and delisted from the London AIM market on 31 May 2023. HQ operations are US-based (Denver, Colorado). Server count is marketed as \"thousands\" (some reviews cite ~35,000) across 91 countries/locations, but PIA does not publish a precise, audited server total, so the numeric servers field is left at 0 (unknown). Pricing reflects rotating promotions; the long-term effective rate hovers around $2/mo (Security.org cites $2.03/mo on the 2-year plan; Tom's Guide has seen ~$1.75/mo promos). PIA offers a 7-day free trial via its iOS/Android apps (one-time) plus a 30-day money-back guarantee; there is no perpetual free tier.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "PIA official — Transparency Report Q4 2025 (30 requests, zero data)",
+      "url": "https://www.privateinternetaccess.com/blog/transparency-report-q4-2025/"
+    },
+    {
+      "label": "PIA official — Transparency Report hub (Q2 2025, 46 requests, zero logs)",
+      "url": "https://www.privateinternetaccess.com/transparency-report"
+    },
+    {
+      "label": "PIA official — Third Deloitte (Audit Romania) no-logs audit (2025)",
+      "url": "https://www.privateinternetaccess.com/blog/security-audit-2025/"
+    },
+    {
+      "label": "PIA official — Second Deloitte (Audit Romania) no-logs audit (April 2024)",
+      "url": "https://www.privateinternetaccess.com/blog/security-audit-2024/"
+    },
+    {
+      "label": "PIA official — Deloitte no-logs audit PDF (April 2024 limited-assurance report)",
+      "url": "https://www.privateinternetaccess.com/audit/DeloitteNoLogsAudit2024.pdf"
+    },
+    {
+      "label": "PIA official — first Deloitte audit announcement (2022)",
+      "url": "https://www.privateinternetaccess.com/blog/privacy-audit/"
+    },
+    {
+      "label": "PIA official — VPN encryption (AES-256-GCM, RSA-4096/SHA-256 handshake)",
+      "url": "https://www.privateinternetaccess.com/pages/vpn-encryption"
+    },
+    {
+      "label": "PIA official — Linux GUI app (Qt-based open-source desktop client)",
+      "url": "https://www.privateinternetaccess.com/blog/pia-vpn-linux-app/"
+    },
+    {
+      "label": "GitHub pia-foss/desktop — open-source desktop client (GPLv3, Windows/macOS/Linux GUI)",
+      "url": "https://github.com/pia-foss/desktop"
+    },
+    {
+      "label": "Security.org — PIA pricing ($11.99/mo; $2.03/mo 2-year; unlimited devices; 30-day refund; 7-day mobile free trial)",
+      "url": "https://www.security.org/vpn/private-internet-access/"
+    },
+    {
+      "label": "Tom's Guide — PIA promo as low as $1.75/mo (2-year)",
+      "url": "https://www.tomsguide.com/computing/vpns/vpn-deal-of-the-week-private-internet-access-drops-to-usd1-75-per-month-and-its-an-experts-dream"
+    },
+    {
+      "label": "TorrentFreak — PIA no-logging claims proven in court again (2018 hacking trial)",
+      "url": "https://torrentfreak.com/private-internet-access-no-logging-claims-proven-true-again-in-court-180606/"
+    },
+    {
+      "label": "TorrentFreak — PIA no-logging tested in FBI case (2016)",
+      "url": "https://torrentfreak.com/vpn-providers-no-logging-claims-tested-in-fbi-case-160312/"
+    },
+    {
+      "label": "Wikipedia — Private Internet Access (founding 2010/Andrew Lee/London Trust Media, Kape acquisition Nov 2019, GPLv3 desktop+Android / MIT iOS)",
+      "url": "https://en.wikipedia.org/wiki/Private_Internet_Access"
+    },
+    {
+      "label": "Wikipedia — Kape Technologies (Crossrider history, Sagi ownership, brand portfolio)",
+      "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
+    },
+    {
+      "label": "CBN.com.cy — Unikmind (Teddy Sagi) successful take-private offer for Kape; £1.25bn; AIM delisting 31 May 2023",
+      "url": "https://www.cbn.com.cy/article/2023/5/9/711630/successful-public-offer-by-teddy-sagi-for-kape-technologies/"
+    },
+    {
+      "label": "Cloudwards — PIA review (multi-hop via Shadowsocks/SOCKS5, 91+ countries, crypto/gift-card payment)",
+      "url": "https://www.cloudwards.net/private-internet-access-review/"
+    },
+    {
+      "label": "CyberInsider — PIA 2025 Deloitte audit / rising government requests",
+      "url": "https://cyberinsider.com/pias-no-logs-claims-backed-by-new-deloitte-audit-as-govt-requests-surge/"
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "slug": "torguard",
+  "name": "TorGuard",
+  "website": "https://torguard.net",
+  "tagline": "A US-based, power-user-oriented VPN with a large server network and broad protocol/obfuscation support, but no independent audit and US-server torrenting restrictions.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "VPNetworks LLC",
+    "conglomerate": "Data Protection Services LLC",
+    "founded": 2012
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "TorGuard states it collects no VPN/proxy usage or connection logs (no traffic, DNS, timestamps, bandwidth, or IP logging). It does keep regularly-purged Apache web-server logs and uses analytics (Google Analytics) on its website. No independent audit verifies the no-logs claim."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Stealth VPN (OpenVPN Scramble / Shadowsocks / Stunnel obfuscation)",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM",
+    "handshake": "RSA-2048/4096"
+  },
+  "transparency": {
+    "openSourceClients": "partial",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "In a March 2022 US civil copyright suit brought by independent film studios, TorGuard reached a confidential settlement and agreed to use commercially reasonable efforts to block BitTorrent on its US servers; no money changed hands and no user activity logs were produced or demanded, but this was a pre-ruling settlement rather than a server seizure or raid that demonstrably yielded no data."
+  },
+  "infra": {
+    "simultaneousConnections": 8,
+    "countries": 50,
+    "servers": 3000,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 10.99,
+    "bestPerMonthUsd": 4.27,
+    "bestPlanTerm": "3-year",
+    "freeTrialDays": 7,
+    "refundDays": 7,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Torrenting/P2P users who connect to non-US servers",
+    "Technical/power users who want manual configs, port forwarding, dedicated IPs, and many protocols",
+    "People who want to pay anonymously with crypto, gift cards, or cash",
+    "Users who want to test the service first via a free 7-day trial"
+  ],
+  "notFor": [
+    "Users who require an independently audited, proven no-logs provider",
+    "Those who want to torrent on US-based servers",
+    "Privacy maximalists who prefer a non-Five-Eyes jurisdiction or fully open-source consumer clients",
+    "Users wanting a reliable, plug-and-play WireGuard experience"
+  ],
+  "pros": [
+    "Large network (3,000+ servers in 50+ countries) with extensive protocol support (OpenVPN, WireGuard, IKEv2) plus strong obfuscation/Stealth options for restrictive networks",
+    "Power-user features: port forwarding, dedicated/static IPs, scriptable configs, app- and network-level kill switch, and own encrypted DNS",
+    "Privacy-friendly signup with anonymous payment options including cryptocurrency (Bitcoin, Litecoin, Monero via self-hosted BTCPay Server), 100+ gift cards (PayGarden), and cash by mail",
+    "RAM-based server infrastructure, and a real-world 2022 lawsuit in which no user activity logs were produced",
+    "Genuine no-credit-card 7-day free trial available in addition to the money-back guarantee"
+  ],
+  "cons": [
+    "US jurisdiction (Five Eyes) with no independent no-logs or security audit to back the privacy claims",
+    "BitTorrent/P2P is blocked on US servers following the 2022 studio settlement",
+    "Reported reliability problems, notably a WireGuard implementation that testers in 2026 found unstable or inoperable",
+    "Flagship desktop/mobile clients are not open source (only router/OpenWRT helper apps are); short 7-day refund window with case-by-case exceptions; streaming access often needs a paid add-on/dedicated IP"
+  ],
+  "notes": "Parent entity is VPNetworks LLC, under the Data Protection Services LLC holding structure (which also owns Private-Email and PrivateRouter); not part of a large VPN conglomerate (e.g., Kape/Gen/Ziff Davis). HQ in Orlando, Florida; the company briefly used a Nevis offshore structure (~2013) before moving back to the US. Pricing has three tiers (Standard/Pro/Premium) with simultaneous connections of 8/12/30 respectively; the figure given here is for the base Standard plan. Cheapest effective rate (~$4.27–$4.28/mo) is on the 3-year Standard plan at regular pricing; frequent promo codes push this lower. A 7-day free trial (no credit card required) is offered at torguard.net/free-trial/ alongside a 7-day money-back guarantee. Streaming/dedicated-IP features typically cost extra (~$7.99/mo add-on). WireGuard, IKEv2, and OpenVPN are supported in-app; additional protocols (L2TP/IPsec, Stunnel, Shadowsocks, OpenConnect, V2Ray) are available. Official open-source code (github.com/torguardvpn) covers OpenWRT/router client apps and server tooling, but the main consumer GUI apps are closed-source. No National Security Letter or FISA order has been reported received per the company.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "TorGuard official 7-day free-trial page",
+      "url": "https://torguard.net/free-trial/"
+    },
+    {
+      "label": "TorGuard official site (buy/pricing)",
+      "url": "https://torguard.net/buy-vpn/"
+    },
+    {
+      "label": "TorGuard official GitHub org (open-source router/server apps)",
+      "url": "https://github.com/torguardvpn"
+    },
+    {
+      "label": "CyberInsider — TorGuard VPN Review 2026 (ownership, logging, no audit, WireGuard issues)",
+      "url": "https://cyberinsider.com/vpn/reviews/torguard/"
+    },
+    {
+      "label": "Security.org — TorGuard Review & Pricing 2026 (tiers, 7-day refund, connections)",
+      "url": "https://www.security.org/vpn/torguard/"
+    },
+    {
+      "label": "vpnMentor — TorGuard Review 2026 (RAM-only, $4.27 3-year, free trial, payments)",
+      "url": "https://www.vpnmentor.com/reviews/torguard-anonymous-vpn/"
+    },
+    {
+      "label": "Cloudwards — TorGuard Review 2026 ($4.28 3-year, 7-day trial/guarantee, no audit)",
+      "url": "https://www.cloudwards.net/torguard-review/"
+    },
+    {
+      "label": "AllAboutCookies — TorGuard Review 2026 (7-day trial, $4.28, tiers/connections, no audit)",
+      "url": "https://allaboutcookies.org/torguard-vpn-review"
+    },
+    {
+      "label": "SafetyDetectives — TorGuard Review 2026 (no audit)",
+      "url": "https://www.safetydetectives.com/best-vpns/torguard/"
+    },
+    {
+      "label": "TorrentFreak — TorGuard settles piracy lawsuit, blocks US torrent traffic (2022); no logs produced/demanded",
+      "url": "https://torrentfreak.com/torguard-settles-piracy-lawsuit-and-agrees-to-block-torrent-traffic-on-u-s-servers-220314/"
+    },
+    {
+      "label": "GreyCoder — VPNs with public audits (TorGuard: none)",
+      "url": "https://greycoder.com/a-list-of-vpn-providers-with-public-audits/"
+    },
+    {
+      "label": "GreyCoder — VPNs with anonymous payments (TorGuard crypto/gift cards/cash, Monero via BTCPay)",
+      "url": "https://greycoder.com/best-vpns-with-anonymous-payments-bitcoin-monero-gift-cards-cash/"
+    }
+  ]
+}

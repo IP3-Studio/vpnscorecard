@@ -1,0 +1,152 @@
+{
+  "slug": "ipvanish",
+  "name": "IPVanish",
+  "website": "https://www.ipvanish.com",
+  "tagline": "US-based, Ziff Davis-owned VPN with unlimited device connections and a twice-audited no-logs policy, shadowed by a 2016 logging disclosure.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "NetProtect (consumer VPN unit within Ziff Davis's VIPRE Security Group)",
+    "conglomerate": "Ziff Davis",
+    "founded": 2012
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "unknown",
+    "ip": "none",
+    "summary": "Claims a strict no-logs policy, independently audited twice under Ziff Davis ownership (Leviathan Security Group 2022; Schellman, finalized Feb 21 2025). The 2025 audit assessed nine technical areas (logging configs, server images, simulated sessions) and confirmed IPVanish does not log customer traffic/activity, traffic metadata, DNS queries, or user IP addresses across all servers, regions, and tiers; abuse-detection systems were noted to run in memory retaining only anonymized aggregate stats. Bandwidth logging was not specifically itemized in the published audit scope. Note: in 2016 (pre-Ziff Davis, under Highwinds) IPVanish handed detailed connection logs to US Homeland Security despite a no-logs claim."
+  },
+  "privacy": {
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "anonymousSignup": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "none",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256 (OpenVPN) / ChaCha20 (WireGuard)",
+    "handshake": "unknown"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Leviathan Security Group",
+        "year": 2022,
+        "scope": "No-logs audit confirming IPVanish complies with the no-log statements in its privacy policy and does not log or store customer traffic data or internet activity; included staff interviews, configuration inspection, technical documentation review, and server deployment review.",
+        "url": "https://www.businesswire.com/news/home/20220405005182/en/IPVanish-Certifies-No-logs-VPN-Protection-with-Third-party-Audit"
+      },
+      {
+        "firm": "Schellman",
+        "year": 2025,
+        "scope": "No-logs audit (finalized Feb 21, 2025) across nine technical areas confirming IPVanish does not log customer traffic/activity, traffic metadata, DNS queries, or user IP addresses, and applies the policy uniformly across all servers, regions, and subscription tiers.",
+        "url": "https://www.businesswire.com/news/home/20250410657320/en/IPVanish-Affirms-No-Log-Commitment-with-Latest-Independent-Audit"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "no",
+    "realWorldNoLog": "Failed in practice in 2016: under then-owner Highwinds, IPVanish supplied US Homeland Security Investigations with detailed connection logs (connection/disconnection timestamps, the user's real Comcast source IP, account details) that identified a user, despite advertising a no-logs policy. Surfaced publicly via court documents in June 2018 (reported by TorrentFreak). This predates Ziff Davis ownership and the 2022/2025 audits. No documented post-audit case has tested the current no-logs claim."
+  },
+  "infra": {
+    "simultaneousConnections": "unlimited",
+    "countries": 110,
+    "servers": 3200,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 12.99,
+    "bestPerMonthUsd": 2.19,
+    "bestPlanTerm": "2-year (Essential)",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "yes",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Households wanting to cover many devices on one subscription",
+    "Streaming and general everyday privacy on a budget",
+    "Torrenting/P2P users (allowed on all servers, with free SOCKS5)"
+  ],
+  "notFor": [
+    "High-risk users (journalists, activists) needing strong jurisdiction and a clean track record",
+    "People who require anonymous/crypto payment",
+    "Users who insist on open-source clients, port forwarding, or fully RAM-only infrastructure"
+  ],
+  "pros": [
+    "Unlimited simultaneous device connections on every plan",
+    "No-logs policy independently audited twice under Ziff Davis (Leviathan 2022, Schellman 2025)",
+    "Solid feature set: WireGuard, kill switch, Double Hop multihop, Scramble obfuscation, private DNS, full P2P support with free SOCKS5",
+    "Cheap long-term intro pricing (around $2.19/mo on the 2-year Essential plan)"
+  ],
+  "cons": [
+    "US (Five Eyes) jurisdiction is unfavorable for privacy",
+    "Documented 2016 incident where it handed detailed connection logs to Homeland Security despite a no-logs claim",
+    "No anonymous payment options (no crypto or cash; card/PayPal/Google Pay only)",
+    "Apps are not open source, no port forwarding, and RAM-only server migration is still incomplete; steep price jump on renewal"
+  ],
+  "notes": "Founded 2012 by Mudhook Media Inc. under Highwinds Network Group (Orlando, FL); acquired by StackPath in 2017 (when Highwinds was bought), then by J2 Global in 2019, which rebranded to Ziff Davis. Now operated by the NetProtect consumer-VPN unit within Ziff Davis's VIPRE Security Group, HQ'd in New York City. The 2016 logging incident (handover of connection timestamps + real source IP under Highwinds, surfaced via court docs June 2018) is the single most important caveat and is why courtTested is 'no' (a subpoena DID yield usable user data). Two post-acquisition audits (Leviathan 2022, Schellman 2025) plus a Trust Center/Transparency Report (Q1 2025: 35 legal requests, no user data provided) are the counterweight. 'enemyOfInternet' = no (the US is not on RSF's Enemies of the Internet list). Verification confirmed the draft was largely accurate; only material change was portForwarding (unknown -> no), plus minor refinements to the parent-company layer and pricing/refund caveat.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Wikipedia — IPVanish (history, ownership, 2016 incident, audits)",
+      "url": "https://en.wikipedia.org/wiki/IPVanish"
+    },
+    {
+      "label": "BusinessWire — IPVanish Affirms No-Log Commitment with Latest Independent Audit (Schellman, 2025)",
+      "url": "https://www.businesswire.com/news/home/20250410657320/en/IPVanish-Affirms-No-Log-Commitment-with-Latest-Independent-Audit"
+    },
+    {
+      "label": "BusinessWire — IPVanish Certifies No-Logs VPN Protection with Third-Party Audit (Leviathan, 2022)",
+      "url": "https://www.businesswire.com/news/home/20220405005182/en/IPVanish-Certifies-No-logs-VPN-Protection-with-Third-party-Audit"
+    },
+    {
+      "label": "CyberInsider — IPVanish Confirms No-Logs Policy in New Independent Audit (Schellman scope, Feb 21 2025)",
+      "url": "https://cyberinsider.com/ipvanish-confirms-no-logs-policy-in-new-independent-audit/"
+    },
+    {
+      "label": "TorrentFreak — IPVanish 'No-Logging' VPN Led Homeland Security to Comcast User (2016 incident)",
+      "url": "https://torrentfreak.com/ipvanish-no-logging-vpn-led-homeland-security-to-comcast-user-180505/"
+    },
+    {
+      "label": "CyberInsider — IPVanish VPN Review 2026 (features, protocols, infrastructure, payments, RAM-only timeline)",
+      "url": "https://cyberinsider.com/vpn/reviews/ipvanish/"
+    },
+    {
+      "label": "Security.org — IPVanish Cost & Plan Pricing in 2026",
+      "url": "https://www.security.org/vpn/ipvanish/"
+    },
+    {
+      "label": "VPNAlert — IPVanish for Torrenting 2025 (no port forwarding, SOCKS5)",
+      "url": "https://vpnalert.com/guides/ipvanish-torrenting/"
+    },
+    {
+      "label": "Wikipedia — VIPRE (Ziff Davis brand; NetProtect, IPVanish, StrongVPN)",
+      "url": "https://en.wikipedia.org/wiki/VIPRE"
+    },
+    {
+      "label": "VPNpro — IPVanish pricing in 2026",
+      "url": "https://vpnpro.com/best-vpn-services/ipvanish-pricing/"
+    }
+  ]
+}

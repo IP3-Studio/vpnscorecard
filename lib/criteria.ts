@@ -150,11 +150,11 @@ function eyesCell(v: Vpn["jurisdiction"]["eyes"]): Cell {
     case "none":
       return good("None");
     case "fourteen":
-      return partial("14 Eyes", 0.4);
+      return partial("14 Eyes", 0.55);
     case "nine":
-      return partial("9 Eyes", 0.25);
+      return partial("9 Eyes", 0.4);
     case "five":
-      return bad("5 Eyes");
+      return bad("5 Eyes", 0.25);
     default:
       return UNKNOWN;
   }
@@ -369,6 +369,21 @@ export const CRITERIA: Criterion[] = [
     weight: 1,
     explain: "Publishes a warrant canary or regular transparency report.",
     evaluate: (v) => yesBonus(v.transparency.transparencyReport),
+  },
+  {
+    id: "courtTested",
+    label: "Court / seizure-tested no-logs",
+    short: "Battle-tested",
+    category: "transparency",
+    weight: 2,
+    explain:
+      "No-logs proven in the real world — a server seizure, police raid, or subpoena that produced no usable user data. A bonus, never a penalty.",
+    evaluate: (v) =>
+      v.transparency.courtTested === "yes"
+        ? good("Proven")
+        : v.transparency.courtTested === "no"
+          ? neutral("Untested")
+          : UNKNOWN,
   },
 
   // --- Value ---

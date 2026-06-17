@@ -1,0 +1,134 @@
+{
+  "slug": "astrill",
+  "name": "Astrill VPN",
+  "website": "https://www.astrill.com",
+  "tagline": "A long-running premium VPN best known for defeating censorship in China via its proprietary StealthVPN protocol.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Liechtenstein",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Veloxee Corp",
+    "founded": 2009
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "unknown",
+    "timestamps": "some",
+    "bandwidth": "some",
+    "ip": "some",
+    "summary": "No traffic/browsing logs by design (server software cannot see which sites users visit). However the privacy policy states it keeps the last 20 connection records per account (connection time, duration, country, device type, app version) and tracks your real IP plus connection time, device type and app version during an active session (generally removed permanently on disconnect). Bandwidth is counted in aggregate (total transferred bytes) with no personally identifiable information. Extended retention can occur in case of irregularities/misuse."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "StealthVPN (and OpenWeb)",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "unknown",
+    "ramOnly": "yes",
+    "portForwarding": "yes",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256 (OpenVPN); ChaCha20 (WireGuard)",
+    "handshake": "RSA / ECDHE (per OpenVPN & WireGuard standards)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server-seizure, raid, or subpoena outcome demonstrating that no usable user data existed. Astrill has never commissioned an independent no-logs or security audit."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 50,
+    "servers": 300,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 30,
+    "bestPerMonthUsd": 12.5,
+    "bestPlanTerm": "2-year",
+    "freeTrialDays": 7,
+    "refundDays": 0,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "yes"
+  },
+  "bestFor": [
+    "Users in China or other high-censorship countries who need reliable, obfuscated access",
+    "Travellers and expats who prioritize censorship circumvention over price",
+    "People who want manual control and broad protocol/router support"
+  ],
+  "notFor": [
+    "Budget-conscious users — it is one of the priciest options on the market",
+    "Privacy purists who require an independently audited, open-source, strict-zero-logs provider",
+    "Anyone wanting a generous money-back guarantee, since refunds are not offered"
+  ],
+  "pros": [
+    "Highly reliable in China and other heavily censored regions via the proprietary StealthVPN obfuscation protocol",
+    "Strong feature set: kill switch, port forwarding, multi-hop, RAM-only servers, fast P2P, WireGuard + OpenVPN",
+    "Accepts privacy-friendly payments including Bitcoin",
+    "Long operating history (since 2009) with apps across all major platforms including Linux"
+  ],
+  "cons": [
+    "Among the most expensive VPNs (~$30/month month-to-month) and best long-term rate (~$12.50/mo on the 2-year plan) is still pricey",
+    "No independent audit ever; clients and StealthVPN/OpenWeb protocols are closed source",
+    "Privacy policy admits last-20 connection records (timestamps, country, device) and session IP, undercutting strict no-logs claims",
+    "Effectively no refunds (all sales final per official policy), so the 7-day trial is the only safety net"
+  ],
+  "notes": "Jurisdiction has a documented ambiguity: Astrill was historically associated with Seychelles (older Terms referenced it), but the current official Privacy Policy places the company \"Veloxee Corp., with registered seat at Staedtle 36, 9460 Vaduz, Principality of Liechtenstein.\" Liechtenstein is outside the 5/9/14 Eyes alliances. The official FAQ states \"We have over 300 servers located in 50+ countries\"; third-party reviews variously cite 300+ servers and 56-60 countries, so exact counts are uncertain (official floor used here). The official FAQ/refund policy states \"All Astrill service sales are final and no refunds are possible,\" while a few affiliate reviews claim a 30-day money-back guarantee — the no-refund policy is treated as authoritative. A free 7-day trial (limited, email + phone verification, no payment details; not available in China) is confirmed. Accepted payments per FAQ: credit/debit cards, bank wire, PayPal, Perfect Money, WeChat Pay, AliPay and Bitcoin (Bitcoin is the only cryptocurrency; no cash option listed).",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Astrill official Privacy Policy (logging records, Veloxee Corp / Vaduz, Liechtenstein address)",
+      "url": "https://www.astrill.com/privacy-policy"
+    },
+    {
+      "label": "Astrill official FAQ (no refunds / sales final, 7-day trial, payment methods, '300 servers / 50+ countries', 5 devices)",
+      "url": "https://www.astrill.com/faq"
+    },
+    {
+      "label": "Astrill official site (home/features)",
+      "url": "https://www.astrill.com"
+    },
+    {
+      "label": "Astrill no-logs feature page",
+      "url": "https://www.astrill.com/vpn-for/no-logs"
+    },
+    {
+      "label": "Security.org — Astrill VPN Review 2026 (pricing $30 / $180 / $300; session IP retention; no audit mentioned)",
+      "url": "https://www.security.org/vpn/astrill-vpn/review/"
+    },
+    {
+      "label": "vpnMentor — Astrill VPN Review 2026 (China, pricing, no audit)",
+      "url": "https://www.vpnmentor.com/reviews/astrill-vpn/"
+    },
+    {
+      "label": "Top10VPN — Astrill VPN Review (closed-source StealthVPN/OpenWeb, no audit)",
+      "url": "https://www.top10vpn.com/reviews/astrill/"
+    },
+    {
+      "label": "SafetyDetectives — Astrill VPN Review 2026 (7-day trial not in China, no refunds)",
+      "url": "https://www.safetydetectives.com/best-vpns/astrill/"
+    },
+    {
+      "label": "AllAboutCookies — Astrill VPN Review 2026 (jurisdiction Liechtenstein/Veloxee, last-20 connection records)",
+      "url": "https://allaboutcookies.org/astrill-vpn-review"
+    }
+  ]
+}

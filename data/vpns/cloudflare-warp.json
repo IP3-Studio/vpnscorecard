@@ -1,0 +1,169 @@
+{
+  "slug": "cloudflare-warp",
+  "name": "Cloudflare WARP",
+  "website": "https://one.one.one.one/",
+  "tagline": "Cloudflare's free traffic-encryption app built on its 1.1.1.1 resolver, with an optional paid WARP+ tier for faster routing.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Cloudflare, Inc.",
+    "founded": 2009
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "some",
+    "timestamps": "some",
+    "bandwidth": "yes",
+    "ip": "yes",
+    "summary": "Not a no-logs VPN. Cloudflare's Application Privacy Policy lists operational data that includes source IP and source port plus destination IP, the services enabled, and the amount of data transferred, stored for no longer than two years after last use of the application. Cloudflare states it does not retain a link between the IP you use to access the Internet and the websites you visit. DNS query data from the 1.1.1.1 resolver excludes client IP (source IPs are truncated/anonymized and deleted within ~25 hours; the bulk of DNS data is stored ~24 hours). Cloudflare states it will not sell or rent personal information but will disclose data in response to subpoenas, court orders, or legal process, or in an emergency to protect any person."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCrypto": "no",
+    "acceptsCash": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "MASQUE (Cloudflare's HTTP/3 + QUIC tunneling transport, increasingly the default); WireGuard is implemented via Cloudflare's open-source BoringTun.",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "no",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20-Poly1305 (WireGuard, TLS_CHACHA20_POLY1305_SHA256); MASQUE rides TLS 1.3 over QUIC/HTTP3",
+    "handshake": "WireGuard Noise / Curve25519; MASQUE uses TLS 1.3"
+  },
+  "transparency": {
+    "openSourceClients": "partial",
+    "audits": [
+      {
+        "firm": "KPMG (Big-4 accounting firm)",
+        "year": 2025,
+        "scope": "Independent privacy examination of the 1.1.1.1 PUBLIC DNS RESOLVER ONLY (period Feb 1, 2024 - Jan 31, 2025; results published by Cloudflare July 10, 2025; reported as the fourth consecutive examination with no exceptions). Did NOT cover the WARP VPN tunnel.",
+        "url": "https://blog.cloudflare.com/tag/privacy/"
+      },
+      {
+        "firm": "KPMG (Big-4 accounting firm)",
+        "year": 2020,
+        "scope": "Independent privacy examination of the 1.1.1.1 PUBLIC DNS RESOLVER ONLY (period Feb 1 - Oct 31, 2019; results announced March 2020). Did NOT cover the WARP VPN tunnel.",
+        "url": "https://blog.cloudflare.com/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination/"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No public court-tested no-log event specific to the WARP VPN tunnel. Cloudflare publishes a semi-annual transparency report covering legal data requests across its services, and KPMG has examined the 1.1.1.1 DNS resolver's privacy commitments four consecutive years (2020 through the July 2025 report) -- but the WARP tunnel itself has never been independently audited."
+  },
+  "infra": {
+    "simultaneousConnections": 5,
+    "countries": 0,
+    "servers": 0,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 4.99,
+    "bestPerMonthUsd": 4.99,
+    "bestPlanTerm": "monthly",
+    "freeTrialDays": 0,
+    "refundDays": 0,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "falseClaims": "no",
+    "contradictoryLogging": "no"
+  },
+  "bestFor": [
+    "Encrypting DNS and last-mile traffic against a snooping ISP or public Wi-Fi",
+    "Users wanting a free, low-friction speed/privacy boost without configuration",
+    "Improving connection reliability on networks that throttle or block standard VPNs"
+  ],
+  "notFor": [
+    "Anyone needing true anonymity, IP hiding, or to defeat geo-blocking/streaming locks",
+    "Privacy-critical or threat-model users who require a verified no-logs, audited VPN",
+    "Torrenting/P2P where a kill switch and leak protection matter"
+  ],
+  "pros": [
+    "Genuinely free at the basic tier with no data caps; WARP+ is inexpensive (~$4.99/mo or less)",
+    "Built on Cloudflare's fast global network and 1.1.1.1 resolver; MASQUE/HTTP3 transport resists VPN port blocking",
+    "Cloudflare commits in writing that it will not sell or rent personal data, and DNS query data excludes client IP",
+    "Easy one-tap apps on Windows, macOS, Linux, iOS, and Android; runs its own encrypted DNS",
+    "The underlying 1.1.1.1 resolver's privacy commitments have passed four consecutive independent KPMG examinations (most recent published July 2025)"
+  ],
+  "cons": [
+    "Not a privacy/anonymity VPN -- Cloudflare itself states it is 'not designed to hide your identity from the Internet properties you access,' and your IP can be exposed in some cases",
+    "Not no-logs: source IP/port and destination IP are recorded as operational data and retained up to two years after last use",
+    "No kill switch, no manual server/country selection, and no port forwarding",
+    "Independent audits cover only the 1.1.1.1 DNS resolver, never the WARP tunnel; the official client is proprietary (only the BoringTun library is open source)",
+    "No first-party money-back guarantee -- refunds depend on Apple/Google app-store policies"
+  ],
+  "notes": "Cloudflare WARP is fundamentally a consumer front-end to the 1.1.1.1 encrypted resolver plus traffic encryption over Cloudflare's network, not a conventional commercial VPN. It does not let users pick an exit location or spoof their country, and Cloudflare explicitly disclaims identity-hiding. 'Simultaneous connections' is set to 5 per the WARP+ subscription model; the free tier is effectively unlimited per third-party review. Server/country counts are left at 0 because WARP routes through Cloudflare's anycast edge (300+ cities) rather than a selectable VPN server list -- the traditional 'server count' metric does not map cleanly. Pricing is regionally variable (historically pegged roughly to local pricing); $4.99 is the US reference figure and WARP+ is purchased through the mobile app stores. No long-term discount plan or first-party refund window is published for WARP+. Independent audits (KPMG, four consecutive years through July 2025) cover only the 1.1.1.1 DNS resolver's privacy commitments, not the WARP VPN tunnel.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "Cloudflare Application Privacy Policy (consumer 1.1.1.1 + WARP operational data: source IP/port, destination IP, services enabled, data transferred; 2-year retention; ~24h DNS; no-sale; law-enforcement disclosure)",
+      "url": "https://www.cloudflare.com/application/privacypolicy/"
+    },
+    {
+      "label": "Cloudflare 1.1.1.1 Application Terms of Service ('not designed to hide your identity')",
+      "url": "https://www.cloudflare.com/application/terms/"
+    },
+    {
+      "label": "Cloudflare 1.1.1.1 Public DNS Resolver privacy commitments (developer docs: source IP truncation/anonymization, deletion within 25 hours, 0.05% sampling)",
+      "url": "https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/"
+    },
+    {
+      "label": "Cloudflare blog: Results of the 1.1.1.1 Public DNS Resolver Privacy Examination (KPMG / Big-4, period Feb 1-Oct 31 2019, announced March 2020, resolver only)",
+      "url": "https://blog.cloudflare.com/announcing-the-results-of-the-1-1-1-1-public-dns-resolver-privacy-examination/"
+    },
+    {
+      "label": "Cloudflare blog Privacy tag (most recent 1.1.1.1 resolver privacy-examination posts, incl. the July 2025 KPMG results and a 2026-04-01 follow-up)",
+      "url": "https://blog.cloudflare.com/tag/privacy/"
+    },
+    {
+      "label": "BleepingComputer: Cloudflare's 1.1.1.1 DNS Passes Privacy Audit, Some Issues Found (names KPMG as auditor; resolver-only scope; 0.05% packet sampling caveat)",
+      "url": "https://www.bleepingcomputer.com/news/security/cloudflares-1111-dns-passes-privacy-audit-some-issues-found/"
+    },
+    {
+      "label": "CyberInsider: Independent audit confirms Cloudflare's 1.1.1.1 resolver privacy claims (Big-4 firm, resolver-only scope, 2020 + most-recent examination)",
+      "url": "https://cyberinsider.com/independent-audit-confirms-cloudflares-1-1-1-1-resolver-privacy-claims/"
+    },
+    {
+      "label": "Cloudflare, Inc. SEC Form 10-K FY2020/FY2025 KPMG consent exhibits (confirms KPMG is Cloudflare's independent registered accounting firm)",
+      "url": "https://www.sec.gov/Archives/edgar/data/0001477333/000147733321000009/fy202010-kex231xkpmgconsent.htm"
+    },
+    {
+      "label": "Cloudflare blog: Zero Trust WARP tunneling with a MASQUE (protocol detail)",
+      "url": "https://blog.cloudflare.com/zero-trust-warp-with-a-masque/"
+    },
+    {
+      "label": "Cloudflare WARP device/client settings (MASQUE vs WireGuard, cipher suites)",
+      "url": "https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/warp/configure-warp/warp-settings/"
+    },
+    {
+      "label": "Cloudflare BoringTun (open-source WireGuard implementation underlying WARP)",
+      "url": "https://github.com/cloudflare/boringtun"
+    },
+    {
+      "label": "How do I subscribe to WARP and WARP+ Unlimited? (Cloudflare support: WARP+ purchased via Apple/Google app stores, regionally variable price)",
+      "url": "https://support.cloudflarewarp.com/hc/en-us/articles/360025731413-How-do-I-subscribe-to-WARP-and-WARP-Unlimited"
+    },
+    {
+      "label": "vpnMentor WARP review 2026 (free/WARP+ $4.99 price, no first-party refund/money-back, 5 devices on WARP+, no kill switch, P2P/leak notes, US/5-Eyes jurisdiction)",
+      "url": "https://www.vpnmentor.com/reviews/warp-by-cloudflare/"
+    },
+    {
+      "label": "one.one.one.one official app/product page",
+      "url": "https://one.one.one.one/"
+    }
+  ]
+}

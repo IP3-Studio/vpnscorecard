@@ -1,0 +1,150 @@
+{
+  "slug": "vyprvpn",
+  "name": "VyprVPN",
+  "website": "https://www.vyprvpn.com/",
+  "tagline": "A long-running VPN with its own server network and the Chameleon obfuscation protocol, now US-owned with an aging no-logs audit.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Certida, LLC",
+    "conglomerate": "Certida",
+    "founded": 2009
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Company claims a strict no-logs policy (no activity, IP, connection timestamps, or DNS requests), backed by its own VyprDNS. The only independent verification is a 2018 Leviathan Security Group audit performed under prior Golden Frog/Swiss ownership; it has not been re-audited since the 2023 Certida acquisition, and the dedicated VPN-specific privacy policy that previously detailed what was/was not logged was reportedly replaced with a generic website privacy policy. The Trust page now states only 'We do not collect any data or metadata from our users, and nothing is stored from their sessions.' Logging fields reflect the stated policy but are not currently independently verified."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCrypto": "no",
+    "acceptsCash": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Chameleon (256-bit OpenVPN-based, scrambles packet metadata to defeat DPI/VPN blocking)",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256",
+    "handshake": "RSA-2048 / ECDH (Curve25519 for WireGuard)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Leviathan Security Group",
+        "year": 2018,
+        "scope": "Independent no-logs / no-log network verification (performed under prior Golden Frog ownership; not repeated since the 2023 Certida acquisition)",
+        "url": "https://www.vyprvpn.com/blog/post/no-log-vpn-service"
+      }
+    ],
+    "transparencyReport": "unknown",
+    "courtTested": "unknown",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena outcome is publicly known. The 2018 Leviathan audit is the only third-party validation and predates the US ownership change; no Certida-commissioned re-audit has been published as of 2026."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 60,
+    "servers": 700,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 10,
+    "bestPerMonthUsd": 3,
+    "bestPlanTerm": "2-year",
+    "freeTrialDays": 3,
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "falseClaims": "unknown",
+    "contradictoryLogging": "unknown"
+  },
+  "bestFor": [
+    "Users in censored or restrictive networks who need obfuscation (Chameleon protocol)",
+    "People who value a self-owned server network over rented infrastructure",
+    "Streaming and general everyday privacy on a mid-range budget, across many devices (10 connections)"
+  ],
+  "notFor": [
+    "Privacy maximalists who require a non-Five-Eyes jurisdiction and a recent, post-ownership-change audit",
+    "Users who need anonymous signup, cash, or cryptocurrency payment",
+    "People who want advanced features like multi-hop, port forwarding, RAM-only servers, or open-source clients"
+  ],
+  "pros": [
+    "Owns and operates its entire server network (no rented third-party servers) with its own zero-knowledge VyprDNS",
+    "Chameleon proprietary protocol obfuscates traffic to bypass DPI, VPN blocking, and censorship",
+    "Was the first major VPN to commission an independent no-logs audit (Leviathan Security Group, 2018)",
+    "Supports modern protocols (WireGuard, OpenVPN, IKEv2) with a kill switch, allows P2P/torrenting, and permits up to 10 simultaneous connections"
+  ],
+  "cons": [
+    "Now headquartered in the US (Five Eyes) after the 2023 Certida acquisition, down from privacy-friendly Switzerland",
+    "No-logs audit is from 2018 and has not been refreshed since the ownership change; the dedicated VPN privacy policy was reportedly replaced by a generic website policy",
+    "Requires a name to register and does not accept cryptocurrency, weakening anonymous signup",
+    "Lacks advanced features such as multi-hop, port forwarding, and RAM-only servers; clients are not open source"
+  ],
+  "notes": "VyprVPN was created by Golden Frog and historically marketed as Swiss-based (incorporated in Switzerland, operated largely from Texas). In 2023 it was acquired by Certida, LLC, a Texas, US company, which moved the jurisdiction to the United States; the Trust page now identifies \"Certida, LLC\" as the legal operator. The widely cited Leviathan Security Group no-logs audit dates to 2018 and was conducted under the prior owner; reviewers note it has not been repeated post-acquisition and that the dedicated VPN-specific privacy policy was replaced with a generic website policy, so the current no-logs status is not independently proven. CORRECTION vs draft: simultaneous connections is officially 10 (not 5). CORRECTION vs draft: the claim that PPTP and L2TP/IPsec were discontinued in 2026 is not supported — VyprVPN's official protocol page still lists L2TP/IPsec as supported and lists PPTP only as 'deprecated' (likely still works, limited support), alongside WireGuard, OpenVPN, Chameleon, and IKEv2. Pricing (monthly $10; ~$3/mo effective on a multi-year plan; 30-day money-back guarantee; 3-day mobile-only free trial; no free tier) was corroborated via Cloudwards, CyberInsider, and vpnMentor because the official pricing/buy pages returned HTTP 403.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "VyprVPN Trust page (operator = Certida, LLC; no-logs statement)",
+      "url": "https://www.vyprvpn.com/trust"
+    },
+    {
+      "label": "VyprVPN official site (operated by Certida, LLC)",
+      "url": "https://www.vyprvpn.com/"
+    },
+    {
+      "label": "VyprVPN: World's First Publicly Audited No-Log VPN (Leviathan, 2018)",
+      "url": "https://www.vyprvpn.com/blog/post/no-log-vpn-service"
+    },
+    {
+      "label": "Certida FAQ – VyprVPN Support (ownership, US-based, audited no-log network)",
+      "url": "https://support.vyprvpn.com/hc/en-us/articles/15903991797645-Certida-FAQ"
+    },
+    {
+      "label": "VyprVPN Support: simultaneous connections (official 10-device limit)",
+      "url": "https://support.vyprvpn.com/hc/en-us/articles/360040964191-What-are-simultaneous-connections-and-how-many-devices-can-I-use"
+    },
+    {
+      "label": "VyprVPN Support: which VPN protocols are supported (L2TP/IPsec supported; PPTP deprecated)",
+      "url": "https://support.vyprvpn.com/hc/en-us/articles/360038096091-Which-VPN-protocols-does-VyprVPN-support"
+    },
+    {
+      "label": "VPNCompare: VyprVPN ownership change brings US jurisdiction move",
+      "url": "https://www.vpncompare.co.uk/vyprvpn-ownership-change-brings-us-jurisdiction-move/"
+    },
+    {
+      "label": "VPNCompare: VyprVPN Review 2026 (jurisdiction, audit, protocols, connections)",
+      "url": "https://www.vpncompare.co.uk/vyprvpn-review/"
+    },
+    {
+      "label": "Cloudwards VyprVPN Review 2026 (pricing, logging, audit, servers)",
+      "url": "https://www.cloudwards.net/vyprvpn-review/"
+    },
+    {
+      "label": "vpnMentor VyprVPN Review 2026 (pricing, audit, jurisdiction, crypto)",
+      "url": "https://www.vpnmentor.com/reviews/vyprvpn/"
+    },
+    {
+      "label": "CyberInsider VyprVPN Review 2026 (logging, jurisdiction, refund, drawbacks)",
+      "url": "https://cyberinsider.com/vpn/reviews/vyprvpn/"
+    }
+  ]
+}

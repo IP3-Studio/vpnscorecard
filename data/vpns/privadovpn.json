@@ -1,0 +1,139 @@
+{
+  "slug": "privadovpn",
+  "name": "PrivadoVPN",
+  "website": "https://privadovpn.com",
+  "tagline": "Iceland-based VPN known for an unusually generous free tier and cheap long-term plans, but with no published independent audit.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Iceland",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Privado Networks ehf. (Iceland)",
+    "founded": 2019
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "Markets a 'zero-log' policy: per its Privacy Policy (eff. 1 May 2026) it does not retain browsing history, traffic destination, data content, VPN-session IP logs, or DNS queries. It does keep account data (email, username, hashed password; ~30 days post-deletion), payment/billing records (kept ~7 years under Icelandic bookkeeping law), and aggregate per-account/plan bandwidth counters, plus self-hosted Sentry crash reports (~1 yr) and anonymous aggregate app statistics. Independent reviewers (Top10VPN) note the account/bandwidth metadata means this is 'not a no-logs privacy policy' in the strictest sense, and the claim is unaudited. No connection-timestamp retention is described in the policy, so 'timestamps: none' is inferred rather than explicitly stated."
+  },
+  "privacy": {
+    "acceptsCrypto": "yes",
+    "acceptsCash": "unknown",
+    "anonymousSignup": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "yes",
+    "wireguard": "yes",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "yes"
+  },
+  "encryption": {
+    "dataCipher": "AES-256-GCM",
+    "handshake": "unknown"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [],
+    "transparencyReport": "no",
+    "courtTested": "no",
+    "realWorldNoLog": "No documented server seizure, raid, or subpoena has tested the no-logs claim; no warrant canary. No published independent no-logs or security audit as of June 2026 (confirmed by Top10VPN, vpnMentor, Security.org and PCMag/Wikipedia)."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "countries": 50,
+    "servers": 500,
+    "linux": "cli"
+  },
+  "pricing": {
+    "monthlyUsd": 10.99,
+    "bestPerMonthUsd": 1.11,
+    "bestPlanTerm": "24 months",
+    "freeTrialDays": 0,
+    "refundDays": 30,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "unknown"
+  },
+  "bestFor": [
+    "Budget users wanting a low-cost long-term VPN",
+    "People who need a capable free VPN for light/occasional use",
+    "Streaming and general privacy on multiple devices",
+    "Casual torrenting/P2P"
+  ],
+  "notFor": [
+    "Threat models requiring independently audited, court-proven no-logs guarantees",
+    "Users who need open-source clients or a native Linux GUI",
+    "Anyone needing port forwarding or multihop",
+    "Fully anonymous signup (email is required)"
+  ],
+  "pros": [
+    "Genuinely useful free tier (10 GB per 30 days, full AES-256, kill switch, split tunneling, P2P, one device)",
+    "Very cheap long-term plans (around $1.11/month on the 2-year plan) with 10 simultaneous connections",
+    "Privacy-friendly jurisdiction after 2026 move to Iceland (outside 5/9/14 Eyes and EU data-retention rules)",
+    "Solid core feature set: WireGuard/OpenVPN/IKEv2, own DNS, kill switch, split tunneling, OpenVPN 'Scramble' obfuscation, and reliable Netflix unblocking"
+  ],
+  "cons": [
+    "No published independent no-logs or security audit, no transparency report, and no warrant canary",
+    "Never court-tested by a documented seizure or subpoena, so the no-logs claim is unverified",
+    "Closed-source apps and no native Linux GUI (manual/CLI setup only)",
+    "Retains some account-level metadata (bandwidth, billing records, diagnostics) and lacks advanced privacy features like multihop and port forwarding"
+  ],
+  "notes": "Founded 2019 as Privado Networks (originally Zug, Switzerland). In early 2026 it relocated its legal home/data controller to Iceland (Privado Networks ehf., Garðabær near Reykjavík), citing Switzerland's proposed March 2025 OSCPT surveillance/data-retention amendment; new ToS/Privacy Policy effective 1 May 2026, with the Swiss AG and a Delaware LLC retained only as payment processors. Some official marketing pages remain stale: the No-Log feature page still says 'PrivadoVPN is based in Switzerland' and cites Swiss consumer-protection law, contradicting the Iceland legal entity. Server count (~500+) and ~50 countries (67 cities) are vendor/reviewer figures, not independently audited; Security.org confirms physical (not virtual) servers, so RAM-only is effectively absent but not vendor-stated. PrivadoVPN is bundled with Usenet brands (Newshosting, UsenetServer, Tweaknews, Easynews) and reportedly absorbed Newshosting's prior VPN; historically these shared WLVPN infrastructure. However, no source establishes a single named parent conglomerate that owns PrivadoVPN (Highwinds-era brands like IPVanish went to Ziff Davis, a separate lineage), so conglomerate is left blank. Crypto is accepted via BitPay (BTC/ETH/LTC and others). AES-256-GCM is standard for its WireGuard/OpenVPN here, but the exact handshake/key-exchange details were not verified.",
+  "lastVerified": "2026-06-17",
+  "sources": [
+    {
+      "label": "PrivadoVPN Privacy Policy (data controller: Privado Networks ehf., Iceland; eff. 1 May 2026; logging/retention detail)",
+      "url": "https://privadovpn.com/privacy-policy/"
+    },
+    {
+      "label": "PrivadoVPN official Pricing page ($10.99/mo; 24-mo $1.11/mo; free 10GB/30d; 30-day money-back; 10 connections)",
+      "url": "https://privadovpn.com/pricing/"
+    },
+    {
+      "label": "PrivadoVPN No-Log VPN feature page (STALE: still references Switzerland and Swiss consumer-protection law)",
+      "url": "https://privadovpn.com/features/no-log-vpn/"
+    },
+    {
+      "label": "TechRadar: PrivadoVPN's new Terms of Service make its move from Switzerland to Iceland official",
+      "url": "https://www.techradar.com/vpn/vpn-services/privadovpns-new-terms-of-service-make-its-privacy-protecting-move-from-switzerland-to-iceland-official"
+    },
+    {
+      "label": "TechRadar: 'Our users deserve better' – PrivadoVPN set to leave Switzerland on privacy grounds",
+      "url": "https://www.techradar.com/vpn/vpn-privacy-security/our-users-deserve-better-privadovpn-set-to-leave-switzerland-on-privacy-grounds"
+    },
+    {
+      "label": "Top10VPN PrivadoVPN review (logging is 'not a no-logs policy'; no audit/transparency report/warrant canary; never court-tested; closed-source; Iceland no Eyes; independent ownership)",
+      "url": "https://www.top10vpn.com/reviews/privadovpn/"
+    },
+    {
+      "label": "vpnMentor PrivadoVPN review (Scramble obfuscation; no port forwarding; no third-party audit; PayPal/cards/crypto BTC-ETH-LTC; free 10GB/1 device)",
+      "url": "https://www.vpnmentor.com/reviews/privadovpn/"
+    },
+    {
+      "label": "Security.org PrivadoVPN review (hundreds of physical servers in 50 countries; IKEv2/OpenVPN/WireGuard; no IP logging; unaudited)",
+      "url": "https://www.security.org/vpn/privado/"
+    },
+    {
+      "label": "VPNCompare PrivadoVPN review (Iceland move + Privado Networks ehf.; BitPay crypto; CLI-only Linux; 50 countries/67 cities; free-tier features; no public audit)",
+      "url": "https://www.vpncompare.co.uk/privadovpn-review/"
+    },
+    {
+      "label": "Wikipedia: PrivadoVPN (released 2019; operates under Iceland law as of 1 May 2026; PCMag noted no third-party audit)",
+      "url": "https://en.wikipedia.org/wiki/PrivadoVPN"
+    }
+  ]
+}

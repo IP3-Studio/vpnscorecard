@@ -98,6 +98,8 @@ export const VpnSchema = z.object({
       killSwitch: Tri.default("unknown"),
       ownDns: Tri.default("unknown"),
       ramOnly: Tri.default("unknown"),
+      portForwarding: Tri.default("unknown"),
+      p2p: Tri.default("unknown"),
       ipv6: z.enum(["supported", "blocked", "leak", "unknown"]).default("unknown"),
     })
     .prefault({}),
@@ -114,6 +116,8 @@ export const VpnSchema = z.object({
       openSourceClients: Support.default("unknown"),
       audits: z.array(AuditSchema).default([]),
       transparencyReport: Tri.default("unknown"),
+      /** No-logs proven by a real seizure/raid/subpoena that produced no data. */
+      courtTested: Tri.default("unknown"),
       /** Real-world no-logs evidence, e.g. a server seizure or court outcome. */
       realWorldNoLog: z.string().optional(),
     })
