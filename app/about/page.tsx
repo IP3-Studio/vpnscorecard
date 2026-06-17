@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "VPN Privacy Tests is an independent, non-commercial VPN comparison project by IP3 Studio.",
+    "VPN Scorecard is an independent, non-commercial VPN comparison project by IP3 Studio.",
 };
 
 export default function AboutPage() {
@@ -13,7 +13,7 @@ export default function AboutPage() {
       <h1 className="text-3xl font-bold tracking-tight">About</h1>
 
       <p className="mt-4 text-zinc-600 dark:text-zinc-400">
-        VPN Privacy Tests is an independent, non-commercial project that compares
+        VPN Scorecard is an independent, non-commercial project that compares
         VPN tools the way{" "}
         <a href="https://privacytests.org" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline dark:text-emerald-400">
           PrivacyTests.org
