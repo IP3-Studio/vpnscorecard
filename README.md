@@ -1,11 +1,11 @@
-# VPN Privacy Tests
+# VPN Scorecard
 
 An independent, **non-commercial** comparison of VPN tools — the way
 [PrivacyTests.org](https://privacytests.org) compares browsers. Every VPN is
 scored against a [published rubric](./lib/criteria.ts), every fact is backed by
 a primary source, and the project carries **no affiliate links**.
 
-A project of [IP3 Studio](https://github.com/IP3-Studio). Live site: _TBD_.
+A project of [IP3 Studio](https://github.com/IP3-Studio). Live site: [vpnscorecard.com](https://vpnscorecard.com) _(coming soon)_.
 
 ## Principles
 
@@ -63,8 +63,8 @@ See [`/methodology`](./app/methodology/page.tsx).
 
 ## Status
 
-First batch of **6 verified services** (Mullvad, Proton VPN, IVPN, NordVPN,
-Surfshark, Windscribe). More are added in batches as they are re-researched.
+**35 verified services** and counting — re-researched from primary sources, with
+defunct providers (ibVPN, Perfect Privacy, Atlas VPN, …) removed. More in batches.
 
 ## Roadmap
 
