@@ -5,6 +5,7 @@ import { getAllSlugs, getVpnBySlug } from "@/lib/load";
 import { scoreVpn } from "@/lib/scoring";
 import { ScoreBadge, ScoreBar } from "@/components/ScoreCell";
 import { DataSheet } from "@/components/DataSheet";
+import { TypeBadge, TYPE_META } from "@/components/TypeBadge";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
@@ -62,7 +63,10 @@ export default async function VpnPage({
       {/* Header */}
       <div className="mt-4 flex flex-col gap-4 border-b border-zinc-200 pb-6 sm:flex-row sm:items-start sm:justify-between dark:border-zinc-800">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">{vpn.name}</h1>
+          <div className="flex flex-wrap items-center gap-2">
+            <h1 className="text-3xl font-bold tracking-tight">{vpn.name}</h1>
+            {vpn.type !== "provider" && <TypeBadge type={vpn.type} className="text-xs" />}
+          </div>
           {vpn.tagline && (
             <p className="mt-1 text-zinc-600 dark:text-zinc-400">{vpn.tagline}</p>
           )}
@@ -76,8 +80,16 @@ export default async function VpnPage({
           </a>
         </div>
         <div className="flex flex-col items-start gap-1 sm:items-end">
-          <ScoreBadge score={score.overall} className="text-2xl" />
-          <span className="text-xs text-zinc-500">Overall score</span>
+          {vpn.type === "mesh" ? (
+            <span className="rounded-md bg-violet-100 px-2 py-1 text-xs font-medium text-violet-700 dark:bg-violet-500/15 dark:text-violet-300">
+              Mesh tool — not scored
+            </span>
+          ) : (
+            <>
+              <ScoreBadge score={score.overall} className="text-2xl" />
+              <span className="text-xs text-zinc-500">Overall score</span>
+            </>
+          )}
         </div>
       </div>
 
@@ -105,20 +117,37 @@ export default async function VpnPage({
         <Fact label="Free tier" value={vpn.pricing.freeTier === "yes" ? "Yes" : "No"} />
       </dl>
 
-      {/* Category scores */}
-      <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
-        {score.categories.map((c) => (
-          <div key={c.id} className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-800">
-            <div className="flex items-baseline justify-between">
-              <span className="text-sm font-medium">{c.label}</span>
-              <span className="font-mono text-sm">{c.score ?? "–"}</span>
+      {/* Type explainer (mixnet / mesh) */}
+      {vpn.type !== "provider" && (
+        <p className="mt-6 rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-400">
+          <span className="font-semibold">{TYPE_META[vpn.type].label}.</span>{" "}
+          {TYPE_META[vpn.type].blurb}
+        </p>
+      )}
+
+      {/* Category scores (providers + mixnet only) */}
+      {vpn.type === "mesh" ? (
+        <div className="mt-6 rounded-lg border border-violet-200 bg-violet-50/50 p-4 text-sm text-zinc-600 dark:border-violet-500/20 dark:bg-violet-500/5 dark:text-zinc-300">
+          <strong>{vpn.name} is a mesh VPN</strong>, so we don&apos;t give it a head-to-head
+          score. There&apos;s no provider no-logs policy, jurisdiction, or server network to
+          rate — only your own devices, linked privately. The data sheet below shows what it
+          does offer.
+        </div>
+      ) : (
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          {score.categories.map((c) => (
+            <div key={c.id} className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-800">
+              <div className="flex items-baseline justify-between">
+                <span className="text-sm font-medium">{c.label}</span>
+                <span className="font-mono text-sm">{c.score ?? "–"}</span>
+              </div>
+              <div className="mt-2">
+                <ScoreBar score={c.score} />
+              </div>
             </div>
-            <div className="mt-2">
-              <ScoreBar score={c.score} />
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
 
       {/* Best for / Not for */}
       {(vpn.bestFor.length > 0 || vpn.notFor.length > 0) && (
