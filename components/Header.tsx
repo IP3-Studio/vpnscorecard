@@ -14,10 +14,10 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between gap-4 px-4">
         <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
           <span className="grid h-6 w-6 place-items-center rounded bg-emerald-500 text-xs font-bold text-white">
-            V
+            VS
           </span>
           <span>
-            VPN<span className="text-emerald-500">Tests</span>
+            VPN<span className="text-emerald-500">Scorecard</span>
           </span>
         </Link>
 

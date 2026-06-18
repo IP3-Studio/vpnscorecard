@@ -8,9 +8,10 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vpnscorecard.com"),
   title: {
-    default: "VPN Privacy Tests — independent, non-commercial VPN comparison",
-    template: "%s — VPN Privacy Tests",
+    default: "VPN Scorecard — independent, non-commercial VPN comparison",
+    template: "%s — VPN Scorecard",
   },
   description:
     "An independent, non-commercial comparison of VPN tools across privacy, security, transparency, value and ethics. Every claim is sourced. No affiliate links.",

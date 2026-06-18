@@ -2,23 +2,22 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { CATEGORIES, CRITERIA_BY_CATEGORY } from "@/lib/criteria";
 import { ScoreCell, ScoreBadge } from "./ScoreCell";
 import type { Row } from "./ComparisonGrid";
 
 const MAX = 4;
 
-export function CompareTool({ rows }: { rows: Row[] }) {
-  const params = useSearchParams();
-  const fromUrl = (params.get("vpns") ?? "")
-    .split(",")
-    .map((s) => s.trim())
-    .filter((s) => rows.some((r) => r.vpn.slug === s));
-
+export function CompareTool({
+  rows,
+  initialSlugs,
+}: {
+  rows: Row[];
+  initialSlugs: string[];
+}) {
   const [selected, setSelected] = useState<string[]>(
-    fromUrl.length > 0
-      ? fromUrl.slice(0, MAX)
+    initialSlugs.length > 0
+      ? initialSlugs.slice(0, MAX)
       : rows.slice(0, Math.min(3, rows.length)).map((r) => r.vpn.slug),
   );
 
