@@ -19,11 +19,25 @@ export async function generateMetadata({
   const { slug } = await params;
   const vpn = getVpnBySlug(slug);
   if (!vpn) return { title: "Not found" };
+  const description =
+    vpn.tagline ??
+    `Privacy, security, transparency, value and ethics breakdown for ${vpn.name}.`;
+  const url = `/vpn/${vpn.slug}`;
   return {
     title: vpn.name,
-    description:
-      vpn.tagline ??
-      `Privacy, security, transparency, value and ethics breakdown for ${vpn.name}.`,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      type: "article",
+      title: `${vpn.name} | VPN Scorecard`,
+      description,
+      url,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${vpn.name} | VPN Scorecard`,
+      description,
+    },
   };
 }
 
