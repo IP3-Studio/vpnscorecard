@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CATEGORIES, CRITERIA_BY_CATEGORY } from "@/lib/criteria";
+import { TypeBadge } from "@/components/TypeBadge";
 
 export const metadata: Metadata = {
   title: "Methodology",
@@ -22,6 +23,42 @@ export default function MethodologyPage() {
         hidden numbers — this page is generated from the same configuration that
         powers the grid.
       </p>
+
+      {/* Tool types */}
+      <h2 className="mt-10 text-xl font-bold">Three kinds of tool</h2>
+      <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
+        Not everything called a &ldquo;VPN&rdquo; is the same product, and scoring
+        them on one scale would mislead. We tag each tool by type — and only the
+        traffic-routing ones are ranked against each other:
+      </p>
+      <div className="mt-3 space-y-3 text-sm">
+        <div className="flex gap-3">
+          <TypeBadge type="provider" className="mt-0.5 shrink-0" />
+          <p className="text-zinc-600 dark:text-zinc-400">
+            <strong>Provider</strong> — a conventional VPN that routes your traffic
+            through the company&apos;s own servers (Mullvad, Proton, IVPN…). Scored in full.
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <TypeBadge type="mixnet" className="mt-0.5 shrink-0" />
+          <p className="text-zinc-600 dark:text-zinc-400">
+            <strong>Mixnet</strong> — routes traffic through a multi-hop mix network
+            with cover traffic that resists the traffic-correlation attacks ordinary
+            VPNs can&apos;t (e.g. NymVPN). Still a traffic-routing service, so it&apos;s
+            scored on the same rubric.
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <TypeBadge type="mesh" className="mt-0.5 shrink-0" />
+          <p className="text-zinc-600 dark:text-zinc-400">
+            <strong>Mesh</strong> — links your <em>own</em> devices privately,
+            Tailscale-style (e.g. NostrVPN), with no traffic-exit provider. There is no
+            provider no-logs policy, jurisdiction, or server network to rate, so we{" "}
+            <strong>list mesh tools but don&apos;t give them a head-to-head score</strong> —
+            comparing one to NordVPN would be apples-to-oranges.
+          </p>
+        </div>
+      </div>
 
       <div className="mt-6 rounded-lg border border-zinc-200 p-4 text-sm dark:border-zinc-800">
         <h2 className="font-semibold">How a cell is scored</h2>
