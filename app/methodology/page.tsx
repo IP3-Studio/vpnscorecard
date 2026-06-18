@@ -5,7 +5,7 @@ import { CATEGORIES, CRITERIA_BY_CATEGORY } from "@/lib/criteria";
 export const metadata: Metadata = {
   title: "Methodology",
   description:
-    "How VPN Privacy Tests scores and ranks VPNs: the exact criteria, weights, verification policy, licensing and limitations.",
+    "How VPN Scorecard scores and ranks VPNs: the exact criteria, weights, verification policy, licensing and limitations.",
 };
 
 export default function MethodologyPage() {

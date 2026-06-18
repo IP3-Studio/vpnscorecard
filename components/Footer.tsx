@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col gap-8 sm:flex-row sm:justify-between">
           <div className="max-w-sm">
             <div className="mb-2 font-semibold text-zinc-900 dark:text-zinc-100">
-              VPN Privacy Tests
+              VPN Scorecard
             </div>
             <p>
               An independent, non-commercial comparison of VPN tools. We take no
