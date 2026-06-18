@@ -1,0 +1,95 @@
+{
+  "slug": "nostrvpn",
+  "name": "NostrVPN",
+  "website": "https://nostrvpn.org/",
+  "tagline": "A Tailscale-style mesh VPN that links your own devices using Nostr keys — no provider, no account, no central coordination server.",
+  "status": "active",
+  "type": "mesh",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Decentralised (no provider)",
+    "eyes": "unknown",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Open-source project (Martti Malmi / sirius)"
+  },
+  "logging": {
+    "traffic": "unknown",
+    "dns": "unknown",
+    "timestamps": "unknown",
+    "bandwidth": "unknown",
+    "ip": "unknown",
+    "summary": "Not a traffic-routing provider, so there is no central operator to keep logs. Devices connect peer-to-peer over WireGuard; discovery and coordination run over decentralised Nostr relays rather than a company control plane."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "unknown",
+    "acceptsCrypto": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Nostr-key identity + decentralised relay coordination (nvpn CLI/daemon); devices reach each other via stable .nvpn names",
+    "multihop": "unknown",
+    "obfuscation": "unknown",
+    "killSwitch": "unknown",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "unknown",
+    "p2p": "yes",
+    "ipv6": "unknown"
+  },
+  "encryption": {
+    "dataCipher": "WireGuard (ChaCha20-Poly1305)",
+    "handshake": "WireGuard (Curve25519); identity via Nostr (secp256k1) keys"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "unknown",
+    "realWorldNoLog": "Self-hosted / decentralised by design: there is no company database to subpoena or seize."
+  },
+  "infra": {
+    "linux": "cli"
+  },
+  "pricing": {
+    "freeTrialDays": 0,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Linking your own devices (laptops, phones, home servers, SSH) privately",
+    "Self-sovereign networking with no provider account or email",
+    "Nostr / Bitcoin users comfortable with key-based identity"
+  ],
+  "notFor": [
+    "Hiding your IP or geo-shifting like a commercial VPN — it isn't an exit provider",
+    "Non-technical users — it's an early-stage CLI/daemon project",
+    "Anyone needing audited, production-grade reliability today"
+  ],
+  "pros": [
+    "No central company, account, or email — your Nostr key is your identity",
+    "No central coordination server to monitor, subpoena, or seize",
+    "Open-source; built on WireGuard for the encrypted data plane",
+    "Created by Martti Malmi (sirius), one of Bitcoin's earliest developers"
+  ],
+  "cons": [
+    "Different category from a traffic-routing VPN — won't give you an anonymous exit IP",
+    "Early-stage and rough; limited platform polish",
+    "No independent audit; small project",
+    "Requires technical comfort (CLI/daemon, key management)"
+  ],
+  "notes": "Mesh / overlay VPN in the spirit of Tailscale, but decentralised: WireGuard handles encryption while device discovery and coordination run over Nostr relays instead of a company's control plane. We list it for completeness but do not score it against traffic-routing providers — the privacy axes (provider no-logs, jurisdiction, server network) don't apply to a device mesh.",
+  "lastVerified": "2026-06-18",
+  "sources": [
+    { "label": "Nostr VPN — official site", "url": "https://nostrvpn.org/" },
+    { "label": "nostr-vpn (open source, Martti Malmi)", "url": "https://github.com/mmalmi/nostr-vpn" },
+    { "label": "Cryptonews — Bitcoin developer launches privacy-focused Nostr VPN", "url": "https://cryptonews.net/news/blockchain/32891743/" }
+  ]
+}
