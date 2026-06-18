@@ -19,6 +19,8 @@ const linkCls =
   "hover:text-emerald-600 dark:hover:text-emerald-400";
 
 export function Footer() {
+  const year = new Date().getFullYear();
+  const copyright = year > 2026 ? `2026–${year}` : "2026";
   return (
     <footer className="border-t border-zinc-200/70 bg-zinc-50/50 dark:border-zinc-800/70 dark:bg-zinc-900/30">
       <div className="mx-auto max-w-7xl px-4 py-10 text-sm text-zinc-600 dark:text-zinc-400">
@@ -108,7 +110,14 @@ export function Footer() {
             <a href="https://privacytests.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-600 dark:hover:text-emerald-400">
               PrivacyTests.org
             </a>
-            . © 2026 IP3 Studio.
+            .
+          </p>
+          <p>
+            © {copyright} IP3 Studio. All rights reserved. Site code is{" "}
+            <a href="https://github.com/IP3-Studio/vpnscorecard/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="underline hover:text-emerald-600 dark:hover:text-emerald-400">
+              MIT-licensed
+            </a>
+            ; comparison data is CC BY-NC-SA 4.0.
           </p>
         </div>
       </div>
