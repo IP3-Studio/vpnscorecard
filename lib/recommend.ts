@@ -13,7 +13,8 @@ export type Budget = "free" | "cheap" | "any";
 export type PriorityId =
   | "openSource"
   | "audited"
-  | "anonymous"
+  | "anonSignup"
+  | "anonPayment"
   | "noEyes"
   | "obfuscation"
   | "freeOrCheap";
@@ -49,7 +50,8 @@ export const BUDGETS: { id: Budget; label: string; desc: string }[] = [
 export const PRIORITIES: { id: PriorityId; label: string; desc: string }[] = [
   { id: "openSource", label: "Open-source apps", desc: "Code you can inspect." },
   { id: "audited", label: "Independently audited", desc: "Claims checked by third parties." },
-  { id: "anonymous", label: "Anonymous signup & payment", desc: "No email; cash or crypto." },
+  { id: "anonSignup", label: "Anonymous signup", desc: "Create an account with no email or personal info." },
+  { id: "anonPayment", label: "Anonymous payment", desc: "Pay with cash or cryptocurrency." },
   { id: "noEyes", label: "Outside 14 Eyes", desc: "Privacy-friendly jurisdiction." },
   { id: "obfuscation", label: "Beats censorship", desc: "Disguises VPN traffic." },
   { id: "freeOrCheap", label: "Easy on the wallet", desc: "Low price or free tier." },
@@ -58,7 +60,8 @@ export const PRIORITIES: { id: PriorityId; label: string; desc: string }[] = [
 const PRIORITY_CRITERIA: Record<PriorityId, string[]> = {
   openSource: ["openSource"],
   audited: ["audits"],
-  anonymous: ["anonymousSignup", "anonymousPayment"],
+  anonSignup: ["anonymousSignup"],
+  anonPayment: ["anonymousPayment"],
   noEyes: ["jurisdiction"],
   obfuscation: ["obfuscation"],
   freeOrCheap: ["price", "freeTier"],
