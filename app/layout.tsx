@@ -8,7 +8,7 @@ import { Footer } from "@/components/Footer";
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
-const SITE_URL = "https://vpnscorecard.com";
+const SITE_URL = "https://www.vpnscorecard.com";
 const SITE_DESC =
   "An independent, non-commercial comparison of VPN tools across privacy, security, transparency, value and ethics. Every claim is sourced, and we take no money from the VPNs we rank.";
 
