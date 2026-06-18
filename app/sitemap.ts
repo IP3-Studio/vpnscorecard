@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/load";
 
-const BASE = "https://vpnscorecard.com";
+const BASE = "https://www.vpnscorecard.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = ["", "/recommend", "/compare", "/methodology", "/about", "/disclaimer"];
