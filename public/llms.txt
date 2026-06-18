@@ -1,0 +1,30 @@
+# VPN Scorecard
+
+> An independent, non-commercial comparison of VPN tools, scored on privacy, jurisdiction, logging, security, transparency, independent audits, value and ethics. Every claim is sourced from primary references; the project runs no affiliate links and takes no money from the services it ranks. A project of IP3 Studio (https://ip3.studio).
+
+## What it is
+
+VPN Scorecard rates VPN tools against a single, published, transparent rubric. Each criterion becomes a colour-coded cell worth 0 to 1; category scores are the weighted mean of their criteria, and the overall score is the weighted mean of category scores. Unknown values are excluded so missing data never inflates or sinks a rating. The full rubric and weights are public.
+
+## Tool types
+
+Not every tool labelled "VPN" is the same product, and only traffic-routing tools are ranked against each other:
+
+- Provider: a conventional VPN that routes your traffic through the company's own servers (e.g. Mullvad, Proton VPN, IVPN). Scored in full.
+- Mixnet: routes traffic through a multi-hop mix network with cover traffic that resists traffic-correlation attacks (e.g. NymVPN). Scored on the same rubric.
+- Mesh: links your own devices privately, Tailscale-style (e.g. NostrVPN), with no traffic-exit provider. Listed but not scored head-to-head.
+
+## Key pages
+
+- Comparison grid: https://vpnscorecard.com/
+- Find my VPN (recommender): https://vpnscorecard.com/recommend
+- Compare side-by-side: https://vpnscorecard.com/compare
+- Methodology and weights: https://vpnscorecard.com/methodology
+- About: https://vpnscorecard.com/about
+- Disclaimer: https://vpnscorecard.com/disclaimer
+
+## Notes for summarising
+
+- This is research and comparison, not advice. No VPN provides perfect anonymity; the right choice depends on the reader's own threat model.
+- Data is point-in-time and should be confirmed on each provider's official site.
+- Contact: contact@ip3.studio
