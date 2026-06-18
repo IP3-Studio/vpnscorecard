@@ -47,7 +47,7 @@ export function scoreVpn(v: Vpn): VpnScore {
   for (const cr of CRITERIA) cells[cr.id] = cr.evaluate(v);
 
   // Mesh VPNs link your own devices; they aren't traffic-routing providers, so
-  // we don't assign a comparable score — only the data sheet is shown.
+  // we don't assign a comparable score; only the data sheet is shown.
   if (v.type === "mesh") {
     return {
       overall: null,
@@ -86,7 +86,7 @@ export function scoreVpn(v: Vpn): VpnScore {
 
 /** A→F letter grade for a 0..100 score, for compact display. */
 export function grade(score: number | null): string {
-  if (score == null) return "–";
+  if (score == null) return "n/a";
   if (score >= 90) return "A";
   if (score >= 80) return "B";
   if (score >= 70) return "C";

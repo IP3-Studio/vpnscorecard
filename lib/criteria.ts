@@ -5,7 +5,7 @@ import type { Vpn } from "./schema";
  *
  * The comparison grid columns, the per-VPN scorecard, the overall/category
  * scores (lib/scoring.ts) and the public methodology page are ALL generated
- * from the registry below — there are no hidden numbers.
+ * from the registry below; there are no hidden numbers.
  */
 
 export type CellVerdict = "good" | "partial" | "bad" | "neutral" | "unknown";
@@ -244,7 +244,7 @@ export const CRITERIA: Criterion[] = [
     category: "privacy",
     weight: 2,
     explain:
-      "Connection metadata — DNS requests, timestamps, and source IP. Scored as the worst of those three fields.",
+      "Connection metadata: DNS requests, timestamps, and source IP. Scored as the worst of the three.",
     evaluate: (v) =>
       logCell(worstLog(v.logging.dns, v.logging.timestamps, v.logging.ip)),
   },
@@ -377,7 +377,7 @@ export const CRITERIA: Criterion[] = [
     category: "transparency",
     weight: 2,
     explain:
-      "No-logs proven in the real world — a server seizure, police raid, or subpoena that produced no usable user data. A bonus, never a penalty.",
+      "No-logs proven in the real world by a server seizure, police raid, or subpoena that produced no usable user data. Counts as a bonus only.",
     evaluate: (v) =>
       v.transparency.courtTested === "yes"
         ? good("Proven")
@@ -412,7 +412,7 @@ export const CRITERIA: Criterion[] = [
     short: "Free tier",
     category: "value",
     weight: 1,
-    explain: "Offers a genuinely free (not just trial) tier. A bonus, never a penalty.",
+    explain: "Offers a genuinely free tier, not just a trial. Counts as a bonus only.",
     evaluate: (v) => yesBonus(v.pricing.freeTier),
   },
 

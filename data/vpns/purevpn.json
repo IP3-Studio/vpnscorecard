@@ -105,68 +105,68 @@
     "Accepts cryptocurrency and offers a 31-day money-back guarantee"
   ],
   "cons": [
-    "2017 FBI case proved it logged and handed over connection-correlation data while claiming 'no logs' — a lasting trust mark",
+    "2017 FBI case proved it logged and handed over connection-correlation data while claiming 'no logs', a lasting trust mark",
     "BVI HQ but development/staff historically tied to Gaditek in Karachi, Pakistan; some users distrust the operational footprint",
     "Several privacy features (port forwarding, dedicated IP) are paid add-ons, not included",
     "No free tier and only a paid $0.99 7-day trial; RAM-only servers and multihop not clearly documented; the most recent (2023) audit firm was not named"
   ],
-  "notes": "Corporate identity GZ Systems Ltd. operates under the PureSquare (Pure²) brand umbrella (brand identity unveiled Nov 2022; PureSquare ONE-platform/parent-brand launch Feb 2023), which also covers PureKeep, PurePrivacy, PureEncrypt, PureDome, and PureWL. Operationally the group is tied to Gaditek in Karachi, Pakistan. HQ relocated from Hong Kong to the British Virgin Islands in November 2021 for a privacy-favorable jurisdiction with no mandatory data-retention laws. BVI is not a member of any Five/Nine/Fourteen Eyes intelligence alliance. Pricing tiers are Standard/Plus/Max; figures above are the Standard tier; the cheapest genuine rate is the 5-year Standard plan (~$1.99/mo), with the 2-year Standard at ~$2.15/mo. P2P is restricted to designated servers (excludes US/UK/CA/AU). The $0.99 7-day trial is a paid trial, not a free tier. NOTE ON AUDITS: there have been four consecutive no-log assessments (Altius IT 2019; KPMG 2021; a fourth Feb-Apr 2023 by an unnamed 'top audit firm'); the DRAFT's claim of an 'Altius IT 2024 renewal' and a 'new' Dec 2025 KPMG audit could not be substantiated — the Dec 2025 KPMG blog re-publicizes earlier KPMG audit content.",
+  "notes": "Corporate identity GZ Systems Ltd. operates under the PureSquare (Pure²) brand umbrella (brand identity unveiled Nov 2022; PureSquare ONE-platform/parent-brand launch Feb 2023), which also covers PureKeep, PurePrivacy, PureEncrypt, PureDome, and PureWL. Operationally the group is tied to Gaditek in Karachi, Pakistan. HQ relocated from Hong Kong to the British Virgin Islands in November 2021 for a privacy-favorable jurisdiction with no mandatory data-retention laws. BVI is not a member of any Five/Nine/Fourteen Eyes intelligence alliance. Pricing tiers are Standard/Plus/Max; figures above are the Standard tier; the cheapest genuine rate is the 5-year Standard plan (~$1.99/mo), with the 2-year Standard at ~$2.15/mo. P2P is restricted to designated servers (excludes US/UK/CA/AU). The $0.99 7-day trial is a paid trial, not a free tier. NOTE ON AUDITS: there have been four consecutive no-log assessments (Altius IT 2019; KPMG 2021; a fourth Feb-Apr 2023 by an unnamed 'top audit firm'); the DRAFT's claim of an 'Altius IT 2024 renewal' and a 'new' Dec 2025 KPMG audit could not be substantiated, the Dec 2025 KPMG blog re-publicizes earlier KPMG audit content.",
   "lastVerified": "2026-06-17",
   "sources": [
     {
-      "label": "Wikipedia — PureVPN (owner GZ Systems Ltd., founded 2007, BVI HQ, 6,500 servers/78 countries, 2017 FBI Ryan Lin incident, active as of Jan 2026)",
+      "label": "Wikipedia, PureVPN (owner GZ Systems Ltd., founded 2007, BVI HQ, 6,500 servers/78 countries, 2017 FBI Ryan Lin incident, active as of Jan 2026)",
       "url": "https://en.wikipedia.org/wiki/PureVPN"
     },
     {
-      "label": "PureVPN — 'Fourth successful no-log assessment' blog (4th audit, Feb-Apr 2023, 'top audit firm', legacy-protocol findings; pub. Aug 2023)",
+      "label": "PureVPN, 'Fourth successful no-log assessment' blog (4th audit, Feb-Apr 2023, 'top audit firm', legacy-protocol findings; pub. Aug 2023)",
       "url": "https://www.purevpn.com/blog/fourth-successful-no-log-assessment/"
     },
     {
-      "label": "PureVPN — KPMG validates no-log claims (always-on audit; re-published Dec 2025)",
+      "label": "PureVPN, KPMG validates no-log claims (always-on audit; re-published Dec 2025)",
       "url": "https://www.purevpn.com/blog/kpmg-validates-purevpn-no-log-claims/"
     },
     {
-      "label": "PR Newswire — PureVPN passes SECOND KPMG evaluation under always-on audit (first KPMG audit, 2021)",
+      "label": "PR Newswire, PureVPN passes SECOND KPMG evaluation under always-on audit (first KPMG audit, 2021)",
       "url": "https://www.prnewswire.com/news-releases/purevpn-the-first-no-log-vpn-with-an-always-on-audit-passes-second-kpmg-evaluation-301349340.html"
     },
     {
-      "label": "PureVPN — No-Log Certified / Altius IT first audit (2019)",
+      "label": "PureVPN, No-Log Certified / Altius IT first audit (2019)",
       "url": "https://www.purevpn.com/blog/no-log-certified/"
     },
     {
-      "label": "PureVPN — HQ migration Hong Kong to BVI (Nov 2021)",
+      "label": "PureVPN, HQ migration Hong Kong to BVI (Nov 2021)",
       "url": "https://www.purevpn.com/blog/purevpn-hq-migration/"
     },
     {
-      "label": "Newswire — PureVPN unveils new brand identity / PureSquare rebrand and new products (Nov 2022)",
+      "label": "Newswire, PureVPN unveils new brand identity / PureSquare rebrand and new products (Nov 2022)",
       "url": "https://www.newswire.com/news/purevpn-unveils-new-brand-identity-and-new-products-21873168"
     },
     {
-      "label": "PureVPN — Order/pricing page (Standard/Plus/Max; 2-year Standard $2.15/mo; 31-day money-back)",
+      "label": "PureVPN, Order/pricing page (Standard/Plus/Max; 2-year Standard $2.15/mo; 31-day money-back)",
       "url": "https://www.purevpn.com/order"
     },
     {
-      "label": "Security.org — PureVPN review (cheapest ~$1.69-$1.99 on 5-year, $12.95/mo, 31-day refund, $0.99 7-day paid trial, 10 connections, WireGuard, crypto)",
+      "label": "Security.org, PureVPN review (cheapest ~$1.69-$1.99 on 5-year, $12.95/mo, 31-day refund, $0.99 7-day paid trial, 10 connections, WireGuard, crypto)",
       "url": "https://www.security.org/vpn/purevpn/review/"
     },
     {
-      "label": "Security.org — PureVPN pricing 2026 (5-year Standard $47.95 ≈ $1.99/mo; 31-day refund all plans)",
+      "label": "Security.org, PureVPN pricing 2026 (5-year Standard $47.95 ≈ $1.99/mo; 31-day refund all plans)",
       "url": "https://www.security.org/vpn/purevpn/"
     },
     {
-      "label": "CyberInsider — PureVPN review 2026 (BVI/Gaditek Karachi, Altius IT June 2019, 31-day refund, $0.99 trial, dedicated IP paid add-on, cheapest 5-year)",
+      "label": "CyberInsider, PureVPN review 2026 (BVI/Gaditek Karachi, Altius IT June 2019, 31-day refund, $0.99 trial, dedicated IP paid add-on, cheapest 5-year)",
       "url": "https://cyberinsider.com/vpn/reviews/purevpn/"
     },
     {
-      "label": "PixelPrivacy — 5/9/14 Eyes alliances (BVI not a member of any Eyes alliance)",
+      "label": "PixelPrivacy, 5/9/14 Eyes alliances (BVI not a member of any Eyes alliance)",
       "url": "https://www.pixelprivacy.com/resources/5eyes-9eyes-14eyes/"
     },
     {
-      "label": "The Register — VPN logs helped unmask alleged net stalker (2017 Ryan Lin case; two originating IPs)",
+      "label": "The Register, VPN logs helped unmask alleged net stalker (2017 Ryan Lin case; two originating IPs)",
       "url": "https://www.theregister.com/2017/10/08/vpn_logs_helped_unmask_alleged_net_stalker_say_feds/"
     },
     {
-      "label": "Help Net Security — Alleged cyberstalker unmasked by PureVPN logs (2017)",
+      "label": "Help Net Security, Alleged cyberstalker unmasked by PureVPN logs (2017)",
       "url": "https://www.helpnetsecurity.com/2017/10/09/cyberstalker-unmasked-purevpn/"
     }
   ]

@@ -11,7 +11,7 @@ const BAD = "text-rose-600 dark:text-rose-400";
 const WARN = "text-amber-600 dark:text-amber-400";
 const MUTE = "text-zinc-400 dark:text-zinc-500";
 
-const dash = <span className={MUTE}>—</span>;
+const dash = <span className={MUTE}>n/a</span>;
 
 function tone(text: string, cls: string): ReactNode {
   return <span className={cls}>{text}</span>;
@@ -49,7 +49,7 @@ function eyesf(v?: string): ReactNode {
 }
 
 function supportf(v?: string): ReactNode {
-  if (v === "yes") return tone("Yes — all apps", GOOD);
+  if (v === "yes") return tone("Yes, all apps", GOOD);
   if (v === "partial") return tone("Partial", WARN);
   if (v === "no") return tone("No", BAD);
   return tone("Unknown", MUTE);

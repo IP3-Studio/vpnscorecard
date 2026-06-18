@@ -107,7 +107,7 @@
     "No anonymous options: requires a Mozilla account email, and accepts only card/PayPal (no crypto or cash)",
     "Limited to 5 simultaneous devices, WireGuard-only (no OpenVPN), no port forwarding, and no advertised obfuscation"
   ],
-  "notes": "Mozilla VPN is a managed front-end over Mullvad's WireGuard server network: Mullvad handles encrypted traffic (and keeps no activity logs), while Mozilla operates the apps, accounts, and billing. Operating company is Mozilla Corporation (US/California, Five Eyes), a for-profit subsidiary wholly owned by the nonprofit Mozilla Foundation; the VPN servers are Mullvad's (Sweden, Fourteen Eyes). No-log caveat: Mozilla's privacy notice states no logs of network activity are kept by Mozilla or Mullvad, but Mozilla temporarily retains your IP address in server logs for 90 days. Server count advertised as '500+' and countries as '30+' on the official features page; third-party 2026 reviews report higher figures (up to 1,000+ servers / 57+ countries) because Mozilla's network maps onto Mullvad's larger infrastructure. CORRECTION vs draft: there is no separate 2025 Cure53 audit — the only Mozilla VPN security-audit posts are 2021 (Aug 31) and 2023 (Dec 6); the draft's '2025' entry conflated the 2023 audit with a third-party article updated in Feb 2025. NEW since draft: Mozilla shipped a free browser-only VPN tier in Firefox 149 (launched ~March 24, 2026; 50GB/month, temporarily unlimited through Aug 31, 2026), which is why freeTier is now 'yes' at the product level even though the paid system-wide app has no free tier. Encryption cipher details (ChaCha20-Poly1305, Curve25519) are inherent to WireGuard rather than explicitly stated by Mozilla. Refund: 30-day money-back guarantee, first-time customers only.",
+  "notes": "Mozilla VPN is a managed front-end over Mullvad's WireGuard server network: Mullvad handles encrypted traffic (and keeps no activity logs), while Mozilla operates the apps, accounts, and billing. Operating company is Mozilla Corporation (US/California, Five Eyes), a for-profit subsidiary wholly owned by the nonprofit Mozilla Foundation; the VPN servers are Mullvad's (Sweden, Fourteen Eyes). No-log caveat: Mozilla's privacy notice states no logs of network activity are kept by Mozilla or Mullvad, but Mozilla temporarily retains your IP address in server logs for 90 days. Server count advertised as '500+' and countries as '30+' on the official features page; third-party 2026 reviews report higher figures (up to 1,000+ servers / 57+ countries) because Mozilla's network maps onto Mullvad's larger infrastructure. CORRECTION vs draft: there is no separate 2025 Cure53 audit, the only Mozilla VPN security-audit posts are 2021 (Aug 31) and 2023 (Dec 6); the draft's '2025' entry conflated the 2023 audit with a third-party article updated in Feb 2025. NEW since draft: Mozilla shipped a free browser-only VPN tier in Firefox 149 (launched ~March 24, 2026; 50GB/month, temporarily unlimited through Aug 31, 2026), which is why freeTier is now 'yes' at the product level even though the paid system-wide app has no free tier. Encryption cipher details (ChaCha20-Poly1305, Curve25519) are inherent to WireGuard rather than explicitly stated by Mozilla. Refund: 30-day money-back guarantee, first-time customers only.",
   "lastVerified": "2026-06-17",
   "sources": [
     {
@@ -139,11 +139,11 @@
       "url": "https://blog.mozilla.org/security/2021/08/31/mozilla-vpn-security-audit/"
     },
     {
-      "label": "Mozilla VPN Security Audit 2023 (Cure53; Mozilla Security Blog, Dec 6 2023 — DoS, iOS keychain leak, daemon access controls)",
+      "label": "Mozilla VPN Security Audit 2023 (Cure53; Mozilla Security Blog, Dec 6 2023, DoS, iOS keychain leak, daemon access controls)",
       "url": "https://blog.mozilla.org/security/2023/12/06/mozilla-vpn-security-audit-2023/"
     },
     {
-      "label": "Mozilla VPN update + 2023 audit results (Mozilla Blog, Dec 6 2023 — the post the draft mislabeled as '2025')",
+      "label": "Mozilla VPN update + 2023 audit results (Mozilla Blog, Dec 6 2023, the post the draft mislabeled as '2025')",
       "url": "https://blog.mozilla.org/en/mozilla/mozilla-vpn-update-new-privacy-features-plus-independent-security-audit-results/"
     },
     {
@@ -151,27 +151,27 @@
       "url": "https://github.com/mozilla-mobile/mozilla-vpn-client/blob/main/LICENSE.md"
     },
     {
-      "label": "Mozilla VPN (Wikipedia) — launch, Mullvad infrastructure, license",
+      "label": "Mozilla VPN (Wikipedia), launch, Mullvad infrastructure, license",
       "url": "https://en.wikipedia.org/wiki/Mozilla_VPN"
     },
     {
-      "label": "Top10VPN Mozilla VPN review — logging table (timestamps NOT logged), 90-day IP retention, Five Eyes",
+      "label": "Top10VPN Mozilla VPN review, logging table (timestamps NOT logged), 90-day IP retention, Five Eyes",
       "url": "https://www.top10vpn.com/reviews/mozilla-vpn/"
     },
     {
-      "label": "Security.org Mozilla VPN review 2026 — pricing, no free version, 30-day refund, US jurisdiction",
+      "label": "Security.org Mozilla VPN review 2026, pricing, no free version, 30-day refund, US jurisdiction",
       "url": "https://www.security.org/vpn/mozilla/review/"
     },
     {
-      "label": "CyberInsider — Mozilla rolls out free built-in VPN in Firefox 149 (50GB/month, March 2026)",
+      "label": "CyberInsider, Mozilla rolls out free built-in VPN in Firefox 149 (50GB/month, March 2026)",
       "url": "https://cyberinsider.com/mozilla-rolls-out-free-built-in-vpn-in-firefox-with-50gb-monthly-limit/"
     },
     {
-      "label": "TechRadar — Mozilla scraps Firefox free-VPN data cap through summer 2026",
+      "label": "TechRadar, Mozilla scraps Firefox free-VPN data cap through summer 2026",
       "url": "https://www.techradar.com/vpn/vpn-services/browse-securely-without-limits-mozilla-scraps-data-cap-on-firefoxs-free-vpn-for-the-whole-summer"
     },
     {
-      "label": "State of Mozilla 2024 — corporate structure (Foundation owns Corporation/MZLA)",
+      "label": "State of Mozilla 2024, corporate structure (Foundation owns Corporation/MZLA)",
       "url": "https://www.mozilla.org/en-US/foundation/annualreport/2024/article/financing-an-open-internet-mozillas-path-forward/"
     }
   ]

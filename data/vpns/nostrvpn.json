@@ -2,7 +2,7 @@
   "slug": "nostrvpn",
   "name": "NostrVPN",
   "website": "https://nostrvpn.org/",
-  "tagline": "A Tailscale-style mesh VPN that links your own devices using Nostr keys — no provider, no account, no central coordination server.",
+  "tagline": "A decentralised, Tailscale-style mesh VPN that links your own devices using Nostr-key identity instead of a central provider or account.",
   "status": "active",
   "type": "mesh",
   "verified": true,
@@ -69,27 +69,27 @@
     "Nostr / Bitcoin users comfortable with key-based identity"
   ],
   "notFor": [
-    "Hiding your IP or geo-shifting like a commercial VPN — it isn't an exit provider",
-    "Non-technical users — it's an early-stage CLI/daemon project",
+    "Hiding your IP or geo-shifting like a commercial VPN, it isn't an exit provider",
+    "Non-technical users, it's an early-stage CLI/daemon project",
     "Anyone needing audited, production-grade reliability today"
   ],
   "pros": [
-    "No central company, account, or email — your Nostr key is your identity",
+    "No central company, account, or email; your Nostr key is your identity",
     "No central coordination server to monitor, subpoena, or seize",
     "Open-source; built on WireGuard for the encrypted data plane",
     "Created by Martti Malmi (sirius), one of Bitcoin's earliest developers"
   ],
   "cons": [
-    "Different category from a traffic-routing VPN — won't give you an anonymous exit IP",
+    "Different category from a traffic-routing VPN, won't give you an anonymous exit IP",
     "Early-stage and rough; limited platform polish",
     "No independent audit; small project",
     "Requires technical comfort (CLI/daemon, key management)"
   ],
-  "notes": "Mesh / overlay VPN in the spirit of Tailscale, but decentralised: WireGuard handles encryption while device discovery and coordination run over Nostr relays instead of a company's control plane. We list it for completeness but do not score it against traffic-routing providers — the privacy axes (provider no-logs, jurisdiction, server network) don't apply to a device mesh.",
+  "notes": "Mesh / overlay VPN in the spirit of Tailscale, but decentralised: WireGuard handles encryption while device discovery and coordination run over Nostr relays instead of a company's control plane. We list it for completeness but do not score it against traffic-routing providers; the privacy axes (provider no-logs, jurisdiction, server network) don't apply to a device mesh.",
   "lastVerified": "2026-06-18",
   "sources": [
-    { "label": "Nostr VPN — official site", "url": "https://nostrvpn.org/" },
+    { "label": "Nostr VPN, official site", "url": "https://nostrvpn.org/" },
     { "label": "nostr-vpn (open source, Martti Malmi)", "url": "https://github.com/mmalmi/nostr-vpn" },
-    { "label": "Cryptonews — Bitcoin developer launches privacy-focused Nostr VPN", "url": "https://cryptonews.net/news/blockchain/32891743/" }
+    { "label": "Cryptonews, Bitcoin developer launches privacy-focused Nostr VPN", "url": "https://cryptonews.net/news/blockchain/32891743/" }
   ]
 }

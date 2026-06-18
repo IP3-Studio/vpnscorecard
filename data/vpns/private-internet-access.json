@@ -116,75 +116,75 @@
   "lastVerified": "2026-06-17",
   "sources": [
     {
-      "label": "PIA official — Transparency Report Q4 2025 (30 requests, zero data)",
+      "label": "PIA official, Transparency Report Q4 2025 (30 requests, zero data)",
       "url": "https://www.privateinternetaccess.com/blog/transparency-report-q4-2025/"
     },
     {
-      "label": "PIA official — Transparency Report hub (Q2 2025, 46 requests, zero logs)",
+      "label": "PIA official, Transparency Report hub (Q2 2025, 46 requests, zero logs)",
       "url": "https://www.privateinternetaccess.com/transparency-report"
     },
     {
-      "label": "PIA official — Third Deloitte (Audit Romania) no-logs audit (2025)",
+      "label": "PIA official, Third Deloitte (Audit Romania) no-logs audit (2025)",
       "url": "https://www.privateinternetaccess.com/blog/security-audit-2025/"
     },
     {
-      "label": "PIA official — Second Deloitte (Audit Romania) no-logs audit (April 2024)",
+      "label": "PIA official, Second Deloitte (Audit Romania) no-logs audit (April 2024)",
       "url": "https://www.privateinternetaccess.com/blog/security-audit-2024/"
     },
     {
-      "label": "PIA official — Deloitte no-logs audit PDF (April 2024 limited-assurance report)",
+      "label": "PIA official, Deloitte no-logs audit PDF (April 2024 limited-assurance report)",
       "url": "https://www.privateinternetaccess.com/audit/DeloitteNoLogsAudit2024.pdf"
     },
     {
-      "label": "PIA official — first Deloitte audit announcement (2022)",
+      "label": "PIA official, first Deloitte audit announcement (2022)",
       "url": "https://www.privateinternetaccess.com/blog/privacy-audit/"
     },
     {
-      "label": "PIA official — VPN encryption (AES-256-GCM, RSA-4096/SHA-256 handshake)",
+      "label": "PIA official, VPN encryption (AES-256-GCM, RSA-4096/SHA-256 handshake)",
       "url": "https://www.privateinternetaccess.com/pages/vpn-encryption"
     },
     {
-      "label": "PIA official — Linux GUI app (Qt-based open-source desktop client)",
+      "label": "PIA official, Linux GUI app (Qt-based open-source desktop client)",
       "url": "https://www.privateinternetaccess.com/blog/pia-vpn-linux-app/"
     },
     {
-      "label": "GitHub pia-foss/desktop — open-source desktop client (GPLv3, Windows/macOS/Linux GUI)",
+      "label": "GitHub pia-foss/desktop, open-source desktop client (GPLv3, Windows/macOS/Linux GUI)",
       "url": "https://github.com/pia-foss/desktop"
     },
     {
-      "label": "Security.org — PIA pricing ($11.99/mo; $2.03/mo 2-year; unlimited devices; 30-day refund; 7-day mobile free trial)",
+      "label": "Security.org, PIA pricing ($11.99/mo; $2.03/mo 2-year; unlimited devices; 30-day refund; 7-day mobile free trial)",
       "url": "https://www.security.org/vpn/private-internet-access/"
     },
     {
-      "label": "Tom's Guide — PIA promo as low as $1.75/mo (2-year)",
+      "label": "Tom's Guide, PIA promo as low as $1.75/mo (2-year)",
       "url": "https://www.tomsguide.com/computing/vpns/vpn-deal-of-the-week-private-internet-access-drops-to-usd1-75-per-month-and-its-an-experts-dream"
     },
     {
-      "label": "TorrentFreak — PIA no-logging claims proven in court again (2018 hacking trial)",
+      "label": "TorrentFreak, PIA no-logging claims proven in court again (2018 hacking trial)",
       "url": "https://torrentfreak.com/private-internet-access-no-logging-claims-proven-true-again-in-court-180606/"
     },
     {
-      "label": "TorrentFreak — PIA no-logging tested in FBI case (2016)",
+      "label": "TorrentFreak, PIA no-logging tested in FBI case (2016)",
       "url": "https://torrentfreak.com/vpn-providers-no-logging-claims-tested-in-fbi-case-160312/"
     },
     {
-      "label": "Wikipedia — Private Internet Access (founding 2010/Andrew Lee/London Trust Media, Kape acquisition Nov 2019, GPLv3 desktop+Android / MIT iOS)",
+      "label": "Wikipedia, Private Internet Access (founding 2010/Andrew Lee/London Trust Media, Kape acquisition Nov 2019, GPLv3 desktop+Android / MIT iOS)",
       "url": "https://en.wikipedia.org/wiki/Private_Internet_Access"
     },
     {
-      "label": "Wikipedia — Kape Technologies (Crossrider history, Sagi ownership, brand portfolio)",
+      "label": "Wikipedia, Kape Technologies (Crossrider history, Sagi ownership, brand portfolio)",
       "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
     },
     {
-      "label": "CBN.com.cy — Unikmind (Teddy Sagi) successful take-private offer for Kape; £1.25bn; AIM delisting 31 May 2023",
+      "label": "CBN.com.cy, Unikmind (Teddy Sagi) successful take-private offer for Kape; £1.25bn; AIM delisting 31 May 2023",
       "url": "https://www.cbn.com.cy/article/2023/5/9/711630/successful-public-offer-by-teddy-sagi-for-kape-technologies/"
     },
     {
-      "label": "Cloudwards — PIA review (multi-hop via Shadowsocks/SOCKS5, 91+ countries, crypto/gift-card payment)",
+      "label": "Cloudwards, PIA review (multi-hop via Shadowsocks/SOCKS5, 91+ countries, crypto/gift-card payment)",
       "url": "https://www.cloudwards.net/private-internet-access-review/"
     },
     {
-      "label": "CyberInsider — PIA 2025 Deloitte audit / rising government requests",
+      "label": "CyberInsider, PIA 2025 Deloitte audit / rising government requests",
       "url": "https://cyberinsider.com/pias-no-logs-claims-backed-by-new-deloitte-audit-as-govt-requests-surge/"
     }
   ]
