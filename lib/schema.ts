@@ -26,7 +26,7 @@ export const Status = z.enum(["active", "legacy", "defunct"]);
 /**
  * Product category. `provider` = routes your traffic through the company's
  * servers (a normal VPN). `mixnet` = routes through a multi-hop mix network
- * (e.g. Nym). `mesh` = links your own devices (Tailscale-style) — NOT a
+ * (e.g. Nym). `mesh` = links your own devices (Tailscale-style), NOT a
  * traffic-exit provider, so it is listed but never scored head-to-head.
  */
 export const VpnType = z.enum(["provider", "mixnet", "mesh"]);

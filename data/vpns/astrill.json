@@ -75,7 +75,7 @@
     "People who want manual control and broad protocol/router support"
   ],
   "notFor": [
-    "Budget-conscious users — it is one of the priciest options on the market",
+    "Budget-conscious users, it is one of the priciest options on the market",
     "Privacy purists who require an independently audited, open-source, strict-zero-logs provider",
     "Anyone wanting a generous money-back guarantee, since refunds are not offered"
   ],
@@ -91,7 +91,7 @@
     "Privacy policy admits last-20 connection records (timestamps, country, device) and session IP, undercutting strict no-logs claims",
     "Effectively no refunds (all sales final per official policy), so the 7-day trial is the only safety net"
   ],
-  "notes": "Jurisdiction has a documented ambiguity: Astrill was historically associated with Seychelles (older Terms referenced it), but the current official Privacy Policy places the company \"Veloxee Corp., with registered seat at Staedtle 36, 9460 Vaduz, Principality of Liechtenstein.\" Liechtenstein is outside the 5/9/14 Eyes alliances. The official FAQ states \"We have over 300 servers located in 50+ countries\"; third-party reviews variously cite 300+ servers and 56-60 countries, so exact counts are uncertain (official floor used here). The official FAQ/refund policy states \"All Astrill service sales are final and no refunds are possible,\" while a few affiliate reviews claim a 30-day money-back guarantee — the no-refund policy is treated as authoritative. A free 7-day trial (limited, email + phone verification, no payment details; not available in China) is confirmed. Accepted payments per FAQ: credit/debit cards, bank wire, PayPal, Perfect Money, WeChat Pay, AliPay and Bitcoin (Bitcoin is the only cryptocurrency; no cash option listed).",
+  "notes": "Jurisdiction has a documented ambiguity: Astrill was historically associated with Seychelles (older Terms referenced it), but the current official Privacy Policy places the company \"Veloxee Corp., with registered seat at Staedtle 36, 9460 Vaduz, Principality of Liechtenstein.\" Liechtenstein is outside the 5/9/14 Eyes alliances. The official FAQ states \"We have over 300 servers located in 50+ countries\"; third-party reviews variously cite 300+ servers and 56-60 countries, so exact counts are uncertain (official floor used here). The official FAQ/refund policy states \"All Astrill service sales are final and no refunds are possible,\" while a few affiliate reviews claim a 30-day money-back guarantee, the no-refund policy is treated as authoritative. A free 7-day trial (limited, email + phone verification, no payment details; not available in China) is confirmed. Accepted payments per FAQ: credit/debit cards, bank wire, PayPal, Perfect Money, WeChat Pay, AliPay and Bitcoin (Bitcoin is the only cryptocurrency; no cash option listed).",
   "lastVerified": "2026-06-17",
   "sources": [
     {
@@ -111,23 +111,23 @@
       "url": "https://www.astrill.com/vpn-for/no-logs"
     },
     {
-      "label": "Security.org — Astrill VPN Review 2026 (pricing $30 / $180 / $300; session IP retention; no audit mentioned)",
+      "label": "Security.org, Astrill VPN Review 2026 (pricing $30 / $180 / $300; session IP retention; no audit mentioned)",
       "url": "https://www.security.org/vpn/astrill-vpn/review/"
     },
     {
-      "label": "vpnMentor — Astrill VPN Review 2026 (China, pricing, no audit)",
+      "label": "vpnMentor, Astrill VPN Review 2026 (China, pricing, no audit)",
       "url": "https://www.vpnmentor.com/reviews/astrill-vpn/"
     },
     {
-      "label": "Top10VPN — Astrill VPN Review (closed-source StealthVPN/OpenWeb, no audit)",
+      "label": "Top10VPN, Astrill VPN Review (closed-source StealthVPN/OpenWeb, no audit)",
       "url": "https://www.top10vpn.com/reviews/astrill/"
     },
     {
-      "label": "SafetyDetectives — Astrill VPN Review 2026 (7-day trial not in China, no refunds)",
+      "label": "SafetyDetectives, Astrill VPN Review 2026 (7-day trial not in China, no refunds)",
       "url": "https://www.safetydetectives.com/best-vpns/astrill/"
     },
     {
-      "label": "AllAboutCookies — Astrill VPN Review 2026 (jurisdiction Liechtenstein/Veloxee, last-20 connection records)",
+      "label": "AllAboutCookies, Astrill VPN Review 2026 (jurisdiction Liechtenstein/Veloxee, last-20 connection records)",
       "url": "https://allaboutcookies.org/astrill-vpn-review"
     }
   ]

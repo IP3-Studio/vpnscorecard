@@ -91,7 +91,7 @@
     "No OpenVPN or WireGuard, no independent audit, no open-source clients, kill switch on Windows only",
     "Repeated serious security incidents (2015 botnet/Luminati scandal, 2018 Chrome extension compromise targeting MyEtherWallet, 2021 Google malware removal, June 2026 Windows Hola Browser cryptominer supply-chain attack)"
   ],
-  "notes": "Hola is technically a peer-to-peer routing network rather than a conventional encrypted-tunnel VPN. CORRECTION to common claims: EMK Capital does NOT own Hola VPN. EMK acquired the commercial proxy arm Luminati (which monetizes free users' bandwidth) SEPARATELY from Hola in 2017 (~$125M / ~75.6% stake; valuation ~$165M, potentially up to ~$200M headline); Luminati rebranded to Bright Data in March 2021 and is a separate company. Hola's founders (Vilenski/Shribman) retained their Hola stake. Founding year: company-profile databases (Tracxn/Crunchbase) cite 2007; Wikipedia describes the P2P launch as late 2012 (concept from 2008) — kept as 2007. Refund window: Hola's official money-back guarantee is widely reported in 2026 as 14 days and conditional on the Premium plan being entirely unused (cloudwards.net, vpnmentor.com); one source (security.org) cites 30 days — corrected to 14. Pricing varies by promotion; figures may differ from on-site checkout. 'Ultra' tier runs ~$29.99/mo month-to-month down to ~$7.99/mo on 3 years. Server/country counts vary widely by source (security.org ~1,000-1,500 servers; cloudwards confirms 41 countries; vpnmentor cites 700+ servers / 195+ claimed countries).",
+  "notes": "Hola is technically a peer-to-peer routing network rather than a conventional encrypted-tunnel VPN. CORRECTION to common claims: EMK Capital does NOT own Hola VPN. EMK acquired the commercial proxy arm Luminati (which monetizes free users' bandwidth) SEPARATELY from Hola in 2017 (~$125M / ~75.6% stake; valuation ~$165M, potentially up to ~$200M headline); Luminati rebranded to Bright Data in March 2021 and is a separate company. Hola's founders (Vilenski/Shribman) retained their Hola stake. Founding year: company-profile databases (Tracxn/Crunchbase) cite 2007; Wikipedia describes the P2P launch as late 2012 (concept from 2008), kept as 2007. Refund window: Hola's official money-back guarantee is widely reported in 2026 as 14 days and conditional on the Premium plan being entirely unused (cloudwards.net, vpnmentor.com); one source (security.org) cites 30 days, corrected to 14. Pricing varies by promotion; figures may differ from on-site checkout. 'Ultra' tier runs ~$29.99/mo month-to-month down to ~$7.99/mo on 3 years. Server/country counts vary widely by source (security.org ~1,000-1,500 servers; cloudwards confirms 41 countries; vpnmentor cites 700+ servers / 195+ claimed countries).",
   "lastVerified": "2026-06-17",
   "sources": [
     {
@@ -103,43 +103,43 @@
       "url": "https://hola.org/"
     },
     {
-      "label": "Wikipedia: Hola (VPN) — history, botnet, Luminati/Bright Data, EMK Capital",
+      "label": "Wikipedia: Hola (VPN), history, botnet, Luminati/Bright Data, EMK Capital",
       "url": "https://en.wikipedia.org/wiki/Hola_(VPN)"
     },
     {
-      "label": "Wikipedia: Bright Data — Luminati spun out of Hola, sold separately to EMK Capital 2017, rebrand 2021",
+      "label": "Wikipedia: Bright Data, Luminati spun out of Hola, sold separately to EMK Capital 2017, rebrand 2021",
       "url": "https://en.wikipedia.org/wiki/Bright_Data"
     },
     {
-      "label": "Cloudwards — Hola VPN Review 2026 (pricing, 14-day conditional refund, 41 countries, logging, no audit)",
+      "label": "Cloudwards, Hola VPN Review 2026 (pricing, 14-day conditional refund, 41 countries, logging, no audit)",
       "url": "https://www.cloudwards.net/hola-vpn/"
     },
     {
-      "label": "Security.org — Hola VPN Review & Pricing 2026 (Premium/Ultra pricing, servers, kill switch)",
+      "label": "Security.org, Hola VPN Review & Pricing 2026 (Premium/Ultra pricing, servers, kill switch)",
       "url": "https://www.security.org/vpn/hola/"
     },
     {
-      "label": "vpnMentor — Hola VPN Review 2026 (operational status, 14-day refund, no free/premium logging distinction, no audit)",
+      "label": "vpnMentor, Hola VPN Review 2026 (operational status, 14-day refund, no free/premium logging distinction, no audit)",
       "url": "https://www.vpnmentor.com/reviews/hola-vpn/"
     },
     {
-      "label": "BleepingComputer — Hola Browser for Windows compromised to deliver cryptominer (June 4, 2026)",
+      "label": "BleepingComputer, Hola Browser for Windows compromised to deliver cryptominer (June 4, 2026)",
       "url": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/"
     },
     {
-      "label": "Newsweek — Trend Micro security warning on Hola/Luminati",
+      "label": "Newsweek, Trend Micro security warning on Hola/Luminati",
       "url": "https://www.newsweek.com/hola-holavpn-luminati-cybersecurity-trend-micro-virtual-private-network-1264639"
     },
     {
-      "label": "BleepingComputer — Hola Chrome extension breach targeting MyEtherWallet (2018)",
+      "label": "BleepingComputer, Hola Chrome extension breach targeting MyEtherWallet (2018)",
       "url": "https://www.bleepingcomputer.com/news/security/hacker-breaches-hola-vpn-chrome-extension-to-go-after-cryptocurrency-wallet-site/"
     },
     {
-      "label": "Mergr — EMK Capital Acquires Bright Data (deal details)",
+      "label": "Mergr, EMK Capital Acquires Bright Data (deal details)",
       "url": "https://mergr.com/transaction/emk-capital-acquires-bright-data"
     },
     {
-      "label": "CSO Online — Hola users vulnerable to hacking",
+      "label": "CSO Online, Hola users vulnerable to hacking",
       "url": "https://www.csoonline.com/article/551625/users-of-free-vpn-hola-vulnerable-to-hacking-researchers-warn.html"
     }
   ]

@@ -20,7 +20,7 @@ export default function Home() {
           <Link href="/methodology" className="text-emerald-600 underline-offset-2 hover:underline dark:text-emerald-400">
             published rubric
           </Link>{" "}
-          and backed by primary sources — and we take no affiliate money.
+          and backed by primary sources. We take no money from the VPNs we list.
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-3">
           <Link

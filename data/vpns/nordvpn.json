@@ -58,8 +58,8 @@
   "notes": "Tiered Basic/Plus/Complete plans; higher tiers bundle a password manager and storage.",
   "lastVerified": "2026-06-17",
   "sources": [
-    { "label": "Security.org — NordVPN review", "url": "https://www.security.org/vpn/nordvpn/review/" },
-    { "label": "Cybernews — NordVPN review", "url": "https://cybernews.com/best-vpn/nordvpn-review/" },
+    { "label": "Security.org, NordVPN review", "url": "https://www.security.org/vpn/nordvpn/review/" },
+    { "label": "Cybernews, NordVPN review", "url": "https://cybernews.com/best-vpn/nordvpn-review/" },
     { "label": "NordVPN (official)", "url": "https://nordvpn.com" }
   ]
 }

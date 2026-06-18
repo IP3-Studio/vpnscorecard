@@ -2,7 +2,7 @@
   "slug": "surfshark",
   "name": "Surfshark",
   "website": "https://surfshark.com",
-  "tagline": "Budget-friendly, unlimited devices, RAM-only — now part of Nord Security.",
+  "tagline": "Budget-friendly, unlimited devices, RAM-only, now part of Nord Security.",
   "status": "active",
   "verified": true,
   "jurisdiction": { "country": "Netherlands", "eyes": "nine", "enemyOfInternet": "no" },
@@ -55,8 +55,8 @@
   "notes": "Merged under Nord Security's parent company in Feb 2022 but runs separate infrastructure and audit cycles.",
   "lastVerified": "2026-06-17",
   "sources": [
-    { "label": "Security.org — Surfshark review", "url": "https://www.security.org/vpn/surfshark/review/" },
-    { "label": "Surfshark vs NordVPN (official — merger + 2025 audit)", "url": "https://surfshark.com/blog/surfshark-vs-nordvpn" },
+    { "label": "Security.org, Surfshark review", "url": "https://www.security.org/vpn/surfshark/review/" },
+    { "label": "Surfshark vs NordVPN (official, merger + 2025 audit)", "url": "https://surfshark.com/blog/surfshark-vs-nordvpn" },
     { "label": "Surfshark (official)", "url": "https://surfshark.com" }
   ]
 }

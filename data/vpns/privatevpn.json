@@ -94,7 +94,7 @@
     "Small network (~200 servers), no RAM-only/diskless servers, no multihop, and closed-source clients; reviewers report IPv6/kill-switch leak issues (e.g. IPv6 leak on Linux, kill-switch leak during server changes)",
     "Owned by web-hosting conglomerate Miss Group (PE-backed by Perwyn) rather than a small in-house team"
   ],
-  "notes": "Launched around 2009 as PrivateVPN Global AB (Sweden, company reg. 559282-2182) and ACQUIRED BY MISS GROUP in 2022 — the draft's 'small in-house team' framing is outdated. Miss Group is an international web-hosting group (30+ brands, 700k+ accounts) majority-owned by private-equity firm Perwyn (since 2020); reports in early 2025 indicated Miss Group was being prepared for sale, but no completed onward acquisition (e.g. to team.blue) is confirmed as of mid-2026. No-logs policy is NOT independently audited and there is no documented court/seizure test. WireGuard is offered but reviewers consistently report it is manual-config only and not selectable in-app as of 2026. Crypto (Bitcoin) is accepted, but signup requires an email so it is not fully anonymous. Refund window is 30 days. A free trial is NOT reliably available: a 7-day no-card trial via support gift code is referenced by several 2024-2025 sources, but it is intermittent/on-request and was reportedly discontinued in 2022; vpnMentor and Top10VPN's 2026 review pages list 'no free trial' — hence freeTrialDays set to 0 with low confidence. Monthly price varies by region/promo: observed $9.29 (official prices page), $9.90, and $11.99 (vpnMentor) — the listed $8.99 could not be confirmed on a primary page and should be treated as approximate. Cheapest per-month is the 36-month plan at ~$2.00 ($1.86 on the official site's current promo).",
+  "notes": "Launched around 2009 as PrivateVPN Global AB (Sweden, company reg. 559282-2182) and ACQUIRED BY MISS GROUP in 2022, the draft's 'small in-house team' framing is outdated. Miss Group is an international web-hosting group (30+ brands, 700k+ accounts) majority-owned by private-equity firm Perwyn (since 2020); reports in early 2025 indicated Miss Group was being prepared for sale, but no completed onward acquisition (e.g. to team.blue) is confirmed as of mid-2026. No-logs policy is NOT independently audited and there is no documented court/seizure test. WireGuard is offered but reviewers consistently report it is manual-config only and not selectable in-app as of 2026. Crypto (Bitcoin) is accepted, but signup requires an email so it is not fully anonymous. Refund window is 30 days. A free trial is NOT reliably available: a 7-day no-card trial via support gift code is referenced by several 2024-2025 sources, but it is intermittent/on-request and was reportedly discontinued in 2022; vpnMentor and Top10VPN's 2026 review pages list 'no free trial', hence freeTrialDays set to 0 with low confidence. Monthly price varies by region/promo: observed $9.29 (official prices page), $9.90, and $11.99 (vpnMentor), the listed $8.99 could not be confirmed on a primary page and should be treated as approximate. Cheapest per-month is the 36-month plan at ~$2.00 ($1.86 on the official site's current promo).",
   "lastVerified": "2026-06-17",
   "sources": [
     {
@@ -110,15 +110,15 @@
       "url": "https://privatevpn.com/prices/pvpndealen/"
     },
     {
-      "label": "Miss Group press release via Cision — 'Miss Group acquires fastest-growing private VPN provider' (2022 acquisition)",
+      "label": "Miss Group press release via Cision, 'Miss Group acquires fastest-growing private VPN provider' (2022 acquisition)",
       "url": "https://news.cision.com/miss-group-holdings-ltd/r/miss-group-acquires-fastest-growing-private-vpn-provider,c3587444"
     },
     {
-      "label": "Anecta — Miss Group acquires PrivateVPN (2022; Miss Group PE-backed by Perwyn, 30+ brands)",
+      "label": "Anecta, Miss Group acquires PrivateVPN (2022; Miss Group PE-backed by Perwyn, 30+ brands)",
       "url": "https://anecta.se/en/transaktion/miss-group-acquires-private-vpn/"
     },
     {
-      "label": "webhosting.today — 'Miss Group prepares for sale' (Jan 2025; Perwyn majority owner)",
+      "label": "webhosting.today, 'Miss Group prepares for sale' (Jan 2025; Perwyn majority owner)",
       "url": "https://webhosting.today/2025/01/15/miss-group-prepares-for-sale-what-lies-ahead-for-the-nordic-hosting-giant/"
     },
     {
@@ -130,7 +130,7 @@
       "url": "https://www.top10vpn.com/reviews/privatevpn/"
     },
     {
-      "label": "vpnMentor — how to get a PrivateVPN free trial (intermittent on-request 7-day no-card trial; discontinued 2022, sometimes reoffered)",
+      "label": "vpnMentor, how to get a PrivateVPN free trial (intermittent on-request 7-day no-card trial; discontinued 2022, sometimes reoffered)",
       "url": "https://www.vpnmentor.com/blog/offers/how-to-get-a-privatevpn-free-trial-easiest-hack/"
     },
     {

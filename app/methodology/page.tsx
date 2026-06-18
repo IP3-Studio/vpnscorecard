@@ -20,7 +20,7 @@ export default function MethodologyPage() {
         fixed list of criteria, each criterion becomes a colour-coded cell worth
         0–1, category scores are the weighted average of their criteria, and the
         overall score is the weighted average of category scores. There are no
-        hidden numbers — this page is generated from the same configuration that
+        hidden numbers. This page is generated from the same configuration that
         powers the grid.
       </p>
 
@@ -28,21 +28,21 @@ export default function MethodologyPage() {
       <h2 className="mt-10 text-xl font-bold">Three kinds of tool</h2>
       <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
         Not everything called a &ldquo;VPN&rdquo; is the same product, and scoring
-        them on one scale would mislead. We tag each tool by type — and only the
+        them on one scale would mislead. We tag each tool by type, and only the
         traffic-routing ones are ranked against each other:
       </p>
       <div className="mt-3 space-y-3 text-sm">
         <div className="flex gap-3">
           <TypeBadge type="provider" className="mt-0.5 shrink-0" />
           <p className="text-zinc-600 dark:text-zinc-400">
-            <strong>Provider</strong> — a conventional VPN that routes your traffic
+            <strong>Provider.</strong> A conventional VPN that routes your traffic
             through the company&apos;s own servers (Mullvad, Proton, IVPN…). Scored in full.
           </p>
         </div>
         <div className="flex gap-3">
           <TypeBadge type="mixnet" className="mt-0.5 shrink-0" />
           <p className="text-zinc-600 dark:text-zinc-400">
-            <strong>Mixnet</strong> — routes traffic through a multi-hop mix network
+            <strong>Mixnet.</strong> Routes traffic through a multi-hop mix network
             with cover traffic that resists the traffic-correlation attacks ordinary
             VPNs can&apos;t (e.g. NymVPN). Still a traffic-routing service, so it&apos;s
             scored on the same rubric.
@@ -51,11 +51,11 @@ export default function MethodologyPage() {
         <div className="flex gap-3">
           <TypeBadge type="mesh" className="mt-0.5 shrink-0" />
           <p className="text-zinc-600 dark:text-zinc-400">
-            <strong>Mesh</strong> — links your <em>own</em> devices privately,
+            <strong>Mesh.</strong> Links your <em>own</em> devices privately,
             Tailscale-style (e.g. NostrVPN), with no traffic-exit provider. There is no
             provider no-logs policy, jurisdiction, or server network to rate, so we{" "}
-            <strong>list mesh tools but don&apos;t give them a head-to-head score</strong> —
-            comparing one to NordVPN would be apples-to-oranges.
+            <strong>list mesh tools but don&apos;t give them a head-to-head score</strong>.
+            Comparing one to NordVPN would be apples to oranges.
           </p>
         </div>
       </div>
@@ -63,10 +63,10 @@ export default function MethodologyPage() {
       <div className="mt-6 rounded-lg border border-zinc-200 p-4 text-sm dark:border-zinc-800">
         <h2 className="font-semibold">How a cell is scored</h2>
         <ul className="mt-2 space-y-1 text-zinc-600 dark:text-zinc-400">
-          <li><span className="text-emerald-600 dark:text-emerald-400">✓ Good</span> — meets the bar (score 1.0).</li>
-          <li><span className="text-amber-600 dark:text-amber-400">∼ Partial</span> — partially meets it (0.25–0.6).</li>
-          <li><span className="text-rose-600 dark:text-rose-400">✗ Poor</span> — fails it (score 0).</li>
-          <li>? Unknown / – N/A — <strong>excluded</strong> from averages, so missing data never inflates or sinks a score.</li>
+          <li><span className="text-emerald-600 dark:text-emerald-400">✓ Good</span>: meets the bar (score 1.0).</li>
+          <li><span className="text-amber-600 dark:text-amber-400">∼ Partial</span>: partially meets it (0.25 to 0.6).</li>
+          <li><span className="text-rose-600 dark:text-rose-400">✗ Poor</span>: fails it (score 0).</li>
+          <li>? Unknown or N/A: <strong>excluded</strong> from averages, so missing data never inflates or sinks a score.</li>
         </ul>
       </div>
 
@@ -123,13 +123,13 @@ export default function MethodologyPage() {
         <li>· A VPN appears on the site <strong>only</strong> once we have re-verified it against primary sources. Unverified or legacy data is never shown as current.</li>
         <li>· Every published record carries a <code>lastVerified</code> date and a list of sources, enforced at build time.</li>
         <li>· Anything we cannot confirm is marked <em>unknown</em> rather than guessed.</li>
-        <li>· The data reflects a point in time. VPNs change pricing, ownership and policies often — always confirm on the provider&apos;s own site.</li>
+        <li>· The data reflects a point in time. VPNs change pricing, ownership and policies often, so always confirm on the provider&apos;s own site.</li>
       </ul>
 
       {/* What we don't (yet) measure */}
       <h2 className="mt-10 text-xl font-bold">What we don&apos;t (yet) score</h2>
       <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
-        Connection speed is deliberately excluded — it is volatile, route- and
+        Connection speed is deliberately excluded because it is volatile, route- and
         time-dependent, and easily gamed by marketing. Website-privacy metrics
         (trackers, cookies) are collected in our schema but not yet scored. Both
         are on the roadmap.
