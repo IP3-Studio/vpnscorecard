@@ -1,0 +1,121 @@
+{
+  "slug": "nymvpn",
+  "name": "NymVPN",
+  "website": "https://nym.com/",
+  "tagline": "Decentralised mixnet VPN that hides metadata, not just your IP — with a 5-hop noise-generating mix network.",
+  "status": "active",
+  "type": "mixnet",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Switzerland",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Nym Technologies SA",
+    "founded": 2018
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Zero-knowledge architecture: Nym states no point on the network — neither Nym nor the node operators — can link your identity to your activity. zk-nym anonymous credentials decouple payment from traffic. The no-logs property rests on the decentralised mixnet design rather than a dedicated no-logs audit."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "yes",
+    "acceptsCrypto": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Nym Noise-Generating Mixnet — 5-hop Sphinx routing with cover traffic (Anonymous Mode); AmneziaWG/WireGuard 2-hop (Fast Mode)",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "yes",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "unknown",
+    "p2p": "unknown",
+    "ipv6": "unknown"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20-Poly1305 / AES-128",
+    "handshake": "Sphinx layered encryption; BLAKE2; post-quantum planned"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [
+      {
+        "firm": "Cure53",
+        "year": 2024,
+        "scope": "Apps, backend/API, infrastructure & cryptography (generally strong posture; some medium-severity backend issues)",
+        "url": "https://nym.com/trust-center/Cure53-security-audit-2024"
+      },
+      {
+        "firm": "Oak Security",
+        "year": 2023,
+        "scope": "Protocol / cryptography"
+      },
+      {
+        "firm": "JP Aumasson",
+        "year": 2021,
+        "scope": "Cryptography"
+      }
+    ],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Not yet tested by a public seizure or subpoena; protection rests on a decentralised mixnet where node operators cannot see who is communicating with whom."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 7.7,
+    "bestPerMonthUsd": 2.25,
+    "bestPlanTerm": "2 years",
+    "freeTrialDays": 7,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "High-risk users who need metadata protection, not just IP-hiding",
+    "Activists, journalists and crypto users facing traffic-analysis adversaries",
+    "People who want anonymous payment (Monero, Zcash, cash, GNU Taler)"
+  ],
+  "notFor": [
+    "Streaming / high-bandwidth use in Anonymous Mode (5 hops add latency)",
+    "Users wanting a large country/server menu like a commercial VPN",
+    "People who want a mature, set-and-forget consumer app"
+  ],
+  "pros": [
+    "5-hop noise-generating mixnet resists the traffic-correlation attacks ordinary VPNs can't",
+    "Fully open-source clients (Rust) with a strong public audit trail (Aumasson 2021, Oak 2023, Cure53 2024)",
+    "Outside 14 Eyes (Switzerland); zk-nym credentials decouple payment from traffic",
+    "Wide anonymous payment: Monero, Zcash, Bitcoin, $NYM, cash, GNU Taler"
+  ],
+  "cons": [
+    "Anonymous Mode's 5 hops add real latency vs a normal VPN",
+    "Younger product; smaller network and fewer consumer conveniences",
+    "No dedicated independent no-logs audit (protection is architectural); some past audits flagged backend issues since addressed",
+    "No OpenVPN; some features (split tunnelling) still in beta"
+  ],
+  "notes": "Built on the Nym mixnet (NYM token). Two modes: 2-hop 'Fast' (AmneziaWG/WireGuard) and 5-hop 'Anonymous' (Sphinx with continuous cover traffic). Up to 10 devices. Cure53's July 2024 assessment found a generally strong posture with some medium-severity backend DoS issues; the Coconut/e-cash cryptography was reviewed without exploitable leaks.",
+  "lastVerified": "2026-06-18",
+  "sources": [
+    { "label": "Nym — official site", "url": "https://nym.com/" },
+    { "label": "Nym — features (modes, kill switch, DNS, platforms)", "url": "https://nym.com/features" },
+    { "label": "Nym — pricing & payment methods", "url": "https://nym.com/pricing" },
+    { "label": "Nym — Cure53 security audit (July 2024)", "url": "https://nym.com/trust-center/Cure53-security-audit-2024" },
+    { "label": "nym-vpn-client (open source, Rust)", "url": "https://github.com/nymtech/nym-vpn-client" },
+    { "label": "Nym Technologies — Wikipedia", "url": "https://en.wikipedia.org/wiki/Nym_Technologies" },
+    { "label": "Cybernews — NymVPN review", "url": "https://cybernews.com/best-vpn/nymvpn-review/" }
+  ]
+}
