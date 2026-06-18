@@ -156,7 +156,7 @@ export function RecommendWizard({ vpns }: { vpns: Vpn[] }) {
         </ol>
         {results.length === 0 && (
           <p className="text-sm text-zinc-500">
-            Try widening your budget — only some services have a free tier or sub-$5 pricing.
+            Try widening your budget. Only some services have a free tier or sub-$5 pricing.
           </p>
         )}
       </div>

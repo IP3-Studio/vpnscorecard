@@ -31,7 +31,7 @@
   "technical": {
     "openvpn": "no",
     "wireguard": "no",
-    "proprietaryProtocol": "TrustTunnel (AdGuard's own VPN protocol, branded TrustTunnel when open-sourced) — masks traffic as ordinary HTTPS over HTTP/2 or HTTP/3 / QUIC transport with TLS-based encryption; reference server implementation and CLI client open-sourced under Apache 2.0 in January 2026",
+    "proprietaryProtocol": "TrustTunnel (AdGuard's own VPN protocol, branded TrustTunnel when open-sourced), masks traffic as ordinary HTTPS over HTTP/2 or HTTP/3 / QUIC transport with TLS-based encryption; reference server implementation and CLI client open-sourced under Apache 2.0 in January 2026",
     "multihop": "no",
     "obfuscation": "yes",
     "killSwitch": "yes",
@@ -84,16 +84,16 @@
   "pros": [
     "Free tier with 3 GB/month (expandable via bonuses), useful for light or trial use",
     "Custom obfuscated protocol (TrustTunnel) disguises VPN traffic as normal HTTPS over HTTP/2/HTTP/3, helping bypass blocks and censorship",
-    "TrustTunnel protocol — server reference implementation plus CLI client — was open-sourced under Apache 2.0 in January 2026, a rare transparency move",
+    "TrustTunnel protocol, server reference implementation plus CLI client, was open-sourced under Apache 2.0 in January 2026, a rare transparency move",
     "Cyprus jurisdiction, outside the 5/9/14 Eyes intelligence-sharing alliances; up to 10 simultaneous devices on paid plans"
   ],
   "cons": [
     "No-logs policy and apps have never been independently audited, and there is no transparency/warrant-canary report",
-    "Only the proprietary protocol is offered — no OpenVPN or WireGuard option for users who prefer audited standards",
+    "Only the proprietary protocol is offered, no OpenVPN or WireGuard option for users who prefer audited standards",
     "Consumer GUI apps are not fully open source (only the protocol/server reference implementation and CLI client are), and per-account traffic volume (byte counts) is recorded",
     "AdGuard was founded in Moscow, Russia (company now incorporated in Cyprus); some privacy-focused users weigh the company's origins"
   ],
-  "notes": "Server location count: the official site states \"62 countries\" and \"70+ locations\"; a raw server total is not published by AdGuard (servers set to 0 = unknown). Note that third-party 2026 reviews disagree on geography (e.g., Cloudwards cites 44 countries / 5 connections; vpnMentor cites 70 countries / 800+ servers / 10 connections) — the official AdGuard figures (62 countries, 70+ locations, 10 paid connections) are used here as authoritative. Pricing reflects standard recurring rates (monthly $11.99; 1-year $3.99/mo / $47.88; best standard plan is the 2-year at $2.99/mo, ~$71.76 billed up front, confirmed by Cloudwards). The 30-day money-back guarantee applies to 1-year and 2-year plans only; monthly subscriptions are non-refundable. Deeply discounted multi-year deals (e.g., a 5-year bundle ~$35-40 one-time, ≈$0.58-0.67/mo) appear via third-party resellers like StackSocial but are promotional, new-user one-time purchases rather than the standard plan. Kill switch is reported on desktop and mobile (on by default). P2P/torrenting is allowed on premium servers only. AdGuard DNS is the provider's own resolver. Payment methods: bank cards, PayPal, and cryptocurrency (crypto licenses are not auto-renewed). Company co-founded by Andrey Meshkov, Dmitry Zaytsev, and Igor Lukyanov; incorporated in Cyprus (AdGuard Software Limited, Limassol, reg. HE 332952, incorporated June 1, 2009), with roots in Moscow; no parent conglomerate or holding company identified across NorthData/OpenCorporates/CyprusRegistry. TrustTunnel open-source announcement is dated Jan 21, 2026 on AdGuard's own blog (some press, e.g. CyberInsider/Tom's Guide, report Jan 22).",
+  "notes": "Server location count: the official site states \"62 countries\" and \"70+ locations\"; a raw server total is not published by AdGuard (servers set to 0 = unknown). Note that third-party 2026 reviews disagree on geography (e.g., Cloudwards cites 44 countries / 5 connections; vpnMentor cites 70 countries / 800+ servers / 10 connections), the official AdGuard figures (62 countries, 70+ locations, 10 paid connections) are used here as authoritative. Pricing reflects standard recurring rates (monthly $11.99; 1-year $3.99/mo / $47.88; best standard plan is the 2-year at $2.99/mo, ~$71.76 billed up front, confirmed by Cloudwards). The 30-day money-back guarantee applies to 1-year and 2-year plans only; monthly subscriptions are non-refundable. Deeply discounted multi-year deals (e.g., a 5-year bundle ~$35-40 one-time, ≈$0.58-0.67/mo) appear via third-party resellers like StackSocial but are promotional, new-user one-time purchases rather than the standard plan. Kill switch is reported on desktop and mobile (on by default). P2P/torrenting is allowed on premium servers only. AdGuard DNS is the provider's own resolver. Payment methods: bank cards, PayPal, and cryptocurrency (crypto licenses are not auto-renewed). Company co-founded by Andrey Meshkov, Dmitry Zaytsev, and Igor Lukyanov; incorporated in Cyprus (AdGuard Software Limited, Limassol, reg. HE 332952, incorporated June 1, 2009), with roots in Moscow; no parent conglomerate or holding company identified across NorthData/OpenCorporates/CyprusRegistry. TrustTunnel open-source announcement is dated Jan 21, 2026 on AdGuard's own blog (some press, e.g. CyberInsider/Tom's Guide, report Jan 22).",
   "lastVerified": "2026-06-17",
   "sources": [
     {
@@ -113,11 +113,11 @@
       "url": "https://adguard-vpn.com/en/about-us.html"
     },
     {
-      "label": "AdGuard VPN privacy policy (last updated Dec 23, 2024 — no traffic/DNS/IP/timestamp logs; stores byte counts ~90 days)",
+      "label": "AdGuard VPN privacy policy (last updated Dec 23, 2024, no traffic/DNS/IP/timestamp logs; stores byte counts ~90 days)",
       "url": "https://adguard-vpn.com/en/privacy.html"
     },
     {
-      "label": "AdGuard blog — TrustTunnel open-source announcement (Jan 21, 2026; Apache 2.0; server reference impl + clients)",
+      "label": "AdGuard blog, TrustTunnel open-source announcement (Jan 21, 2026; Apache 2.0; server reference impl + clients)",
       "url": "https://adguard-vpn.com/en/blog/adguard-vpn-protocol-goes-open-source-meet-trusttunnel.html"
     },
     {
@@ -125,23 +125,23 @@
       "url": "https://github.com/TrustTunnel/TrustTunnel"
     },
     {
-      "label": "CyberInsider — AdGuard open-sources TrustTunnel (Jan 22, 2026; full spec + reference implementation + cross-platform clients)",
+      "label": "CyberInsider, AdGuard open-sources TrustTunnel (Jan 22, 2026; full spec + reference implementation + cross-platform clients)",
       "url": "https://cyberinsider.com/adguard-open-sources-its-custom-vpn-protocol-trusttunnel/"
     },
     {
-      "label": "Tom's Guide — TrustTunnel goes open-source",
+      "label": "Tom's Guide, TrustTunnel goes open-source",
       "url": "https://www.tomsguide.com/computing/vpns/adguard-vpns-obfuscated-trusttunnel-protocol-goes-open-source-heres-what-you-need-to-know"
     },
     {
-      "label": "Cloudwards — AdGuard VPN Review 2026 (monthly $11.99, 1yr $3.99/mo, 2yr $2.99/mo, 30-day refund, proprietary-only)",
+      "label": "Cloudwards, AdGuard VPN Review 2026 (monthly $11.99, 1yr $3.99/mo, 2yr $2.99/mo, 30-day refund, proprietary-only)",
       "url": "https://www.cloudwards.net/adguard-vpn-review/"
     },
     {
-      "label": "vpnMentor — AdGuard VPN Review 2026 (no IP/history/timestamp logs, not audited, kill switch on by default, P2P premium-only, 10 connections)",
+      "label": "vpnMentor, AdGuard VPN Review 2026 (no IP/history/timestamp logs, not audited, kill switch on by default, P2P premium-only, 10 connections)",
       "url": "https://www.vpnmentor.com/reviews/adguard-vpn/"
     },
     {
-      "label": "AllAboutCookies — AdGuard VPN Review 2026 (free tier never audited)",
+      "label": "AllAboutCookies, AdGuard VPN Review 2026 (free tier never audited)",
       "url": "https://allaboutcookies.org/adguard-vpn-review"
     },
     {
@@ -149,15 +149,15 @@
       "url": "https://github.com/AdguardTeam/AdguardKnowledgeBase/blob/master/11.vpn/04.FAQ/docs.en.md"
     },
     {
-      "label": "CyprusRegistry — ADGUARD SOFTWARE LIMITED (HE 332952, Limassol, status Active)",
+      "label": "CyprusRegistry, ADGUARD SOFTWARE LIMITED (HE 332952, Limassol, status Active)",
       "url": "https://cyprusregistry.com/companies/HE/332952"
     },
     {
-      "label": "OpenCorporates — ADGUARD SOFTWARE LIMITED (Cyprus, HE332952)",
+      "label": "OpenCorporates, ADGUARD SOFTWARE LIMITED (Cyprus, HE332952)",
       "url": "https://opencorporates.com/companies/cy/HE332952"
     },
     {
-      "label": "StackSocial — AdGuard VPN 5-Yr Subscription (promotional new-user reseller bundle ~$35-40 one-time)",
+      "label": "StackSocial, AdGuard VPN 5-Yr Subscription (promotional new-user reseller bundle ~$35-40 one-time)",
       "url": "https://www.stacksocial.com/sales/adguard-vpn-5-yr-subscription"
     }
   ]

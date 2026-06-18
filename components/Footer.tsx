@@ -10,6 +10,7 @@ const SITE_LINKS = [
 
 const STUDIO_LINKS = [
   { href: "https://ip3.studio", label: "ip3.studio" },
+  { href: "mailto:contact@ip3.studio", label: "Contact us" },
   { href: "https://x.com/ip3studio", label: "X / Twitter" },
   { href: "https://www.linkedin.com/company/ip3-studio", label: "LinkedIn" },
   { href: "https://github.com/IP3-Studio/vpnscorecard", label: "Source on GitHub" },
@@ -30,8 +31,8 @@ export function Footer() {
               VPN Scorecard
             </div>
             <p>
-              An independent, non-commercial comparison of VPN tools. We take no
-              money from the services we rank and run{" "}
+              An independent, non-commercial comparison of VPN tools. We earn
+              nothing from the VPNs we rank and carry{" "}
               <strong className="text-zinc-800 dark:text-zinc-200">
                 no affiliate links
               </strong>
@@ -89,8 +90,8 @@ export function Footer() {
             <Link href="/methodology" className="underline hover:text-emerald-600 dark:hover:text-emerald-400">
               published methodology
             </Link>{" "}
-            and editorial judgement; data is point-in-time and may be out of date —
-            always verify on the provider&apos;s own site. We are not affiliated with
+            and editorial judgement; data is point-in-time and may be out of date,
+            so always verify on the provider&apos;s own site. We are not affiliated with
             any VPN listed. Read the full{" "}
             <Link href="/disclaimer" className="underline hover:text-emerald-600 dark:hover:text-emerald-400">
               disclaimer

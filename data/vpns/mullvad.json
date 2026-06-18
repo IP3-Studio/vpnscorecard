@@ -37,7 +37,7 @@
     ],
     "transparencyReport": "yes",
     "courtTested": "yes",
-    "realWorldNoLog": "In April 2023 Swedish police executed a search warrant at Mullvad's office and left empty-handed — there was no customer data to seize."
+    "realWorldNoLog": "In April 2023 Swedish police executed a search warrant at Mullvad's office and left empty-handed, there was no customer data to seize."
   },
   "infra": { "simultaneousConnections": 5, "countries": 45, "linux": "gui" },
   "pricing": { "monthlyUsd": 5.8, "bestPerMonthUsd": 5.8, "bestPlanTerm": "flat rate (no discount)", "refundDays": 14, "freeTier": "no" },
@@ -46,7 +46,7 @@
   "notFor": ["Large streaming libraries (no port forwarding, modest network)", "Bargain hunters wanting multi-year discounts"],
   "pros": [
     "Account-number signup with no email or personal data",
-    "Flat €5/mo — no manipulative tiers or upsells",
+    "Flat €5/mo, no manipulative tiers or upsells",
     "Accepts cash and Monero; RAM-only servers",
     "Repeatedly audited; survived a real police search with no data to give"
   ],
@@ -59,7 +59,7 @@
   "lastVerified": "2026-06-17",
   "sources": [
     { "label": "Mullvad pricing (official)", "url": "https://mullvad.net/en/pricing" },
-    { "label": "TechRadar — 2025 audit", "url": "https://www.techradar.com/vpn/vpn-services/another-audit-same-result-mullvad-proven-secure-and-log-free-in-latest-audit-check" },
+    { "label": "TechRadar, 2025 audit", "url": "https://www.techradar.com/vpn/vpn-services/another-audit-same-result-mullvad-proven-secure-and-log-free-in-latest-audit-check" },
     { "label": "Mullvad (official)", "url": "https://mullvad.net" }
   ]
 }

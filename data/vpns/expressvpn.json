@@ -115,7 +115,7 @@
   ],
   "cons": [
     "Significantly more expensive than most competitors at the monthly rate, with steep post-intro renewal pricing",
-    "Owned by Kape Technologies (now private under Unikmind / Teddy Sagi) — a group with a controversial adware/Crossrider history and reduced transparency after going private",
+    "Owned by Kape Technologies (now private under Unikmind / Teddy Sagi), a group with a controversial adware/Crossrider history and reduced transparency after going private",
     "Lacks multihop/Double VPN and offers no meaningful port forwarding (router-only)",
     "Apps are proprietary (only the Lightway protocol and leak-test tools are open-source), limiting full client-side code verification"
   ],
@@ -123,63 +123,63 @@
   "lastVerified": "2026-06-17",
   "sources": [
     {
-      "label": "ExpressVPN official — Policy towards logs / privacy",
+      "label": "ExpressVPN official, Policy towards logs / privacy",
       "url": "https://www.expressvpn.com/what-is-vpn/policy-towards-logs"
     },
     {
-      "label": "ExpressVPN Blog — KPMG 2025 no-logs policy audit (ISAE 3000 Type I, 28 Feb 2025; 2nd KPMG audit, 23 total)",
+      "label": "ExpressVPN Blog, KPMG 2025 no-logs policy audit (ISAE 3000 Type I, 28 Feb 2025; 2nd KPMG audit, 23 total)",
       "url": "https://www.expressvpn.com/blog/kpmg-2025-no-logs-policy-audit/"
     },
     {
-      "label": "ExpressVPN Blog — Why ExpressVPN now supports WireGuard (post-quantum, Aug 2025)",
+      "label": "ExpressVPN Blog, Why ExpressVPN now supports WireGuard (post-quantum, Aug 2025)",
       "url": "https://www.expressvpn.com/blog/why-expressvpn-now-supports-wireguard/"
     },
     {
-      "label": "ExpressVPN Blog — 2 security audits of Lightway's Rust rewrite (Cure53 + Praetorian, 2024)",
+      "label": "ExpressVPN Blog, 2 security audits of Lightway's Rust rewrite (Cure53 + Praetorian, 2024)",
       "url": "https://www.expressvpn.com/blog/lightway-audits-cure53-praetorian/"
     },
     {
-      "label": "ExpressVPN Blog — PwC audits ExpressVPN servers / TrustedServer",
+      "label": "ExpressVPN Blog, PwC audits ExpressVPN servers / TrustedServer",
       "url": "https://www.expressvpn.com/blog/pwc-audits-expressvpn-servers-to-confirm-essential-privacy-protections/"
     },
     {
-      "label": "ExpressVPN Support — Simultaneous connections (10/12/14 by tier)",
+      "label": "ExpressVPN Support, Simultaneous connections (10/12/14 by tier)",
       "url": "https://www.expressvpn.com/support/knowledge-hub/simultaneous-connections/"
     },
     {
-      "label": "ExpressVPN official — Buy VPN with Bitcoin/crypto (BitPay, USDT, email-only signup)",
+      "label": "ExpressVPN official, Buy VPN with Bitcoin/crypto (BitPay, USDT, email-only signup)",
       "url": "https://www.expressvpn.com/features/buy-vpn-with-bitcoin"
     },
     {
-      "label": "ExpressVPN official — VPN trial (7-day mobile free trial)",
+      "label": "ExpressVPN official, VPN trial (7-day mobile free trial)",
       "url": "https://www.expressvpn.com/features/vpn-trial"
     },
     {
-      "label": "Comparitech — ExpressVPN server seized in Turkey, no info found (2017)",
+      "label": "Comparitech, ExpressVPN server seized in Turkey, no info found (2017)",
       "url": "https://www.comparitech.com/blog/vpn-privacy/expressvpn-server-seized-in-turkey-verifyies-no-logs-claim/"
     },
     {
-      "label": "PrivateProxyGuide — Who Owns ExpressVPN in 2026 (Kape/Unikmind/Teddy Sagi; Crossrider history)",
+      "label": "PrivateProxyGuide, Who Owns ExpressVPN in 2026 (Kape/Unikmind/Teddy Sagi; Crossrider history)",
       "url": "https://www.privateproxyguide.com/who-owns-expressvpn/"
     },
     {
-      "label": "Wikipedia — Kape Technologies (Unikmind delisting from AIM, 31 May 2023)",
+      "label": "Wikipedia, Kape Technologies (Unikmind delisting from AIM, 31 May 2023)",
       "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
     },
     {
-      "label": "Security.org — ExpressVPN price & plans 2026 ($2.79 2-yr Basic, 30-day guarantee, tiers)",
+      "label": "Security.org, ExpressVPN price & plans 2026 ($2.79 2-yr Basic, 30-day guarantee, tiers)",
       "url": "https://www.security.org/vpn/expressvpn/"
     },
     {
-      "label": "AllAboutCookies — ExpressVPN price 2026 ($2.49 2-yr Basic; Advanced/Pro tiers)",
+      "label": "AllAboutCookies, ExpressVPN price 2026 ($2.49 2-yr Basic; Advanced/Pro tiers)",
       "url": "https://allaboutcookies.org/expressvpn-price"
     },
     {
-      "label": "TechRadar — ExpressVPN removes 30-day guarantee during World Cup (10 Jun–11 Jul 2026)",
+      "label": "TechRadar, ExpressVPN removes 30-day guarantee during World Cup (10 Jun–11 Jul 2026)",
       "url": "https://www.techradar.com/vpn/vpn-services/expressvpn-removes-30-day-free-trial-during-the-world-cup-here-are-the-vpns-with-the-best-free-trials-to-use-instead"
     },
     {
-      "label": "Wikipedia — ExpressVPN (founded 2009, history)",
+      "label": "Wikipedia, ExpressVPN (founded 2009, history)",
       "url": "https://en.wikipedia.org/wiki/ExpressVPN"
     }
   ]

@@ -55,8 +55,8 @@
   "notes": "A 2021 incident saw two servers seized in Ukraine; Windscribe responded by hardening server security and rolling out its FreshScribe stack.",
   "lastVerified": "2026-06-17",
   "sources": [
-    { "label": "Windscribe — no identifying logs (official)", "url": "https://windscribe.com/features/no-identifying-logs" },
-    { "label": "BleepingComputer — Windscribe review (audits)", "url": "https://www.bleepingcomputer.com/vpn/reviews/windscribe-vpn-review/" },
+    { "label": "Windscribe, no identifying logs (official)", "url": "https://windscribe.com/features/no-identifying-logs" },
+    { "label": "BleepingComputer, Windscribe review (audits)", "url": "https://www.bleepingcomputer.com/vpn/reviews/windscribe-vpn-review/" },
     { "label": "Windscribe (official)", "url": "https://windscribe.com" }
   ]
 }

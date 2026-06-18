@@ -57,6 +57,6 @@
   "sources": [
     { "label": "IVPN no-logging audit (official)", "url": "https://www.ivpn.net/blog/ivpn-no-logging-claim-verified-by-independent-audit" },
     { "label": "IVPN (official)", "url": "https://www.ivpn.net" },
-    { "label": "Wikipedia — IVPN", "url": "https://en.wikipedia.org/wiki/IVPN" }
+    { "label": "Wikipedia, IVPN", "url": "https://en.wikipedia.org/wiki/IVPN" }
   ]
 }

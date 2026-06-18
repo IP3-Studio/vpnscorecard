@@ -51,7 +51,7 @@
       {
         "firm": "Unnamed authorized third-party lab (Google Play MASA)",
         "year": 2026,
-        "scope": "Android app only — Mobile Application Security Assessment (MASA) validated against OWASP MASVS (MASTG); earned Google Play 'Verified'/Independent Security Review badge. NOT a no-logs or full-infrastructure audit; auditing firm not publicly named.",
+        "scope": "Android app only, Mobile Application Security Assessment (MASA) validated against OWASP MASVS (MASTG); earned Google Play 'Verified'/Independent Security Review badge. NOT a no-logs or full-infrastructure audit; auditing firm not publicly named.",
         "url": "https://zoogvpn.com/android-security-badge/"
       }
     ],
@@ -105,47 +105,47 @@
   "lastVerified": "2026-06-17",
   "sources": [
     {
-      "label": "ZoogVPN official — Privacy Policy (logging, legal entity, company no., Greece jurisdiction)",
+      "label": "ZoogVPN official, Privacy Policy (logging, legal entity, company no., Greece jurisdiction)",
       "url": "https://zoogvpn.com/privacy/"
     },
     {
-      "label": "ZoogVPN official — Pricing (monthly $9.99, 2-year $2.49/$59.99, free 10 GB tier, 7-day refund, crypto/payment methods)",
+      "label": "ZoogVPN official, Pricing (monthly $9.99, 2-year $2.49/$59.99, free 10 GB tier, 7-day refund, crypto/payment methods)",
       "url": "https://zoogvpn.com/pricing/"
     },
     {
-      "label": "ZoogVPN official — Features (10 connections, OpenVPN/IKEv2, kill switch, Shadow obfuscation, P2P, AES-256/2048-bit)",
+      "label": "ZoogVPN official, Features (10 connections, OpenVPN/IKEv2, kill switch, Shadow obfuscation, P2P, AES-256/2048-bit)",
       "url": "https://zoogvpn.com/features/"
     },
     {
-      "label": "ZoogVPN official — WireGuard implementation page",
+      "label": "ZoogVPN official, WireGuard implementation page",
       "url": "https://zoogvpn.com/wireguard-implementation/"
     },
     {
-      "label": "ZoogVPN official — Warrant Canary (current as of June 2026; 0 NSLs / gag orders / warrants)",
+      "label": "ZoogVPN official, Warrant Canary (current as of June 2026; 0 NSLs / gag orders / warrants)",
       "url": "https://zoogvpn.com/warrant-canary/"
     },
     {
-      "label": "ZoogVPN official — Android 'Verified' badge / MASA (OWASP MASVS) audit announcement (firm unnamed)",
+      "label": "ZoogVPN official, Android 'Verified' badge / MASA (OWASP MASVS) audit announcement (firm unnamed)",
       "url": "https://zoogvpn.com/android-security-badge/"
     },
     {
-      "label": "Softoria official — confirms ZoogVPN is a Softoria-group product (with DataForSEO, DataImpulse); Ukraine-based, founded 2014",
+      "label": "Softoria official, confirms ZoogVPN is a Softoria-group product (with DataForSEO, DataImpulse); Ukraine-based, founded 2014",
       "url": "https://softoria.com/why-us/"
     },
     {
-      "label": "top10vpn — ZoogVPN review (Softoria/ZoogVPN same owner, Ukraine operations, 10 paid connections, no independent audit)",
+      "label": "top10vpn, ZoogVPN review (Softoria/ZoogVPN same owner, Ukraine operations, 10 paid connections, no independent audit)",
       "url": "https://www.top10vpn.com/reviews/zoogvpn/"
     },
     {
-      "label": "vpnMentor — ZoogVPN Review 2026 (no infrastructure audit, 100 servers/55 countries, $2.49 best price, no multi-hop/port-forwarding/RAM-only)",
+      "label": "vpnMentor, ZoogVPN Review 2026 (no infrastructure audit, 100 servers/55 countries, $2.49 best price, no multi-hop/port-forwarding/RAM-only)",
       "url": "https://www.vpnmentor.com/reviews/zoogvpn/"
     },
     {
-      "label": "PrivacySharks — ZoogVPN Review 2026 (launched 2013, Greece base, no-logs not yet audited, 7-day refund)",
+      "label": "PrivacySharks, ZoogVPN Review 2026 (launched 2013, Greece base, no-logs not yet audited, 7-day refund)",
       "url": "https://www.privacysharks.com/vpn-reviews/zoogvpn/"
     },
     {
-      "label": "Cloudwards — ZoogVPN Review 2026 (Linux no-GUI limitation, 7-day guarantee, no named audit)",
+      "label": "Cloudwards, ZoogVPN Review 2026 (Linux no-GUI limitation, 7-day guarantee, no named audit)",
       "url": "https://www.cloudwards.net/zoogvpn-review/"
     }
   ]

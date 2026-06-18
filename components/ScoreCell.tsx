@@ -29,11 +29,18 @@ export function ScoreBadge({
   score: number | null;
   className?: string;
 }) {
+  if (score == null) {
+    return (
+      <span className={`font-mono font-semibold ${scoreText(score)} ${className}`}>
+        <span className="text-lg leading-none">n/a</span>
+      </span>
+    );
+  }
   return (
     <span
       className={`inline-flex items-baseline gap-0.5 font-mono font-semibold ${scoreText(score)} ${className}`}
     >
-      <span className="text-lg leading-none">{score ?? "–"}</span>
+      <span className="text-lg leading-none">{score}</span>
       <span className="text-[10px] opacity-60">/100</span>
     </span>
   );
