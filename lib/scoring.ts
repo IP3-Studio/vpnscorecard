@@ -46,6 +46,16 @@ export function scoreVpn(v: Vpn): VpnScore {
   const cells: Record<string, Cell> = {};
   for (const cr of CRITERIA) cells[cr.id] = cr.evaluate(v);
 
+  // Mesh VPNs link your own devices; they aren't traffic-routing providers, so
+  // we don't assign a comparable score — only the data sheet is shown.
+  if (v.type === "mesh") {
+    return {
+      overall: null,
+      categories: CATEGORIES.map((c) => ({ id: c.id, label: c.label, score: null })),
+      cells,
+    };
+  }
+
   const categories: CategoryScore[] = CATEGORIES.map((cat) => {
     const mean = weightedMean(
       CRITERIA_BY_CATEGORY[cat.id].map((cr) => ({

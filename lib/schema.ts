@@ -23,6 +23,13 @@ export const LogState = z.enum(["none", "some", "yes", "unknown"]);
 export const Eyes = z.enum(["none", "five", "nine", "fourteen", "unknown"]);
 /** Lifecycle status. Only `active` services are scored/ranked. */
 export const Status = z.enum(["active", "legacy", "defunct"]);
+/**
+ * Product category. `provider` = routes your traffic through the company's
+ * servers (a normal VPN). `mixnet` = routes through a multi-hop mix network
+ * (e.g. Nym). `mesh` = links your own devices (Tailscale-style) — NOT a
+ * traffic-exit provider, so it is listed but never scored head-to-head.
+ */
+export const VpnType = z.enum(["provider", "mixnet", "mesh"]);
 
 export const SourceSchema = z.object({
   label: z.string(),
@@ -46,6 +53,8 @@ export const VpnSchema = z.object({
   /** Short one-liner shown on cards and the detail header. */
   tagline: z.string().optional(),
   status: Status.default("active"),
+  /** Product category (provider / mixnet / mesh). Mesh tools are not scored. */
+  type: VpnType.default("provider"),
   /** Gate for public display. Unverified records never appear as current. */
   verified: z.boolean().default(false),
 

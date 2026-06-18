@@ -94,6 +94,7 @@ export function recommend(vpns: Vpn[], prefs: Prefs): Recommendation[] {
   ]);
 
   return vpns
+    .filter((v) => v.type !== "mesh") // mesh tools aren't traffic-routing providers
     .filter((v) => passesBudget(v, prefs.budget))
     .map((v) => {
       const { cells } = scoreVpn(v);
