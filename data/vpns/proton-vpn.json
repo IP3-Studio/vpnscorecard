@@ -31,7 +31,7 @@
   "transparency": {
     "openSourceClients": "yes",
     "audits": [
-      { "firm": "Securitum", "year": 2025, "scope": "no-logs — live server inspection, Zürich", "url": "https://protonvpn.com/blog/no-logs-audit" },
+      { "firm": "Securitum", "year": 2025, "scope": "no-logs, live server inspection, Zürich", "url": "https://protonvpn.com/blog/no-logs-audit" },
       { "firm": "Securitum", "year": 2024, "scope": "no-logs" }
     ],
     "transparencyReport": "yes",
@@ -57,7 +57,7 @@
   "lastVerified": "2026-06-17",
   "sources": [
     { "label": "Proton VPN no-logs audits (official)", "url": "https://protonvpn.com/blog/no-logs-audit" },
-    { "label": "Tom's Guide — fourth consecutive no-logs audit", "url": "https://www.tomsguide.com/computing/vpns/proton-vpn-passes-its-fourth-consecutive-no-logs-audit-heres-what-that-means-for-your-data" },
+    { "label": "Tom's Guide, fourth consecutive no-logs audit", "url": "https://www.tomsguide.com/computing/vpns/proton-vpn-passes-its-fourth-consecutive-no-logs-audit-heres-what-that-means-for-your-data" },
     { "label": "Proton VPN (official)", "url": "https://protonvpn.com" }
   ]
 }

@@ -35,12 +35,12 @@ export default function DisclaimerPage() {
       </p>
 
       <div className="mt-8 space-y-6 text-sm">
-        <Item title="Independence — no affiliates, no sponsors">
-          We are not affiliated with, sponsored by, or paid by any VPN provider
-          listed. We run <strong>no affiliate links</strong> and accept no money
-          from the services we rank. Our only goal is an honest comparison.
+        <Item title="Independence">
+          We are not affiliated with, sponsored by, or paid by any VPN we list,
+          and we run <strong>no affiliate links</strong>. Our only goal is an
+          honest comparison.
         </Item>
-        <Item title="Informational only — not advice">
+        <Item title="Informational only">
           This site is provided for general information and education. It is{" "}
           <strong>not legal, security, or financial advice</strong> and should not
           be relied on as such. Choose tools based on your own situation and, where
@@ -62,7 +62,7 @@ export default function DisclaimerPage() {
           security, privacy, or suitability for you.
         </Item>
         <Item title="No tool is perfect">
-          No VPN — or any single tool — provides perfect anonymity or security. A VPN
+          No VPN, or any single tool, provides perfect anonymity or security. A VPN
           is one part of a broader privacy strategy, and the right choice depends on
           your own threat model.
         </Item>

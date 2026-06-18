@@ -55,7 +55,7 @@
       {
         "firm": "App Defense Alliance (MASA)",
         "year": 2023,
-        "scope": "Mobile Application Security Assessment — authentication, information handling, encryption",
+        "scope": "Mobile Application Security Assessment, authentication, information handling, encryption",
         "url": "https://www.vpnmentor.com/reviews/hide-me-vpn/"
       },
       {
@@ -107,8 +107,8 @@
     "Linux CLI, OpenWRT and Ubuntu Touch clients are open source (GPL-2.0) on the eVenture GitHub org"
   ],
   "cons": [
-    "No-logs audit cadence is light — one true no-logs audit (Securitum 2024) plus a mobile (MASA) assessment and a 2015 DefenseCode audit; not audited annually like some rivals",
-    "Main desktop and mobile apps are not open source — only niche Linux/router/Ubuntu Touch clients are public, limiting independent code verification",
+    "No-logs audit cadence is light, one true no-logs audit (Securitum 2024) plus a mobile (MASA) assessment and a 2015 DefenseCode audit; not audited annually like some rivals",
+    "Main desktop and mobile apps are not open source, only niche Linux/router/Ubuntu Touch clients are public, limiting independent code verification",
     "Month-to-month price is high ($11.99); the cheap rate requires a ~2-year commitment",
     "No documented real-world court/seizure test of the no-logs claim; static port forwarding is not offered"
   ],
@@ -116,35 +116,35 @@
   "lastVerified": "2026-06-17",
   "sources": [
     {
-      "label": "SafetyDetectives — hide.me VPN Review 2026 (audit, RAM-only, pricing $11.99/$2.59, 10 connections)",
+      "label": "SafetyDetectives, hide.me VPN Review 2026 (audit, RAM-only, pricing $11.99/$2.59, 10 connections)",
       "url": "https://www.safetydetectives.com/best-vpns/hide-me/"
     },
     {
-      "label": "vpnMentor — Hide.me Review 2026 (no-logs, MASA audit, payments, owner eVenture)",
+      "label": "vpnMentor, Hide.me Review 2026 (no-logs, MASA audit, payments, owner eVenture)",
       "url": "https://www.vpnmentor.com/reviews/hide-me-vpn/"
     },
     {
-      "label": "Cloudwards — Hide.me VPN Review 2026 (RAM-only confirmed, $2.69/2yr billed $69.95, 30-day refund, eVenture, Malaysia non-Eyes)",
+      "label": "Cloudwards, Hide.me VPN Review 2026 (RAM-only confirmed, $2.69/2yr billed $69.95, 30-day refund, eVenture, Malaysia non-Eyes)",
       "url": "https://www.cloudwards.net/hide-me-review/"
     },
     {
-      "label": "Top10VPN — Hide.me Review 2026 (RAM-only/diskless, no open-source apps, no court/seizure test, $11.99 monthly)",
+      "label": "Top10VPN, Hide.me Review 2026 (RAM-only/diskless, no open-source apps, no court/seizure test, $11.99 monthly)",
       "url": "https://www.top10vpn.com/reviews/hide-me/"
     },
     {
-      "label": "VPNOverview — Hide.me VPN Review 2025 (RAM-only servers, Securitum 2024 covered RAM structure, VPN Trust Initiative 2025)",
+      "label": "VPNOverview, Hide.me VPN Review 2025 (RAM-only servers, Securitum 2024 covered RAM structure, VPN Trust Initiative 2025)",
       "url": "https://vpnoverview.com/vpn-reviews/hide-me/"
     },
     {
-      "label": "WizCase — hide.me Review 2026 (diskless servers, eVenture independent of rivals, 30-day refund)",
+      "label": "WizCase, hide.me Review 2026 (diskless servers, eVenture independent of rivals, 30-day refund)",
       "url": "https://www.wizcase.com/reviews/hide-me/"
     },
     {
-      "label": "hide.me VPN (eVenture) GitHub organization — open-source Linux CLI, OpenWRT, Ubuntu Touch clients (GPL-2.0) and SoftEther fork",
+      "label": "hide.me VPN (eVenture) GitHub organization, open-source Linux CLI, OpenWRT, Ubuntu Touch clients (GPL-2.0) and SoftEther fork",
       "url": "https://github.com/eventure"
     },
     {
-      "label": "Gizmodo — Hide.me Review 2026 (pricing cross-check, jurisdiction, crypto payments)",
+      "label": "Gizmodo, Hide.me Review 2026 (pricing cross-check, jurisdiction, crypto payments)",
       "url": "https://gizmodo.com/best-vpn/hide-me"
     }
   ]

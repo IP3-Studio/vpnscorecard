@@ -2,7 +2,7 @@
   "slug": "nymvpn",
   "name": "NymVPN",
   "website": "https://nym.com/",
-  "tagline": "Decentralised mixnet VPN that hides metadata, not just your IP — with a 5-hop noise-generating mix network.",
+  "tagline": "Decentralised mixnet VPN that hides metadata, not just your IP, with a 5-hop noise-generating mix network.",
   "status": "active",
   "type": "mixnet",
   "verified": true,
@@ -21,7 +21,7 @@
     "timestamps": "none",
     "bandwidth": "none",
     "ip": "none",
-    "summary": "Zero-knowledge architecture: Nym states no point on the network — neither Nym nor the node operators — can link your identity to your activity. zk-nym anonymous credentials decouple payment from traffic. The no-logs property rests on the decentralised mixnet design rather than a dedicated no-logs audit."
+    "summary": "Zero-knowledge architecture: Nym states no point on the network, neither Nym nor the node operators, can link your identity to your activity. zk-nym anonymous credentials decouple payment from traffic. The no-logs property rests on the decentralised mixnet design rather than a dedicated no-logs audit."
   },
   "privacy": {
     "anonymousSignup": "yes",
@@ -32,7 +32,7 @@
   "technical": {
     "openvpn": "no",
     "wireguard": "yes",
-    "proprietaryProtocol": "Nym Noise-Generating Mixnet — 5-hop Sphinx routing with cover traffic (Anonymous Mode); AmneziaWG/WireGuard 2-hop (Fast Mode)",
+    "proprietaryProtocol": "Nym Noise-Generating Mixnet, 5-hop Sphinx routing with cover traffic (Anonymous Mode); AmneziaWG/WireGuard 2-hop (Fast Mode)",
     "multihop": "yes",
     "obfuscation": "yes",
     "killSwitch": "yes",
@@ -110,12 +110,12 @@
   "notes": "Built on the Nym mixnet (NYM token). Two modes: 2-hop 'Fast' (AmneziaWG/WireGuard) and 5-hop 'Anonymous' (Sphinx with continuous cover traffic). Up to 10 devices. Cure53's July 2024 assessment found a generally strong posture with some medium-severity backend DoS issues; the Coconut/e-cash cryptography was reviewed without exploitable leaks.",
   "lastVerified": "2026-06-18",
   "sources": [
-    { "label": "Nym — official site", "url": "https://nym.com/" },
-    { "label": "Nym — features (modes, kill switch, DNS, platforms)", "url": "https://nym.com/features" },
-    { "label": "Nym — pricing & payment methods", "url": "https://nym.com/pricing" },
-    { "label": "Nym — Cure53 security audit (July 2024)", "url": "https://nym.com/trust-center/Cure53-security-audit-2024" },
+    { "label": "Nym, official site", "url": "https://nym.com/" },
+    { "label": "Nym, features (modes, kill switch, DNS, platforms)", "url": "https://nym.com/features" },
+    { "label": "Nym, pricing & payment methods", "url": "https://nym.com/pricing" },
+    { "label": "Nym, Cure53 security audit (July 2024)", "url": "https://nym.com/trust-center/Cure53-security-audit-2024" },
     { "label": "nym-vpn-client (open source, Rust)", "url": "https://github.com/nymtech/nym-vpn-client" },
-    { "label": "Nym Technologies — Wikipedia", "url": "https://en.wikipedia.org/wiki/Nym_Technologies" },
-    { "label": "Cybernews — NymVPN review", "url": "https://cybernews.com/best-vpn/nymvpn-review/" }
+    { "label": "Nym Technologies, Wikipedia", "url": "https://en.wikipedia.org/wiki/Nym_Technologies" },
+    { "label": "Cybernews, NymVPN review", "url": "https://cybernews.com/best-vpn/nymvpn-review/" }
   ]
 }

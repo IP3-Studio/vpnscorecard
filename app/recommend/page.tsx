@@ -15,8 +15,8 @@ export default function RecommendPage() {
       <h1 className="text-3xl font-bold tracking-tight">Find my VPN</h1>
       <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-400">
         Tell us what matters to you. We re-weight our published criteria
-        accordingly and explain every recommendation — no black-box AI, no
-        affiliate bias.
+        accordingly and show the reasoning behind every result. It runs on a
+        documented rubric you can read, and no result is paid placement.
       </p>
       <RecommendWizard vpns={vpns} />
     </div>

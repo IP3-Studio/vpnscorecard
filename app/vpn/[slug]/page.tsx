@@ -48,7 +48,7 @@ export default async function VpnPage({
 
   const devices =
     vpn.infra.simultaneousConnections === undefined
-      ? "—"
+      ? "n/a"
       : String(vpn.infra.simultaneousConnections);
 
   return (
@@ -82,7 +82,7 @@ export default async function VpnPage({
         <div className="flex flex-col items-start gap-1 sm:items-end">
           {vpn.type === "mesh" ? (
             <span className="rounded-md bg-violet-100 px-2 py-1 text-xs font-medium text-violet-700 dark:bg-violet-500/15 dark:text-violet-300">
-              Mesh tool — not scored
+              Mesh tool, not scored
             </span>
           ) : (
             <>
@@ -103,14 +103,14 @@ export default async function VpnPage({
               : ""
           }`}
         />
-        <Fact label="Founded" value={vpn.company.founded ? String(vpn.company.founded) : "—"} />
-        <Fact label="Owner" value={vpn.company.parent ?? "—"} />
+        <Fact label="Founded" value={vpn.company.founded ? String(vpn.company.founded) : "n/a"} />
+        <Fact label="Owner" value={vpn.company.parent ?? "n/a"} />
         <Fact
           label="Best price"
           value={
             vpn.pricing.bestPerMonthUsd != null
               ? `$${vpn.pricing.bestPerMonthUsd.toFixed(2)}/mo`
-              : "—"
+              : "n/a"
           }
         />
         <Fact label="Devices" value={devices} />
@@ -130,7 +130,7 @@ export default async function VpnPage({
         <div className="mt-6 rounded-lg border border-violet-200 bg-violet-50/50 p-4 text-sm text-zinc-600 dark:border-violet-500/20 dark:bg-violet-500/5 dark:text-zinc-300">
           <strong>{vpn.name} is a mesh VPN</strong>, so we don&apos;t give it a head-to-head
           score. There&apos;s no provider no-logs policy, jurisdiction, or server network to
-          rate — only your own devices, linked privately. The data sheet below shows what it
+          rate, just your own devices linked privately. The data sheet below shows what it
           does offer.
         </div>
       ) : (
@@ -139,7 +139,7 @@ export default async function VpnPage({
             <div key={c.id} className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-800">
               <div className="flex items-baseline justify-between">
                 <span className="text-sm font-medium">{c.label}</span>
-                <span className="font-mono text-sm">{c.score ?? "–"}</span>
+                <span className="font-mono text-sm">{c.score ?? "n/a"}</span>
               </div>
               <div className="mt-2">
                 <ScoreBar score={c.score} />
@@ -202,7 +202,7 @@ export default async function VpnPage({
       {/* Full data sheet (in the spirit of the original chart) */}
       <h2 className="mt-10 text-xl font-bold">Full data sheet</h2>
       <p className="mb-4 mt-1 text-sm text-zinc-500">
-        Every attribute we track — coloured by whether it helps or hurts your privacy.
+        Every attribute we track, coloured by whether it helps or hurts your privacy.
       </p>
       <DataSheet vpn={vpn} />
 
@@ -246,7 +246,7 @@ export default async function VpnPage({
         </ul>
         {vpn.lastVerified && (
           <p className="mt-3 text-xs text-zinc-500">
-            Last verified {vpn.lastVerified}. Point-in-time data — always confirm on the provider&apos;s own site.
+            Last verified {vpn.lastVerified}. Point-in-time data, so always confirm on the provider&apos;s own site.
           </p>
         )}
       </div>

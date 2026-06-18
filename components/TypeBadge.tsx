@@ -8,14 +8,14 @@ export const TYPE_META: Record<
     label: "VPN provider",
     short: "Provider",
     cls: "bg-zinc-100 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300",
-    blurb: "Routes your traffic through the company's own servers — a conventional VPN.",
+    blurb: "A conventional VPN that routes your traffic through the company's own servers.",
   },
   mixnet: {
     label: "Mixnet VPN",
     short: "Mixnet",
     cls: "bg-indigo-100 text-indigo-700 dark:bg-indigo-500/15 dark:text-indigo-300",
     blurb:
-      "Routes traffic through a multi-hop mix network with cover traffic — resists the traffic-correlation attacks ordinary VPNs can't.",
+      "Routes traffic through a multi-hop mix network with cover traffic, resisting the traffic-correlation attacks ordinary VPNs can't.",
   },
   mesh: {
     label: "Mesh VPN",

@@ -3,7 +3,7 @@ import { scoreVpn } from "./scoring";
 import type { Vpn } from "./schema";
 
 /**
- * Transparent, rule-based "find my VPN" recommender — no LLM. It re-weights the
+ * Transparent, rule-based "find my VPN" recommender (no LLM). It re-weights the
  * same criteria used for scoring, emphasising the ones the user cares about,
  * applies a budget filter, and explains every result.
  */

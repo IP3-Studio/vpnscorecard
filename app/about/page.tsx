@@ -40,7 +40,7 @@ export default function AboutPage() {
 
       <h2 className="mt-8 text-xl font-bold">Our principles</h2>
       <ul className="mt-3 space-y-2 text-zinc-600 dark:text-zinc-400">
-        <li>· <strong>No affiliate links.</strong> Ever. No sponsorships, no paid placement.</li>
+        <li>· <strong>The rankings aren&apos;t for sale.</strong> We earn nothing if you sign up, and take no sponsorships or paid placement.</li>
         <li>· <strong>Sourced or unknown.</strong> We cite primary sources or say we don&apos;t know.</li>
         <li>· <strong>Transparent scoring.</strong> The whole rubric is public and the code is open.</li>
         <li>· <strong>Point-in-time honesty.</strong> Every record shows when it was last verified.</li>
@@ -52,7 +52,7 @@ export default function AboutPage() {
         <a href="https://github.com/IP3-Studio" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline dark:text-emerald-400">
           IP3 Studio
         </a>
-        . The dataset and site are works in progress — we publish a VPN only once
+        . The dataset and site are works in progress; we publish a VPN only once
         it has been re-verified, and add more in batches. Spotted something out of
         date or wrong? Corrections via the GitHub repository are very welcome.
       </p>
