@@ -38,7 +38,10 @@
     "ownDns": "yes",
     "ramOnly": "unknown",
     "portForwarding": "no",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "no",
+    "postQuantum": "yes",
+    "postQuantumNote": "MASQUE tunnel over TLS 1.3 with hybrid ML-KEM-768 (X25519/P-256 ECDH + ML-KEM-768); shipped Sept 2025 for both free consumer 1.1.1.1 and enterprise clients. PQ via MASQUE only, not WireGuard."
   },
   "encryption": {
     "dataCipher": "ChaCha20-Poly1305 (WireGuard, TLS_CHACHA20_POLY1305_SHA256); MASQUE rides TLS 1.3 over QUIC/HTTP3",

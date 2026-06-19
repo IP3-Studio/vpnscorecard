@@ -39,7 +39,10 @@
     "ownDns": "yes",
     "ramOnly": "no",
     "portForwarding": "no",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "no",
+    "insecureProtocols": "L2TP"
   },
   "encryption": {
     "dataCipher": "AES-256 (OpenVPN) / ChaCha20 (WireGuard)",

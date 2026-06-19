@@ -38,7 +38,9 @@
     "ownDns": "yes",
     "ramOnly": "yes",
     "portForwarding": "yes",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "no"
   },
   "encryption": {
     "dataCipher": "AES-256-GCM (OpenVPN); ChaCha20 (WireGuard)",

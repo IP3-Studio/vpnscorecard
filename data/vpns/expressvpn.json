@@ -39,7 +39,10 @@
     "ownDns": "yes",
     "ramOnly": "yes",
     "portForwarding": "no",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "yes",
+    "postQuantumNote": "Lightway protocol uses ML-KEM (NIST post-quantum standard, built on Kyber) at NIST Security Level 5 for TCP and UDP; rolled out across all major platforms January 2025. A post-quantum WireGuard variant was also added in 2025."
   },
   "encryption": {
     "dataCipher": "AES-256-GCM",

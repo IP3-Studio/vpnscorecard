@@ -37,7 +37,10 @@
     "ownDns": "unknown",
     "ramOnly": "unknown",
     "portForwarding": "yes",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "no",
+    "insecureProtocols": "PPTP, L2TP"
   },
   "encryption": {
     "dataCipher": "AES-256-CBC (OpenVPN)",

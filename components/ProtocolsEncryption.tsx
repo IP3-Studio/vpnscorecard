@@ -90,6 +90,15 @@ export function ProtocolsEncryption({ vpn }: { vpn: Vpn }) {
         </div>
       )}
 
+      {t.insecureProtocols && (
+        <div className="mt-3 rounded-lg border border-rose-200 bg-rose-50/40 p-4 text-sm dark:border-rose-500/20 dark:bg-rose-500/5">
+          <span className="font-semibold text-rose-700 dark:text-rose-300">Also offers legacy protocols. </span>
+          <span className="text-zinc-600 dark:text-zinc-300">
+            {t.insecureProtocols}, which are outdated and best avoided.
+          </span>
+        </div>
+      )}
+
       <div className="mt-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
         <div className="border-b border-zinc-200 px-4 py-2 text-xs font-semibold uppercase tracking-wide text-zinc-500 dark:border-zinc-800">
           This provider&apos;s setup
@@ -116,6 +125,9 @@ export function ProtocolsEncryption({ vpn }: { vpn: Vpn }) {
           ))}
         </dl>
       </div>
+      {t.postQuantum === "yes" && t.postQuantumNote && (
+        <p className="mt-2 text-xs text-zinc-500">Post-quantum: {t.postQuantumNote}</p>
+      )}
     </section>
   );
 }
