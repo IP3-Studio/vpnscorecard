@@ -37,7 +37,10 @@
     "ownDns": "yes",
     "ramOnly": "no",
     "portForwarding": "unknown",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "no",
+    "insecureProtocols": "PPTP, L2TP"
   },
   "encryption": {
     "dataCipher": "AES-GCM",

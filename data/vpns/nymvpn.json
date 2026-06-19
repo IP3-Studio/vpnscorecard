@@ -40,7 +40,10 @@
     "ramOnly": "unknown",
     "portForwarding": "unknown",
     "p2p": "unknown",
-    "ipv6": "unknown"
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "yes",
+    "postQuantumNote": "Post-quantum key exchange via NymVPN's purpose-built Lewes Protocol, which layers an additional PQ secret key on top of the existing WireGuard/AmneziaWG-based key exchange (hybrid). Enabled by default for all Fast Mode connections as of the v2026.9 update; mixnet/Anonymous-mode PQ protection is a later phase."
   },
   "encryption": {
     "dataCipher": "ChaCha20-Poly1305 / AES-128",
@@ -110,12 +113,33 @@
   "notes": "Built on the Nym mixnet (NYM token). Two modes: 2-hop 'Fast' (AmneziaWG/WireGuard) and 5-hop 'Anonymous' (Sphinx with continuous cover traffic). Up to 10 devices. Cure53's July 2024 assessment found a generally strong posture with some medium-severity backend DoS issues; the Coconut/e-cash cryptography was reviewed without exploitable leaks.",
   "lastVerified": "2026-06-18",
   "sources": [
-    { "label": "Nym, official site", "url": "https://nym.com/" },
-    { "label": "Nym, features (modes, kill switch, DNS, platforms)", "url": "https://nym.com/features" },
-    { "label": "Nym, pricing & payment methods", "url": "https://nym.com/pricing" },
-    { "label": "Nym, Cure53 security audit (July 2024)", "url": "https://nym.com/trust-center/Cure53-security-audit-2024" },
-    { "label": "nym-vpn-client (open source, Rust)", "url": "https://github.com/nymtech/nym-vpn-client" },
-    { "label": "Nym Technologies, Wikipedia", "url": "https://en.wikipedia.org/wiki/Nym_Technologies" },
-    { "label": "Cybernews, NymVPN review", "url": "https://cybernews.com/best-vpn/nymvpn-review/" }
+    {
+      "label": "Nym, official site",
+      "url": "https://nym.com/"
+    },
+    {
+      "label": "Nym, features (modes, kill switch, DNS, platforms)",
+      "url": "https://nym.com/features"
+    },
+    {
+      "label": "Nym, pricing & payment methods",
+      "url": "https://nym.com/pricing"
+    },
+    {
+      "label": "Nym, Cure53 security audit (July 2024)",
+      "url": "https://nym.com/trust-center/Cure53-security-audit-2024"
+    },
+    {
+      "label": "nym-vpn-client (open source, Rust)",
+      "url": "https://github.com/nymtech/nym-vpn-client"
+    },
+    {
+      "label": "Nym Technologies, Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nym_Technologies"
+    },
+    {
+      "label": "Cybernews, NymVPN review",
+      "url": "https://cybernews.com/best-vpn/nymvpn-review/"
+    }
   ]
 }

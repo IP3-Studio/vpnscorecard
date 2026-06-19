@@ -38,7 +38,11 @@
     "ownDns": "yes",
     "ramOnly": "unknown",
     "portForwarding": "yes",
-    "p2p": "yes"
+    "p2p": "yes",
+    "ikev2": "yes",
+    "postQuantum": "yes",
+    "postQuantumNote": "Quantum-resistant encryption keys generated via Quantinuum's Quantum Origin platform, deployed with OpenVPN in the Windows/Mac/iOS/Android apps. Limited to servers in US, UK, Australia, Canada, Germany, Netherlands. Note: this is quantum-verified key generation, not a post-quantum KEM (no ML-KEM/Kyber yet); PureVPN says NIST-approved PQ algorithms are still pending.",
+    "insecureProtocols": "PPTP, L2TP"
   },
   "encryption": {
     "dataCipher": "AES-256-GCM",
