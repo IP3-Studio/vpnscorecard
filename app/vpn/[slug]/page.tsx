@@ -5,6 +5,7 @@ import { getAllSlugs, getVpnBySlug } from "@/lib/load";
 import { scoreVpn } from "@/lib/scoring";
 import { ScoreBadge, ScoreBar } from "@/components/ScoreCell";
 import { DataSheet } from "@/components/DataSheet";
+import { ProtocolsEncryption } from "@/components/ProtocolsEncryption";
 import { TypeBadge, TYPE_META } from "@/components/TypeBadge";
 
 export function generateStaticParams() {
@@ -212,6 +213,9 @@ export default async function VpnPage({
           </div>
         </div>
       )}
+
+      {/* Protocols & encryption (detail-only depth) */}
+      <ProtocolsEncryption vpn={vpn} />
 
       {/* Full data sheet (in the spirit of the original chart) */}
       <h2 className="mt-10 text-xl font-bold">Full data sheet</h2>
