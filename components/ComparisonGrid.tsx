@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { CATEGORIES, CRITERIA } from "@/lib/criteria";
 import type { Vpn } from "@/lib/schema";
 import type { VpnScore } from "@/lib/scoring";
@@ -24,6 +25,92 @@ const QUICK_FILTERS: { id: string; label: string; test: (r: Row) => boolean }[] 
   { id: "freetier", label: "Free tier", test: (r) => r.vpn.pricing.freeTier === "yes" },
 ];
 
+/** Conglomerates that own several VPN brands — surfaced as a flag. */
+const KNOWN_GROUPS = [
+  "Kape Technologies",
+  "Nord Security",
+  "Gen Digital",
+  "Ziff Davis",
+  "Point Wild",
+];
+
+function ownerOf(vpn: Vpn): { label: string; group: boolean } | null {
+  const raw = (vpn.company.conglomerate || vpn.company.parent || "").trim();
+  if (!raw) return null;
+  const group = KNOWN_GROUPS.find((g) => raw.includes(g));
+  if (group) return { label: group, group: true };
+  return { label: raw.split(/[(,;]/)[0].trim(), group: false };
+}
+
+function OwnerTag({ vpn }: { vpn: Vpn }) {
+  const o = ownerOf(vpn);
+  if (!o) return null;
+  if (o.group)
+    return (
+      <span
+        title={`Owned by ${o.label}`}
+        className="mt-0.5 inline-block rounded bg-amber-100 px-1.5 py-px text-[10px] font-medium text-amber-700 dark:bg-amber-500/15 dark:text-amber-300"
+      >
+        {o.label}
+      </span>
+    );
+  return <div className="text-[11px] text-zinc-400">{o.label}</div>;
+}
+
+function VpnCard({
+  r,
+  selectedHas,
+  onToggle,
+}: {
+  r: Row;
+  selectedHas: boolean;
+  onToggle: () => void;
+}) {
+  return (
+    <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex items-start gap-2">
+          <input
+            type="checkbox"
+            checked={selectedHas}
+            onChange={onToggle}
+            aria-label={`Select ${r.vpn.name} to compare`}
+            className="mt-1 accent-emerald-500"
+          />
+          <div>
+            <div className="flex items-center gap-1.5">
+              <Link
+                href={`/vpn/${r.vpn.slug}`}
+                className="font-semibold hover:text-emerald-600 dark:hover:text-emerald-400"
+              >
+                {r.vpn.name}
+              </Link>
+              {r.vpn.type !== "provider" && <TypeBadge type={r.vpn.type} />}
+            </div>
+            <div className="text-[11px] text-zinc-500">{r.vpn.jurisdiction.country}</div>
+            <OwnerTag vpn={r.vpn} />
+          </div>
+        </div>
+        <ScoreBadge score={r.score.overall} />
+      </div>
+      <div className="mt-3 grid grid-cols-4 gap-2 text-center">
+        {r.score.categories.map((c) => (
+          <div key={c.id} className="rounded bg-zinc-50 py-1.5 dark:bg-zinc-900/50">
+            <div className="font-mono text-sm">{c.score ?? "n/a"}</div>
+            <div className="text-[9px] uppercase tracking-wide text-zinc-400">{c.label}</div>
+          </div>
+        ))}
+      </div>
+      <Link
+        href={`/vpn/${r.vpn.slug}`}
+        className="mt-3 inline-block text-xs font-medium text-emerald-600 hover:underline dark:text-emerald-400"
+      >
+        View full report →
+      </Link>
+    </div>
+  );
+}
+
 export function ComparisonGrid({ rows }: { rows: Row[] }) {
   const [query, setQuery] = useState("");
   const [filters, setFilters] = useState<Set<string>>(new Set());
@@ -32,6 +119,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [typeFilter, setTypeFilter] = useState<Set<string>>(new Set());
+  const router = useRouter();
 
   const visibleCriteria = useMemo(
     () => CRITERIA.filter((c) => !hidden.has(c.category)),
@@ -171,8 +259,20 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
         </div>
       </div>
 
-      {/* Grid */}
-      <div className="thin-scroll overflow-x-auto rounded-lg border border-zinc-200 dark:border-zinc-800">
+      {/* Mobile + tablet cards */}
+      <div className="space-y-3 lg:hidden">
+        {filtered.map((r) => (
+          <VpnCard
+            key={r.vpn.slug}
+            r={r}
+            selectedHas={selected.has(r.vpn.slug)}
+            onToggle={() => toggleSet(selected, setSelected, r.vpn.slug)}
+          />
+        ))}
+      </div>
+
+      {/* Grid (desktop) */}
+      <div className="thin-scroll hidden overflow-x-auto rounded-lg border border-zinc-200 dark:border-zinc-800 lg:block">
         <table className="w-full border-collapse text-left text-sm">
           <thead>
             <tr className="border-b border-zinc-200 dark:border-zinc-800">
@@ -238,7 +338,8 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
             {filtered.map((r) => (
               <tr
                 key={r.vpn.slug}
-                className="border-b border-zinc-100 last:border-0 hover:bg-zinc-50/60 dark:border-zinc-800/60 dark:hover:bg-zinc-900/40"
+                onClick={() => router.push(`/vpn/${r.vpn.slug}`)}
+                className="cursor-pointer border-b border-zinc-100 last:border-0 hover:bg-zinc-50/60 dark:border-zinc-800/60 dark:hover:bg-zinc-900/40"
               >
                 <th
                   scope="row"
@@ -249,6 +350,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
                       type="checkbox"
                       checked={selected.has(r.vpn.slug)}
                       onChange={() => toggleSet(selected, setSelected, r.vpn.slug)}
+                      onClick={(e) => e.stopPropagation()}
                       aria-label={`Select ${r.vpn.name} to compare`}
                       className="accent-emerald-500"
                     />
@@ -265,6 +367,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
                       <div className="text-[11px] text-zinc-500">
                         {r.vpn.jurisdiction.country}
                       </div>
+                      <OwnerTag vpn={r.vpn} />
                     </div>
                   </div>
                 </th>
