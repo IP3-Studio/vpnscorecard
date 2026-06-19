@@ -5,8 +5,15 @@
   "tagline": "Gibraltar-based privacy purist; anonymous accounts, no upsells.",
   "status": "active",
   "verified": true,
-  "jurisdiction": { "country": "Gibraltar", "eyes": "none", "enemyOfInternet": "no" },
-  "company": { "parent": "IVPN Limited (Privatus Limited)", "founded": 2009 },
+  "jurisdiction": {
+    "country": "Gibraltar",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "IVPN Limited (Privatus Limited)",
+    "founded": 2009
+  },
   "logging": {
     "traffic": "none",
     "dns": "none",
@@ -15,7 +22,12 @@
     "ip": "none",
     "summary": "No connection or activity logs; RAM-only servers. No-logs verified by repeated annual Cure53 audits."
   },
-  "privacy": { "anonymousSignup": "yes", "acceptsCash": "yes", "acceptsCrypto": "yes", "pgpKey": "yes" },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "yes",
+    "acceptsCrypto": "yes",
+    "pgpKey": "yes"
+  },
   "technical": {
     "openvpn": "yes",
     "wireguard": "yes",
@@ -24,23 +36,57 @@
     "killSwitch": "yes",
     "ownDns": "yes",
     "ramOnly": "yes",
-    "ipv6": "unknown"
+    "ipv6": "unknown",
+    "ikev2": "yes",
+    "postQuantum": "yes",
+    "postQuantumNote": "Quantum-resistant WireGuard, on by default in IVPN apps: a post-quantum KEM (Kyber-1024 on mobile; Kyber-1024 + Classic-McEliece-348864 on desktop, via liboqs) derives a rotating WireGuard PresharedKey for an extra symmetric layer."
   },
-  "encryption": { "dataCipher": "ChaCha20 / AES-256", "handshake": "Curve25519 / RSA-4096" },
+  "encryption": {
+    "dataCipher": "ChaCha20 / AES-256",
+    "handshake": "Curve25519 / RSA-4096"
+  },
   "transparency": {
     "openSourceClients": "yes",
     "audits": [
-      { "firm": "Cure53", "year": 2025, "scope": "7th annual security audit" },
-      { "firm": "Cure53", "year": 2024, "scope": "apps + infrastructure" }
+      {
+        "firm": "Cure53",
+        "year": 2025,
+        "scope": "7th annual security audit"
+      },
+      {
+        "firm": "Cure53",
+        "year": 2024,
+        "scope": "apps + infrastructure"
+      }
     ],
     "transparencyReport": "yes",
     "realWorldNoLog": "Gibraltar has no mandatory data-retention law; IVPN publishes a transparency report and warrant canary."
   },
-  "infra": { "simultaneousConnections": 7, "countries": 32, "linux": "gui" },
-  "pricing": { "monthlyUsd": 6, "bestPerMonthUsd": 4, "bestPlanTerm": "3-year (Standard)", "refundDays": 30, "freeTier": "no" },
-  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
-  "bestFor": ["Privacy purists who dislike upsells", "Anonymous signup & payment", "Anti-tracking and multi-hop"],
-  "notFor": ["Streaming and large server networks", "Free-tier seekers"],
+  "infra": {
+    "simultaneousConnections": 7,
+    "countries": 32,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 6,
+    "bestPerMonthUsd": 4,
+    "bestPlanTerm": "3-year (Standard)",
+    "refundDays": 30,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Privacy purists who dislike upsells",
+    "Anonymous signup & payment",
+    "Anti-tracking and multi-hop"
+  ],
+  "notFor": [
+    "Streaming and large server networks",
+    "Free-tier seekers"
+  ],
   "pros": [
     "Anonymous account-ID signup; accepts cash and Monero",
     "Annual Cure53 audits (7 consecutive)",
@@ -55,8 +101,17 @@
   "notes": "Standard plan allows 2 devices; Pro allows 7 and adds multi-hop.",
   "lastVerified": "2026-06-17",
   "sources": [
-    { "label": "IVPN no-logging audit (official)", "url": "https://www.ivpn.net/blog/ivpn-no-logging-claim-verified-by-independent-audit" },
-    { "label": "IVPN (official)", "url": "https://www.ivpn.net" },
-    { "label": "Wikipedia, IVPN", "url": "https://en.wikipedia.org/wiki/IVPN" }
+    {
+      "label": "IVPN no-logging audit (official)",
+      "url": "https://www.ivpn.net/blog/ivpn-no-logging-claim-verified-by-independent-audit"
+    },
+    {
+      "label": "IVPN (official)",
+      "url": "https://www.ivpn.net"
+    },
+    {
+      "label": "Wikipedia, IVPN",
+      "url": "https://en.wikipedia.org/wiki/IVPN"
+    }
   ]
 }

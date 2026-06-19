@@ -103,6 +103,8 @@ export const VpnSchema = z.object({
       ikev2: Tri.default("unknown"),
       /** Name of an in-house protocol, e.g. "NordLynx", "Lightway". */
       proprietaryProtocol: z.string().optional(),
+      /** Legacy/insecure protocols still offered, e.g. "PPTP, L2TP". */
+      insecureProtocols: z.string().optional(),
       multihop: Tri.default("unknown"),
       obfuscation: Tri.default("unknown"),
       killSwitch: Tri.default("unknown"),
@@ -113,6 +115,8 @@ export const VpnSchema = z.object({
       ipv6: z.enum(["supported", "blocked", "leak", "unknown"]).default("unknown"),
       /** Offers post-quantum-resistant key exchange. */
       postQuantum: Tri.default("unknown"),
+      /** How post-quantum is delivered, e.g. "ML-KEM-768 in NordLynx". */
+      postQuantumNote: z.string().optional(),
     })
     .prefault({}),
 

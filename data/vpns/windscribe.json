@@ -5,8 +5,15 @@
   "tagline": "Flexible Canadian VPN with a real free tier and open-source apps.",
   "status": "active",
   "verified": true,
-  "jurisdiction": { "country": "Canada", "eyes": "five", "enemyOfInternet": "no" },
-  "company": { "parent": "Windscribe Limited", "founded": 2016 },
+  "jurisdiction": {
+    "country": "Canada",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Windscribe Limited",
+    "founded": 2016
+  },
   "logging": {
     "traffic": "none",
     "dns": "none",
@@ -15,7 +22,12 @@
     "ip": "none",
     "summary": "Keeps no IP or traffic logs; retains total monthly bandwidth (to enforce data caps) and a timestamp of last activity."
   },
-  "privacy": { "anonymousSignup": "yes", "acceptsCash": "no", "acceptsCrypto": "yes", "pgpKey": "unknown" },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "no",
+    "acceptsCrypto": "yes",
+    "pgpKey": "unknown"
+  },
   "technical": {
     "openvpn": "yes",
     "wireguard": "yes",
@@ -24,23 +36,61 @@
     "killSwitch": "yes",
     "ownDns": "yes",
     "ramOnly": "unknown",
-    "ipv6": "unknown"
+    "ipv6": "unknown",
+    "ikev2": "yes",
+    "postQuantum": "yes",
+    "postQuantumNote": "WireGuard connections are post-quantum resistant: the WireGuard pre-shared key is delivered over TLS 1.3 using the hybrid X25519MLKEM768 key exchange (ML-KEM-768). Rolled out Oct 2025 (Desktop 2.17.9, Android 3.93.1835, iOS 3.9.4); enabled per-device after logging out/in on the WireGuard protocol."
   },
-  "encryption": { "dataCipher": "ChaCha20 / AES-256", "handshake": "Curve25519 / RSA-4096" },
+  "encryption": {
+    "dataCipher": "ChaCha20 / AES-256",
+    "handshake": "Curve25519 / RSA-4096"
+  },
   "transparency": {
     "openSourceClients": "yes",
     "audits": [
-      { "firm": "Packetlabs", "year": 2024, "scope": "FreshScribe VPN stack" },
-      { "firm": "Leviathan Security", "year": 2022, "scope": "Android + iOS apps" },
-      { "firm": "Leviathan Security", "year": 2021, "scope": "desktop app" }
+      {
+        "firm": "Packetlabs",
+        "year": 2024,
+        "scope": "FreshScribe VPN stack"
+      },
+      {
+        "firm": "Leviathan Security",
+        "year": 2022,
+        "scope": "Android + iOS apps"
+      },
+      {
+        "firm": "Leviathan Security",
+        "year": 2021,
+        "scope": "desktop app"
+      }
     ],
     "transparencyReport": "yes"
   },
-  "infra": { "simultaneousConnections": "unlimited", "countries": 69, "linux": "gui" },
-  "pricing": { "monthlyUsd": 9, "bestPerMonthUsd": 5.75, "bestPlanTerm": "annual (Pro)", "refundDays": 3, "freeTier": "yes" },
-  "ethics": { "contradictoryLogging": "no", "falseClaims": "no" },
-  "bestFor": ["Free-tier users", "Tinkerers (Build-a-Plan, custom configs)", "Open-source advocates on a budget"],
-  "notFor": ["Those needing a privacy-friendly jurisdiction (Canada is 5 Eyes)", "Anyone wanting a long refund window"],
+  "infra": {
+    "simultaneousConnections": "unlimited",
+    "countries": 69,
+    "linux": "gui"
+  },
+  "pricing": {
+    "monthlyUsd": 9,
+    "bestPerMonthUsd": 5.75,
+    "bestPlanTerm": "annual (Pro)",
+    "refundDays": 3,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Free-tier users",
+    "Tinkerers (Build-a-Plan, custom configs)",
+    "Open-source advocates on a budget"
+  ],
+  "notFor": [
+    "Those needing a privacy-friendly jurisdiction (Canada is 5 Eyes)",
+    "Anyone wanting a long refund window"
+  ],
   "pros": [
     "Genuine free tier (10GB/mo with email)",
     "Fully open-source apps on GitHub",
@@ -55,8 +105,17 @@
   "notes": "A 2021 incident saw two servers seized in Ukraine; Windscribe responded by hardening server security and rolling out its FreshScribe stack.",
   "lastVerified": "2026-06-17",
   "sources": [
-    { "label": "Windscribe, no identifying logs (official)", "url": "https://windscribe.com/features/no-identifying-logs" },
-    { "label": "BleepingComputer, Windscribe review (audits)", "url": "https://www.bleepingcomputer.com/vpn/reviews/windscribe-vpn-review/" },
-    { "label": "Windscribe (official)", "url": "https://windscribe.com" }
+    {
+      "label": "Windscribe, no identifying logs (official)",
+      "url": "https://windscribe.com/features/no-identifying-logs"
+    },
+    {
+      "label": "BleepingComputer, Windscribe review (audits)",
+      "url": "https://www.bleepingcomputer.com/vpn/reviews/windscribe-vpn-review/"
+    },
+    {
+      "label": "Windscribe (official)",
+      "url": "https://windscribe.com"
+    }
   ]
 }

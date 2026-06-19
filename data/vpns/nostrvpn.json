@@ -39,7 +39,9 @@
     "ramOnly": "unknown",
     "portForwarding": "unknown",
     "p2p": "yes",
-    "ipv6": "unknown"
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "no"
   },
   "encryption": {
     "dataCipher": "WireGuard (ChaCha20-Poly1305)",
@@ -88,8 +90,17 @@
   "notes": "Mesh / overlay VPN in the spirit of Tailscale, but decentralised: WireGuard handles encryption while device discovery and coordination run over Nostr relays instead of a company's control plane. We list it for completeness but do not score it against traffic-routing providers; the privacy axes (provider no-logs, jurisdiction, server network) don't apply to a device mesh.",
   "lastVerified": "2026-06-18",
   "sources": [
-    { "label": "Nostr VPN, official site", "url": "https://nostrvpn.org/" },
-    { "label": "nostr-vpn (open source, Martti Malmi)", "url": "https://github.com/mmalmi/nostr-vpn" },
-    { "label": "Cryptonews, Bitcoin developer launches privacy-focused Nostr VPN", "url": "https://cryptonews.net/news/blockchain/32891743/" }
+    {
+      "label": "Nostr VPN, official site",
+      "url": "https://nostrvpn.org/"
+    },
+    {
+      "label": "nostr-vpn (open source, Martti Malmi)",
+      "url": "https://github.com/mmalmi/nostr-vpn"
+    },
+    {
+      "label": "Cryptonews, Bitcoin developer launches privacy-focused Nostr VPN",
+      "url": "https://cryptonews.net/news/blockchain/32891743/"
+    }
   ]
 }
