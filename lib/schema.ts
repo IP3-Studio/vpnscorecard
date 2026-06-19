@@ -100,6 +100,7 @@ export const VpnSchema = z.object({
     .object({
       openvpn: Tri.default("unknown"),
       wireguard: Tri.default("unknown"),
+      ikev2: Tri.default("unknown"),
       /** Name of an in-house protocol, e.g. "NordLynx", "Lightway". */
       proprietaryProtocol: z.string().optional(),
       multihop: Tri.default("unknown"),
@@ -110,6 +111,8 @@ export const VpnSchema = z.object({
       portForwarding: Tri.default("unknown"),
       p2p: Tri.default("unknown"),
       ipv6: z.enum(["supported", "blocked", "leak", "unknown"]).default("unknown"),
+      /** Offers post-quantum-resistant key exchange. */
+      postQuantum: Tri.default("unknown"),
     })
     .prefault({}),
 
