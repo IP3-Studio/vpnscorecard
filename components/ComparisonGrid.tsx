@@ -21,7 +21,7 @@ const QUICK_FILTERS: { id: string; label: string; test: (r: Row) => boolean }[] 
   { id: "wireguard", label: "WireGuard", test: (r) => r.score.cells.wireguard.verdict === "good" },
   { id: "nologs", label: "No traffic logs", test: (r) => r.score.cells.noLogsTraffic.verdict === "good" },
   { id: "noeyes", label: "Outside 14 Eyes", test: (r) => r.score.cells.jurisdiction.verdict === "good" },
-  { id: "freetier", label: "Free tier", test: (r) => r.score.cells.freeTier.verdict === "good" },
+  { id: "freetier", label: "Free tier", test: (r) => r.vpn.pricing.freeTier === "yes" },
 ];
 
 export function ComparisonGrid({ rows }: { rows: Row[] }) {

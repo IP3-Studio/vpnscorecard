@@ -148,7 +148,7 @@ export default async function VpnPage({
           does offer.
         </div>
       ) : (
-        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {score.categories.map((c) => (
             <div key={c.id} className="rounded-lg border border-zinc-200 p-3 dark:border-zinc-800">
               <div className="flex items-baseline justify-between">
