@@ -22,7 +22,6 @@ export type CategoryId =
   | "privacy"
   | "technical"
   | "transparency"
-  | "value"
   | "ethics";
 
 export interface Category {
@@ -66,12 +65,6 @@ export const CATEGORIES: Category[] = [
     blurb:
       "Independent audits, open-source clients, and diskless infrastructure.",
     weight: 0.3,
-  },
-  {
-    id: "value",
-    label: "Value",
-    blurb: "Price, refund window, and whether a free tier exists.",
-    weight: 0.1,
   },
   {
     id: "ethics",
@@ -181,33 +174,6 @@ function auditCell(audits: Vpn["transparency"]["audits"]): Cell {
     verdict: n >= 2 ? "good" : "partial",
     display: `${n}× (${latest})`,
     score: n >= 2 ? 1 : 0.7,
-  };
-}
-
-function priceCell(p?: number): Cell {
-  if (p == null) return UNKNOWN;
-  const display = `$${p.toFixed(2)}`;
-  let score: number;
-  if (p <= 3) score = 1;
-  else if (p <= 5) score = 0.8;
-  else if (p <= 7) score = 0.6;
-  else if (p <= 10) score = 0.4;
-  else score = 0.2;
-  return {
-    verdict: score >= 0.8 ? "good" : score >= 0.5 ? "partial" : "bad",
-    display,
-    score,
-  };
-}
-
-function refundCell(d?: number): Cell {
-  if (d == null) return UNKNOWN;
-  if (d === 0) return bad("None");
-  const score = d >= 30 ? 1 : d >= 14 ? 0.7 : d >= 7 ? 0.4 : 0.2;
-  return {
-    verdict: score >= 0.8 ? "good" : score >= 0.4 ? "partial" : "bad",
-    display: `${d} days`,
-    score,
   };
 }
 
@@ -384,36 +350,6 @@ export const CRITERIA: Criterion[] = [
         : v.transparency.courtTested === "no"
           ? neutral("Untested")
           : UNKNOWN,
-  },
-
-  // --- Value ---
-  {
-    id: "price",
-    label: "Price (best $/mo)",
-    short: "Price",
-    category: "value",
-    weight: 2,
-    explain:
-      "Effective monthly cost on the cheapest long-term plan, in USD. Cheaper scores higher.",
-    evaluate: (v) => priceCell(v.pricing.bestPerMonthUsd),
-  },
-  {
-    id: "refund",
-    label: "Refund window",
-    short: "Refund",
-    category: "value",
-    weight: 1,
-    explain: "Money-back guarantee length. 30 days or more scores best.",
-    evaluate: (v) => refundCell(v.pricing.refundDays),
-  },
-  {
-    id: "freeTier",
-    label: "Free tier",
-    short: "Free tier",
-    category: "value",
-    weight: 1,
-    explain: "Offers a genuinely free tier, not just a trial. Counts as a bonus only.",
-    evaluate: (v) => yesBonus(v.pricing.freeTier),
   },
 
   // --- Ethics ---

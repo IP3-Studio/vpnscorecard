@@ -129,10 +129,11 @@ export default function MethodologyPage() {
       {/* What we don't (yet) measure */}
       <h2 className="mt-10 text-xl font-bold">What we don&apos;t (yet) score</h2>
       <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
-        Connection speed is deliberately excluded because it is volatile, route- and
-        time-dependent, and easily gamed by marketing. Website-privacy metrics
-        (trackers, cookies) are collected in our schema but not yet scored. Both
-        are on the roadmap.
+        Price, refund windows and free tiers are shown for context but kept out of
+        the score: cheaper isn&apos;t safer, and rewarding low prices would distort a
+        privacy comparison. Connection speed is excluded too, because it is volatile,
+        route- and time-dependent, and easily gamed by marketing. Website-privacy
+        metrics (trackers, cookies) are collected in our schema but not yet scored.
       </p>
 
       {/* Licensing */}

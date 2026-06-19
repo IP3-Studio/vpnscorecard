@@ -16,8 +16,7 @@ export type PriorityId =
   | "anonSignup"
   | "anonPayment"
   | "noEyes"
-  | "obfuscation"
-  | "freeOrCheap";
+  | "obfuscation";
 
 export interface Prefs {
   useCase: UseCase;
@@ -54,7 +53,6 @@ export const PRIORITIES: { id: PriorityId; label: string; desc: string }[] = [
   { id: "anonPayment", label: "Anonymous payment", desc: "Pay with cash or cryptocurrency." },
   { id: "noEyes", label: "Outside 14 Eyes", desc: "Privacy-friendly jurisdiction." },
   { id: "obfuscation", label: "Beats censorship", desc: "Disguises VPN traffic." },
-  { id: "freeOrCheap", label: "Easy on the wallet", desc: "Low price or free tier." },
 ];
 
 const PRIORITY_CRITERIA: Record<PriorityId, string[]> = {
@@ -64,12 +62,11 @@ const PRIORITY_CRITERIA: Record<PriorityId, string[]> = {
   anonPayment: ["anonymousPayment"],
   noEyes: ["jurisdiction"],
   obfuscation: ["obfuscation"],
-  freeOrCheap: ["price", "freeTier"],
 };
 
 const USECASE_CRITERIA: Record<UseCase, string[]> = {
   general: ["noLogsTraffic", "audits"],
-  streaming: ["price", "obfuscation"],
+  streaming: ["obfuscation"],
   torrenting: ["killSwitch", "noLogsTraffic", "ownDns"],
   activism: [
     "jurisdiction",
