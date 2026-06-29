@@ -216,7 +216,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
 
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="text-zinc-500">Type:</span>
-          {(["provider", "mixnet", "mesh"] as const).map((t) => {
+          {(["provider", "mixnet", "network"] as const).map((t) => {
             const on = typeFilter.has(t);
             return (
               <button

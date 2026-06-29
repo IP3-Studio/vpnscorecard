@@ -4,7 +4,7 @@
   "website": "https://nostrvpn.org/",
   "tagline": "A decentralised, Tailscale-style mesh VPN that links your own devices using Nostr-key identity instead of a central provider or account.",
   "status": "active",
-  "type": "mesh",
+  "type": "network",
   "verified": true,
   "jurisdiction": {
     "country": "Decentralised (no provider)",
