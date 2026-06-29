@@ -1,0 +1,98 @@
+{
+  "slug": "gnosis-vpn",
+  "name": "Gnosis VPN",
+  "website": "https://vpn.gnosis.eth.limo/",
+  "tagline": "An experimental, decentralised VPN built on the HOPR incentivised mixnet by Gnosis DAO, with on-chain metered payments. A proof-of-concept, not yet a consumer product.",
+  "status": "active",
+  "type": "network",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Decentralised (HOPR mixnet)",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Gnosis DAO + HOPR Association (Switzerland)",
+    "founded": 2024
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "unknown",
+    "timestamps": "none",
+    "bandwidth": "unknown",
+    "ip": "none",
+    "summary": "Decentralised by design: every packet takes an unpredictable multi-hop route through the HOPR mixnet, so no central entity can link traffic. The project notes it is not fully trustless yet."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "no",
+    "acceptsCrypto": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "no",
+    "proprietaryProtocol": "HOPR incentivised mixnet (multi-hop, per-packet path mixing with cover traffic) over libp2p; Gnosis Chain as trust anchor and Safe smart accounts for on-chain metered payments",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "unknown",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "unknown",
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "unknown"
+  },
+  "encryption": {
+    "handshake": "HOPR Sphinx-style per-hop layered (mixnet) encryption"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Decentralised mixnet with no central operator; still an early proof-of-concept and not fully trustless."
+  },
+  "infra": {
+    "linux": "cli"
+  },
+  "pricing": {
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Web3 and crypto users wanting decentralised, censorship-resistant routing",
+    "Privately reaching the Gnosis ecosystem",
+    "People who want metadata privacy via an incentivised mixnet, not just IP-hiding"
+  ],
+  "notFor": [
+    "Everyday consumer VPN use: it's an early proof-of-concept",
+    "Non-technical users (crypto-metered payments, desktop/extension only)",
+    "Anyone needing a finished, audited product today"
+  ],
+  "pros": [
+    "Built on the HOPR incentivised mixnet: every packet takes an unpredictable multi-hop route",
+    "Fully open-source; decentralised and uncensorable by design",
+    "Funded by Gnosis DAO governance (GIP-98 / GIP-122); on-chain, no traditional account",
+    "Aims for metadata privacy beyond simple IP-hiding"
+  ],
+  "cons": [
+    "Early proof-of-concept / beta (codenames El Dorado, Atlantis); not production-ready",
+    "On-chain crypto-metered payments and desktop / browser-extension only, not for general users",
+    "Not fully trustless yet; no independent audit",
+    "Different architecture from a commercial VPN, so we list it but don't score it"
+  ],
+  "notes": "A decentralised VPN built on the HOPR mixnet, funded by Gnosis DAO (~$1.5M+ to HOPR via GIP-98/122). Routes traffic over an incentivised multi-hop mixnet with on-chain metered payments. Currently an experimental proof-of-concept (desktop / browser extension), with broader early access targeted around Q3 2026. Listed as a decentralised anonymity network rather than scored against conventional VPNs.",
+  "lastVerified": "2026-06-18",
+  "sources": [
+    { "label": "Gnosis VPN (official, ENS/IPFS)", "url": "https://vpn.gnosis.eth.limo/" },
+    { "label": "gnosis/gnosis_vpn-client (open source)", "url": "https://github.com/gnosis/gnosis_vpn-client" },
+    { "label": "HOPR proposes GnosisVPN (Dr. Sebastian Burgel)", "url": "https://medium.com/hoprnet/hopr-proposes-gnosisvpn-e1111f763dee" },
+    { "label": "The Block: GnosisDAO votes $4.8M to fund HOPR's VPN", "url": "https://www.theblock.co/post/345976/gnosisdao-votes-invest-4-8-million-fund-hoprs-private-uncensorable-vpn" },
+    { "label": "Blockonomi: GnosisDAO Invests in HOPR to Develop GnosisVPN", "url": "https://blockonomi.com/gnosisdao-invests-in-hopr-to-develop-gnosisvpn-a-decentralized-web3-vpn/" }
+  ]
+}
