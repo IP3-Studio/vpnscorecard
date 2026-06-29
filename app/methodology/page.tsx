@@ -49,12 +49,13 @@ export default function MethodologyPage() {
           </p>
         </div>
         <div className="flex gap-3">
-          <TypeBadge type="mesh" className="mt-0.5 shrink-0" />
+          <TypeBadge type="network" className="mt-0.5 shrink-0" />
           <p className="text-zinc-600 dark:text-zinc-400">
-            <strong>Mesh.</strong> Links your <em>own</em> devices privately,
-            Tailscale-style (e.g. NostrVPN), with no traffic-exit provider. There is no
-            provider no-logs policy, jurisdiction, or server network to rate, so we{" "}
-            <strong>list mesh tools but don&apos;t give them a head-to-head score</strong>.
+            <strong>Network / Mesh.</strong> Decentralised anonymity networks you route
+            through (Tor onion routing, the HOPR mixnet behind Gnosis VPN) or private device
+            meshes (Tailscale-style, e.g. NostrVPN). There is no provider no-logs policy,
+            jurisdiction, or server network to rate, and several are experimental, so we{" "}
+            <strong>list these tools but don&apos;t give them a head-to-head score</strong>.
             Comparing one to NordVPN would be apples to oranges.
           </p>
         </div>
