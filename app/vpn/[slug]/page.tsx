@@ -134,7 +134,7 @@ export default async function VpnPage({
         <Fact label="Free tier" value={vpn.pricing.freeTier === "yes" ? "Yes" : "No"} />
       </dl>
 
-      {/* Type explainer (mixnet / mesh) */}
+      {/* Type explainer (mixnet / network) */}
       {vpn.type !== "provider" && (
         <p className="mt-6 rounded-lg border border-zinc-200 bg-zinc-50 px-4 py-3 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-400">
           <span className="font-semibold">{TYPE_META[vpn.type].label}.</span>{" "}
