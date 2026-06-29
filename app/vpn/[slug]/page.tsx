@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllSlugs, getVpnBySlug } from "@/lib/load";
 import { scoreVpn } from "@/lib/scoring";
+import { SCORED_TYPES } from "@/lib/schema";
 import { ScoreBadge, ScoreBar } from "@/components/ScoreCell";
 import { DataSheet } from "@/components/DataSheet";
 import { ProtocolsEncryption } from "@/components/ProtocolsEncryption";
@@ -60,6 +61,7 @@ export default async function VpnPage({
   const vpn = getVpnBySlug(slug);
   if (!vpn) notFound();
   const score = scoreVpn(vpn);
+  const scored = SCORED_TYPES.has(vpn.type);
 
   const devices =
     vpn.infra.simultaneousConnections === undefined
@@ -95,9 +97,9 @@ export default async function VpnPage({
           </a>
         </div>
         <div className="flex flex-col items-start gap-1 sm:items-end">
-          {vpn.type === "mesh" ? (
-            <span className="rounded-md bg-violet-100 px-2 py-1 text-xs font-medium text-violet-700 dark:bg-violet-500/15 dark:text-violet-300">
-              Mesh tool, not scored
+          {!scored ? (
+            <span className="rounded-md bg-zinc-100 px-2 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
+              Not scored
             </span>
           ) : (
             <>
@@ -141,12 +143,11 @@ export default async function VpnPage({
       )}
 
       {/* Category scores (providers + mixnet only) */}
-      {vpn.type === "mesh" ? (
-        <div className="mt-6 rounded-lg border border-violet-200 bg-violet-50/50 p-4 text-sm text-zinc-600 dark:border-violet-500/20 dark:bg-violet-500/5 dark:text-zinc-300">
-          <strong>{vpn.name} is a mesh VPN</strong>, so we don&apos;t give it a head-to-head
-          score. There&apos;s no provider no-logs policy, jurisdiction, or server network to
-          rate, just your own devices linked privately. The data sheet below shows what it
-          does offer.
+      {!scored ? (
+        <div className="mt-6 rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
+          <strong>{vpn.name}</strong> is in the {TYPE_META[vpn.type].label} category, so we
+          don&apos;t give it a head-to-head score. It {TYPE_META[vpn.type].notScoredReason}. The
+          data sheet below shows what it does offer.
         </div>
       ) : (
         <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4">

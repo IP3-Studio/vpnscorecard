@@ -5,7 +5,7 @@ import {
   type CategoryId,
   type Cell,
 } from "./criteria";
-import type { Vpn } from "./schema";
+import { SCORED_TYPES, type Vpn } from "./schema";
 
 /**
  * Hybrid scoring: every criterion is evaluated into a 0..1 cell (criteria.ts),
@@ -46,9 +46,9 @@ export function scoreVpn(v: Vpn): VpnScore {
   const cells: Record<string, Cell> = {};
   for (const cr of CRITERIA) cells[cr.id] = cr.evaluate(v);
 
-  // Mesh VPNs link your own devices; they aren't traffic-routing providers, so
-  // we don't assign a comparable score; only the data sheet is shown.
-  if (v.type === "mesh") {
+  // Some tool types (device meshes, decentralised anonymity networks) aren't
+  // conventional traffic-routing providers, so we don't assign a comparable score.
+  if (!SCORED_TYPES.has(v.type)) {
     return {
       overall: null,
       categories: CATEGORIES.map((c) => ({ id: c.id, label: c.label, score: null })),

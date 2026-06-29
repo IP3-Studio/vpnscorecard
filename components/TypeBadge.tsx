@@ -2,7 +2,7 @@ import type { Vpn } from "@/lib/schema";
 
 export const TYPE_META: Record<
   Vpn["type"],
-  { label: string; short: string; cls: string; blurb: string }
+  { label: string; short: string; cls: string; blurb: string; notScoredReason?: string }
 > = {
   provider: {
     label: "VPN provider",
@@ -23,6 +23,17 @@ export const TYPE_META: Record<
     cls: "bg-violet-100 text-violet-700 dark:bg-violet-500/15 dark:text-violet-300",
     blurb:
       "Links your own devices privately (Tailscale-style). Not a traffic-exit provider, so it isn't scored head-to-head with VPN services.",
+    notScoredReason:
+      "links your own devices rather than routing your traffic through a provider's servers, so there's no provider no-logs policy, jurisdiction, or server network to rate",
+  },
+  network: {
+    label: "Anonymity network",
+    short: "Network",
+    cls: "bg-teal-100 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300",
+    blurb:
+      "A decentralised anonymity network you route through (Tor onion routing, HOPR mixnet) rather than a commercial provider. Often experimental, so it's listed but not scored head-to-head.",
+    notScoredReason:
+      "is a decentralised anonymity network rather than a commercial VPN, and it's experimental, so the conventional-VPN protocol rubric doesn't fairly apply",
   },
 };
 

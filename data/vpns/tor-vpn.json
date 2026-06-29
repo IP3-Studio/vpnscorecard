@@ -1,0 +1,100 @@
+{
+  "slug": "tor-vpn",
+  "name": "Tor VPN",
+  "website": "https://www.torproject.org/",
+  "tagline": "The Tor Project's free, open-source, experimental Android app that routes each app through a 3-hop Tor circuit (onion routing), with per-app circuits and .onion access.",
+  "status": "active",
+  "type": "network",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Decentralised (Tor network)",
+    "eyes": "none",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "The Tor Project (US 501(c)(3) non-profit)",
+    "founded": 2006
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No central operator logs your activity; anonymity comes from routing through volunteer-run relays where no single relay sees both your identity and your destination. Caveat: this is an experimental beta that may still expose Android system-level identifiers."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "unknown",
+    "acceptsCrypto": "unknown",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "no",
+    "proprietaryProtocol": "Tor onion routing (3-hop circuits) via Arti, Tor's Rust implementation; per-app circuit isolation and pluggable transports for censorship circumvention",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "unknown",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "no",
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "unknown"
+  },
+  "encryption": {
+    "dataCipher": "AES-128 (per onion layer)",
+    "handshake": "Curve25519 (ntor handshake)"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "yes",
+    "courtTested": "yes",
+    "realWorldNoLog": "The Tor network's anonymity has withstood years of real-world subpoenas and investigations; volunteer relays hold no logs that could deanonymise users. (The new Android app itself is beta.)"
+  },
+  "infra": {
+    "linux": "none"
+  },
+  "pricing": {
+    "freeTrialDays": 0,
+    "freeTier": "yes"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Maximum anonymity against powerful adversaries (the long-standing gold standard)",
+    "Censorship circumvention and reaching .onion services",
+    "Testers and developers willing to try a beta"
+  ],
+  "notFor": [
+    "Anything sensitive right now: the Tor Project warns it's experimental and may leak identifiers",
+    "Speed or streaming (Tor is slow by design)",
+    "iOS or desktop users (Android-only for now)"
+  ],
+  "pros": [
+    "Routes through the Tor network, the most studied anonymity system, with per-app circuits and exit IPs",
+    "Free and open-source (BSD-3), built on Arti (Tor's Rust rewrite)",
+    "From the non-profit Tor Project; censorship circumvention and .onion access",
+    "No accounts, no payment, no single provider to trust"
+  ],
+  "cons": [
+    "Experimental beta: not to be relied on for sensitive activity yet",
+    "May expose Android system-level identifiers; expect bugs and crashes",
+    "Android-only; slow compared with a normal VPN",
+    "Different architecture from a commercial VPN, so we list it but don't score it head-to-head"
+  ],
+  "notes": "The Tor Project's first official VPN-style app (beta, Android-only, launched September 2025). Routes each app's traffic through a 3-hop Tor circuit using Arti, Tor's modern Rust implementation. Free, open-source (BSD-3 licence). Listed as a decentralised anonymity network rather than scored against conventional VPNs.",
+  "lastVerified": "2026-06-18",
+  "sources": [
+    { "label": "The Tor Project (official)", "url": "https://www.torproject.org/" },
+    { "label": "CyberInsider: Tor Project launches experimental beta VPN app for Android", "url": "https://cyberinsider.com/tor-project-launches-experimental-beta-vpn-app-for-android/" },
+    { "label": "TechRadar: Tor Project quietly launches a beta Android VPN", "url": "https://www.techradar.com/vpn/vpn-services/the-tor-project-quietly-launches-a-beta-android-vpn-and-looks-for-testers" },
+    { "label": "CNET: The Tor Project wants you to test its new VPN on Android", "url": "https://www.cnet.com/tech/services-and-software/the-tor-project-wants-you-to-test-the-limits-of-its-new-vpn-on-android/" },
+    { "label": "Tom's Guide: The Tor Project has launched its own VPN", "url": "https://www.tomsguide.com/computing/vpns/the-tor-project-has-launched-its-own-vpn-but-its-not-the-finished-product-yet" }
+  ]
+}
