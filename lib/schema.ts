@@ -29,7 +29,9 @@ export const Status = z.enum(["active", "legacy", "defunct"]);
  * (e.g. Nym). `mesh` = links your own devices (Tailscale-style), NOT a
  * traffic-exit provider, so it is listed but never scored head-to-head.
  */
-export const VpnType = z.enum(["provider", "mixnet", "mesh"]);
+export const VpnType = z.enum(["provider", "mixnet", "mesh", "network"]);
+/** Tool types that receive a head-to-head overall score (others are listed only). */
+export const SCORED_TYPES = new Set<z.infer<typeof VpnType>>(["provider", "mixnet"]);
 
 export const SourceSchema = z.object({
   label: z.string(),
