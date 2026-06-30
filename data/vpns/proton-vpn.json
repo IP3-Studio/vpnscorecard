@@ -24,7 +24,7 @@
   },
   "privacy": {
     "anonymousSignup": "no",
-    "acceptsCash": "unknown",
+    "acceptsCash": "yes",
     "acceptsCrypto": "yes",
     "pgpKey": "yes"
   },
@@ -50,6 +50,12 @@
     "audits": [
       {
         "firm": "Securitum",
+        "year": 2026,
+        "scope": "no-logs (fifth consecutive annual audit)",
+        "url": "https://protonvpn.com/blog/no-logs-audit"
+      },
+      {
+        "firm": "Securitum",
         "year": 2025,
         "scope": "no-logs, live server inspection, Zürich",
         "url": "https://protonvpn.com/blog/no-logs-audit"
@@ -58,10 +64,21 @@
         "firm": "Securitum",
         "year": 2024,
         "scope": "no-logs"
+      },
+      {
+        "firm": "Securitum",
+        "year": 2023,
+        "scope": "no-logs"
+      },
+      {
+        "firm": "Securitum",
+        "year": 2022,
+        "scope": "no-logs (first audit)"
       }
     ],
     "transparencyReport": "yes",
-    "realWorldNoLog": "Switzerland sits outside the 5/9/14 Eyes and has no VPN data-retention requirement; Proton publishes a transparency report."
+    "courtTested": "yes",
+    "realWorldNoLog": "Across 411 legal requests (2019-2025), Proton VPN disclosed zero VPN activity data: with no logs, it cannot identify who connected to a server, even under a binding Swiss order. Switzerland also sits outside the 5/9/14 Eyes with no VPN data-retention law."
   },
   "infra": {
     "simultaneousConnections": 10,
@@ -89,8 +106,9 @@
   ],
   "pros": [
     "Strong Swiss jurisdiction outside 5/9/14 Eyes",
-    "All apps open source and independently audited",
-    "Unlimited free tier with no data cap (1 device, 5 countries)",
+    "Open source, with five consecutive independent no-logs audits (Securitum, 2022-2026)",
+    "Court-tested: across 411 legal requests, zero VPN data was handed over",
+    "Unlimited free tier with no data cap; private payment by cash (mail) or Bitcoin",
     "Stealth obfuscation protocol and Secure Core multi-hop"
   ],
   "cons": [
@@ -99,15 +117,19 @@
     "One company spanning many products is a broad attack surface"
   ],
   "notes": "Overseen by the non-profit Proton Foundation; the free tier is funded by paid subscriptions.",
-  "lastVerified": "2026-06-17",
+  "lastVerified": "2026-06-30",
   "sources": [
     {
-      "label": "Proton VPN no-logs audits (official)",
+      "label": "Proton VPN no-logs audits (official, five consecutive)",
       "url": "https://protonvpn.com/blog/no-logs-audit"
     },
     {
-      "label": "Tom's Guide, fourth consecutive no-logs audit",
-      "url": "https://www.tomsguide.com/computing/vpns/proton-vpn-passes-its-fourth-consecutive-no-logs-audit-heres-what-that-means-for-your-data"
+      "label": "Proton VPN transparency report (legal requests, zero data disclosed)",
+      "url": "https://protonvpn.com/blog/transparency-report"
+    },
+    {
+      "label": "Proton VPN payment options, including cash by mail",
+      "url": "https://protonvpn.com/support/payment-options"
     },
     {
       "label": "Proton VPN (official)",
