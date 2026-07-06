@@ -1,0 +1,102 @@
+{
+  "slug": "sentinel",
+  "name": "Sentinel dVPN",
+  "website": "https://sentinel.co/",
+  "tagline": "A live, open-source decentralised VPN (dVPN) network on Cosmos: 1,500+ independent nodes across 70+ countries, paid in the $DVPN token. A protocol and marketplace, not a single provider.",
+  "status": "active",
+  "type": "network",
+  "verified": true,
+  "jurisdiction": {
+    "country": "Decentralised (Cosmos, global nodes)",
+    "eyes": "unknown",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Sentinel dVPN Foundation, on-chain validator governance",
+    "founded": 2018
+  },
+  "logging": {
+    "traffic": "unknown",
+    "dns": "unknown",
+    "timestamps": "unknown",
+    "bandwidth": "unknown",
+    "ip": "unknown",
+    "summary": "Decentralised: no central operator, and traffic is end-to-end encrypted between you and an independent exit node. But trust varies by node (anyone can run one), and session records (your wallet address, the node, and a timestamp) are written to the public Cosmos blockchain, so connection metadata is pseudonymous rather than fully private."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "no",
+    "acceptsCrypto": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Sentinel dVPN protocol on Cosmos (on-chain session authorisation); nodes run WireGuard (Curve25519) or V2Ray (VLess/VMess)",
+    "multihop": "unknown",
+    "obfuscation": "yes",
+    "killSwitch": "unknown",
+    "ownDns": "unknown",
+    "ramOnly": "unknown",
+    "portForwarding": "unknown",
+    "p2p": "yes",
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "no"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20 (WireGuard) / V2Ray",
+    "handshake": "Curve25519 (WireGuard)"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "Censorship-resistant by design: zero bootstrap nodes and no central servers to seize. There is no single operator to subpoena, but equally no audited no-logs policy, and session metadata lives on a public blockchain."
+  },
+  "infra": {
+    "countries": 70,
+    "servers": 1500,
+    "linux": "cli"
+  },
+  "pricing": {
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Crypto-native users who want a censorship-resistant, decentralised VPN",
+    "Avoiding a single provider you have to trust (no central servers to seize)",
+    "Developers building their own branded dVPN app on the protocol"
+  ],
+  "notFor": [
+    "People who want one accountable operator with an audited no-logs policy",
+    "Non-crypto users (payment and identity are wallet-based)",
+    "Anyone who needs connection metadata kept fully private (session records are on a public blockchain)",
+    "Streaming or plug-and-play simplicity (node quality varies)"
+  ],
+  "pros": [
+    "Fully open source: node, client, protocol, and SDK",
+    "Decentralised marketplace of 1,500+ independent nodes across 70+ countries",
+    "No central servers to seize; censorship-resistant by design",
+    "Live on Cosmos mainnet since 2021, with 1.4M+ users",
+    "Pay per bandwidth in crypto ($DVPN); no account or email required"
+  ],
+  "cons": [
+    "Not a single accountable provider: trust and logging vary by node operator",
+    "Session records (wallet, node, timestamp) are written to a public blockchain",
+    "Payment and identity are crypto/wallet-based, not for everyone",
+    "Different architecture from a commercial VPN, so we list it but don't score it"
+  ],
+  "notes": "Sentinel is an open-source decentralised VPN (dVPN) protocol and bandwidth marketplace on the Cosmos blockchain. Independent operators run WireGuard or V2Ray exit nodes (1,500+ across 70+ countries) and are paid in the $DVPN token; sessions are authorised on-chain. Consumer apps such as Cosmo dVPN, Sentinel Shield and Independent VPN are built on it. Live on mainnet since March 2021. Listed as a decentralised network rather than scored against conventional providers.",
+  "lastVerified": "2026-07-06",
+  "sources": [
+    { "label": "Sentinel (official)", "url": "https://sentinel.co/" },
+    { "label": "Sentinel's dVPN protocol launches on Cosmos mainnet (CoinDesk, 2021)", "url": "https://www.coindesk.com/tech/2021/03/27/sentinels-decentralized-vpn-protocol-launches-on-cosmos-mainnet" },
+    { "label": "Sentinel moves to Cosmos mainnet (PR Newswire)", "url": "https://www.prnewswire.com/news-releases/sentinel-moves-to-cosmos-mainnet-301301899.html" },
+    { "label": "Sentinel VPN by Sentinel dVPN Foundation (QuickNode)", "url": "https://www.quicknode.com/builders-guide/tools/sentinel-vpn-by-sentinel-dvpn-foundation" }
+  ]
+}
