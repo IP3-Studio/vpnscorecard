@@ -1,0 +1,123 @@
+{
+  "slug": "brave-vpn",
+  "name": "Brave VPN",
+  "website": "https://brave.com/firewall-vpn/",
+  "tagline": "Brave's built-in Firewall + VPN, powered by Guardian. WireGuard-based with a privacy-preserving login, but both firms are US-based (Five Eyes).",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Brave Software, Inc. (VPN powered by Guardian)",
+    "founded": 2015
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "Strict no-logs: Brave says it stores no data about your traffic, connections, usage, or IP. A privacy-preserving login means Brave itself can't tell whether you've used the VPN. Guardian's infrastructure was independently audited in 2024. Both firms are US-based."
+  },
+  "privacy": {
+    "anonymousSignup": "no",
+    "acceptsCash": "no",
+    "acceptsCrypto": "no",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "no",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "unknown",
+    "ipv6": "unknown",
+    "ikev2": "yes",
+    "postQuantum": "no"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20 (WireGuard) / AES-256 (IKEv2)",
+    "handshake": "Curve25519 (WireGuard)"
+  },
+  "transparency": {
+    "openSourceClients": "no",
+    "audits": [
+      {
+        "firm": "Independent security firm",
+        "year": 2024,
+        "scope": "Infrastructure security audit (Apr 2024), via Guardian",
+        "url": "https://guardianapp.com/company/partners/brave/"
+      },
+      {
+        "firm": "Independent security firm",
+        "year": 2024,
+        "scope": "Software security audit (Feb 2024), via Guardian"
+      }
+    ],
+    "transparencyReport": "yes",
+    "courtTested": "unknown",
+    "realWorldNoLog": "Guardian publishes a transparency report on every legal request (who asked, what for, what was shared) and passed independent software and infrastructure audits in 2024. US jurisdiction (Five Eyes) still applies, and there is no widely reported no-logs court test."
+  },
+  "infra": {
+    "simultaneousConnections": 10,
+    "linux": "none"
+  },
+  "pricing": {
+    "monthlyUsd": 9.99,
+    "bestPerMonthUsd": 8.33,
+    "bestPlanTerm": "1-year",
+    "freeTrialDays": 7,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "Existing Brave browser users who want a built-in VPN and firewall",
+    "Blocking trackers and ads across the whole device",
+    "A simple, integrated VPN without a separate app"
+  ],
+  "notFor": [
+    "Anyone who needs to stay outside US / Five Eyes jurisdiction",
+    "Users who want a fully open-source, independently run VPN like Proton or Mullvad",
+    "Desktop or Android users who rely on a kill switch (it is iOS only)",
+    "People who don't use the Brave browser"
+  ],
+  "pros": [
+    "WireGuard (ChaCha20) and IKEv2 with a strict no-logs policy",
+    "Privacy-preserving login means Brave can't link your subscription to your VPN usage",
+    "Guardian infrastructure independently audited in 2024, with a public transparency report",
+    "Built into the Brave browser, with a device-wide firewall that blocks ads and trackers",
+    "Covers up to 10 devices, with a 7-day free trial"
+  ],
+  "cons": [
+    "Brave and Guardian are both US-based, placing the VPN inside the Five Eyes",
+    "The VPN backend is Guardian's proprietary infrastructure; the browser is open source but the VPN service is not",
+    "Kill switch is iOS only, and there is no Linux app yet",
+    "Requires the Brave browser, and offers no anonymous, cash, or crypto payment"
+  ],
+  "notes": "Brave Firewall + VPN is powered by Guardian, a San Francisco security firm. It uses WireGuard (ChaCha20) and IKEv2/IPSec (AES-256), with an anonymous, privacy-preserving login so Brave can't link your purchase to your VPN usage. Guardian ran independent software (Feb 2024) and infrastructure (Apr 2024) audits and publishes a transparency report. Both Brave Software and Guardian are US-based, which places the service inside the Five Eyes.",
+  "lastVerified": "2026-07-06",
+  "sources": [
+    {
+      "label": "Brave Firewall + VPN (official)",
+      "url": "https://brave.com/firewall-vpn/"
+    },
+    {
+      "label": "Guardian — Brave partnership (audits, transparency report)",
+      "url": "https://guardianapp.com/company/partners/brave/"
+    },
+    {
+      "label": "Brave VPN relaunch: new features, servers, plans",
+      "url": "https://brave.com/blog/vpn-relaunch/"
+    }
+  ]
+}
