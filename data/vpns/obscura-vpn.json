@@ -8,7 +8,8 @@
   "jurisdiction": {
     "country": "United States",
     "eyes": "five",
-    "enemyOfInternet": "no"
+    "enemyOfInternet": "no",
+    "neutral": true
   },
   "company": {
     "parent": "Sovereign Engineering Inc. (founder: Carl Dong)",
@@ -59,7 +60,7 @@
     ],
     "transparencyReport": "unknown",
     "courtTested": "no",
-    "realWorldNoLog": "By design, Obscura's entry relay never sees your destination and the Mullvad exit never sees your identity, so neither party alone can link you to your traffic even under legal pressure. Cure53's 2025 audit found no major issues. The company is new and not yet court-tested, and its jurisdiction is not emphasised because the architecture limits what any single party can reveal."
+    "realWorldNoLog": "By design, Obscura's entry relay never sees your destination and the Mullvad exit never sees your identity, so neither party alone can link you to your traffic even under legal pressure. Cure53's 2025 audit found no major issues. Sovereign Engineering is US-based, but because the two-party design means its own jurisdiction can't expose your traffic, we show the US / Five Eyes fact and treat jurisdiction as neutral in the score. The company is new and not yet court-tested."
   },
   "infra": {
     "linux": "none"

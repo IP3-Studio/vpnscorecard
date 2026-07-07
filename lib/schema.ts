@@ -66,6 +66,12 @@ export const VpnSchema = z.object({
       country: z.string().default("Unknown"),
       eyes: Eyes.default("unknown"),
       enemyOfInternet: Tri.default("unknown"),
+      /**
+       * When true, jurisdiction is shown honestly (country + eyes) but NOT
+       * scored: a trust-split / multi-hop design across independent operators
+       * means the provider's own jurisdiction cannot expose user traffic.
+       */
+      neutral: z.boolean().default(false),
     })
     .prefault({}),
 
