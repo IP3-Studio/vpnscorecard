@@ -190,8 +190,13 @@ export const CRITERIA: Criterion[] = [
     category: "privacy",
     weight: 3,
     explain:
-      "Whether the operating country belongs to the 5/9/14 Eyes intelligence-sharing alliances. Outside all three scores best.",
-    evaluate: (v) => eyesCell(v.jurisdiction.eyes),
+      "Whether the operating country belongs to the 5/9/14 Eyes intelligence-sharing alliances. Outside all three scores best. A provider whose architecture (a trust-split or multi-hop across independent operators) means its own jurisdiction cannot expose user traffic is shown honestly but marked jurisdiction-neutral, so this line is not scored for it.",
+    evaluate: (v) => {
+      const cell = eyesCell(v.jurisdiction.eyes);
+      // Architecture-neutralised: keep the honest label (e.g. "5 Eyes") but
+      // drop it from the score.
+      return v.jurisdiction.neutral ? neutral(cell.display) : cell;
+    },
   },
   {
     id: "noLogsTraffic",
