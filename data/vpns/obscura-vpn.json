@@ -1,0 +1,106 @@
+{
+  "slug": "obscura-vpn",
+  "name": "Obscura VPN",
+  "website": "https://obscura.com/",
+  "tagline": "A two-party relay VPN: Obscura runs the entry hop and can't see your traffic, while the exit is run by Mullvad and never sees your identity. Open source, audited by Cure53.",
+  "status": "active",
+  "verified": true,
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Sovereign Engineering Inc. (founder: Carl Dong)",
+    "founded": 2024
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "none",
+    "ip": "none",
+    "summary": "No logs by design: Obscura's entry relay can't decrypt your traffic or see your destination, and the Mullvad-run exit never sees your identity. Obscura says it doesn't log your IP and can't see your internet traffic, ever. Independently checked by Cure53 in 2025."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "no",
+    "acceptsCrypto": "yes",
+    "pgpKey": "unknown"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "yes",
+    "proprietaryProtocol": "Two-party relay: WireGuard tunnelled over QUIC, entry relay run by Obscura and exit run by Mullvad (Rust implementation)",
+    "multihop": "yes",
+    "obfuscation": "yes",
+    "killSwitch": "unknown",
+    "ownDns": "yes",
+    "ramOnly": "unknown",
+    "portForwarding": "no",
+    "p2p": "unknown",
+    "ipv6": "unknown",
+    "ikev2": "no",
+    "postQuantum": "unknown"
+  },
+  "encryption": {
+    "dataCipher": "ChaCha20-Poly1305 (WireGuard)",
+    "handshake": "Curve25519 (WireGuard)"
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [
+      {
+        "firm": "Cure53",
+        "year": 2025,
+        "scope": "app and two-party relay protocol; no major issues found",
+        "url": "https://obscura.com/blog/obscuras-first-audit/"
+      }
+    ],
+    "transparencyReport": "unknown",
+    "courtTested": "no",
+    "realWorldNoLog": "By design, Obscura's entry relay never sees your destination and the Mullvad exit never sees your identity, so neither party alone can link you to your traffic even under legal pressure. Cure53's 2025 audit found no major issues. The company is new and not yet court-tested, and its jurisdiction is not emphasised because the architecture limits what any single party can reveal."
+  },
+  "infra": {
+    "linux": "none"
+  },
+  "pricing": {
+    "monthlyUsd": 8.0,
+    "freeTier": "no"
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "People who want strong metadata privacy without fully trusting one provider",
+    "Mac, iOS, and Android users who want WireGuard with a Mullvad exit",
+    "Users who want anonymous signup and Monero or Lightning payment"
+  ],
+  "notFor": [
+    "Users who need a native Windows or Linux app (WireGuard config only)",
+    "People who want a long track record (it launched in 2025)",
+    "Anyone who needs the provider itself to sit outside Five Eyes on paper"
+  ],
+  "pros": [
+    "Two-party relay: the entry (Obscura) can't see your traffic, the exit (Mullvad) can't see your identity",
+    "Passed an independent Cure53 audit in 2025 with no major issues",
+    "Fully open source, with WireGuard tunnelled over QUIC, written in Rust",
+    "Anonymous signup with a random account number; pay by Monero or Lightning",
+    "No logs by design, not just by policy"
+  ],
+  "cons": [
+    "Sovereign Engineering is a US company, though the two-party design limits what any single party can reveal",
+    "New (launched February 2025), so limited track record and not yet court-tested",
+    "Native apps are macOS, iOS, and Android only; Windows and Linux need manual WireGuard configs",
+    "Exit network depends on Mullvad"
+  ],
+  "notes": "Obscura VPN (by Sovereign Engineering Inc., founded by Carl Dong) uses a two-party relay: your traffic is WireGuard-encrypted end to end to a Mullvad-run exit, while Obscura's entry relay cannot decrypt it, so neither party alone can link your identity to your destination. Open source (github.com/Sovereign-Engineering/obscuravpn-client), audited by Cure53 in 2025. Login is a random account number with no email; payment by card, Bitcoin Lightning, or Monero. Windows and Linux are supported via downloadable WireGuard configs. Launched 11 February 2025.",
+  "lastVerified": "2026-07-06",
+  "sources": [
+    { "label": "Obscura VPN (official)", "url": "https://obscura.com/" },
+    { "label": "Obscura VPN pricing", "url": "https://obscura.com/pricing/" },
+    { "label": "Obscura's first independent audit, by Cure53", "url": "https://obscura.com/blog/obscuras-first-audit/" },
+    { "label": "TechRadar: Obscura VPN aces its first independent audit", "url": "https://www.techradar.com/vpn/vpn-services/obscura-vpn-just-aced-its-first-independent-audit" }
+  ]
+}
