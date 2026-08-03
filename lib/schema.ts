@@ -84,6 +84,13 @@ export const VpnSchema = z.object({
    */
   concerns: z.array(ConcernSchema).default([]),
 
+  /**
+   * Facts that count in the service's favour against the concerns above:
+   * audits passed, ownership or jurisdiction changes, court tests survived.
+   * Rendered alongside the warning so a flag is never the whole story.
+   */
+  mitigating: z.array(z.string()).default([]),
+
   jurisdiction: z
     .object({
       country: z.string().default("Unknown"),

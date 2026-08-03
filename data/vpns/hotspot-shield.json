@@ -1,5 +1,38 @@
 {
   "slug": "hotspot-shield",
+  "concerns": [
+    {
+      "year": 2016,
+      "label": "Peer-reviewed study measured JavaScript ad injection",
+      "detail": "An academic study of 283 VPN apps by researchers at CSIRO, UNSW, ICSI and UC Berkeley named Hotspot Shield as one of two apps actively injecting JavaScript via iframes for advertising and tracking, using more than five third-party tracking libraries. This is a measured finding rather than an allegation.",
+      "url": "https://research.csiro.au/isp/wp-content/uploads/sites/106/2016/08/paper-1.pdf"
+    },
+    {
+      "year": 2016,
+      "label": "Shopping traffic redirected to affiliate partners",
+      "detail": "The same study documented the app intercepting web requests and redirecting them through an AnchorFree endpoint to affiliate networks, with observed redirections for retailers including eBay, Target, Best Buy and Macy's.",
+      "url": "https://research.csiro.au/isp/wp-content/uploads/sites/106/2016/08/paper-1.pdf"
+    },
+    {
+      "year": 2017,
+      "label": "Privacy group asked the FTC to investigate",
+      "detail": "The Center for Democracy and Technology filed a complaint arguing that marketing promising guaranteed security and privacy was contradicted by a policy permitting logging to identify a user's general location and optimise advertisements. These were CDT's allegations; no public FTC action followed, and the company called the claims unfounded.",
+      "url": "https://web.archive.org/web/20181217215315/https://cdt.org/files/2017/08/FTC-CDT-VPN-complaint-8-7-17.pdf"
+    },
+    {
+      "year": 2018,
+      "label": "Flaw exposed users' real IP address",
+      "detail": "CVE-2018-6460: a local web server endpoint could be queried by an unauthenticated attacker to reveal VPN connection state, Wi-Fi network name and the user's real IP address. Rated high severity by NVD, reported in December 2017 and fixed in February 2018.",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-6460"
+    }
+  ],
+  "mitigating": [
+    "The FTC never took public action. No investigation, consent order or finding against the company was ever announced, so the complaint's broader deception claims remain untested rather than proven.",
+    "The company denied the allegations, saying user information is never associated with online activity and that IP addresses are not stored.",
+    "An independent technical review by Aon in 2023 examined the free and paid tiers, node server logs and the client, and found no indication that browsing activity could be correlated back to a unique user, and no plaintext IP logging. Its scope covered logging and collection rather than hosting security.",
+    "The ad-injection and affiliate-redirect measurements are a 2015 and 2016 snapshot of the Android app; no comparable later measurement was found.",
+    "Ownership has changed repeatedly since: AnchorFree became Pango, was acquired by Aura, spun back out, and is now part of Point Wild."
+  ],
   "name": "Hotspot Shield",
   "website": "https://www.hotspotshield.com/",
   "tagline": "A long-running US-based VPN built on the proprietary Catapult Hydra protocol, now operated by Point Wild, offering fast speeds but a checkered privacy history.",

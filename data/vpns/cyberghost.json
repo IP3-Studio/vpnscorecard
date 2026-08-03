@@ -1,5 +1,31 @@
 {
   "slug": "cyberghost",
+  "concerns": [
+    {
+      "year": 2017,
+      "label": "Bought by Crossrider, before the Kape rebrand",
+      "detail": "CyberGhost was acquired in 2017 by Crossrider, about a year before that company renamed itself Kape Technologies, citing the strong association with its past activities. It is the longest-held VPN in the group. No logging or malware incident has been documented at CyberGhost itself.",
+      "url": "https://en.globes.co.il/en/article-crossrider-renamed-kape-after-switching-to-cybersecurity-1001227178"
+    },
+    {
+      "year": 2015,
+      "label": "Parent was a major ad-injection affiliate",
+      "detail": "Research by Google and UC Berkeley identified CyberGhost's acquirer, Crossrider, as the largest affiliate driving traffic to the Superfish ad injector. Crossrider provided the platform and affiliate IDs; it was not found to have authored the injectors.",
+      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+    },
+    {
+      "year": 2021,
+      "label": "Parent also owns VPN review sites",
+      "detail": "Kape acquired Webselenese, which operates the vpnMentor and Wizcase review sites, for around $149 million. That places the ranking of VPNs and the ownership of VPN brands inside one company.",
+      "url": "https://www.techradar.com/news/kape-signs-dollar150m-deal-for-fellow-security-firm-webselense"
+    }
+  ],
+  "mitigating": [
+    "Deloitte Audit Romania has assessed CyberGhost's no-logs infrastructure three times, in 2022, 2024 and 2025, so the audit cadence is sustained under Kape ownership.",
+    "The 2024 assessment found nothing contradicting the company's description of its no-logs setup.",
+    "CyberGhost publishes regular transparency reports covering legal requests and takedown demands.",
+    "The concern here is corporate lineage and group structure, not any documented CyberGhost logging failure or malware incident."
+  ],
   "name": "CyberGhost VPN",
   "website": "https://www.cyberghostvpn.com/",
   "tagline": "A Romania-based, Kape-owned VPN with a large server network, streaming focus, and a thrice-audited no-logs policy, but limited advanced privacy features and a controversial parent company.",

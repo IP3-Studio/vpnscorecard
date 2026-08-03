@@ -1,5 +1,26 @@
 {
   "slug": "hma-hidemyass",
+  "concerns": [
+    {
+      "year": 2011,
+      "label": "Court-ordered logs helped convict a user",
+      "detail": "HMA complied with a UK court order and supplied account information that helped identify Cody Kretsinger over the LulzSec breach of Sony Pictures. He pleaded guilty and was sentenced in 2013. Note the important distinction from a broken promise: HMA did not advertise a no-logs policy at the time.",
+      "url": "https://www.justice.gov/file/487861/dl"
+    },
+    {
+      "year": 2011,
+      "label": "Openly a logging service, in a Five Eyes country",
+      "detail": "HMA publicly defended session logging, arguing that a provider claiming no logging could not otherwise locate abusive customers, and said it was complying with its country's legal system. It is based in the UK, a Five Eyes member subject to the Investigatory Powers Act.",
+      "url": "https://www.theregister.com/2011/09/26/hidemyass_lulzsec_controversy/"
+    }
+  ],
+  "mitigating": [
+    "Important context: HMA never advertised a no-logs policy in 2011. It disclosed session logging and defended it openly, so unlike some cases here this was not a broken promise.",
+    "It acted on a court order rather than volunteering the data.",
+    "It introduced an actual no-logging policy in 2020, covering original IP address, DNS queries, activity, data transferred and connection timestamps.",
+    "That policy was independently verified by the cyber-risk firm VerSprite in 2020 across its Android, iOS, Mac and Windows clients.",
+    "Ownership has changed since: Privax was acquired by AVG, then Avast, and is now part of Gen Digital."
+  ],
   "name": "HMA (HideMyAss)",
   "website": "https://www.hidemyass.com",
   "tagline": "A long-running UK-based VPN, now owned by the Avast/Norton conglomerate Gen Digital, known for its very large country footprint but burdened by a Five Eyes jurisdiction and a history of handing user data to law enforcement.",

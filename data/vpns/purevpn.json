@@ -1,5 +1,27 @@
 {
   "slug": "purevpn",
+  "concerns": [
+    {
+      "year": 2017,
+      "label": "Provided records that helped identify a user",
+      "detail": "In the FBI complaint against Ryan Lin, the sworn affidavit states that PureVPN was able to determine its service had been accessed by the same customer from two originating IP addresses, the home Lin was living in at the time and the software company where he was employed at the time. That let investigators correlate its records with third-party logs.",
+      "url": "https://www.justice.gov/opa/press-release/file/1001841/download"
+    },
+    {
+      "year": 2017,
+      "label": "Advertised no logs while retaining originating IPs",
+      "detail": "PureVPN marketed a no-logs service and its policy stated it kept no record of user activity, while a separate clause disclosed that connection times and bandwidth were recorded. Neither clause disclosed retention of the originating IP addresses that enabled the identification. PureVPN responded that it had not breached its policy and that browsing logs were never stored or shared.",
+      "url": "https://torrentfreak.com/purevpn-logs-helped-fbi-net-alleged-cyberstalker-171009/"
+    }
+  ],
+  "mitigating": [
+    "Only connection metadata was implicated. The affidavit does not show that browsing content or destination logs were handed over.",
+    "PureVPN moved from a zero browsing logs policy to a zero user logs policy in May 2018, dropping exactly the originating IP and timestamp data at issue in this case.",
+    "A first independent no-logs audit by Altius IT in 2019 reported no configurations or log files that could identify a person or their activity.",
+    "KPMG has run recurring no-logs audits since 2021, under an arrangement allowing unannounced inspection.",
+    "The company moved its base from Hong Kong to the British Virgin Islands in 2021.",
+    "It now publishes a trust centre citing consecutive no-logs audits, ISO 27001 certification and a warrant canary."
+  ],
   "name": "PureVPN",
   "website": "https://www.purevpn.com",
   "tagline": "A long-running, budget-priced VPN with a large server network and repeated independent no-logs audits, shadowed by a 2017 case in which it handed connection-correlation data to the FBI.",

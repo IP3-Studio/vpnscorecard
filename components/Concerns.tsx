@@ -50,10 +50,23 @@ export function ConcernPanel({ vpn }: { vpn: Vpn }) {
           </li>
         ))}
       </ul>
+      {vpn.mitigating.length > 0 && (
+        <div className="mt-4 rounded-md border border-emerald-300 bg-emerald-50 p-3 dark:border-emerald-500/25 dark:bg-emerald-500/5">
+          <h3 className="text-xs font-semibold uppercase tracking-wide text-emerald-800 dark:text-emerald-300">
+            What counts in their favour
+          </h3>
+          <ul className="mt-1.5 list-disc space-y-1 pl-4 text-sm text-zinc-700 dark:text-zinc-300">
+            {vpn.mitigating.map((m, i) => (
+              <li key={i}>{m}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <p className="mt-3 text-xs text-zinc-500">
         Listing a concern is a statement about the documented record, not a claim about
         how the service behaves today. Where a provider has since changed owner,
-        jurisdiction or policy, that is noted in the report below.
+        jurisdiction or policy, that is noted above and in the report below.
       </p>
     </section>
   );
