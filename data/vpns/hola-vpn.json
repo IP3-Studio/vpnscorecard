@@ -3,7 +3,7 @@
   "concerns": [
     {
       "label": "Free users are still sold as network resources",
-      "detail": "Hola's own FAQ states that it works by sharing the contributed resources of its users for business use by Bright Data, that free users provide a certain amount of network and processing power, and that only Premium subscribers do not contribute device resources. The 2015 model continues; it is now disclosed rather than hidden.",
+      "detail": "Hola's own FAQ states that it works by sharing the contributed resources of its users for business use by Bright Data, that free users provide a certain amount of network and processing power, and that only Premium subscribers do not contribute device resources. The same FAQ says its browser extensions are not part of the peer-to-peer network, so this applies to the free apps rather than every product. The 2015 model continues; it is now disclosed rather than hidden.",
       "url": "https://hola.org/faq"
     },
     {
@@ -15,7 +15,7 @@
     {
       "year": 2015,
       "label": "User nodes used in an attack on 8chan",
-      "detail": "8chan's founder reported an attack sending thousands of requests in 30 seconds from clean residential IPs. Hola's founder confirmed an attacker had used Luminati against 8chan, saying the customer slipped through screening and the account was terminated.",
+      "detail": "8chan's founder reported an attack sending thousands of requests in 30 seconds from clean residential IPs. Hola's founder confirmed that an attacker had used Luminati against 8chan, and said the customer had slipped through the company's screening.",
       "url": "https://www.theregister.com/2015/05/29/hola_vpn_used_8chan_takedown_botnet_or_not/"
     },
     {
@@ -27,7 +27,7 @@
     {
       "year": 2018,
       "label": "Chrome extension hijacked to phish a crypto wallet",
-      "detail": "An attacker took over Hola's Chrome Web Store account and pushed a modified extension that redirected MyEtherWallet users to a phishing site for about five hours. Hola confirmed the incident and notified the wallet provider and Google. This was an attack on Hola rather than conduct by Hola.",
+      "detail": "Hola's Chrome extension was compromised and served code that redirected MyEtherWallet users towards a phishing site for around five hours. MyEtherWallet itself was not breached and advised affected users to move their funds. This was an attack on Hola rather than conduct by Hola.",
       "url": "https://techcrunch.com/2018/07/09/myetherwallet-hit-by-attack-hola/"
     }
   ],

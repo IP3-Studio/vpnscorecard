@@ -4,7 +4,7 @@
     {
       "year": 2016,
       "label": "Peer-reviewed study measured JavaScript ad injection",
-      "detail": "An academic study of 283 VPN apps by researchers at CSIRO, UNSW, ICSI and UC Berkeley named Hotspot Shield as one of two apps actively injecting JavaScript via iframes for advertising and tracking, using more than five third-party tracking libraries. This is a measured finding rather than an allegation.",
+      "detail": "An academic study of 283 Android apps using the VPN permission, by researchers at CSIRO, UNSW, ICSI and UC Berkeley, named the then free ad-supported Hotspot Shield Android app as one of two actively injecting JavaScript via iframes for advertising and tracking, using more than five third-party tracking libraries. This is a measured finding rather than an allegation.",
       "url": "https://research.csiro.au/isp/wp-content/uploads/sites/106/2016/08/paper-1.pdf"
     },
     {
@@ -22,7 +22,7 @@
     {
       "year": 2018,
       "label": "Flaw exposed users' real IP address",
-      "detail": "CVE-2018-6460: a local web server endpoint could be queried by an unauthenticated attacker to reveal VPN connection state, Wi-Fi network name and the user's real IP address. Rated high severity by NVD, reported in December 2017 and fixed in February 2018.",
+      "detail": "CVE-2018-6460: a local web server endpoint could be queried by an unauthenticated attacker to reveal VPN connection state, Wi-Fi network name and the user's real IP address. Rated high severity by NVD, first reported to the company in November 2017 and fixed in February 2018.",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-6460"
     }
   ],

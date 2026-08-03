@@ -4,14 +4,14 @@
     {
       "year": 2019,
       "label": "Acquired by Kape Technologies",
-      "detail": "Kape acquired PIA's parent London Trust Media in late 2019, its second VPN purchase after CyberGhost. PIA had until then been independently owned with a strong privacy-community reputation. No logging failure has been documented at PIA itself, before or since.",
+      "detail": "Kape acquired PIA's parent holding company in late 2019, its third VPN purchase after CyberGhost and ZenMate. PIA had until then been independently owned with a strong privacy-community reputation. No logging failure has been documented at PIA itself, before or since.",
       "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
     },
     {
       "year": 2015,
-      "label": "Parent was a major ad-injection affiliate",
-      "detail": "Kape traded as Crossrider until March 2018. Research by Google and UC Berkeley identified Crossrider as the top affiliate feeding the Superfish and intext.nav-links ad injectors, whose extensions commonly arrived through software bundlers.",
-      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+      "label": "Later owner's ad-injection history, long predating the purchase",
+      "detail": "Kape traded as Crossrider until 2018. Research by Google and UC Berkeley identified Crossrider as the top affiliate feeding the Superfish and intext.nav-links ad injectors. Note the chronology: PIA was independent and founder-owned in 2015, Crossrider shut the ad platform down in 2016, and it did not acquire PIA until three years later.",
+      "url": "https://research.google/pubs/ad-injection-at-scale-assessing-deceptive-advertisement-modifications/"
     },
     {
       "year": 2021,
