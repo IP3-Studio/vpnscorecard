@@ -40,6 +40,21 @@ export const SourceSchema = z.object({
 });
 export type Source = z.infer<typeof SourceSchema>;
 
+/**
+ * A documented, sourced integrity concern: a proven incident or an ownership
+ * history that a reader deserves to know about before trusting the service.
+ * Opinion doesn't belong here; every entry needs a citation.
+ */
+export const ConcernSchema = z.object({
+  year: z.number().int().optional(),
+  /** Short headline, e.g. "Handed user logs to the FBI". */
+  label: z.string(),
+  /** One or two factual sentences. Say "alleged" when it is an allegation. */
+  detail: z.string(),
+  url: z.url().optional(),
+});
+export type Concern = z.infer<typeof ConcernSchema>;
+
 export const AuditSchema = z.object({
   firm: z.string(),
   year: z.number().int(),
@@ -60,6 +75,14 @@ export const VpnSchema = z.object({
   type: VpnType.default("provider"),
   /** Gate for public display. Unverified records never appear as current. */
   verified: z.boolean().default(false),
+
+  /**
+   * Documented integrity concerns. A non-empty list means the service is
+   * flagged with a warning and receives NO overall score: a proven no-logs
+   * breach or adware/surveillance history isn't something a good feature set
+   * should be able to average away.
+   */
+  concerns: z.array(ConcernSchema).default([]),
 
   jurisdiction: z
     .object({

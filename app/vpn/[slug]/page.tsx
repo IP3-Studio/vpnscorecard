@@ -2,8 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getAllSlugs, getVpnBySlug } from "@/lib/load";
-import { scoreVpn } from "@/lib/scoring";
-import { SCORED_TYPES } from "@/lib/schema";
+import { isScored, scoreVpn } from "@/lib/scoring";
+import { ConcernPanel } from "@/components/Concerns";
 import { ScoreBadge, ScoreBar } from "@/components/ScoreCell";
 import { DataSheet } from "@/components/DataSheet";
 import { ProtocolsEncryption } from "@/components/ProtocolsEncryption";
@@ -61,7 +61,8 @@ export default async function VpnPage({
   const vpn = getVpnBySlug(slug);
   if (!vpn) notFound();
   const score = scoreVpn(vpn);
-  const scored = SCORED_TYPES.has(vpn.type);
+  const scored = isScored(vpn);
+  const flagged = vpn.concerns.length > 0;
 
   const devices =
     vpn.infra.simultaneousConnections === undefined
@@ -97,7 +98,11 @@ export default async function VpnPage({
           </a>
         </div>
         <div className="flex flex-col items-start gap-1 sm:items-end">
-          {!scored ? (
+          {flagged ? (
+            <span className="rounded-md bg-rose-100 px-2 py-1 text-xs font-semibold text-rose-700 dark:bg-rose-500/15 dark:text-rose-300">
+              ⚠ Not scored
+            </span>
+          ) : !scored ? (
             <span className="rounded-md bg-zinc-100 px-2 py-1 text-xs font-medium text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
               Not scored
             </span>
@@ -109,6 +114,9 @@ export default async function VpnPage({
           )}
         </div>
       </div>
+
+      {/* Documented concerns: shown before anything else */}
+      <ConcernPanel vpn={vpn} />
 
       {/* Quick facts */}
       <dl className="mt-6 grid grid-cols-2 gap-4 text-sm sm:grid-cols-4 lg:grid-cols-6">
@@ -143,7 +151,13 @@ export default async function VpnPage({
       )}
 
       {/* Category scores (providers + mixnet only) */}
-      {!scored ? (
+      {flagged ? (
+        <div className="mt-6 rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
+          No category scores are shown for {vpn.name} because of the documented concerns
+          above. Every individual data point is still published below, so you can weigh
+          the record yourself.
+        </div>
+      ) : !scored ? (
         <div className="mt-6 rounded-lg border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
           <strong>{vpn.name}</strong> is in the {TYPE_META[vpn.type].label} category, so we
           don&apos;t give it a head-to-head score. It {TYPE_META[vpn.type].notScoredReason}. The

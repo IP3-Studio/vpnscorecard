@@ -1,6 +1,6 @@
 import { CRITERIA } from "./criteria";
-import { scoreVpn } from "./scoring";
-import { SCORED_TYPES, type Vpn } from "./schema";
+import { isScored, scoreVpn } from "./scoring";
+import { type Vpn } from "./schema";
 
 /**
  * Transparent, rule-based "find my VPN" recommender (no LLM). It re-weights the
@@ -94,7 +94,7 @@ export function recommend(vpns: Vpn[], prefs: Prefs): Recommendation[] {
   ]);
 
   return vpns
-    .filter((v) => SCORED_TYPES.has(v.type)) // only score-able tool types
+    .filter((v) => isScored(v)) // score-able types, and nothing flagged with a concern
     .filter((v) => passesBudget(v, prefs.budget))
     .map((v) => {
       const { cells } = scoreVpn(v);

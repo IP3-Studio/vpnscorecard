@@ -61,6 +61,29 @@ export default function MethodologyPage() {
         </div>
       </div>
 
+      {/* Documented concerns */}
+      <h2 className="mt-10 text-xl font-bold">Documented concerns, and why they void a score</h2>
+      <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
+        Some services carry a documented incident or ownership history that a reader
+        deserves to see before trusting them. We mark those with a{" "}
+        <span className="font-semibold text-rose-600 dark:text-rose-400">⚠ Concerns</span>{" "}
+        tag and give them <strong>no overall score at all</strong>. A provider that handed
+        user logs to police while advertising &ldquo;no logs&rdquo;, or one owned by a
+        company built on adware, has failed at the one thing a privacy tool exists to do.
+        Averaging that away against a good protocol list would produce a number that
+        flatters the service and misleads the reader, so we publish the record instead of a
+        rank.
+      </p>
+      <p className="mt-3 text-sm text-zinc-600 dark:text-zinc-400">
+        The bar is evidence, not reputation. Every concern we list is a specific,
+        dated, sourced event or ownership fact, and we say plainly when something was an
+        allegation rather than a proven finding. Individual data cells are still published
+        in full, and where a service has since changed owner, jurisdiction, policy or
+        passed independent audits, that is recorded alongside. A concern describes the
+        documented record; it is not a prediction about present-day behaviour, and readers
+        can weigh it themselves.
+      </p>
+
       <div className="mt-6 rounded-lg border border-zinc-200 p-4 text-sm dark:border-zinc-800">
         <h2 className="font-semibold">How a cell is scored</h2>
         <ul className="mt-2 space-y-1 text-zinc-600 dark:text-zinc-400">
