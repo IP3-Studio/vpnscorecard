@@ -7,7 +7,8 @@ import { CATEGORIES, CRITERIA } from "@/lib/criteria";
 import type { Vpn } from "@/lib/schema";
 import type { VpnScore } from "@/lib/scoring";
 import { ScoreCell, ScoreBadge } from "./ScoreCell";
-import { TypeBadge, TYPE_META } from "./TypeBadge";
+import { TypeBadge } from "./TypeBadge";
+import { ConcernBadge } from "./Concerns";
 
 export interface Row {
   vpn: Vpn;
@@ -78,7 +79,7 @@ function VpnCard({
             className="mt-1 accent-emerald-500"
           />
           <div>
-            <div className="flex items-center gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5">
               <Link
                 href={`/vpn/${r.vpn.slug}`}
                 className="font-semibold hover:text-emerald-600 dark:hover:text-emerald-400"
@@ -86,6 +87,7 @@ function VpnCard({
                 {r.vpn.name}
               </Link>
               {r.vpn.type !== "provider" && <TypeBadge type={r.vpn.type} />}
+              {r.vpn.concerns.length > 0 && <ConcernBadge />}
             </div>
             <div className="text-[11px] text-zinc-500">{r.vpn.jurisdiction.country}</div>
             <OwnerTag vpn={r.vpn} />
@@ -118,7 +120,6 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
   const [sortKey, setSortKey] = useState<SortKey>("overall");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
   const [selected, setSelected] = useState<Set<string>>(new Set());
-  const [typeFilter, setTypeFilter] = useState<Set<string>>(new Set());
   const router = useRouter();
 
   const visibleCriteria = useMemo(
@@ -136,7 +137,6 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
       for (const f of QUICK_FILTERS) {
         if (filters.has(f.id) && !f.test(r)) return false;
       }
-      if (typeFilter.size > 0 && !typeFilter.has(r.vpn.type)) return false;
       return true;
     });
     rs = [...rs].sort((a, b) => {
@@ -160,7 +160,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
       return sortDir === "asc" ? cmp : -cmp;
     });
     return rs;
-  }, [rows, query, filters, typeFilter, sortKey, sortDir]);
+  }, [rows, query, filters, sortKey, sortDir]);
 
   function toggleSort(key: SortKey) {
     if (sortKey === key) {
@@ -209,27 +209,6 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
                 }`}
               >
                 {f.label}
-              </button>
-            );
-          })}
-        </div>
-
-        <div className="flex flex-wrap items-center gap-2 text-xs">
-          <span className="text-zinc-500">Type:</span>
-          {(["provider", "mixnet", "network"] as const).map((t) => {
-            const on = typeFilter.has(t);
-            return (
-              <button
-                key={t}
-                onClick={() => toggleSet(typeFilter, setTypeFilter, t)}
-                title={TYPE_META[t].blurb}
-                className={`rounded-full border px-3 py-1 font-medium transition ${
-                  on
-                    ? "border-emerald-500 bg-emerald-500 text-white"
-                    : "border-zinc-300 text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-300"
-                }`}
-              >
-                {TYPE_META[t].short}
               </button>
             );
           })}
@@ -355,7 +334,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
                       className="accent-emerald-500"
                     />
                     <div>
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex flex-wrap items-center gap-1.5">
                         <Link
                           href={`/vpn/${r.vpn.slug}`}
                           className="font-semibold text-zinc-900 hover:text-emerald-600 dark:text-zinc-100 dark:hover:text-emerald-400"
@@ -363,6 +342,7 @@ export function ComparisonGrid({ rows }: { rows: Row[] }) {
                           {r.vpn.name}
                         </Link>
                         {r.vpn.type !== "provider" && <TypeBadge type={r.vpn.type} />}
+                        {r.vpn.concerns.length > 0 && <ConcernBadge />}
                       </div>
                       <div className="text-[11px] text-zinc-500">
                         {r.vpn.jurisdiction.country}

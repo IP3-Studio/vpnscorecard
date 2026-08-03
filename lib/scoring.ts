@@ -29,6 +29,15 @@ export interface VpnScore {
   cells: Record<string, Cell>;
 }
 
+/**
+ * Whether a service gets a head-to-head overall score. Two things disqualify:
+ * a tool type that isn't a conventional traffic-routing provider, and any
+ * documented integrity concern (see `concerns` in the schema).
+ */
+export function isScored(v: Vpn): boolean {
+  return SCORED_TYPES.has(v.type) && v.concerns.length === 0;
+}
+
 function weightedMean(
   pairs: { score: number | null; weight: number }[],
 ): number | null {
@@ -46,9 +55,10 @@ export function scoreVpn(v: Vpn): VpnScore {
   const cells: Record<string, Cell> = {};
   for (const cr of CRITERIA) cells[cr.id] = cr.evaluate(v);
 
-  // Some tool types (device meshes, decentralised anonymity networks) aren't
-  // conventional traffic-routing providers, so we don't assign a comparable score.
-  if (!SCORED_TYPES.has(v.type)) {
+  // Not scored: either the tool type isn't a conventional provider (device
+  // meshes, decentralised networks), or there is a documented concern on
+  // record. Individual cells are still shown, so the data stays useful.
+  if (!isScored(v)) {
     return {
       overall: null,
       categories: CATEGORIES.map((c) => ({ id: c.id, label: c.label, score: null })),
