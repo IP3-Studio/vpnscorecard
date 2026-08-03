@@ -1,5 +1,44 @@
 {
   "slug": "expressvpn",
+  "concerns": [
+    {
+      "year": 2021,
+      "label": "CIO admitted UAE hacking work under a US settlement",
+      "detail": "ExpressVPN's then-CIO Daniel Gericke entered a deferred prosecution agreement over conspiracy to violate US arms-export controls and to commit computer fraud, paying $335,000. The factual statement he stipulated to as true says he was directly involved in computer network exploitation operations for a UAE company and later served as a program manager there. ExpressVPN's own account says he did not choose targets or launch exploits.",
+      "url": "https://www.justice.gov/opa/press-release/file/1432621/download"
+    },
+    {
+      "year": 2021,
+      "label": "Company retained and publicly defended him",
+      "detail": "ExpressVPN said it had no plans to change Gericke's position and that it fully stood behind him, adding that it had known the key facts before hiring him. Employees objected internally and the decision drew public criticism.",
+      "url": "https://www.techtarget.com/searchsecurity/news/252506801/ExpressVPN-stands-behind-CIO-named-in-UAE-hacking-scandal"
+    },
+    {
+      "year": 2021,
+      "label": "Acquired by Kape Technologies, formerly Crossrider",
+      "detail": "Kape bought ExpressVPN for $936 million in September 2021. Kape traded as Crossrider until March 2018, when it renamed itself citing the strong association with the company's past activities.",
+      "url": "https://www.theregister.com/2021/09/14/expressvpn_bought_kape/"
+    },
+    {
+      "year": 2015,
+      "label": "Parent was a major ad-injection affiliate",
+      "detail": "Research by Google and UC Berkeley presented at IEEE Security and Privacy described Crossrider as a platform enabling drop-in monetisation via major ad injectors, and identified it as the largest affiliate of the Superfish injector. Crossrider supplied the platform and affiliate IDs rather than authoring the injectors.",
+      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+    },
+    {
+      "year": 2025,
+      "label": "Gericke a defendant in a live US hacking lawsuit",
+      "detail": "Saudi activist Loujain AlHathloul sued DarkMatter Group and three former US intelligence operatives including Gericke. A judge denied the motion to dismiss in August 2025 and the case is proceeding. The allegations remain unproven.",
+      "url": "https://www.eff.org/cases/alhathloul-v-darkmatter-group"
+    }
+  ],
+  "mitigating": [
+    "Turkish investigators seized an ExpressVPN server during the Karlov assassination inquiry in 2017 and recovered no usable logs, a real-world test of the no-logs claim.",
+    "Repeated independent audits: KPMG has assessed the no-logs policy and TrustedServer, and Cure53 has penetration-tested TrustedServer and the Lightway protocol.",
+    "A further KPMG no-logs assessment covers systems as of February 2025, so the audit cadence has continued for years under Kape ownership.",
+    "The Gericke matter concerns his prior employer, not any conduct against ExpressVPN users, and the settlement was a deferred prosecution rather than a conviction.",
+    "No evidence has emerged that Kape or its VPN brands have engaged in ad injection since the platform business wound down around 2016."
+  ],
   "name": "ExpressVPN",
   "website": "https://www.expressvpn.com",
   "tagline": "A long-established British Virgin Islands VPN known for its audited no-logs policy, RAM-only TrustedServer infrastructure, and the in-house open-source Lightway protocol, now owned by Kape Technologies.",

@@ -1,5 +1,32 @@
 {
   "slug": "private-internet-access",
+  "concerns": [
+    {
+      "year": 2019,
+      "label": "Acquired by Kape Technologies",
+      "detail": "Kape acquired PIA's parent London Trust Media in late 2019, its second VPN purchase after CyberGhost. PIA had until then been independently owned with a strong privacy-community reputation. No logging failure has been documented at PIA itself, before or since.",
+      "url": "https://en.wikipedia.org/wiki/Kape_Technologies"
+    },
+    {
+      "year": 2015,
+      "label": "Parent was a major ad-injection affiliate",
+      "detail": "Kape traded as Crossrider until March 2018. Research by Google and UC Berkeley identified Crossrider as the top affiliate feeding the Superfish and intext.nav-links ad injectors, whose extensions commonly arrived through software bundlers.",
+      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+    },
+    {
+      "year": 2021,
+      "label": "Parent also owns VPN review sites",
+      "detail": "Kape's purchase of Webselenese gave it vpnMentor and Wizcase, review sites that rank VPNs including its own brands. Ownership disclosure on those sites has been criticised as inconspicuous.",
+      "url": "https://www.techradar.com/news/kape-signs-dollar150m-deal-for-fellow-security-firm-webselense"
+    }
+  ],
+  "mitigating": [
+    "Court-tested twice in US federal proceedings, more than any other VPN on this site. In a 2016 FBI case a subpoena to London Trust Media produced only a rough region of the country, with no identifying logs.",
+    "In a 2018 case PIA's general counsel testified under oath that the company holds no customer logs, and none were produced.",
+    "Deloitte Audit Romania audited the no-logs policy and found server configurations were not designed to identify users or their activity. PIA runs RAM-only servers.",
+    "PIA publishes a transparency report on the legal demands it receives.",
+    "The concern is prospective, about whether Kape ownership since 2019 changes any of this, rather than any documented failure by PIA."
+  ],
   "name": "Private Internet Access",
   "website": "https://www.privateinternetaccess.com",
   "tagline": "A long-established, budget-priced US-based VPN with open-source apps, RAM-only servers, and a no-logs policy repeatedly audited by Deloitte and tested in court.",

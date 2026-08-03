@@ -1,5 +1,43 @@
 {
   "slug": "hola-vpn",
+  "concerns": [
+    {
+      "label": "Free users are still sold as network resources",
+      "detail": "Hola's own FAQ states that it works by sharing the contributed resources of its users for business use by Bright Data, that free users provide a certain amount of network and processing power, and that only Premium subscribers do not contribute device resources. The 2015 model continues; it is now disclosed rather than hidden.",
+      "url": "https://hola.org/faq"
+    },
+    {
+      "year": 2015,
+      "label": "Free users' bandwidth resold via Luminati",
+      "detail": "Hola sold access to its free users' idle connections as residential exit nodes through its sister company Luminati. This is admitted rather than alleged: the founder confirmed the model publicly in May 2015.",
+      "url": "https://torrentfreak.com/hola-vpn-sells-users-bandwidth-150528/"
+    },
+    {
+      "year": 2015,
+      "label": "User nodes used in an attack on 8chan",
+      "detail": "8chan's founder reported an attack sending thousands of requests in 30 seconds from clean residential IPs. Hola's founder confirmed an attacker had used Luminati against 8chan, saying the customer slipped through screening and the account was terminated.",
+      "url": "https://www.theregister.com/2015/05/29/hola_vpn_used_8chan_takedown_botnet_or_not/"
+    },
+    {
+      "year": 2015,
+      "label": "Researchers demonstrated remote code execution",
+      "detail": "The adios-hola.org researchers published a working in-browser exploit against Hola users and reported that it could run attacker-supplied code with high privileges on some systems, an issue they said had been present since at least 2013. They also found persistent identifiers readable by any website.",
+      "url": "https://web.archive.org/web/20150704001828/http://adios-hola.org/"
+    },
+    {
+      "year": 2018,
+      "label": "Chrome extension hijacked to phish a crypto wallet",
+      "detail": "An attacker took over Hola's Chrome Web Store account and pushed a modified extension that redirected MyEtherWallet users to a phishing site for about five hours. Hola confirmed the incident and notified the wallet provider and Google. This was an attack on Hola rather than conduct by Hola.",
+      "url": "https://techcrunch.com/2018/07/09/myetherwallet-hit-by-attack-hola/"
+    }
+  ],
+  "mitigating": [
+    "Disclosure has improved substantially: the FAQ, website and install flow now state the peer-to-peer arrangement and name Bright Data explicitly.",
+    "Paying Premium subscribers are exempt and do not contribute device resources.",
+    "After the 2015 disclosures the company announced an internal review, an external security audit, a bug bounty and a security lead hire, and said the reported console issues were fixed.",
+    "Luminati was sold in 2017 and renamed Bright Data, so the reseller is no longer a Hola subsidiary.",
+    "Hola states that average peer traffic is very small per day and that peers cannot access the contributing device."
+  ],
   "name": "Hola VPN",
   "website": "https://hola.org/",
   "tagline": "A peer-to-peer \"VPN\" that routes free users' traffic through one another's devices rather than dedicated encrypted servers.",

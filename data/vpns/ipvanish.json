@@ -1,5 +1,26 @@
 {
   "slug": "ipvanish",
+  "concerns": [
+    {
+      "year": 2016,
+      "label": "Denied logging, then handed over user records",
+      "detail": "In a US Homeland Security Investigations case, then-parent Highwinds Network Group first replied that it did not log any usage information, then after a second summons supplied the customer's name, email, subscription details, real Comcast originating IP, and connection and disconnection times. The business has changed owner twice since.",
+      "url": "https://torrentfreak.com/ipvanish-no-logging-vpn-led-homeland-security-to-comcast-user-180505/"
+    },
+    {
+      "year": 2018,
+      "label": "Contradicted explicit zero-logging marketing",
+      "detail": "Throughout 2016 IPVanish publicly claimed it did not collect or log any traffic or use of its VPN service. The disclosure only became public when court filings were reported in June 2018.",
+      "url": "https://www.courtlistener.com/docket/4267019/united-states-v-gevirtz/"
+    }
+  ],
+  "mitigating": [
+    "The conduct predates every current owner. The business passed from Highwinds to StackPath in 2017, then to J2 Global in 2019, which became Ziff Davis in 2021.",
+    "StackPath said its acquisition due diligence found no logs and no logging systems in place, and that it would not log users.",
+    "An independent no-logs audit by Leviathan Security Group was published in 2022.",
+    "A second independent audit by Schellman was completed in 2025, covering logging configurations, server images and simulated user sessions.",
+    "The company launched a trust centre with quarterly transparency reports on law enforcement requests."
+  ],
   "name": "IPVanish",
   "website": "https://www.ipvanish.com",
   "tagline": "US-based, Ziff Davis-owned VPN with unlimited device connections and a twice-audited no-logs policy, shadowed by a 2016 logging disclosure.",
