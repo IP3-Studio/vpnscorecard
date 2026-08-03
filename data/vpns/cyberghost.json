@@ -9,9 +9,9 @@
     },
     {
       "year": 2015,
-      "label": "Parent was a major ad-injection affiliate",
-      "detail": "Research by Google and UC Berkeley identified CyberGhost's acquirer, Crossrider, as the largest affiliate driving traffic to the Superfish ad injector. Crossrider provided the platform and affiliate IDs; it was not found to have authored the injectors.",
-      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+      "label": "Acquirer's ad-injection history, predating the purchase",
+      "detail": "Research by Google and UC Berkeley identified Crossrider as the largest affiliate driving traffic to the Superfish ad injector. Crossrider provided the platform and affiliate IDs rather than authoring the injectors, and it wound the platform down in 2016, before it bought CyberGhost in 2017. CyberGhost itself was independent at the time and had no part in it.",
+      "url": "https://research.google/pubs/ad-injection-at-scale-assessing-deceptive-advertisement-modifications/"
     },
     {
       "year": 2021,

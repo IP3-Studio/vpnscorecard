@@ -3,33 +3,33 @@
   "concerns": [
     {
       "year": 2021,
-      "label": "CIO admitted UAE hacking work under a US settlement",
-      "detail": "ExpressVPN's then-CIO Daniel Gericke entered a deferred prosecution agreement over conspiracy to violate US arms-export controls and to commit computer fraud, paying $335,000. The factual statement he stipulated to as true says he was directly involved in computer network exploitation operations for a UAE company and later served as a program manager there. ExpressVPN's own account says he did not choose targets or launch exploits.",
-      "url": "https://www.justice.gov/opa/press-release/file/1432621/download"
+      "label": "Then-CIO resolved US charges over UAE hacking work",
+      "detail": "Daniel Gericke, ExpressVPN's CIO at the time, entered a deferred prosecution agreement resolving charges of conspiracy to violate US arms-export controls and to commit access-device and computer fraud, paying $335,000 of a $1,685,000 total. It required no admission of guilt and produced no conviction, but the defendants acknowledged under oath that the attached factual statement was true. That statement says he was directly involved in computer network exploitation operations for a UAE company from January 2016 and later managed its exploitation-tool development. All of that conduct predates his hiring by ExpressVPN in December 2019.",
+      "url": "https://www.justice.gov/archives/opa/press-release/file/1432621/dl"
     },
     {
       "year": 2021,
-      "label": "Company retained and publicly defended him",
-      "detail": "ExpressVPN said it had no plans to change Gericke's position and that it fully stood behind him, adding that it had known the key facts before hiring him. Employees objected internally and the decision drew public criticism.",
+      "label": "Company kept him on and defended him at the time",
+      "detail": "Reporting at the time said ExpressVPN had no plans to change Gericke's position and fully stood behind him. The company said it had known the key facts of his employment history before hiring him, that he had disclosed them proactively, and that it could not be privy to the classified details of his role. It also said it does not condone Project Raven and that such surveillance is antithetical to its mission. The decision drew public criticism. Gericke left the company in 2023.",
       "url": "https://www.techtarget.com/searchsecurity/news/252506801/ExpressVPN-stands-behind-CIO-named-in-UAE-hacking-scandal"
     },
     {
       "year": 2021,
       "label": "Acquired by Kape Technologies, formerly Crossrider",
-      "detail": "Kape bought ExpressVPN for $936 million in September 2021. Kape traded as Crossrider until March 2018, when it renamed itself citing the strong association with the company's past activities.",
+      "detail": "Kape announced the $936 million purchase of ExpressVPN in September 2021 and completed it that December. Kape traded as Crossrider until 2018, when it changed its name; its chief executive said at the time that the rebrand was driven by the strong association with the company's past activities.",
       "url": "https://www.theregister.com/2021/09/14/expressvpn_bought_kape/"
     },
     {
       "year": 2015,
       "label": "Parent was a major ad-injection affiliate",
       "detail": "Research by Google and UC Berkeley presented at IEEE Security and Privacy described Crossrider as a platform enabling drop-in monetisation via major ad injectors, and identified it as the largest affiliate of the Superfish injector. Crossrider supplied the platform and affiliate IDs rather than authoring the injectors.",
-      "url": "https://people.cs.uchicago.edu/~grantho/papers/oakland2015_ad_injection.pdf"
+      "url": "https://research.google/pubs/ad-injection-at-scale-assessing-deceptive-advertisement-modifications/"
     },
     {
       "year": 2025,
-      "label": "Gericke a defendant in a live US hacking lawsuit",
-      "detail": "Saudi activist Loujain AlHathloul sued DarkMatter Group and three former US intelligence operatives including Gericke. A judge denied the motion to dismiss in August 2025 and the case is proceeding. The allegations remain unproven.",
-      "url": "https://www.eff.org/cases/alhathloul-v-darkmatter-group"
+      "label": "Named in a continuing US hacking lawsuit",
+      "detail": "Saudi activist Loujain AlHathloul sued DarkMatter Group and three former US intelligence operatives, Gericke among them. In August 2025 a judge allowed part of the case to proceed, dismissing other parts. The allegations are unproven, and the case concerns his work before he joined ExpressVPN.",
+      "url": "https://www.eff.org/press/releases/federal-court-rules-lawsuit-against-spyware-maker-darkmatter-can-proceed"
     }
   ],
   "mitigating": [
@@ -37,6 +37,7 @@
     "Repeated independent audits: KPMG has assessed the no-logs policy and TrustedServer, and Cure53 has penetration-tested TrustedServer and the Lightway protocol.",
     "A further KPMG no-logs assessment covers systems as of February 2025, so the audit cadence has continued for years under Kape ownership.",
     "The Gericke matter concerns his prior employer, not any conduct against ExpressVPN users, and the settlement was a deferred prosecution rather than a conviction.",
+    "Gericke left ExpressVPN in 2023, so this is a historical governance question rather than a live one.",
     "No evidence has emerged that Kape or its VPN brands have engaged in ad injection since the platform business wound down around 2016."
   ],
   "name": "ExpressVPN",
