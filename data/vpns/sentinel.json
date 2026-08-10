@@ -2,7 +2,7 @@
   "slug": "sentinel",
   "name": "Sentinel dVPN",
   "website": "https://sentinel.co/",
-  "tagline": "A live, open-source decentralised VPN (dVPN) network on Cosmos: 1,500+ independent nodes across 70+ countries, paid in the $DVPN token. A protocol and marketplace, not a single provider.",
+  "tagline": "An open-source Layer 1 bandwidth marketplace and dVPN application framework, with 1,500+ independently operated nodes across 70+ countries and a native $P2P token. Independent apps are built on it, so it is not a single VPN you sign up to.",
   "status": "active",
   "type": "network",
   "verified": true,
@@ -21,7 +21,7 @@
     "timestamps": "unknown",
     "bandwidth": "unknown",
     "ip": "unknown",
-    "summary": "Decentralised: no central operator, and traffic is end-to-end encrypted between you and an independent exit node. But trust varies by node (anyone can run one), and session records (your wallet address, the node, and a timestamp) are written to the public Cosmos blockchain, so connection metadata is pseudonymous rather than fully private."
+    "summary": "Decentralised: no central operator, and traffic is end-to-end encrypted between you and an independently run node. Trust varies by node, since anyone can operate one. Sessions are authorised on-chain, so a record of the paying address, the node and a timestamp is public. Where an app pays on the user's behalf, that address belongs to the app rather than the user, which weakens the link to an individual."
   },
   "privacy": {
     "anonymousSignup": "yes",
@@ -30,12 +30,12 @@
     "pgpKey": "unknown"
   },
   "technical": {
-    "openvpn": "no",
+    "openvpn": "yes",
     "wireguard": "yes",
-    "proprietaryProtocol": "Sentinel dVPN protocol on Cosmos (on-chain session authorisation); nodes run WireGuard (Curve25519) or V2Ray (VLess/VMess)",
+    "proprietaryProtocol": "Sentinel dVPN protocol framework on its own Cosmos-SDK Layer 1, with on-chain session authorisation. Node software supports six service types: WireGuard, AmneziaWG, V2Ray, Xray, OpenVPN and Hysteria2",
     "multihop": "unknown",
     "obfuscation": "yes",
-    "killSwitch": "unknown",
+    "killSwitch": "yes",
     "ownDns": "unknown",
     "ramOnly": "unknown",
     "portForwarding": "unknown",
@@ -53,7 +53,7 @@
     "audits": [],
     "transparencyReport": "unknown",
     "courtTested": "no",
-    "realWorldNoLog": "Censorship-resistant by design: zero bootstrap nodes and no central servers to seize. There is no single operator to subpoena, but equally no audited no-logs policy, and session metadata lives on a public blockchain."
+    "realWorldNoLog": "Censorship-resistant by design: zero bootstrap nodes and no central servers to seize. There is no single operator to subpoena, but equally no audited no-logs policy across the network, and session authorisation is recorded on a public chain. The chain, node software, protocol and SDKs are open source; each app built on Sentinel has to be judged on its own."
   },
   "infra": {
     "countries": 70,
@@ -61,37 +61,37 @@
     "linux": "cli"
   },
   "pricing": {
-    "freeTier": "no"
+    "freeTier": "yes"
   },
   "ethics": {
     "contradictoryLogging": "no",
     "falseClaims": "no"
   },
   "bestFor": [
-    "Crypto-native users who want a censorship-resistant, decentralised VPN",
-    "Avoiding a single provider you have to trust (no central servers to seize)",
-    "Developers building their own branded dVPN app on the protocol"
+    "People who want censorship-resistant routing with no single operator to seize or subpoena",
+    "Choosing between competing apps and node operators rather than trusting one company",
+    "Developers building their own branded dVPN app on an open protocol"
   ],
   "notFor": [
-    "People who want one accountable operator with an audited no-logs policy",
-    "Non-crypto users (payment and identity are wallet-based)",
-    "Anyone who needs connection metadata kept fully private (session records are on a public blockchain)",
-    "Streaming or plug-and-play simplicity (node quality varies)"
+    "People who want one accountable operator with a single audited no-logs policy",
+    "Anyone who needs session authorisation kept off a public ledger",
+    "Plug-and-play consistency, since both node quality and app quality vary"
   ],
   "pros": [
-    "Fully open source: node, client, protocol, and SDK",
-    "Decentralised marketplace of 1,500+ independent nodes across 70+ countries",
-    "No central servers to seize; censorship-resistant by design",
-    "Live on Cosmos mainnet since 2021, with 1.4M+ users",
-    "Pay per bandwidth in crypto ($DVPN); no account or email required"
+    "Fully open source: chain, node software, protocol and SDKs",
+    "1,500+ independently operated nodes across 70+ countries, with no central server estate to seize",
+    "Node software supports six service types: WireGuard, AmneziaWG, V2Ray, Xray, OpenVPN and Hysteria2",
+    "The SDK implements both a kill switch and DNS leak prevention",
+    "Apps can hide the blockchain entirely, taking cards, Apple Pay, Google Pay or other payment, and some offer free access",
+    "Live on mainnet since 2021, with more than a million users across the apps built on it"
   ],
   "cons": [
-    "Not a single accountable provider: trust and logging vary by node operator",
-    "Session records (wallet, node, timestamp) are written to a public blockchain",
-    "Payment and identity are crypto/wallet-based, not for everyone",
+    "Not a single accountable provider: trust, logging and quality vary by node operator and by app",
+    "Sessions are authorised on-chain, so a record of the paying address, the node and a timestamp is public",
+    "An open-source protocol does not make every app on it open source; each app has to be judged separately",
     "Different architecture from a commercial VPN, so we list it but don't score it"
   ],
-  "notes": "Sentinel is an open-source decentralised VPN (dVPN) protocol and bandwidth marketplace on the Cosmos blockchain. Independent operators run WireGuard or V2Ray exit nodes (1,500+ across 70+ countries) and are paid in the $DVPN token; sessions are authorised on-chain. Consumer apps such as Cosmo dVPN, Sentinel Shield and Independent VPN are built on it. Live on mainnet since March 2021. Listed as a decentralised network rather than scored against conventional providers.",
+  "notes": "Sentinel is not a single dVPN application. It is an open-source Layer 1 peer-to-peer bandwidth marketplace and dVPN application framework, on which independent applications are built. Its native token is $P2P. Nodes are run independently, with deliberately no centrally standardised server estate of the kind Mullvad or NordVPN operate, and the node software supports six service types: WireGuard, AmneziaWG, V2Ray, Xray, OpenVPN and Hysteria2. The SDK implements a kill switch and DNS leak prevention. Sentinel is designed so developers can abstract the blockchain away from users: apps can accept fiat, cards, Apple Pay, Google Pay, Stripe or other cryptocurrencies, can pay $P2P on the user's behalf, and can offer free access supported by ads or bandwidth sharing, so a user need not hold crypto or even know Sentinel is underneath. Independent dVPN, for example, has a free tier. The chain, node software, protocol and SDKs are open source; applications built on Sentinel must be evaluated individually. It is neither a Tor-style anonymity network nor a Tailscale-style private mesh. Live on mainnet since March 2021. Listed as infrastructure rather than scored against consumer VPN apps. Details confirmed by the Sentinel team, July 2026.",
   "lastVerified": "2026-07-06",
   "sources": [
     { "label": "Sentinel (official)", "url": "https://sentinel.co/" },
