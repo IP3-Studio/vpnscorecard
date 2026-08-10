@@ -22,9 +22,9 @@ export const TYPE_META: Record<
     short: "Network / Mesh",
     cls: "bg-teal-100 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300",
     blurb:
-      "A decentralised anonymity network you route through (Tor onion routing, HOPR mixnet) or a private device mesh (Tailscale-style), rather than a commercial VPN provider. Listed but not scored head-to-head.",
+      "Infrastructure rather than a VPN you subscribe to: decentralised anonymity networks (Tor onion routing, the HOPR mixnet), peer-to-peer bandwidth marketplaces and protocol frameworks that other apps are built on, and private device meshes. Listed but not scored head-to-head.",
     notScoredReason:
-      "is a decentralised anonymity network or device mesh rather than a commercial VPN, so there's no provider no-logs policy, jurisdiction, or server network to rate on the conventional rubric",
+      "is network infrastructure rather than a single commercial VPN service, so there's no one provider, no-logs policy, jurisdiction or server estate to rate on the conventional rubric",
   },
 };
 

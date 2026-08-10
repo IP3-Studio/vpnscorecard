@@ -51,11 +51,12 @@ export default function Home() {
       {/* Infrastructure: networks and protocols, not consumer subscriptions */}
       <section className="mb-12">
         <h2 className="text-xl font-bold tracking-tight">
-          Infrastructure: mixnets, meshes and decentralised networks
+          Infrastructure: mixnets, meshes, marketplaces and protocols
         </h2>
         <p className="mt-2 max-w-3xl text-sm text-zinc-600 dark:text-zinc-400">
-          These are networks and protocols rather than products you subscribe to. There
-          is no company holding your traffic, so most of the VPN rubric (a provider
+          These are networks, marketplaces and protocol frameworks rather than products
+          you subscribe to. Some have independent apps built on top of them. There is no
+          single company holding your traffic, so most of the VPN rubric (a provider
           no-logs policy, a jurisdiction, a server fleet) doesn&apos;t apply, and we list
           them without a head-to-head score. NymVPN is the exception: it sells a
           conventional subscription on top of its mixnet, so it is scored.
