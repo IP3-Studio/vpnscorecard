@@ -1,0 +1,119 @@
+{
+  "slug": "freesocks",
+  "name": "FreeSocks",
+  "website": "https://freesocks.org/",
+  "tagline": "A free censorship-circumvention proxy service from the US non-profit Unredacted Inc, not a VPN. Anonymous number-only accounts, no client IP stored anywhere, and a GPL-3.0 stack anyone can self-host.",
+  "status": "active",
+  "type": "network",
+  "verified": true,
+  "concerns": [],
+  "mitigating": [],
+  "jurisdiction": {
+    "country": "United States",
+    "eyes": "five",
+    "enemyOfInternet": "no"
+  },
+  "company": {
+    "parent": "Unredacted Inc (US 501(c)(3) non-profit, incorporated in Delaware)",
+    "founded": 2021
+  },
+  "logging": {
+    "traffic": "none",
+    "dns": "none",
+    "timestamps": "none",
+    "bandwidth": "some",
+    "ip": "none",
+    "summary": "The project documentation states there are no client IPs at rest: the application, the reverse proxy and the captcha service are each configured to persist no client IP, not even hashed. Rate limiting uses short-lived counters that expire on their own, and proxy access logging is disabled automatically. Aggregate byte counters per account do exist, because free keys carry a monthly traffic allowance, but there is no per-connection or per-destination record. Enforcement is visible in the open-source code rather than promised in a policy, though no third party has audited it."
+  },
+  "privacy": {
+    "anonymousSignup": "yes",
+    "acceptsCash": "no",
+    "acceptsCrypto": "yes",
+    "pgpKey": "yes"
+  },
+  "technical": {
+    "openvpn": "no",
+    "wireguard": "no",
+    "ikev2": "no",
+    "proprietaryProtocol": "Proxy protocols rather than VPN protocols: Xray-core (managed via Remnawave) serving VLESS over WebSocket and VLESS + REALITY, with Outline (Shadowsocks) kept as a fallback. The backend is pluggable, so a protocol that gets blocked can be swapped out without rebuilding the service.",
+    "multihop": "no",
+    "obfuscation": "yes",
+    "killSwitch": "no",
+    "ownDns": "no",
+    "ramOnly": "no",
+    "portForwarding": "no",
+    "p2p": "yes",
+    "ipv6": "supported",
+    "postQuantum": "yes",
+    "postQuantumNote": "Hybrid X25519 + ML-KEM-768, so it holds as long as either half holds. The website and API seal account numbers and key delivery with X-Wing HPKE, with short-lived server keys, so a recorded login cannot be decrypted later. On the tunnel itself, REALITY negotiates post-quantum key agreement against the site it borrows its certificate from, so this depends on that target rather than on FreeSocks."
+  },
+  "encryption": {
+    "dataCipher": "Varies by transport. VLESS carries no cipher of its own and relies on the outer TLS 1.3 AEAD (AES-128-GCM or ChaCha20-Poly1305).",
+    "handshake": "X25519, with REALITY able to negotiate hybrid X25519MLKEM768 depending on the target site it borrows its certificate from."
+  },
+  "transparency": {
+    "openSourceClients": "yes",
+    "audits": [],
+    "transparencyReport": "yes",
+    "courtTested": "unknown",
+    "realWorldNoLog": "Unredacted publishes a transparency report, updated quarterly, stating it has never disclosed user communications to any third party, never given any third party direct access to its servers or user data, and never installed law enforcement equipment on its network. The no-logging posture is also inspectable in the GPL-3.0 source. Neither has been tested by a documented seizure or subpoena, and no independent audit has been published."
+  },
+  "infra": {
+    "linux": "unknown",
+    "simultaneousConnections": "unlimited"
+  },
+  "sitePrivacy": {
+    "trackers": 0
+  },
+  "pricing": {
+    "monthlyUsd": 0,
+    "bestPerMonthUsd": 0,
+    "bestPlanTerm": "Free, always. An optional $5/mo membership removes the traffic allowance on your key.",
+    "freeTier": "yes",
+    "refundDays": 0
+  },
+  "ethics": {
+    "contradictoryLogging": "no",
+    "falseClaims": "no"
+  },
+  "bestFor": [
+    "People inside heavily censored countries who need to reach the open internet for free",
+    "Anyone who wants access with no email, phone number or password attached to it",
+    "Operators who want to run their own proxy-distribution service on the same GPL-3.0 stack"
+  ],
+  "notFor": [
+    "Anyone looking for a VPN: this is a proxy service and does not offer WireGuard or OpenVPN",
+    "People who want a one-click branded app, since you install a proxy client of your choice",
+    "Anyone needing a kill switch from the service itself, port forwarding, or unmetered traffic without paying"
+  ],
+  "pros": [
+    "Free, run by a registered 501(c)(3) non-profit, with no advertising and no data business model",
+    "Accounts collect nothing: no email, phone or password, just a random 32-digit number stored only as a keyed hash",
+    "Documentation states no client IP is persisted anywhere, not even hashed, and the claim is inspectable in the source",
+    "The whole service stack is open source under GPL-3.0 and built to be self-hosted by other operators",
+    "Modern censorship-resistant transports (VLESS + REALITY, VLESS over WebSocket, Outline as fallback) on a pluggable backend",
+    "Post-quantum hybrid encryption on the website and API, and a CDN front using Encrypted Client Hello",
+    "Unredacted runs its own autonomous systems and says it collects network metrics without storing flow data",
+    "Quarterly transparency report, no device limit, IPv6 support, and interfaces in English, Farsi, Arabic, Russian and Chinese"
+  ],
+  "cons": [
+    "Not a VPN: no WireGuard or OpenVPN, and no first-party client app, so setup uses third-party proxy apps",
+    "No kill switch from the service itself; that depends on whichever client app you choose",
+    "US jurisdiction (Five Eyes), though there is no provider-held record of who connected where",
+    "No published third-party audit of the service or the codebase",
+    "Free keys carry a monthly traffic allowance; removing it needs a $5/mo membership",
+    "Servers are disk-based rather than RAM-only, and DNS is not resolved on first-party resolvers",
+    "Lose your account number and it cannot be recovered"
+  ],
+  "notes": "FreeSocks is a free proxy-access service, not a VPN: its own project documentation describes it as a proxy and censorship-circumvention service. Unredacted Inc, a US 501(c)(3) incorporated in Delaware, runs the servers and hands out access keys, and the user installs a proxy client of their choice. FreeSocks launched in December 2023 and was rebuilt as v2 on 20 July 2026, moving to a self-hosted backend with Xray-core (via Remnawave) as the proxy layer and Outline kept as a fallback. Accounts are a randomly generated 32-digit number issued after a proof-of-work challenge, with only a keyed hash stored. Website and API traffic is fronted through a CDN using Encrypted Client Hello, with sensitive request bodies additionally sealed to the server using X-Wing hybrid post-quantum HPKE, so the CDN sees only ciphertext. That CDN fronting is a privacy measure against the CDN, not a multi-hop VPN feature, and we do not record it as multi-hop. The optional $5/mo membership lifts traffic limits and is taken through a self-hosted BTCPay Server. Listed as infrastructure and not scored, because the VPN rubric (WireGuard, OpenVPN, first-party DNS, a provider server fleet) does not describe what this is.",
+  "lastVerified": "2026-08-14",
+  "sources": [
+    { "label": "FreeSocks (official site)", "url": "https://freesocks.org/" },
+    { "label": "Unredacted: Internet Freedom is Here, FreeSocks v2", "url": "https://unredacted.org/blog/2026/07/internet-freedom-is-here-freesocks-v2/" },
+    { "label": "freesocks-control-plane source (GPL-3.0)", "url": "https://github.com/unredacted/freesocks-control-plane" },
+    { "label": "FreeSocks: how the no-logging posture is enforced", "url": "https://github.com/unredacted/freesocks-control-plane/blob/main/docs/privacy.md" },
+    { "label": "Unredacted Inc: Transparency report", "url": "https://unredacted.org/about/transparency/" },
+    { "label": "Unredacted Inc: Our Network", "url": "https://unredacted.org/about/network/" },
+    { "label": "Unredacted Inc on Candid (non-profit registry)", "url": "https://app.candid.org/profile/15658067/unredacted-inc/" }
+  ]
+}
