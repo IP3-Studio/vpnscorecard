@@ -78,6 +78,10 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  // Google Search Console ownership proof. Public by design, not a secret.
+  verification: {
+    google: "novUg_4_uhdidRRBJPZV5ofAmHiG7XX5n_gRFbHtWlA",
+  },
   category: "technology",
 };
 
